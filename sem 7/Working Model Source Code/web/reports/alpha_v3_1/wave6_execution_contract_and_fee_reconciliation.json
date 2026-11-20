@@ -1,0 +1,192 @@
+{
+  "artifact_version": "wave6_execution_contract_and_fee_reconciliation/1",
+  "authoritative_engine": {
+    "account_namespace": "research_v3",
+    "delegates_to": "src/lib/paper-book/engine.ts",
+    "legacy_main_book_semantics_unchanged": true,
+    "live_broker_surface": false,
+    "module": "src/lib/research-forward-paper.ts",
+    "typescript_adapter_tests": {
+      "failed": 0,
+      "full_node_includes_tests": true,
+      "passed": 6,
+      "summary": "6 passed in 251.17ms; existing engine namespace/fees/delivery-settlement adapter"
+    }
+  },
+  "evidence_time": "2026-11-14T16:42:00+00:00",
+  "fee_gate": {
+    "component": {
+      "delivery_brokerage": {
+        "cap_rupees": 20.0,
+        "rate": 0.003,
+        "scope": "per_executed_order"
+      },
+      "dp_basis": "Rs 12.50 + GST per scrip (Rs 3.50 CDSL + Rs 9.00 FYERS) on sell",
+      "dp_debit_paise": 1250,
+      "dp_gst_rate": 0.18,
+      "dp_scope": "per_scrip_per_sell_day",
+      "effective_from": "2026-11-14",
+      "id": "fyers-standard-observed-2026-11-14",
+      "note": "observed on fyers.in pricing/charges-list 2026-11-14; never valid before observation"
+    },
+    "fixture_calculation_allowed": true,
+    "historical_extrapolation_allowed": false,
+    "plan": "fyers_standard_observed_2026_11_14",
+    "reasons": [
+      "OPERATOR_ACCOUNT_PLAN_NOT_CONFIRMED",
+      "CORPORATE_ACTION_SOURCE_NOT_CONFIGURED"
+    ],
+    "status": "DATA_BLOCKED"
+  },
+  "forward_ledger": {
+    "audit_export": "wave6_signal_and_paper_ledger.jsonl",
+    "export_is_second_mutable_source": false,
+    "fixture_chain_intact": true,
+    "fixture_export": "wave6_engineering_fixture_ledger.jsonl",
+    "real_chain_intact": true,
+    "runtime_storage": "SQLite WAL; BEGIN IMMEDIATE; UNIQUE(event_id); synchronous FULL"
+  },
+  "independent_fixture_reconciliation": {
+    "claim": "math/engine fixture only; not a real quote, cost history or alpha result",
+    "fee": {
+      "broker_component": "fyers_standard_observed_2026_11_14",
+      "decision_cutoff": null,
+      "fill_ref": "d109d8aaac7c7c5fc10fc1eee61a7d389b953af947a2b62cb795b3443bb2f067",
+      "items": [
+        {
+          "amount_paise": 100,
+          "basis": "0.1% of delivery turnover, rounded to the rupee per fill",
+          "code": "STT"
+        },
+        {
+          "amount_paise": 2,
+          "basis": "Rs 307 per crore each side",
+          "code": "EXCHANGE"
+        },
+        {
+          "amount_paise": 0,
+          "basis": "Rs 10 per crore",
+          "code": "SEBI"
+        },
+        {
+          "amount_paise": 8,
+          "basis": "0.015% of delivery purchase value",
+          "code": "STAMP"
+        },
+        {
+          "amount_paise": 150,
+          "basis": "min(rate x order value, cap) per executed order: 0.300% capped at Rs 20.0",
+          "code": "BROKERAGE"
+        },
+        {
+          "amount_paise": 27,
+          "basis": "18% of brokerage, exchange charge and SEBI fee",
+          "code": "GST"
+        }
+      ],
+      "maturity": "ENGINEERING_FIXTURE",
+      "record_kind": "FEE_EVENT",
+      "recorded_at": "2026-11-16T04:30:00+00:00",
+      "schedule_id": "nse-cm-delivery-2026-03-01",
+      "session_date": null,
+      "stream_id": "w6-engineering-fixture-v1",
+      "total_paise": 287
+    },
+    "fill": {
+      "broker_component_version": "fyers_standard_observed_2026_11_14",
+      "decision_cutoff": null,
+      "executed_value_paise": 50050,
+      "fee_schedule_version": "nse-cm-delivery-2026-03-01",
+      "fill_id": "d109d8aaac7c7c5fc10fc1eee61a7d389b953af947a2b62cb795b3443bb2f067",
+      "fill_status": "FILLED",
+      "filled_quantity": 5,
+      "intent_id": "w6-fixture-buy-0001",
+      "isin": "INE467B01029",
+      "maturity": "ENGINEERING_FIXTURE",
+      "price_paise": 10010,
+      "quantity": 5,
+      "quote_available_at": "2026-11-16T04:29:50+00:00",
+      "quote_provider_ts": "2026-11-16T04:29:50+00:00",
+      "reason_codes": [],
+      "record_kind": "FILL_EVENT",
+      "recorded_at": "2026-11-16T04:30:00+00:00",
+      "session_date": "2026-11-16",
+      "side": "BUY",
+      "slippage_paise": 0,
+      "stream_id": "w6-engineering-fixture-v1",
+      "symbol": "TCS"
+    },
+    "intent": {
+      "accepted": true,
+      "expiry_session": "2026-11-16",
+      "intent_id": "w6-fixture-buy-0001",
+      "isin": "INE467B01029",
+      "status": "PENDING"
+    },
+    "maturity": "ENGINEERING_FIXTURE",
+    "nav": {
+      "cash_paise": 9949663,
+      "equity_paise": 10000163,
+      "fees_paid_paise": 287,
+      "fixture": true,
+      "holdings_value_paise": 50500,
+      "invested_cost_paise": 50050,
+      "nav_known": true,
+      "pending_proceeds_paise": 0,
+      "positions": [
+        {
+          "blocked": false,
+          "isin": "INE467B01029",
+          "mark_paise": 10100,
+          "mark_source": "fixture",
+          "mark_time": "2026-11-17T09:59:50+00:00",
+          "pending_buy": 0,
+          "pending_sell": 0,
+          "quantity": 5,
+          "settled": 5,
+          "status": "MARK_OBSERVED",
+          "symbol": "TCS",
+          "value_paise": 50500
+        }
+      ],
+      "realised_gross_paise": 0,
+      "realised_net_paise": 0,
+      "reserved_cash_paise": 0,
+      "reserved_shares": {},
+      "stream_id": "w6-engineering-fixture-v1",
+      "unrealised_pnl_paise": 450
+    },
+    "reconciliation": {
+      "actual_cash_plus_pending_paise": 9949663,
+      "actual_holdings": {
+        "INE467B01029": 5
+      },
+      "cash_conserved": true,
+      "expected_cash_plus_pending_paise": 9949663,
+      "expected_holdings": {
+        "INE467B01029": 5
+      },
+      "holdings_conserved": true,
+      "no_negative_balances": true,
+      "ok": true,
+      "reservations_valid": true
+    },
+    "settlement": {
+      "previous_session": "2026-11-16",
+      "proceeds_credited_paise": 0,
+      "session_date": "2026-11-17",
+      "settled": true,
+      "shares_settled_buy": 5,
+      "shares_settled_sell": 0
+    },
+    "two_x_fee_sensitivity_paise": 574
+  },
+  "real_lane": {
+    "fees_paid_paise": 0,
+    "fills": 0,
+    "intents": 0,
+    "observed_quotes": 0,
+    "paper_book_mutated": false,
+    "status": "DATA_BLOCKED_NO_ELIGIBLE_STRATEGY"
+  }
+}

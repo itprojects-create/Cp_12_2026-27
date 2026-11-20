@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-11-20T12:35:05.082444+00:00",
+  "n_records": 0,
+  "verification_levels": {
+    "VERIFIED": "official action + original official disclosure + knowability timestamp",
+    "PARTIAL": "official action + effective/ex-date + incomplete original timestamp",
+    "UNKNOWN": "cannot establish safe historical availability"
+  },
+  "by_type": {},
+  "by_year": {},
+  "by_universe": {},
+  "linked_announcement_pct": 0.0,
+  "unlinked_pct": 0.0,
+  "missing_identity": 0,
+  "missing_timestamp": 0,
+  "note": "UNKNOWNs preserved, never auto-filled (\u00a735). Production store is empty until live collection: coverage below describes fixtures only."
+}

@@ -1,0 +1,76 @@
+{
+  "actual_legally_captured_rows_by_w5": 0,
+  "actual_observed_forward_rows_by_w5": 0,
+  "authority": "RESEARCH_ONLY",
+  "config_contract": {
+    "allowed_hosts": [
+      "www.nseindia.com",
+      "nsearchives.nseindia.com"
+    ],
+    "archive_original_bytes": false,
+    "circuit_failure_threshold": 3,
+    "contemporaneous_max_lag_seconds": 86400,
+    "enabled": false,
+    "max_attachment_bytes": 10000000,
+    "max_records_per_run": 100,
+    "max_requests_per_run": 4,
+    "max_response_bytes": 1000000,
+    "schedule_enabled": false,
+    "timeout_seconds": 15.0
+  },
+  "default_enabled": false,
+  "evidence_time": "2026-11-14T09:05:10.030883+00:00",
+  "fixture_tests": [
+    "correction/withdrawal chains",
+    "same-ID edits",
+    "ambiguous timestamps",
+    "mismatched issuer",
+    "wrong ISIN",
+    "retrospective late discovery",
+    "unavailable attachment",
+    "encoding",
+    "duplicate headlines",
+    "hostile prompt-injection text",
+    "available_at cutoff",
+    "rights denial",
+    "content-type/size/rate caps",
+    "429/503 circuit breaker"
+  ],
+  "jev": "DISABLED_NOT_CALLED",
+  "manifest_version": "wave5_event_capture_manifest/1",
+  "pipeline_status": "NOT_CONFIGURED",
+  "preexisting_local_files_excluded": {
+    "all_json_including_metadata_count": 38,
+    "payload_json_count": 19,
+    "reason": "pre-W5 user files; capture clock, terms permission and rights lineage not certified under the W5 contract; not imported or backdated"
+  },
+  "real_human_goldset": {
+    "captured_event_rows": 0,
+    "double_reviewed_labels": 0,
+    "sealed_gold_labels": 0,
+    "status": "GOLDSET_HOLDOUT_UNAVAILABLE"
+  },
+  "schedule_enabled": false,
+  "source": {
+    "actions_entry": "https://www.nseindia.com/companies-listing/corporate-filings-actions",
+    "announcements_entry": "https://www.nseindia.com/companies-listing/corporate-filings-announcements-xbrl",
+    "automated_capture_allowed": false,
+    "network_discovery_status": "TIMEOUT",
+    "original_bytes_storage_allowed": false,
+    "redistribution_allowed": false,
+    "rights_status": "REFERENCE_ONLY_UNVERIFIED_FOR_AUTOMATED_CAPTURE",
+    "source_id": "nse_official_announcements",
+    "terms_entry": "https://www.nseindia.com/terms-of-use"
+  },
+  "store_health": {
+    "chain_intact": true,
+    "chain_reason": "chain intact",
+    "contemporaneous_versions": 0,
+    "head_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "retrospective_versions": 0,
+    "store_schema": "research_v3/event_capture_store/1",
+    "unique_disclosures": 0,
+    "versions": 0
+  },
+  "w4_synthetic_goldset": "UNCHANGED_24_AUTHORED_ROWS_NOT_REAL_ACCURACY"
+}

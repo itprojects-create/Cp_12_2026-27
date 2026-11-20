@@ -1,0 +1,131 @@
+{
+  "artifact_version": "wave6_w0_w5_frozen_controls/1",
+  "authority": {
+    "event_ai_state": "OFF",
+    "jev_money_authority": 0,
+    "live_broker_order_authority": 0,
+    "mercury_money_authority": 0
+  },
+  "controlled_files_pre_post": {
+    "dev_local_workspace": {
+      "actual_sha256": "e1a9220eca2ff9968c7412f7e09105221185c9e02f6a22e55a88d063e83e7de4",
+      "expected_pre_w6_sha256": "e1a9220eca2ff9968c7412f7e09105221185c9e02f6a22e55a88d063e83e7de4",
+      "match": true,
+      "path": "D:\\Quant-Plus\\.local-data\\workspace.json"
+    },
+    "prod_forecast_ledger": {
+      "actual_sha256": "a866645e04d2a226eeae1f35e6ac35edb532901ab9b3d7309e66e1b3ee698083",
+      "expected_pre_w6_sha256": "a866645e04d2a226eeae1f35e6ac35edb532901ab9b3d7309e66e1b3ee698083",
+      "match": true,
+      "path": "D:\\QP\\agent-service\\data\\forecast_ledger.sqlite3"
+    },
+    "prod_paper_signals": {
+      "actual_sha256": "013c345b401cd17e55d6473dbcba35bfa8e8b472962ec1f28c6e446c49aec91f",
+      "expected_pre_w6_sha256": "013c345b401cd17e55d6473dbcba35bfa8e8b472962ec1f28c6e446c49aec91f",
+      "match": true,
+      "path": "D:\\QP\\agent-service\\data\\paper_signals.jsonl"
+    },
+    "prod_v2_paper_pnl": {
+      "actual_sha256": "9fcd5301e572c05b68ca1342905b16f5b1826e4489599b0a02348ddf9fd643e1",
+      "expected_pre_w6_sha256": "9fcd5301e572c05b68ca1342905b16f5b1826e4489599b0a02348ddf9fd643e1",
+      "match": true,
+      "path": "D:\\QP\\agent-service\\data\\forecast_reports\\paper_pnl.jsonl"
+    },
+    "w0_forecast_backup": {
+      "actual_sha256": "f5b21ed78ce48770feb9aca8a42163de1e5f1183910f1a1cfb1218bf8e6288ab",
+      "expected_pre_w6_sha256": "f5b21ed78ce48770feb9aca8a42163de1e5f1183910f1a1cfb1218bf8e6288ab",
+      "match": true,
+      "path": "D:\\Quant-Plus\\reports\\alpha_v3_1\\backups\\forecast_ledger_w0_backup.sqlite3"
+    },
+    "warehouse": {
+      "actual_sha256": "21787a7d07fca1f5126d0c33ce3d73842f6268411624543dbf15217ce9d4e8a4",
+      "expected_pre_w6_sha256": "21787a7d07fca1f5126d0c33ce3d73842f6268411624543dbf15217ce9d4e8a4",
+      "match": true,
+      "path": "D:\\Quant-Plus\\backend-extension\\data\\research_v3\\warehouse.sqlite3"
+    }
+  },
+  "evidence_time": "2026-11-14T16:14:00+00:00",
+  "pinned_reports": {
+    "wave2_research_journal.jsonl": {
+      "actual_sha256": "c24c9b0491fa9bbd819b12393ce84a1aa5321f40c35e48d0b3c233986f50c2e7",
+      "expected_sha256": "c24c9b0491fa9bbd819b12393ce84a1aa5321f40c35e48d0b3c233986f50c2e7",
+      "match": true
+    },
+    "wave3_feature_label_contracts.json": {
+      "actual_sha256": "d637413444e9afe09a705191f05d5e3610fac0d82684c51831a5c42538c9de77",
+      "expected_sha256": "d637413444e9afe09a705191f05d5e3610fac0d82684c51831a5c42538c9de77",
+      "match": true
+    },
+    "wave3_research_journal.jsonl": {
+      "actual_sha256": "ab9a77695e87b49960c9086815b3de07a642f9cb15e82e1ba953246aa0f37426",
+      "expected_sha256": "ab9a77695e87b49960c9086815b3de07a642f9cb15e82e1ba953246aa0f37426",
+      "match": true
+    },
+    "wave4_ablation_results.json": {
+      "actual_sha256": "c86804fd48c030cf3092fbb1e68bcb0062acbcb476dfa1690fb580f93d8c3c8d",
+      "expected_sha256": "c86804fd48c030cf3092fbb1e68bcb0062acbcb476dfa1690fb580f93d8c3c8d",
+      "match": true
+    },
+    "wave4_w3_control_reevaluation.json": {
+      "actual_sha256": "e3f1d782fe2fd4a6cc8e0518d9e63be04a186ef4e72bbeba116b144dc177baeb",
+      "expected_sha256": "e3f1d782fe2fd4a6cc8e0518d9e63be04a186ef4e72bbeba116b144dc177baeb",
+      "match": true
+    },
+    "wave5_event_capture_manifest.json": {
+      "actual_sha256": "b13255d0f8a406c1f64130c210ba46c5713bf4ce9a9aea2374da42024cb90a1b",
+      "expected_sha256": "b13255d0f8a406c1f64130c210ba46c5713bf4ce9a9aea2374da42024cb90a1b",
+      "match": true
+    },
+    "wave5_research_monitor_log.jsonl": {
+      "actual_sha256": "14390bb9390ed7f64436b64f07365a124aacdf94ce95cc632defc431e5ce869f",
+      "expected_sha256": "14390bb9390ed7f64436b64f07365a124aacdf94ce95cc632defc431e5ce869f",
+      "match": true
+    }
+  },
+  "provider_calls": {
+    "jev": 0,
+    "mercury": 0,
+    "other_model": 0
+  },
+  "verdict": "UNCHANGED",
+  "w2_w3_w5_journals": {
+    "wave2_research_journal.jsonl": {
+      "chain_intact": true,
+      "reason": "chain intact"
+    },
+    "wave3_research_journal.jsonl": {
+      "chain_intact": true,
+      "reason": "chain intact"
+    },
+    "wave5_research_monitor_log.jsonl": {
+      "chain_intact": true,
+      "head_hash": "d1abaa95a561ce8ea87489846373bb9dabce0bf06859084b15caed7a25542bca",
+      "reason": "chain intact"
+    }
+  },
+  "w3_control": {
+    "counts_match": true,
+    "feature_hash": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+    "feature_hash_recomputed": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+    "feature_match": true,
+    "label_counts": {
+      "admissible": 47852,
+      "data_blocked_action_window": 163,
+      "no_label": 1974,
+      "total": 49989
+    },
+    "label_hash": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e",
+    "label_hash_recomputed": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e",
+    "label_match": true
+  },
+  "w4_arm_a": {
+    "byte_identity_sha256": "e3f1d782fe2fd4a6cc8e0518d9e63be04a186ef4e72bbeba116b144dc177baeb",
+    "status": "UNCHANGED"
+  },
+  "w5_event_capture": {
+    "actual_rows": 0,
+    "enabled": false,
+    "pipeline_status": "NOT_CONFIGURED",
+    "schedule_enabled": false
+  }
+}

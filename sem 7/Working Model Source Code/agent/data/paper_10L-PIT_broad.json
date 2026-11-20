@@ -1,0 +1,127 @@
+{
+  "rule": "frozen v4 + baked veto + per-rebalance PIT membership (CORRECTNESS_REISSUE \u2014 same rule, bias-corrected universe)",
+  "universe": "broad",
+  "capital": 1000000.0,
+  "n_names": 391,
+  "n_excluded": 104,
+  "initial": 1000000.0,
+  "final": 2141238.95,
+  "profit": 1141238.95,
+  "profit_pct": 114.12,
+  "cagr_pct": 14.47,
+  "max_drawdown_pct": 17.87,
+  "costs_rupees": 88496.51,
+  "cash_leftover": 1850188.17,
+  "n_holdings_end": 17,
+  "yearly": {
+    "2021": {
+      "start": 1000000.0,
+      "end": 1293458.99,
+      "pnl": 293458.99
+    },
+    "2022": {
+      "start": 1293458.99,
+      "end": 1430761.06,
+      "pnl": 137302.07
+    },
+    "2023": {
+      "start": 1430761.06,
+      "end": 2097931.48,
+      "pnl": 667170.41
+    },
+    "2024": {
+      "start": 2097931.48,
+      "end": 2277050.04,
+      "pnl": 179118.56
+    },
+    "2025": {
+      "start": 2277050.04,
+      "end": 2115519.8,
+      "pnl": -161530.24
+    },
+    "2026": {
+      "start": 2115519.8,
+      "end": 2141238.95,
+      "pnl": 25719.15
+    }
+  },
+  "top_holdings_end": [
+    [
+      "SHYAMMETL.NS",
+      22,
+      23430.0
+    ],
+    [
+      "KIRLOSENG.NS",
+      10,
+      23042.0
+    ],
+    [
+      "ASHOKLEY.NS",
+      148,
+      22709.12
+    ],
+    [
+      "INDUSTOWER.NS",
+      60,
+      22053.0
+    ],
+    [
+      "GMRAIRPORT.NS",
+      233,
+      21843.75
+    ],
+    [
+      "AIAENG.NS",
+      5,
+      19345.0
+    ],
+    [
+      "CROMPTON.NS",
+      83,
+      17543.71
+    ],
+    [
+      "HINDZINC.NS",
+      31,
+      17462.3
+    ],
+    [
+      "FORCEMOT.NS",
+      1,
+      17054.0
+    ],
+    [
+      "NAVINFLUOR.NS",
+      2,
+      16490.0
+    ]
+  ],
+  "approx_note": "adjusted closes; integer shares; split-timing effects approx",
+  "generated_at": "2026-10-10T17:18:38.691623+00:00",
+  "decision_audit": {
+    "n_rebalances": 284,
+    "n_rebalances_with_trades": 264,
+    "n_trades": 5959,
+    "n_buys": 3113,
+    "n_sells": 2846,
+    "total_veto_blocks": 506,
+    "total_stressed_blocks": 3089,
+    "rebalance_cost_check": 88496.53
+  },
+  "decisions_file": "data\\paper_10L-PIT_broad_decisions.json",
+  "pit_reissue": {
+    "mode": "CORRECTNESS_REISSUE (not a new strategy)",
+    "universe_id": "nifty500",
+    "strict": false,
+    "note": "non-strict with disclosure (Amendment-1: strict degenerates)",
+    "membership_source_version": "75ebfac3b5d1fb22",
+    "n_frozen_unknown": 0,
+    "pit_status_counts": {
+      "PARTIAL": 284
+    },
+    "first_hash": "28bdc22336bcf0f0",
+    "last_hash": "84155c0a066bd1e0"
+  },
+  "pit_log_file": "data\\paper_10L-PIT_broad_pitlog.json"
+}

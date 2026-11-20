@@ -1,0 +1,98 @@
+{
+ "holdout_window": {
+  "bars": {
+   "basis": "raw unadjusted official bhavcopy; verified corporate-action coverage per adjustment_factor",
+   "distinct_symbols": 3780,
+   "rows": 1413075
+  },
+  "disclosure": "read-only coverage report; nothing was fetched or fabricated",
+  "fees": {
+   "effective_from": [
+    "2026-03-01"
+   ],
+   "note": "exact paper-book model applies only at/after its effective date; earlier fills carry typed SCHEDULE_UNAVAILABLE",
+   "schedules": [
+    "nse-cm-delivery-2026-03-01"
+   ]
+  },
+  "membership": {
+   "members_in_window": 56,
+   "note": "weak (snapshot_floor) spells are backward-walk upper bounds; no row-level first-known timestamps exist in any source",
+   "strict_spells": 23,
+   "universe_rows": 83,
+   "weak_spells": 33
+  },
+  "sessions": {
+   "count": 555,
+   "gaps_over_14d": [],
+   "note": "observed sessions only; a gap means the archive has no bars for ANY symbol there",
+   "per_year": {
+    "2024": 132,
+    "2025": 248,
+    "2026": 175
+   }
+  },
+  "tri": {
+   "basis": "official total-return index (dividends reinvested)",
+   "first": "2024-06-21",
+   "last": "2026-09-17",
+   "rows": 557
+  },
+  "universe_id": "nifty50",
+  "window": [
+   "2024-06-21",
+   "2026-09-17"
+  ]
+ },
+ "train_validation_window": {
+  "bars": {
+   "basis": "raw unadjusted official bhavcopy; verified corporate-action coverage per adjustment_factor",
+   "distinct_symbols": 3148,
+   "rows": 3670492
+  },
+  "disclosure": "read-only coverage report; nothing was fetched or fabricated",
+  "fees": {
+   "effective_from": [
+    "2026-03-01"
+   ],
+   "note": "exact paper-book model applies only at/after its effective date; earlier fills carry typed SCHEDULE_UNAVAILABLE",
+   "schedules": [
+    "nse-cm-delivery-2026-03-01"
+   ]
+  },
+  "membership": {
+   "members_in_window": 70,
+   "note": "weak (snapshot_floor) spells are backward-walk upper bounds; no row-level first-known timestamps exist in any source",
+   "strict_spells": 25,
+   "universe_rows": 83,
+   "weak_spells": 46
+  },
+  "sessions": {
+   "count": 2122,
+   "gaps_over_14d": [],
+   "note": "observed sessions only; a gap means the archive has no bars for ANY symbol there",
+   "per_year": {
+    "2015": 147,
+    "2016": 246,
+    "2017": 248,
+    "2018": 246,
+    "2019": 244,
+    "2020": 250,
+    "2021": 248,
+    "2022": 248,
+    "2023": 245
+   }
+  },
+  "tri": {
+   "basis": "official total-return index (dividends reinvested)",
+   "first": "2015-06-01",
+   "last": "2023-12-29",
+   "rows": 2127
+  },
+  "universe_id": "nifty50",
+  "window": [
+   "2015-06-01",
+   "2023-12-31"
+  ]
+ }
+}

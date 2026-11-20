@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-10-10T16:11:45.358472+00:00",
+  "historical_performance": {
+    "source": "data/core_backtest_v4_broad.json (prior artifact, as-is)",
+    "cagr": 0.1868,
+    "sharpe": 1.509,
+    "max_drawdown": 0.1539
+  },
+  "pit_corrected_performance": {
+    "source": "data/core_backtest_v4_pit500.json (start-date PIT diagnostic)",
+    "cagr": 0.1387,
+    "sharpe": 1.23,
+    "max_drawdown": 0.1289,
+    "note": "start-date snapshot only; per-rebalance P0 layer now available"
+  },
+  "dsr": {
+    "strategy_id": "v4-broad",
+    "strategy_fingerprint": "strat-v4-broad-frozen",
+    "tested_period": "2021-01-01..2026-10-01",
+    "number_of_trials": 13,
+    "selection_history": [
+      "broad-dsr-20261010",
+      "hist-blind-broad-2015-2020",
+      "hist-blind-narrow-2015-2020",
+      "hist-paper-broad-flat",
+      "hist-paper-narrow-env",
+      "hist-paper-narrow-flat",
+      "hist-v1-exposure-bug",
+      "hist-v2",
+      "hist-v3+veto-overlay",
+      "hist-v3-broad",
+      "hist-v3-narrow",
+      "hist-v4-broad",
+      "hist-v4-narrow"
+    ],
+    "observed_sharpe": 1.526,
+    "t_obs": 1419,
+    "skew": -1.1949,
+    "kurtosis": 12.1408,
+    "expected_max_sharpe": 0.6735,
+    "deflated_sharpe": 1.0,
+    "p_value": 0.0,
+    "registry_version": "DSR_REGISTRY_V1"
+  },
+  "ledger": {
+    "added": 18,
+    "duplicates": 0,
+    "total": 18
+  },
+  "concentration_dependence": {
+    "source": "verification audit (as-is)",
+    "note": "2022 broad green carried by 5 names (FACT 68% of net); ~95% of return approx half-beta exposure"
+  },
+  "beta_attribution": {
+    "source": "data/overlay_vs_core_20261007.json + blind 2015-2020 PASS",
+    "note": "no fresh beta regression in this recompute; see prior artifacts"
+  },
+  "forward_status": "INFANCY \u2014 forward clock owns promotion evidence (R8)"
+}

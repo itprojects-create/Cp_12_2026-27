@@ -1,0 +1,55 @@
+{
+ "results_version": "wave4_ablation_results/1",
+ "generated_at": "2026-11-14T08:28:47.860313+00:00",
+ "arm_definitions": {
+  "A": "numerical price/factor core (W3 frozen control)",
+  "B": "A + verified deterministic issuer-event facts",
+  "C": "B + Jev event classifications",
+  "D": "B + Mercury-3 grounded research/extraction",
+  "E": "B + Jev + Mercury-3 escalations",
+  "F": "old frozen forecast-v2 as contextual control (only where comparable)"
+ },
+ "arms": {
+  "A": {
+   "status": "UNCHANGED",
+   "verifier": "backend-extension/scripts/wave4_verify_w3_control.py",
+   "evidence_file": "wave4_w3_control_reevaluation.json",
+   "jev_state": "OFF (events_ai never imported on the control path)"
+  },
+  "B": {
+   "status": "HISTORICAL_EVENT_ABLATION_BLOCKED",
+   "blocker": "no verified contemporaneous historical issuer-event corpus"
+  },
+  "C": {
+   "status": "HISTORICAL_EVENT_ABLATION_BLOCKED",
+   "blocker": "requires Arm B fact layer"
+  },
+  "D": {
+   "status": "HISTORICAL_EVENT_ABLATION_BLOCKED",
+   "blocker": "requires Arm B fact layer"
+  },
+  "E": {
+   "status": "HISTORICAL_EVENT_ABLATION_BLOCKED",
+   "blocker": "requires Arm B fact layer"
+  },
+  "F": {
+   "status": "NOT_RUN_CONTEXTUAL_ONLY",
+   "blocker": "no comparable new plane; W3 control already carries the contextual comparison"
+  },
+  "classification_engineering_check": {
+   "status": "ENGINEERING_CHECK_SYNTHETIC",
+   "evidence_file": "wave4_goldset_metrics.json",
+   "paired_n": 19,
+   "no_financial_claim": true
+  }
+ },
+ "metrics_when_unblocked": [
+  "net_absolute_nav",
+  "benchmark_relative_excess",
+  "drawdown",
+  "turnover",
+  "inference_costs_usd",
+  "event_label_quality"
+ ],
+ "honesty_note": "No arm B–E number exists in this file; a missing number is never simulated, interpolated or extrapolated."
+}

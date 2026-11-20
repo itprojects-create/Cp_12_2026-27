@@ -1,0 +1,12 @@
+{
+  "job": "event-study",
+  "events_seen": 0,
+  "matured": 0,
+  "results": {},
+  "gate": {
+    "t_bar": 2.0,
+    "tested": 0,
+    "admitted": {}
+  },
+  "rule": "Only admitted types may shift forecasts (events.event_prior); none are wired in until admitted."
+}

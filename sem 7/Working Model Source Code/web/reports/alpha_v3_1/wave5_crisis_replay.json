@@ -1,0 +1,199 @@
+{
+  "alternative_proxy_sensitivity": {
+    "changed_from_primary": true,
+    "interpretation": "proxy-rule sensitivity, not a preferred or forecast result",
+    "mapping_hash": "03faee0f626a82e543c502a692538d879981d821bdb52f1a56b7470db5c9721d",
+    "result_id": "301d80ca7f1bc83024225e316411cba3955b34ddf85dfe4b91d9c1c79ab668ec",
+    "status": "PARTIAL_PRICE_ONLY_PROXY",
+    "supported_components_return": -0.3692085190179646,
+    "supported_weight": 1.0,
+    "unmatched_weight": 0.0
+  },
+  "assumptions": {
+    "action_policy": "NO_ACTION_IMPUTATION",
+    "benchmark": "NIFTY50_TRI",
+    "benchmark_basis": "TOTAL_RETURN_INDEX_CONTEXT_ONLY_BASIS_MISMATCH",
+    "coverage_threshold": 0.95,
+    "dividend_policy": "DIVIDENDS_EXCLUDED",
+    "missing_bar_policy": "EXCLUDE_SESSION_NO_FORWARD_FILL",
+    "price_basis": "RAW_UNADJUSTED_CLOSE_PRICE_ONLY",
+    "rebalance_policy": "NO_REBALANCE_WITHIN_WINDOW",
+    "source_data_id": "nse_eod_bhavcopy_2015_2026_full",
+    "source_data_sha256": "21787a7d07fca1f5126d0c33ce3d73842f6268411624543dbf15217ce9d4e8a4",
+    "source_first_seen_at": "2026-09-18",
+    "source_rights_label": "PERSONAL_RESEARCH_USE_PER_LOCAL_MANIFEST_NOT_REDISTRIBUTION_LICENSE",
+    "unmatched_weight_policy": "REPORT_UNMATCHED_DO_NOT_ASSUME_CASH"
+  },
+  "authority": "RESEARCH_ONLY",
+  "benchmark": {
+    "basis": "TOTAL_RETURN_INDEX_CONTEXT_ONLY_BASIS_MISMATCH",
+    "comparability": "BASIS_MISMATCH_PRICE_ONLY_HOLDINGS_VS_TOTAL_RETURN_INDEX",
+    "end_session": "2020-03-23",
+    "end_value": 10710.41,
+    "index": "NIFTY50_TRI",
+    "return": -0.38265399051940385,
+    "start_session": "2020-01-14",
+    "start_value": 17349.12,
+    "status": "OBSERVED"
+  },
+  "component_results": [
+    {
+      "action_coverage": "UNKNOWN_INCOMPLETE_SOURCE; no factor imputed",
+      "current_isin": "INE002A01018",
+      "current_symbol": "RELIANCE",
+      "end_close_paise": 88405,
+      "historical_isins_observed": [
+        "INE002A01018"
+      ],
+      "historical_symbol": "RELIANCE",
+      "holding_id": "h1",
+      "mapping_kind": "SAME_INSTRUMENT",
+      "original_weight_contribution": -0.14768700143847258,
+      "price_only_return": -0.4219628612527788,
+      "reason": "same ISIN observed in crisis window",
+      "sector": "Energy",
+      "start_close_paise": 152940,
+      "status": "OBSERVED_PRICE_ONLY",
+      "weight": 0.35
+    },
+    {
+      "action_coverage": "UNKNOWN_INCOMPLETE_SOURCE; no factor imputed",
+      "current_isin": "INE467B01029",
+      "current_symbol": "TCS",
+      "end_close_paise": 166970,
+      "historical_isins_observed": [
+        "INE467B01029"
+      ],
+      "historical_symbol": "TCS",
+      "holding_id": "h2",
+      "mapping_kind": "SAME_INSTRUMENT",
+      "original_weight_contribution": -0.06085459241469934,
+      "price_only_return": -0.24341836965879737,
+      "reason": "same ISIN observed in crisis window",
+      "sector": "Information Technology",
+      "start_close_paise": 220690,
+      "status": "OBSERVED_PRICE_ONLY",
+      "weight": 0.25
+    },
+    {
+      "action_coverage": "UNKNOWN_INCOMPLETE_SOURCE; no factor imputed",
+      "current_isin": "INE040A01034",
+      "current_symbol": "HDFCBANK",
+      "end_close_paise": 77155,
+      "historical_isins_observed": [
+        "INE040A01034"
+      ],
+      "historical_symbol": "HDFCBANK",
+      "holding_id": "h3",
+      "mapping_kind": "SAME_INSTRUMENT",
+      "original_weight_contribution": -0.10041682822799536,
+      "price_only_return": -0.40166731291198143,
+      "reason": "same ISIN observed in crisis window",
+      "sector": "Financial Services",
+      "start_close_paise": 128950,
+      "status": "OBSERVED_PRICE_ONLY",
+      "weight": 0.25
+    },
+    {
+      "current_symbol": "JIOFIN",
+      "historical_symbol": null,
+      "holding_id": "h4",
+      "mapping_kind": "NO_HISTORICAL_MATCH",
+      "price_only_return": null,
+      "reason": "JIOFIN has no local 2020 bars (pre-listing); no proxy in primary run",
+      "status": "NO_HISTORICAL_MATCH",
+      "weight": 0.15
+    }
+  ],
+  "data_quality": "LOW_PRICE_ONLY_ACTION_COVERAGE_UNKNOWN",
+  "drawdown_peak_session": "2020-01-17",
+  "drawdown_trough_session": "2020-03-23",
+  "event": {
+    "date_basis": "RBI FSR anchors the COVID/panic-selloff context; the exact peak-to-trough operational window is independently cross-checked against the cited market chronology and both dates exist in local official exchange observations",
+    "description": "Retrospective window from the pre-selloff NIFTY peak period to the 23 March 2020 trough session; descriptive historical stress only.",
+    "event_end": "2020-03-23",
+    "event_id": "india-covid-liquidity-selloff-2020",
+    "event_start": "2020-01-14",
+    "geography": "India / NSE",
+    "name": "India COVID-19 liquidity selloff",
+    "source_accessed_date": "2026-11-14",
+    "source_title": "Reserve Bank of India, Financial Stability Report, July 2020",
+    "source_url_or_local_ref": "https://www.rbi.org.in/Scripts/PublicationReportDetails.aspx?ID=1153",
+    "source_verification_status": "OFFICIAL_RBI_REPORT_PAGE_RESOLVED_2026-11-14; DATES_INDEPENDENTLY_ALIGNED_TO_LOCAL_OFFICIAL_BARS",
+    "supporting_sources": [
+      [
+        "RBI FSR Chapter I: Macro-Financial Risks",
+        "https://www.rbi.org.in/Scripts/PublicationReportDetails.aspx?UrlPage=&ID=1147",
+        "official page resolved 2026-11-14; documents January panic sell-offs and March stress"
+      ],
+      [
+        "Major Nifty falls and recoveries (exact 14 Jan / 23 Mar chronology)",
+        "https://www.moneycontrol.com/news/business/markets/major-nifty-falls-and-recoveries-in-2008-took-over-1000-days-for-recovery-5155021.html",
+        "independent chronology located 2026-11-14; bibliographic use only"
+      ],
+      [
+        "NSE Historical Index Data entry point",
+        "https://www.nseindia.com/reports-indices-historical-index-data",
+        "official source entry; local W1 archive supplies observed boundary sessions"
+      ]
+    ]
+  },
+  "evidence_time": "2026-11-14T09:05:10.030883+00:00",
+  "expected_sessions": 48,
+  "full_portfolio_return": null,
+  "limitations": [
+    "RETROSPECTIVE reconstruction from an archive first captured after the event",
+    "raw close prices only; dividends and unresolved split/bonus/demerger effects are not adjusted",
+    "benchmark is TRI while holdings are price-only, so relative economics are not computed",
+    "sector labels are user-supplied hypothetical snapshot metadata, not verified PIT sector membership",
+    "0.150000 portfolio weight unmatched; no full-portfolio return computed"
+  ],
+  "mapping_hash": "442ddd79ce7cbf9f4a3ccfa7b7684593260c96f142e9c077cc0cbbefa6d50cc2",
+  "observed_common_sessions": 48,
+  "observed_session_coverage": 1.0,
+  "output_label": "HISTORICAL_RETROSPECTIVE",
+  "peak_to_trough_drawdown": -0.3716053555559994,
+  "prohibited_interpretations": [
+    "FORECAST",
+    "FUTURE_PROBABILITY",
+    "EXPECTED_RETURN",
+    "LIVE_EXECUTABLE"
+  ],
+  "recovery": {
+    "basis": "supported-components raw price-only index",
+    "recovery_session": "2020-07-03",
+    "sessions_after_trough": 68,
+    "status": "OBSERVED"
+  },
+  "result_id": "0da0487137ee19c763a9c24035bb6d94ff5bb1fc9d523c5acc539540dc1fd966",
+  "sector_contributions": [
+    {
+      "original_weight_price_contribution": -0.14768700143847258,
+      "sector": "Energy"
+    },
+    {
+      "original_weight_price_contribution": -0.10041682822799536,
+      "sector": "Financial Services"
+    },
+    {
+      "original_weight_price_contribution": -0.06085459241469934,
+      "sector": "Information Technology"
+    }
+  ],
+  "snapshot_hash": "7f94b4573301fbed727ef542e846533aa4f156ddeb4b5a8a35480b7bf5413c63",
+  "status": "PARTIAL_PRICE_ONLY_UNMATCHED",
+  "supported_components_return": -0.36348049656607917,
+  "supported_weight": 0.85,
+  "unmatched_weight": 0.15,
+  "window": {
+    "end_session": "2020-03-23",
+    "exchange_calendar": "W1 observed-session calendar from official bhavcopy",
+    "recovery_observation_end": "2020-12-31",
+    "start_session": "2020-01-14"
+  },
+  "worst_observed_day": {
+    "previous_observed_session": "2020-03-20",
+    "return": -0.10973964379093981,
+    "session": "2020-03-23"
+  }
+}

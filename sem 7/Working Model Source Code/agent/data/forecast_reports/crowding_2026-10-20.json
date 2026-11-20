@@ -1,0 +1,13 @@
+{
+  "job": "crowding",
+  "prereg": {
+    "hypothesis": "Cards with narrative crowding >= 0.8 have larger realised |excess return| than other cards.",
+    "metric": "difference in mean |excess return|, CROWDED minus NORMAL, settled cards only",
+    "decision": "SUPPORTED if difference > 0 and Welch t > 2 with >= 30 cards per group; otherwise NOT SUPPORTED",
+    "registered": "2026-10-20, before any crowding-tagged card settled",
+    "direction_use": "none until supported as a volatility signal"
+  },
+  "n_crowded": 0,
+  "n_normal": 0,
+  "verdict": "INSUFFICIENT"
+}

@@ -1,0 +1,14 @@
+# Secrets, broker tokens and research data never enter the image.
+.env
+data/*
+!data/nifty500.txt
+!data/event_calendar.json
+*.log
+.git
+__pycache__
+**/__pycache__
+.venv
+tests
+vol-research
+frontend-client
+docs

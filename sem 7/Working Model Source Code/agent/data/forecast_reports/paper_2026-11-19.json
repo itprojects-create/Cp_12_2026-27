@@ -1,0 +1,51 @@
+{
+  "job": "paper",
+  "batch_as_of": "2026-11-18T00:00:00+00:00",
+  "picked": 3,
+  "picks": [
+    {
+      "symbol": "BHARTIARTL",
+      "horizon": 20,
+      "p": 0.57
+    },
+    {
+      "symbol": "TATACONSUM",
+      "horizon": 20,
+      "p": 0.5595
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "horizon": 20,
+      "p": 0.55
+    }
+  ],
+  "picked_note": "",
+  "scored": 0,
+  "summary": {
+    "picks": 9,
+    "settled": 0,
+    "open": 9,
+    "hits": 0,
+    "mean_net": null,
+    "sum_net": null,
+    "by_horizon": {
+      "20": {
+        "picks": 9,
+        "settled": 0,
+        "open": 9,
+        "hits": 0,
+        "mean_net": null,
+        "sum_net": null
+      }
+    },
+    "cost_hurdle": 0.004,
+    "authority": "SHADOW \u2014 paper P&L evidence only; not the profitability gate",
+    "disclaimer": "SHADOW paper evidence; horizons may still be open; this is not money P&L.",
+    "metric_semantics": {
+      "net": "v2 benchmark-relative excess minus a flat 0.4% hurdle; NOT cash P&L",
+      "corrected_metrics": "quantplus_intelligence.research_v3.economics (v3_trade_cash_pnl: integer-paise itemised charges)",
+      "stream": "V2 pre-registered paper_pnl.jsonl; the V3.1 stream is a separate file and must not overwrite this one"
+    }
+  },
+  "claim": "SHADOW \u2014 forward-testing stream for the trade gate; bridge.edge_gate remains the only path to order intents."
+}

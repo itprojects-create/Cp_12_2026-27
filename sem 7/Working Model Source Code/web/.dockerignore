@@ -1,0 +1,23 @@
+# Never send secrets or local state to the image builder.
+.env*
+.insforge
+.local-data
+node_modules
+.output
+dist
+test-results
+playwright-report
+audit
+reports
+research_notes
+backend-extension
+supabase
+*.log
+.git
+data
+deploy
+.agents
+.codex
+.freebuff
+*.pem
+*.key

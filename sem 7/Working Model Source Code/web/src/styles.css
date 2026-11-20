@@ -1,0 +1,772 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * QUANT PLUS design system.
+ * Near-black institutional palette. Blue is a signal, never decoration.
+ * All colors use oklch. Never hardcode color utilities in components.
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-data);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-panel: var(--panel);
+  --color-panel-elevated: var(--panel-elevated);
+  --color-card: var(--panel);
+  --color-card-foreground: var(--foreground);
+  --color-popover: var(--panel-elevated);
+  --color-popover-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-action: var(--primary-action);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-soft: var(--primary-soft);
+  --color-secondary: var(--panel);
+  --color-secondary-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-subtle: var(--subtle);
+  --color-accent: var(--panel-elevated);
+  --color-accent-foreground: var(--foreground);
+  --color-destructive: var(--negative);
+  --color-destructive-foreground: var(--foreground);
+  --color-positive: var(--positive);
+  --color-warning: var(--warning);
+  --color-negative: var(--negative);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-input: var(--border-strong);
+  --color-ring: var(--primary);
+  --color-ring-offset-background: var(--background);
+  --color-chart-1: var(--primary);
+  --color-chart-2: var(--primary-soft);
+  --color-chart-3: var(--positive);
+  --color-chart-4: var(--warning);
+  --color-chart-5: var(--negative);
+  --color-sidebar: var(--panel);
+  --color-sidebar-foreground: var(--foreground);
+  --color-sidebar-primary: var(--primary);
+  --color-sidebar-primary-foreground: var(--primary-foreground);
+  --color-sidebar-accent: var(--panel-elevated);
+  --color-sidebar-accent-foreground: var(--foreground);
+  --color-sidebar-border: var(--border);
+  --color-sidebar-ring: var(--primary);
+}
+
+:root {
+  --radius: 0.5rem;
+
+  /* #05070C */
+  --background: oklch(0.129 0.014 265);
+  /* #080B12 */
+  --surface: oklch(0.15 0.014 265);
+  /* #0B1220 */
+  --panel: oklch(0.181 0.024 265);
+  /* #0F1726 */
+  --panel-elevated: oklch(0.213 0.024 265);
+  /* #F1F3F7 */
+  --foreground: oklch(0.958 0.004 265);
+  /* #8A94A6, lifted slightly for body copy on panels */
+  --muted-foreground: oklch(0.7 0.02 264);
+  /* Secondary text remains subdued while clearing WCAG AA on dark panels. */
+  --subtle: oklch(0.69 0.021 264);
+  --muted: oklch(0.213 0.024 265);
+  /* #2E7DFF */
+  --primary: oklch(0.611 0.204 262);
+  /* Filled actions need a darker blue for readable white labels. */
+  --primary-action: oklch(0.54 0.19 262);
+  --primary-foreground: oklch(0.985 0.002 265);
+  /* #6EA8FF */
+  --primary-soft: oklch(0.735 0.135 263);
+  /* #35D49A */
+  --positive: oklch(0.777 0.153 165);
+  /* #F2C94C */
+  --warning: oklch(0.845 0.142 89);
+  /* #FF5C6C */
+  --negative: oklch(0.687 0.196 17);
+
+  --border: oklch(1 0 0 / 8%);
+  --border-strong: oklch(1 0 0 / 16%);
+
+  /* Data face. The marketing site keeps a monospace voice; the terminal swaps
+     it for tabular Inter (see .app-ui) so figures align without looking like code. */
+  --font-data: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Motion tokens: one vocabulary for every transition in the product. */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 160ms;
+  --dur-base: 320ms;
+  --dur-slow: 700ms;
+}
+
+/* Marketing surfaces use subdued labels extensively; keep them readable when
+   animation or a translucent panel would otherwise reduce contrast. */
+.landing-page .text-subtle,
+.landing-page [class*="text-subtle/"] {
+  color: var(--muted-foreground);
+}
+.landing-page .opacity-25,
+.landing-page .opacity-30,
+.landing-page .opacity-40 {
+  opacity: 0.78;
+}
+.landing-page [class*="border-primary/"] {
+  border-color: var(--primary-soft);
+}
+
+.calm-mode .pulse-ring,
+.calm-mode .scan-line,
+.calm-mode .marquee-track,
+.calm-mode .animate-pulse {
+  animation: none !important;
+}
+.calm-mode .group:hover {
+  transform: none;
+}
+/* Focus mode: fewer moving parts while deciding. */
+.focus-mode .focus-hide {
+  display: none !important;
+}
+.focus-mode .dash-rise,
+.focus-mode .pulse-ring,
+.focus-mode .marquee-track {
+  animation: none !important;
+}
+.focus-mode .dash-rise,
+.low-bandwidth .dash-rise {
+  opacity: 1 !important;
+  transform: none !important;
+}
+/* Low-bandwidth mode: no animation, blur or ambient lighting. */
+.low-bandwidth *,
+.low-bandwidth *::before,
+.low-bandwidth *::after {
+  animation: none !important;
+  transition: none !important;
+  backdrop-filter: none !important;
+}
+.low-bandwidth .ambient-light {
+  display: none !important;
+}
+.compact-mode [data-density-row] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Readable terminal captions and consistent touch controls without changing the brand. */
+.app-ui :is(.text-\[10px\], .text-\[10\.5px\], .text-\[11px\]) {
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+.app-ui :where(p, li, dd, h1, h2, h3) {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 639px) {
+  .app-ui :is(input:not([type="radio"]):not([type="checkbox"]), select, textarea) {
+    font-size: 1rem;
+  }
+  .app-ui :is(button:not([role="switch"]), summary) {
+    min-height: 2.75rem;
+  }
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* ---- terminal typography ------------------------------------------------ */
+/* :has() also reaches dialogs and popovers portalled outside the shell. */
+:root:has(.app-ui) {
+  --font-data: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+:root:has(.app-ui) .label-tech {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+}
+/* Actions read as words, not codes. Uppercase stays for labels and table headers. */
+:root:has(.app-ui) :is(button, a, [role="button"]).uppercase:not(th *) {
+  text-transform: none;
+  letter-spacing: normal;
+}
+:root:has(.app-ui) :is(button, a, [role="button"]).uppercase.text-\[11px\]:not(th *) {
+  font-size: 12.5px;
+}
+/* Base layer, so component utilities can still override these defaults. */
+@layer base {
+  :root:has(.app-ui) .font-mono {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+  .app-ui {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .app-ui :where(h1, h2, h3) {
+    font-weight: 600;
+    letter-spacing: -0.012em;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  :where(a, button, input, textarea, select, summary, [tabindex], [role="button"]):focus-visible {
+    outline: 2px solid var(--color-primary-soft);
+    outline-offset: 3px;
+    border-radius: 2px;
+    box-shadow: 0 0 0 6px color-mix(in oklab, var(--color-primary) 22%, transparent);
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p,
+  li,
+  dd {
+    text-wrap: pretty;
+  }
+
+  html {
+    scrollbar-color: color-mix(in oklab, var(--color-foreground) 16%, transparent) transparent;
+    scrollbar-width: thin;
+    scroll-padding-top: 5rem;
+  }
+
+  ::selection {
+    background-color: color-mix(in oklab, var(--color-primary) 35%, transparent);
+    color: var(--color-foreground);
+  }
+
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--color-foreground) 14%, transparent);
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in oklab, var(--color-primary-soft) 45%, transparent);
+  }
+}
+
+/* ---- page transitions (View Transitions API; ignored where unsupported) -- */
+
+/* Tools switch screens instantly; a short cross-fade only softens the swap. */
+::view-transition-old(root) {
+  animation: vt-out 90ms linear both;
+}
+::view-transition-new(root) {
+  animation: vt-in 140ms linear both;
+}
+@keyframes vt-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes vt-in {
+  from {
+    opacity: 0;
+  }
+}
+/* Persistent chrome keeps its place instead of cross-fading. */
+.vt-site-nav {
+  view-transition-name: site-nav;
+}
+.vt-app-sidebar {
+  view-transition-name: app-sidebar;
+}
+.vt-app-topbar {
+  view-transition-name: app-topbar;
+}
+::view-transition-group(site-nav),
+::view-transition-group(app-sidebar),
+::view-transition-group(app-topbar) {
+  animation: none;
+}
+
+/* ---- skeleton shimmer --------------------------------------------------- */
+
+@keyframes shimmer {
+  from {
+    background-position: 150% 0;
+  }
+  to {
+    background-position: -50% 0;
+  }
+}
+
+@utility shimmer {
+  background-image: linear-gradient(
+    100deg,
+    color-mix(in oklab, var(--color-panel-elevated) 70%, transparent) 30%,
+    color-mix(in oklab, var(--color-foreground) 7%, transparent) 50%,
+    color-mix(in oklab, var(--color-panel-elevated) 70%, transparent) 70%
+  );
+  background-size: 220% 100%;
+  animation: shimmer 1.6s var(--ease-in-out) infinite;
+}
+
+/* ---- landing motion ------------------------------------------------------ */
+
+@keyframes word-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 105%, 0) rotate(2deg);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) rotate(0);
+  }
+}
+
+@utility word-rise {
+  display: inline-block;
+  opacity: 0;
+  animation: word-rise 1s var(--ease-out-expo) forwards;
+  animation-delay: var(--d, 0ms);
+}
+
+@keyframes gradient-pan {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 200% 50%;
+  }
+}
+
+@utility text-signal {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-muted-foreground) 0%,
+    var(--color-primary-soft) 35%,
+    var(--color-foreground) 50%,
+    var(--color-primary-soft) 65%,
+    var(--color-muted-foreground) 100%
+  );
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-pan 7s linear infinite;
+}
+
+@keyframes scroll-cue {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(220%);
+  }
+}
+
+@utility scroll-cue {
+  animation: scroll-cue 1.8s var(--ease-in-out) infinite;
+}
+
+/* Marquee pauses on hover or keyboard focus so it can be read. */
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+.marquee-paused .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Hover lifts only for real pointers; touch devices get no sticky hover. */
+@media (hover: none) {
+  .hover-lift:hover {
+    transform: none !important;
+  }
+}
+
+/* Windows high contrast: keep focus and boundaries visible. */
+@media (forced-colors: active) {
+  :where(a, button, input, textarea, select, summary):focus-visible {
+    outline: 2px solid CanvasText;
+    box-shadow: none;
+  }
+}
+
+/* Small uppercase technical label */
+@utility label-tech {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-muted-foreground);
+}
+
+@utility display-hero {
+  font-size: clamp(2.75rem, 7vw, 6.75rem);
+  line-height: 0.94;
+  letter-spacing: -0.035em;
+  font-weight: 400;
+}
+
+@utility display-section {
+  font-size: clamp(2rem, 5.4vw, 4.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  font-weight: 400;
+}
+
+@utility display-mono-xl {
+  font-family: var(--font-mono);
+  font-size: clamp(1.75rem, 4vw, 3.25rem);
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+
+/* Hairline grid backdrop used behind data sections */
+@utility grid-lines {
+  background-image:
+    linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
+  background-size: 88px 88px;
+}
+
+@utility reveal-init {
+  opacity: 0;
+  transform: translate3d(0, 26px, 0);
+}
+
+@utility reveal-in {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ---- motion primitives -------------------------------------------------- */
+
+@utility reveal-init-left {
+  opacity: 0;
+  transform: translate3d(-34px, 0, 0);
+}
+
+@utility reveal-init-right {
+  opacity: 0;
+  transform: translate3d(34px, 0, 0);
+}
+
+@utility reveal-init-scale {
+  opacity: 0;
+  transform: scale(0.965);
+}
+
+@utility reveal-init-blur {
+  opacity: 0;
+  filter: blur(14px);
+  transform: translate3d(0, 18px, 0);
+}
+
+@utility reveal-in-blur {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate3d(0, 0, 0);
+  transition:
+    opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 1s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@utility num-tabular {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+}
+
+@keyframes draw-line {
+  from {
+    stroke-dashoffset: var(--draw-length, 1200);
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@utility animate-draw {
+  stroke-dasharray: var(--draw-length, 1200);
+  animation: draw-line 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes value-flash-up {
+  0% {
+    color: var(--color-positive);
+  }
+  100% {
+    color: inherit;
+  }
+}
+
+@keyframes value-flash-down {
+  0% {
+    color: var(--color-negative);
+  }
+  100% {
+    color: inherit;
+  }
+}
+
+@utility flash-up {
+  animation: value-flash-up 0.9s ease-out;
+}
+
+@utility flash-down {
+  animation: value-flash-down 0.9s ease-out;
+}
+
+@keyframes marquee-x {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@utility marquee-track {
+  animation: marquee-x 42s linear infinite;
+}
+
+@keyframes sheen-sweep {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(220%);
+  }
+}
+
+@utility sheen {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      100deg,
+      transparent 20%,
+      color-mix(in oklab, var(--color-foreground) 8%, transparent) 50%,
+      transparent 80%
+    );
+    transform: translateX(-120%);
+  }
+  &:hover::after {
+    animation: sheen-sweep 1.1s ease-out;
+  }
+}
+
+/* ---- dashboard motion --------------------------------------------------- */
+
+@keyframes dash-rise {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 6px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@utility dash-rise {
+  opacity: 0;
+  animation: dash-rise 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: calc(var(--d, 0ms) * 0.25);
+}
+
+/* ---- dealing-screen cues ----------------------------------------------- */
+
+/* A price cell flashes once when it ticks, the way exchange terminals do. */
+@keyframes tick-up {
+  from {
+    background-color: color-mix(in oklab, var(--color-positive) 32%, transparent);
+  }
+}
+@keyframes tick-down {
+  from {
+    background-color: color-mix(in oklab, var(--color-negative) 32%, transparent);
+  }
+}
+.tick-up {
+  animation: tick-up 0.9s ease-out;
+}
+.tick-down {
+  animation: tick-down 0.9s ease-out;
+}
+@keyframes live-dot {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-positive) 55%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 3px transparent;
+  }
+}
+.live-dot {
+  animation: live-dot 2s ease-in-out infinite;
+}
+
+/* Data tables: compact rows, sticky headers, aligned figures. */
+.app-ui table {
+  font-variant-numeric: tabular-nums;
+}
+.app-ui thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: var(--color-panel);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--color-subtle);
+}
+.app-ui tbody tr {
+  transition: background-color 120ms;
+}
+.app-ui tbody tr:hover {
+  background-color: color-mix(in oklab, var(--color-foreground) 3.5%, transparent);
+}
+
+@keyframes pulse-ring {
+  0% {
+    opacity: 0.55;
+    transform: scale(0.85);
+  }
+  70% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.9);
+  }
+}
+
+@utility pulse-ring {
+  animation: pulse-ring 2.6s ease-out infinite;
+}
+
+@keyframes scan-y {
+  0% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(1100%);
+  }
+}
+
+@utility scan-line {
+  animation: scan-y 7s linear infinite;
+}
+
+@keyframes grow-bar {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@utility grow-bar {
+  transform-origin: left center;
+  animation: grow-bar 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: var(--d, 0ms);
+}
+
+@keyframes ripple-pulse {
+  from {
+    transform: scale(0.75);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+@utility ripple-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ripple-pulse 2.4s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  .dash-rise,
+  .reveal-in,
+  .word-rise,
+  .reveal-init,
+  .reveal-init-left,
+  .reveal-init-right,
+  .reveal-init-scale,
+  .reveal-init-blur {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+  .text-signal {
+    animation: none;
+    color: var(--color-muted-foreground);
+    background: none;
+  }
+  ::view-transition-old(root),
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "rule": "frozen v4 + baked veto (integer-share ledger)",
+  "universe": "nifty50",
+  "capital": 5000000.0,
+  "n_names": 36,
+  "n_excluded": 1,
+  "initial": 5000000.0,
+  "final": 6819573.27,
+  "profit": 1819573.27,
+  "profit_pct": 36.39,
+  "cagr_pct": 5.66,
+  "max_drawdown_pct": 12.44,
+  "costs_rupees": 222535.32,
+  "cash_leftover": 6819573.27,
+  "n_holdings_end": 0,
+  "yearly": {
+    "2021": {
+      "start": 5000000.0,
+      "end": 5735416.74,
+      "pnl": 735416.74
+    },
+    "2022": {
+      "start": 5735416.74,
+      "end": 5434417.31,
+      "pnl": -300999.43
+    },
+    "2023": {
+      "start": 5434417.31,
+      "end": 6198656.5,
+      "pnl": 764239.19
+    },
+    "2024": {
+      "start": 6198656.5,
+      "end": 6550358.83,
+      "pnl": 351702.33
+    },
+    "2025": {
+      "start": 6550358.83,
+      "end": 6857907.0,
+      "pnl": 307548.17
+    },
+    "2026": {
+      "start": 6857907.0,
+      "end": 6819573.27,
+      "pnl": -38333.73
+    }
+  },
+  "top_holdings_end": [],
+  "approx_note": "adjusted closes; integer shares; split-timing effects approx",
+  "generated_at": "2026-10-10T10:48:23.594874+00:00",
+  "decision_audit": {
+    "n_rebalances": 284,
+    "n_rebalances_with_trades": 224,
+    "n_trades": 4092,
+    "n_buys": 2064,
+    "n_sells": 2028,
+    "total_veto_blocks": 10,
+    "total_stressed_blocks": 99,
+    "rebalance_cost_check": 222535.33
+  },
+  "decisions_file": "data\\paper_50L_nifty50_decisions.json"
+}

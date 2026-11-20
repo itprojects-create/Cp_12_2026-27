@@ -1,0 +1,650 @@
+{
+  "generated_at": "2026-11-12T07:22:36.272807+00:00",
+  "today": "2026-11-12",
+  "statuses": {
+    "ALREADY_SETTLED": 36,
+    "NOT_MATURE": 98,
+    "ABSTAINED": 465,
+    "MATURE_WAITING_FOR_PRICE": 9
+  },
+  "oct30_cohort": [
+    {
+      "card_id": "db05f30c8c12a67c5fe24d39",
+      "symbol": "ADANIENT",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:21:22.306054+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:55.429606+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.02125819152131192,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "474d85f09e361715449918f9",
+      "symbol": "ADANIPORTS",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:21:39.915629+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:55.633067+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.03895857975837935,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "0c7594229d62f03fe6d80500",
+      "symbol": "APOLLOHOSP",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:21:53.588678+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:55.788811+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.08600611979664197,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "ef704c533add9c833756bc19",
+      "symbol": "ASIANPAINT",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:23:09.888930+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:55.965186+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": 0.011644415731048685,
+        "outperformed": 1
+      }
+    },
+    {
+      "card_id": "fe5ca3aa7c20ecff5e9ca356",
+      "symbol": "AXISBANK",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:23:28.309088+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:56.131794+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": 0.001247898234882694,
+        "outperformed": 1
+      }
+    },
+    {
+      "card_id": "97975bd83a293f7e80bfe2d3",
+      "symbol": "BAJAJ-AUTO",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:23:55.604138+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:56.763079+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.032629280754042034,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "34dd20eaec351e7290df0bbc",
+      "symbol": "BAJAJFINSV",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:24:24.321886+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:57.186257+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": 0.032424421183326224,
+        "outperformed": 1
+      }
+    },
+    {
+      "card_id": "6fa2367cff22ed0a9d327fd3",
+      "symbol": "BAJFINANCE",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:24:09.485815+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:56.937835+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": 0.07252050472595162,
+        "outperformed": 1
+      }
+    },
+    {
+      "card_id": "8a92feb57a3e4dcc5164de6a",
+      "symbol": "BEL",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:24:39.172783+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:57.576432+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.015209749002090156,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "b179781543365a371e165b99",
+      "symbol": "BHARTIARTL",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:24:51.326002+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:57.752310+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.018129916814711988,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "6d1842cc806cb08079da4701",
+      "symbol": "BSE",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:23:42.692802+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:56.301744+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.0032716262008318786,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "fd9cc9459f3cd680cc0a614a",
+      "symbol": "CIPLA",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:25:04.356165+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:58.013924+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.062489969860910266,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "8e31ad26e5f666035d1ebc21",
+      "symbol": "COALINDIA",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:25:18.589645+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:58.188238+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.05749174241096,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "4005296ced14a3c744bae047",
+      "symbol": "DRREDDY",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:25:31.664610+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:58.370595+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.07023683299370131,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "8a79b773eabd1d1c24142124",
+      "symbol": "EICHERMOT",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:25:45.720316+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:58.605128+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.023511759643867647,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "46ca29b50a4f4b6c76220498",
+      "symbol": "ETERNAL",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:26:04.460542+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:58.827612+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.029025596355852112,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "cf1cc7ce59495dd48a22b42e",
+      "symbol": "GRASIM",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:26:19.197417+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:59.078306+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.003391935331438223,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "b35a4a9d29301eeb8c3d0763",
+      "symbol": "HCLTECH",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:26:33.296520+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:59.233429+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.0774366103270252,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "c800649e0da716e28ed8e37a",
+      "symbol": "HDFCBANK",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:26:47.133648+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:59.542628+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": 0.05200489209764392,
+        "outperformed": 1
+      }
+    },
+    {
+      "card_id": "55b83b94e3f118063c3ef854",
+      "symbol": "HDFCLIFE",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:27:00.645117+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:45:59.688393+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.008802409378819931,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "167db0e6ad6b5278bf5ba804",
+      "symbol": "HINDALCO",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:27:14.556957+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:46:00.167330+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.002464289557181365,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "decf5a3e380c33443cfca71a",
+      "symbol": "HINDUNILVR",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:27:29.464557+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:46:00.323440+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": -0.014011332440494462,
+        "outperformed": 0
+      }
+    },
+    {
+      "card_id": "1b51b076e63ae8aa3bea5bef",
+      "symbol": "ICICIBANK",
+      "horizon": 5,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:27:43.500485+00:00",
+      "matures_on": "2026-11-06",
+      "settled_at": "2026-11-11T10:46:00.525734+00:00",
+      "status": "ALREADY_SETTLED",
+      "outcome": {
+        "excess_return": 0.038121860947968766,
+        "outperformed": 1
+      }
+    },
+    {
+      "card_id": "ea3d82b3ccf825c678701987",
+      "symbol": "ADANIENT",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:21:31.245505+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "fe1c3c9449c922ef4b13509c",
+      "symbol": "ADANIPORTS",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:21:44.727345+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "1a1e1cf1a1d1ed24e51e0116",
+      "symbol": "APOLLOHOSP",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:21:59.132817+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "68ea8a6f2074537c35d43839",
+      "symbol": "ASIANPAINT",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:23:18.884419+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "09176a4b442f782e77c5b1ac",
+      "symbol": "AXISBANK",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:23:33.899212+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "2be1857c00484d5e9802d63c",
+      "symbol": "BAJAJ-AUTO",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:24:01.925291+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "68edc0aa6aa38f4476736dd3",
+      "symbol": "BAJAJFINSV",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:24:30.604037+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "a9053c24a87982ce02920a43",
+      "symbol": "BAJFINANCE",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:24:15.835539+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "3b68cbf96f19108380ce5e58",
+      "symbol": "BEL",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:24:43.793679+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "6bc2a0f1e225cbfd5888ec0f",
+      "symbol": "BHARTIARTL",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:24:56.445106+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "e96e430b2bf483cc16d619b9",
+      "symbol": "BSE",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:23:48.084526+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "9a8b04587fb3d285d05c4204",
+      "symbol": "CIPLA",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:25:10.185066+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "78aff1e894399337a30803a4",
+      "symbol": "COALINDIA",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:25:23.994359+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "41006315a86c6baa4265bf42",
+      "symbol": "DRREDDY",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:25:37.099142+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "e5b0dd0b7ae9ccb37edfb39c",
+      "symbol": "EICHERMOT",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:25:56.522748+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "dafa3f8ca5586bb801d7f2f2",
+      "symbol": "ETERNAL",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:26:09.857975+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "bf134b35415664dfaccb53b4",
+      "symbol": "GRASIM",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:26:25.057298+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "e7ae96cfc4e3592e1bf8e31f",
+      "symbol": "HCLTECH",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:26:38.970634+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "326205f1a9f67af1e77008fc",
+      "symbol": "HDFCBANK",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:26:52.798814+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "8b0d7960a2926974daa10559",
+      "symbol": "HDFCLIFE",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:27:06.215482+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "841ef1ffc7cebf7ed1d0400b",
+      "symbol": "HINDALCO",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:27:21.040586+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "8866d1a6affc33b1c8192730",
+      "symbol": "HINDUNILVR",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:27:34.641545+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    },
+    {
+      "card_id": "3345f97fc9ced3c05c734457",
+      "symbol": "ICICIBANK",
+      "horizon": 20,
+      "as_of": "2026-10-30T00:00:00+00:00",
+      "recorded_at": "2026-11-01T15:27:49.225341+00:00",
+      "matures_on": "2026-12-01",
+      "settled_at": null,
+      "status": "NOT_MATURE",
+      "outcome": null
+    }
+  ],
+  "by_day_horizon_status": {
+    "2026-10-19": {
+      "20": {
+        "NOT_MATURE": 1
+      },
+      "5": {
+        "ALREADY_SETTLED": 1
+      }
+    },
+    "2026-10-22": {
+      "5": {
+        "ABSTAINED": 1
+      }
+    },
+    "2026-10-30": {
+      "20": {
+        "NOT_MATURE": 23,
+        "ABSTAINED": 27
+      },
+      "5": {
+        "ALREADY_SETTLED": 23,
+        "ABSTAINED": 27
+      }
+    },
+    "2026-11-02": {
+      "20": {
+        "NOT_MATURE": 11,
+        "ABSTAINED": 89
+      },
+      "5": {
+        "ALREADY_SETTLED": 12,
+        "ABSTAINED": 88
+      }
+    },
+    "2026-11-04": {
+      "20": {
+        "NOT_MATURE": 8
+      },
+      "5": {
+        "MATURE_WAITING_FOR_PRICE": 9
+      }
+    },
+    "2026-11-06": {
+      "20": {
+        "NOT_MATURE": 13,
+        "ABSTAINED": 31
+      },
+      "5": {
+        "NOT_MATURE": 14,
+        "ABSTAINED": 30
+      }
+    },
+    "2026-11-09": {
+      "20": {
+        "NOT_MATURE": 14,
+        "ABSTAINED": 86
+      },
+      "5": {
+        "NOT_MATURE": 14,
+        "ABSTAINED": 86
+      }
+    }
+  }
+}

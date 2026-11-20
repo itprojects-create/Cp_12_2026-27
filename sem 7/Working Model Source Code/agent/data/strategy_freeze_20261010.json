@@ -1,0 +1,115 @@
+{
+  "freeze_version": "LIVE_FORWARD_FREEZE_V1",
+  "frozen_at": "2026-10-10T17:25:07.855498+00:00",
+  "effective_config": {
+    "strategy_fn": "9ff782851edb9ec6",
+    "veto_fn": "136a8361649abf20",
+    "features_fn": "3b3a5c919f771649",
+    "thresholds": {
+      "TOP_K": 50,
+      "TURNOVER_MIN_DELTA": 0.015,
+      "MIN_HOLD_DAYS": 20,
+      "BLACKOUT_DAYS": 10,
+      "PORT_VOL_TARGET": 0.1,
+      "ELEVATED_GROSS_CAP": 0.5,
+      "TIER_CAPS": {
+        "nifty50": 0.1,
+        "nifty500": 0.05,
+        "sme": 0.03
+      },
+      "SECTOR_CAP": 0.25,
+      "GROSS_CAP": 1.0,
+      "COST_PER_SIDE": 0.00105,
+      "MAX_POSITION_PCT": 0.1,
+      "FIXED_BASE_SIZE": 0.025
+    },
+    "universe_policy": {
+      "mode": "pit-nonstrict-weekly",
+      "membership_source_version": "75ebfac3b5d1fb22"
+    },
+    "cost_model": {
+      "version": "env-v1",
+      "roundtrip": 0.0021
+    },
+    "blackout_family": {
+      "version": "BLACKOUT_FAMILY_V1",
+      "rules": [
+        {
+          "rule_id": "B0",
+          "taxonomy_version": "EVENT_TAXONOMY_V1",
+          "eligible_event_types": [
+            "BOARD_MEETING",
+            "EARNINGS"
+          ],
+          "pre_event_sessions": 0,
+          "post_event_sessions": 0,
+          "severity_threshold": null,
+          "applies_to_entries": false,
+          "applies_to_exits": false,
+          "applies_to_existing_positions": false,
+          "version": "BLACKOUT_FAMILY_V1"
+        },
+        {
+          "rule_id": "B1",
+          "taxonomy_version": "EVENT_TAXONOMY_V1",
+          "eligible_event_types": [
+            "BOARD_MEETING",
+            "EARNINGS"
+          ],
+          "pre_event_sessions": 0,
+          "post_event_sessions": 0,
+          "severity_threshold": null,
+          "applies_to_entries": true,
+          "applies_to_exits": false,
+          "applies_to_existing_positions": false,
+          "version": "BLACKOUT_FAMILY_V1"
+        },
+        {
+          "rule_id": "B2",
+          "taxonomy_version": "EVENT_TAXONOMY_V1",
+          "eligible_event_types": [
+            "BOARD_MEETING",
+            "EARNINGS"
+          ],
+          "pre_event_sessions": 0,
+          "post_event_sessions": 1,
+          "severity_threshold": null,
+          "applies_to_entries": true,
+          "applies_to_exits": false,
+          "applies_to_existing_positions": false,
+          "version": "BLACKOUT_FAMILY_V1"
+        },
+        {
+          "rule_id": "B3",
+          "taxonomy_version": "EVENT_TAXONOMY_V1",
+          "eligible_event_types": [
+            "BOARD_MEETING",
+            "EARNINGS"
+          ],
+          "pre_event_sessions": 1,
+          "post_event_sessions": 1,
+          "severity_threshold": null,
+          "applies_to_entries": true,
+          "applies_to_exits": false,
+          "applies_to_existing_positions": false,
+          "version": "BLACKOUT_FAMILY_V1"
+        }
+      ]
+    },
+    "gates": {
+      "direction": {
+        "accuracy_min": 0.55,
+        "min_decisive": 8,
+        "no_edge_hold_min": 0.4,
+        "trade_lo": 0.2,
+        "trade_hi": 0.9
+      },
+      "promotion": "GATESET_V1",
+      "risk": "RISK_GATESET_V1",
+      "execution": "EXEC_GATESET_V1",
+      "quality": "DATAQUALITY_GATESET_V1"
+    },
+    "benchmark": "NIFTY50_TRI+v4-eqw",
+    "config_hash": "0f44687e3abb17cf"
+  }
+}

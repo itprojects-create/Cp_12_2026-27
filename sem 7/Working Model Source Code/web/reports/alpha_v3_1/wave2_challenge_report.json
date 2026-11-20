@@ -1,0 +1,1966 @@
+{
+ "challenges": [
+  {
+   "checks": [
+    {
+     "check": "availability_provenance",
+     "evidence": {
+      "n_fills": 953
+     },
+     "reason": "every fill's entry references the first bar available after its decision; no unavailable data used",
+     "status": "PASS"
+    },
+    {
+     "check": "membership_survivorship",
+     "evidence": {
+      "n_months": 100,
+      "weak_rows_disclosed": 3785
+     },
+     "reason": "every fill sits inside its as-of membership spell; 3785 weak-row disclosures carried (snapshot_floor upper bound \u2014 not row-level first-known timestamps)",
+     "status": "PASS"
+    },
+    {
+     "check": "boundary_continuity",
+     "evidence": {
+      "n_pairs_checked": 99,
+      "n_segments": 1,
+      "violations": []
+     },
+     "reason": "exit equals the next rebalance's entry session; execution rolls price-to-price with no skipped move",
+     "status": "PASS"
+    },
+    {
+     "check": "purge_embargo",
+     "evidence": {
+      "bounds": [
+       "2015-06-01",
+       "2023-12-31"
+      ],
+      "phase": "train_validation"
+     },
+     "reason": "embargo=21 sessions enforced structurally: entries/exit fills are confined to the phase bounds; the first validation entry occurs at/after 2022-01-01",
+     "status": "PASS"
+    },
+    {
+     "check": "missing_periods_nav",
+     "evidence": {
+      "abstained": [
+       "2015-06",
+       "2015-07"
+      ],
+      "continuous_blocked": "chain broken by 2 abstained period(s); 1 labeled segment(s) reported, whole-window continuous NAV withheld (missing observations are NOT flat)",
+      "segments": [
+       [
+        "2015-08",
+        "2015-09",
+        "2015-10",
+        "2015-11",
+        "2015-12",
+        "2016-01",
+        "2016-02",
+        "2016-03",
+        "2016-04",
+        "2016-05",
+        "2016-06",
+        "2016-07",
+        "2016-08",
+        "2016-09",
+        "2016-10",
+        "2016-11",
+        "2016-12",
+        "2017-01",
+        "2017-02",
+        "2017-03",
+        "2017-04",
+        "2017-05",
+        "2017-06",
+        "2017-07",
+        "2017-08",
+        "2017-09",
+        "2017-10",
+        "2017-11",
+        "2017-12",
+        "2018-01",
+        "2018-02",
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08",
+        "2018-09",
+        "2018-10",
+        "2018-11",
+        "2018-12",
+        "2019-01",
+        "2019-02",
+        "2019-03",
+        "2019-04",
+        "2019-05",
+        "2019-06",
+        "2019-07",
+        "2019-08",
+        "2019-09",
+        "2019-10",
+        "2019-11",
+        "2019-12",
+        "2020-01",
+        "2020-02",
+        "2020-03",
+        "2020-04",
+        "2020-05",
+        "2020-06",
+        "2020-07",
+        "2020-08",
+        "2020-09",
+        "2020-10",
+        "2020-11",
+        "2020-12",
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06",
+        "2022-07",
+        "2022-08",
+        "2022-09",
+        "2022-10",
+        "2022-11",
+        "2022-12",
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11"
+       ]
+      ]
+     },
+     "reason": "2 typed abstention(s); 1 labeled segment(s); whole-window continuous NAV withheld",
+     "status": "PASS"
+    },
+    {
+     "check": "benchmark_provenance",
+     "evidence": {
+      "economics_vs_tri_blocked": true,
+      "tri_basis": "total-return (dividends reinvested); price index is a separate series",
+      "tri_sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7"
+     },
+     "reason": "raw unadjusted fills cannot be compared with TRI as an economic conclusion (basis mismatch; unverified actions)",
+     "status": "FAIL"
+    },
+    {
+     "check": "nav_reconciliation",
+     "evidence": {
+      "n_fills_sampled": 50,
+      "n_segments": 1
+     },
+     "reason": "fill-ledger cash arithmetic, itemised paper-book fees, monthly means and per-segment NAV products recomputed independently",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_scenarios",
+     "evidence": {
+      "base": null,
+      "double_cost": null
+     },
+     "reason": "no net months inside the fee-covered window (paper fee schedule effective 2026-03-01; earlier fills stay gross with typed SCHEDULE_UNAVAILABLE)",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "concentration",
+     "evidence": {
+      "sector_dimension": "DATA_BLOCKED: no verified historical sector map ingested",
+      "top_names": []
+     },
+     "reason": "no positive contributions to weight",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "placebo_random_matched",
+     "evidence": {
+      "n_draws": 50,
+      "noise_median": 0.32572637245066094,
+      "percentile": 8.0,
+      "strategy_gross": -0.0256046356536217
+     },
+     "reason": "strategy beats only 8% of matched noise (threshold 90%) \u2014 no edge",
+     "status": "FAIL"
+    },
+    {
+     "check": "dependence_aware_uncertainty",
+     "evidence": {
+      "block": 3,
+      "ci90_mean_monthly": [
+       -0.008906656879561249,
+       0.012101099919313393
+      ],
+      "n_periods": 100
+     },
+     "reason": "moving-block bootstrap (block=3 months, 2000 resamples) 90% CI of the monthly mean: [-0.8907%, +1.2101%] \u2014 months are the dependence unit, not single names/days",
+     "status": "PASS"
+    },
+    {
+     "check": "multiplicity",
+     "evidence": {
+      "n_trials": 16
+     },
+     "reason": "16 configurations were tried; the selected variant must be judged against that many trials (selection-adjusted; a lone peak is a rejection signal)",
+     "status": "PASS"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "holdout_window": [
+       "2024-06-21",
+       "2026-09-17"
+      ],
+      "seal": {
+       "journal": "D:\\Quant-Plus\\reports\\alpha_v3_1\\wave2_research_journal.jsonl",
+       "sealed_at": "2026-11-12T10:41:24.066451+00:00",
+       "sealed_before_runs": true,
+       "window": [
+        "2024-06-21",
+        "2026-09-17"
+       ]
+      }
+     },
+     "reason": "run evaluated train/validation only; holdout untouched",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 2,
+   "n_inconclusive": 2,
+   "n_pass": 9,
+   "phase": "train_validation",
+   "run_id": "c8dd29d9cc33a8943bca597fb8da7d97f8832aa25da55ee91bc70919fc82b02e",
+   "verdict": "DATA_BLOCKED",
+   "verdict_reason": "integrity check(s) failed: benchmark_provenance"
+  },
+  {
+   "checks": [
+    {
+     "check": "availability_provenance",
+     "evidence": {
+      "n_fills": 905
+     },
+     "reason": "every fill's entry references the first bar available after its decision; no unavailable data used",
+     "status": "PASS"
+    },
+    {
+     "check": "membership_survivorship",
+     "evidence": {
+      "n_months": 94,
+      "weak_rows_disclosed": 3513
+     },
+     "reason": "every fill sits inside its as-of membership spell; 3513 weak-row disclosures carried (snapshot_floor upper bound \u2014 not row-level first-known timestamps)",
+     "status": "PASS"
+    },
+    {
+     "check": "boundary_continuity",
+     "evidence": {
+      "n_pairs_checked": 93,
+      "n_segments": 1,
+      "violations": []
+     },
+     "reason": "exit equals the next rebalance's entry session; execution rolls price-to-price with no skipped move",
+     "status": "PASS"
+    },
+    {
+     "check": "purge_embargo",
+     "evidence": {
+      "bounds": [
+       "2015-06-01",
+       "2023-12-31"
+      ],
+      "phase": "train_validation"
+     },
+     "reason": "embargo=21 sessions enforced structurally: entries/exit fills are confined to the phase bounds; the first validation entry occurs at/after 2022-01-01",
+     "status": "PASS"
+    },
+    {
+     "check": "missing_periods_nav",
+     "evidence": {
+      "abstained": [
+       "2015-06",
+       "2015-07",
+       "2015-08",
+       "2015-09",
+       "2015-10",
+       "2015-11",
+       "2015-12",
+       "2016-01"
+      ],
+      "continuous_blocked": "chain broken by 8 abstained period(s); 1 labeled segment(s) reported, whole-window continuous NAV withheld (missing observations are NOT flat)",
+      "segments": [
+       [
+        "2016-02",
+        "2016-03",
+        "2016-04",
+        "2016-05",
+        "2016-06",
+        "2016-07",
+        "2016-08",
+        "2016-09",
+        "2016-10",
+        "2016-11",
+        "2016-12",
+        "2017-01",
+        "2017-02",
+        "2017-03",
+        "2017-04",
+        "2017-05",
+        "2017-06",
+        "2017-07",
+        "2017-08",
+        "2017-09",
+        "2017-10",
+        "2017-11",
+        "2017-12",
+        "2018-01",
+        "2018-02",
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08",
+        "2018-09",
+        "2018-10",
+        "2018-11",
+        "2018-12",
+        "2019-01",
+        "2019-02",
+        "2019-03",
+        "2019-04",
+        "2019-05",
+        "2019-06",
+        "2019-07",
+        "2019-08",
+        "2019-09",
+        "2019-10",
+        "2019-11",
+        "2019-12",
+        "2020-01",
+        "2020-02",
+        "2020-03",
+        "2020-04",
+        "2020-05",
+        "2020-06",
+        "2020-07",
+        "2020-08",
+        "2020-09",
+        "2020-10",
+        "2020-11",
+        "2020-12",
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06",
+        "2022-07",
+        "2022-08",
+        "2022-09",
+        "2022-10",
+        "2022-11",
+        "2022-12",
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11"
+       ]
+      ]
+     },
+     "reason": "8 typed abstention(s); 1 labeled segment(s); whole-window continuous NAV withheld",
+     "status": "PASS"
+    },
+    {
+     "check": "benchmark_provenance",
+     "evidence": {
+      "economics_vs_tri_blocked": true,
+      "tri_basis": "total-return (dividends reinvested); price index is a separate series",
+      "tri_sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7"
+     },
+     "reason": "raw unadjusted fills cannot be compared with TRI as an economic conclusion (basis mismatch; unverified actions)",
+     "status": "FAIL"
+    },
+    {
+     "check": "nav_reconciliation",
+     "evidence": {
+      "n_fills_sampled": 50,
+      "n_segments": 1
+     },
+     "reason": "fill-ledger cash arithmetic, itemised paper-book fees, monthly means and per-segment NAV products recomputed independently",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_scenarios",
+     "evidence": {
+      "base": null,
+      "double_cost": null
+     },
+     "reason": "no net months inside the fee-covered window (paper fee schedule effective 2026-03-01; earlier fills stay gross with typed SCHEDULE_UNAVAILABLE)",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "concentration",
+     "evidence": {
+      "sector_dimension": "DATA_BLOCKED: no verified historical sector map ingested",
+      "top_names": []
+     },
+     "reason": "no positive contributions to weight",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "placebo_random_matched",
+     "evidence": {
+      "n_draws": 50,
+      "noise_median": 0.6327042496088642,
+      "percentile": 4.0,
+      "strategy_gross": 0.06457749648200295
+     },
+     "reason": "strategy beats only 4% of matched noise (threshold 90%) \u2014 no edge",
+     "status": "FAIL"
+    },
+    {
+     "check": "dependence_aware_uncertainty",
+     "evidence": {
+      "block": 3,
+      "ci90_mean_monthly": [
+       -0.006209414378757379,
+       0.009846990244798749
+      ],
+      "n_periods": 94
+     },
+     "reason": "moving-block bootstrap (block=3 months, 2000 resamples) 90% CI of the monthly mean: [-0.6209%, +0.9847%] \u2014 months are the dependence unit, not single names/days",
+     "status": "PASS"
+    },
+    {
+     "check": "multiplicity",
+     "evidence": {
+      "n_trials": 4
+     },
+     "reason": "4 configurations were tried; the selected variant must be judged against that many trials (selection-adjusted; a lone peak is a rejection signal)",
+     "status": "PASS"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "holdout_window": [
+       "2024-06-21",
+       "2026-09-17"
+      ],
+      "seal": {
+       "journal": "D:\\Quant-Plus\\reports\\alpha_v3_1\\wave2_research_journal.jsonl",
+       "sealed_at": "2026-11-12T10:41:24.066451+00:00",
+       "sealed_before_runs": true,
+       "window": [
+        "2024-06-21",
+        "2026-09-17"
+       ]
+      }
+     },
+     "reason": "run evaluated train/validation only; holdout untouched",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 2,
+   "n_inconclusive": 2,
+   "n_pass": 9,
+   "phase": "train_validation",
+   "run_id": "3cd201d69fd93333e1e9ce3e516dca6ab93fed61d6217abe087444dd916768e8",
+   "verdict": "DATA_BLOCKED",
+   "verdict_reason": "integrity check(s) failed: benchmark_provenance"
+  },
+  {
+   "checks": [
+    {
+     "check": "availability_provenance",
+     "evidence": {
+      "n_fills": 3630
+     },
+     "reason": "every fill's entry references the first bar available after its decision; no unavailable data used",
+     "status": "PASS"
+    },
+    {
+     "check": "membership_survivorship",
+     "evidence": {
+      "n_months": 100,
+      "weak_rows_disclosed": 3785
+     },
+     "reason": "every fill sits inside its as-of membership spell; 3785 weak-row disclosures carried (snapshot_floor upper bound \u2014 not row-level first-known timestamps)",
+     "status": "PASS"
+    },
+    {
+     "check": "boundary_continuity",
+     "evidence": {
+      "n_pairs_checked": 99,
+      "n_segments": 1,
+      "violations": []
+     },
+     "reason": "exit equals the next rebalance's entry session; execution rolls price-to-price with no skipped move",
+     "status": "PASS"
+    },
+    {
+     "check": "purge_embargo",
+     "evidence": {
+      "bounds": [
+       "2015-06-01",
+       "2023-12-31"
+      ],
+      "phase": "train_validation"
+     },
+     "reason": "embargo=21 sessions enforced structurally: entries/exit fills are confined to the phase bounds; the first validation entry occurs at/after 2022-01-01",
+     "status": "PASS"
+    },
+    {
+     "check": "missing_periods_nav",
+     "evidence": {
+      "abstained": [
+       "2015-06",
+       "2015-07"
+      ],
+      "continuous_blocked": "chain broken by 2 abstained period(s); 1 labeled segment(s) reported, whole-window continuous NAV withheld (missing observations are NOT flat)",
+      "segments": [
+       [
+        "2015-08",
+        "2015-09",
+        "2015-10",
+        "2015-11",
+        "2015-12",
+        "2016-01",
+        "2016-02",
+        "2016-03",
+        "2016-04",
+        "2016-05",
+        "2016-06",
+        "2016-07",
+        "2016-08",
+        "2016-09",
+        "2016-10",
+        "2016-11",
+        "2016-12",
+        "2017-01",
+        "2017-02",
+        "2017-03",
+        "2017-04",
+        "2017-05",
+        "2017-06",
+        "2017-07",
+        "2017-08",
+        "2017-09",
+        "2017-10",
+        "2017-11",
+        "2017-12",
+        "2018-01",
+        "2018-02",
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08",
+        "2018-09",
+        "2018-10",
+        "2018-11",
+        "2018-12",
+        "2019-01",
+        "2019-02",
+        "2019-03",
+        "2019-04",
+        "2019-05",
+        "2019-06",
+        "2019-07",
+        "2019-08",
+        "2019-09",
+        "2019-10",
+        "2019-11",
+        "2019-12",
+        "2020-01",
+        "2020-02",
+        "2020-03",
+        "2020-04",
+        "2020-05",
+        "2020-06",
+        "2020-07",
+        "2020-08",
+        "2020-09",
+        "2020-10",
+        "2020-11",
+        "2020-12",
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06",
+        "2022-07",
+        "2022-08",
+        "2022-09",
+        "2022-10",
+        "2022-11",
+        "2022-12",
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11"
+       ]
+      ]
+     },
+     "reason": "2 typed abstention(s); 1 labeled segment(s); whole-window continuous NAV withheld",
+     "status": "PASS"
+    },
+    {
+     "check": "benchmark_provenance",
+     "evidence": {
+      "economics_vs_tri_blocked": true,
+      "tri_basis": "total-return (dividends reinvested); price index is a separate series",
+      "tri_sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7"
+     },
+     "reason": "raw unadjusted fills cannot be compared with TRI as an economic conclusion (basis mismatch; unverified actions)",
+     "status": "FAIL"
+    },
+    {
+     "check": "nav_reconciliation",
+     "evidence": {
+      "n_fills_sampled": 50,
+      "n_segments": 1
+     },
+     "reason": "fill-ledger cash arithmetic, itemised paper-book fees, monthly means and per-segment NAV products recomputed independently",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_scenarios",
+     "evidence": {
+      "base": null,
+      "double_cost": null
+     },
+     "reason": "no net months inside the fee-covered window (paper fee schedule effective 2026-03-01; earlier fills stay gross with typed SCHEDULE_UNAVAILABLE)",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "concentration",
+     "evidence": {
+      "sector_dimension": "DATA_BLOCKED: no verified historical sector map ingested",
+      "top_names": []
+     },
+     "reason": "no positive contributions to weight",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "placebo_random_matched",
+     "evidence": {
+      "n_draws": 50,
+      "noise_median": 0.48471264729084185,
+      "percentile": 100.0,
+      "strategy_gross": 0.5886804246292845
+     },
+     "reason": "strategy beats 100% of 50 matched random portfolios drawn from the same eligible pools",
+     "status": "PASS"
+    },
+    {
+     "check": "dependence_aware_uncertainty",
+     "evidence": {
+      "block": 3,
+      "ci90_mean_monthly": [
+       -0.0029466896371114805,
+       0.015434667194387696
+      ],
+      "n_periods": 100
+     },
+     "reason": "moving-block bootstrap (block=3 months, 2000 resamples) 90% CI of the monthly mean: [-0.2947%, +1.5435%] \u2014 months are the dependence unit, not single names/days",
+     "status": "PASS"
+    },
+    {
+     "check": "multiplicity",
+     "evidence": {},
+     "reason": "no sweep metadata attached to this run",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "holdout_window": [
+       "2024-06-21",
+       "2026-09-17"
+      ],
+      "seal": {
+       "journal": "D:\\Quant-Plus\\reports\\alpha_v3_1\\wave2_research_journal.jsonl",
+       "sealed_at": "2026-11-12T10:41:24.066451+00:00",
+       "sealed_before_runs": true,
+       "window": [
+        "2024-06-21",
+        "2026-09-17"
+       ]
+      }
+     },
+     "reason": "run evaluated train/validation only; holdout untouched",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 3,
+   "n_pass": 9,
+   "phase": "train_validation",
+   "run_id": "e8621bade78ceb25c52effe06f079351fb8712440b5598d33bf9fa01cd441dd5",
+   "verdict": "DATA_BLOCKED",
+   "verdict_reason": "integrity check(s) failed: benchmark_provenance"
+  },
+  {
+   "checks": [
+    {
+     "check": "availability_provenance",
+     "evidence": {
+      "n": 1,
+      "violations": [
+       {
+        "bar_available_at": "2015-06-02T00:15:00+05:30",
+        "decision_ts": "2015-06-01T00:15:00+05:30",
+        "ranking_session": "2015-06-01",
+        "symbol": "MARUTI",
+        "violation": "ranking reads a bar available AFTER the cutoff"
+       }
+      ]
+     },
+     "reason": "1 provenance violation(s): future-aware input blocked from promotion",
+     "status": "FAIL"
+    },
+    {
+     "check": "membership_survivorship",
+     "evidence": {
+      "n_months": 102,
+      "weak_rows_disclosed": 3877
+     },
+     "reason": "every fill sits inside its as-of membership spell; 3877 weak-row disclosures carried (snapshot_floor upper bound \u2014 not row-level first-known timestamps)",
+     "status": "PASS"
+    },
+    {
+     "check": "boundary_continuity",
+     "evidence": {
+      "n_pairs_checked": 101,
+      "n_segments": 1,
+      "violations": []
+     },
+     "reason": "exit equals the next rebalance's entry session; execution rolls price-to-price with no skipped move",
+     "status": "PASS"
+    },
+    {
+     "check": "purge_embargo",
+     "evidence": {
+      "bounds": [
+       "2015-06-01",
+       "2023-12-31"
+      ],
+      "phase": "train_validation"
+     },
+     "reason": "embargo=21 sessions enforced structurally: entries/exit fills are confined to the phase bounds; the first validation entry occurs at/after 2022-01-01",
+     "status": "PASS"
+    },
+    {
+     "check": "missing_periods_nav",
+     "evidence": {
+      "abstained": [],
+      "continuous_blocked": null,
+      "segments": [
+       [
+        "2015-06",
+        "2015-07",
+        "2015-08",
+        "2015-09",
+        "2015-10",
+        "2015-11",
+        "2015-12",
+        "2016-01",
+        "2016-02",
+        "2016-03",
+        "2016-04",
+        "2016-05",
+        "2016-06",
+        "2016-07",
+        "2016-08",
+        "2016-09",
+        "2016-10",
+        "2016-11",
+        "2016-12",
+        "2017-01",
+        "2017-02",
+        "2017-03",
+        "2017-04",
+        "2017-05",
+        "2017-06",
+        "2017-07",
+        "2017-08",
+        "2017-09",
+        "2017-10",
+        "2017-11",
+        "2017-12",
+        "2018-01",
+        "2018-02",
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08",
+        "2018-09",
+        "2018-10",
+        "2018-11",
+        "2018-12",
+        "2019-01",
+        "2019-02",
+        "2019-03",
+        "2019-04",
+        "2019-05",
+        "2019-06",
+        "2019-07",
+        "2019-08",
+        "2019-09",
+        "2019-10",
+        "2019-11",
+        "2019-12",
+        "2020-01",
+        "2020-02",
+        "2020-03",
+        "2020-04",
+        "2020-05",
+        "2020-06",
+        "2020-07",
+        "2020-08",
+        "2020-09",
+        "2020-10",
+        "2020-11",
+        "2020-12",
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06",
+        "2022-07",
+        "2022-08",
+        "2022-09",
+        "2022-10",
+        "2022-11",
+        "2022-12",
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11"
+       ]
+      ]
+     },
+     "reason": "0 typed abstention(s); 1 labeled segment(s); continuous chain unbroken",
+     "status": "PASS"
+    },
+    {
+     "check": "benchmark_provenance",
+     "evidence": {
+      "economics_vs_tri_blocked": true,
+      "tri_basis": "total-return (dividends reinvested); price index is a separate series",
+      "tri_sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7"
+     },
+     "reason": "raw unadjusted fills cannot be compared with TRI as an economic conclusion (basis mismatch; unverified actions)",
+     "status": "FAIL"
+    },
+    {
+     "check": "nav_reconciliation",
+     "evidence": {
+      "n_fills_sampled": 50,
+      "n_segments": 1
+     },
+     "reason": "fill-ledger cash arithmetic, itemised paper-book fees, monthly means and per-segment NAV products recomputed independently",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_scenarios",
+     "evidence": {
+      "base": null,
+      "double_cost": null
+     },
+     "reason": "no net months inside the fee-covered window (paper fee schedule effective 2026-03-01; earlier fills stay gross with typed SCHEDULE_UNAVAILABLE)",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "concentration",
+     "evidence": {
+      "sector_dimension": "DATA_BLOCKED: no verified historical sector map ingested",
+      "top_names": []
+     },
+     "reason": "no positive contributions to weight",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "placebo_random_matched",
+     "evidence": {
+      "n_draws": 50,
+      "noise_median": 0.4967344247970704,
+      "percentile": 26.0,
+      "strategy_gross": 0.22372685215508747
+     },
+     "reason": "strategy beats only 26% of matched noise (threshold 90%) \u2014 no edge",
+     "status": "FAIL"
+    },
+    {
+     "check": "dependence_aware_uncertainty",
+     "evidence": {
+      "block": 3,
+      "ci90_mean_monthly": [
+       -0.0049483279555597075,
+       0.011718773604732339
+      ],
+      "n_periods": 102
+     },
+     "reason": "moving-block bootstrap (block=3 months, 2000 resamples) 90% CI of the monthly mean: [-0.4948%, +1.1719%] \u2014 months are the dependence unit, not single names/days",
+     "status": "PASS"
+    },
+    {
+     "check": "multiplicity",
+     "evidence": {},
+     "reason": "no sweep metadata attached to this run",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "holdout_window": [
+       "2024-06-21",
+       "2026-09-17"
+      ],
+      "seal": {
+       "journal": "D:\\Quant-Plus\\reports\\alpha_v3_1\\wave2_research_journal.jsonl",
+       "sealed_at": "2026-11-12T10:41:24.066451+00:00",
+       "sealed_before_runs": true,
+       "window": [
+        "2024-06-21",
+        "2026-09-17"
+       ]
+      }
+     },
+     "reason": "run evaluated train/validation only; holdout untouched",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 3,
+   "n_inconclusive": 3,
+   "n_pass": 7,
+   "phase": "train_validation",
+   "run_id": "a0d8de248ca3341cb3f63065fef952719c1235991e7eb2799ee14603de4377c8",
+   "verdict": "REJECTED",
+   "verdict_reason": "declared negative control (leak_control) runs as designed and can never earn promotion; challenger caught: availability_provenance, benchmark_provenance, placebo_random_matched"
+  },
+  {
+   "checks": [
+    {
+     "check": "availability_provenance",
+     "evidence": {
+      "n_fills": 967
+     },
+     "reason": "every fill's entry references the first bar available after its decision; no unavailable data used",
+     "status": "PASS"
+    },
+    {
+     "check": "membership_survivorship",
+     "evidence": {
+      "n_months": 102,
+      "weak_rows_disclosed": 3877
+     },
+     "reason": "every fill sits inside its as-of membership spell; 3877 weak-row disclosures carried (snapshot_floor upper bound \u2014 not row-level first-known timestamps)",
+     "status": "PASS"
+    },
+    {
+     "check": "boundary_continuity",
+     "evidence": {
+      "n_pairs_checked": 101,
+      "n_segments": 1,
+      "violations": []
+     },
+     "reason": "exit equals the next rebalance's entry session; execution rolls price-to-price with no skipped move",
+     "status": "PASS"
+    },
+    {
+     "check": "purge_embargo",
+     "evidence": {
+      "bounds": [
+       "2015-06-01",
+       "2023-12-31"
+      ],
+      "phase": "train_validation"
+     },
+     "reason": "embargo=21 sessions enforced structurally: entries/exit fills are confined to the phase bounds; the first validation entry occurs at/after 2022-01-01",
+     "status": "PASS"
+    },
+    {
+     "check": "missing_periods_nav",
+     "evidence": {
+      "abstained": [],
+      "continuous_blocked": null,
+      "segments": [
+       [
+        "2015-06",
+        "2015-07",
+        "2015-08",
+        "2015-09",
+        "2015-10",
+        "2015-11",
+        "2015-12",
+        "2016-01",
+        "2016-02",
+        "2016-03",
+        "2016-04",
+        "2016-05",
+        "2016-06",
+        "2016-07",
+        "2016-08",
+        "2016-09",
+        "2016-10",
+        "2016-11",
+        "2016-12",
+        "2017-01",
+        "2017-02",
+        "2017-03",
+        "2017-04",
+        "2017-05",
+        "2017-06",
+        "2017-07",
+        "2017-08",
+        "2017-09",
+        "2017-10",
+        "2017-11",
+        "2017-12",
+        "2018-01",
+        "2018-02",
+        "2018-03",
+        "2018-04",
+        "2018-05",
+        "2018-06",
+        "2018-07",
+        "2018-08",
+        "2018-09",
+        "2018-10",
+        "2018-11",
+        "2018-12",
+        "2019-01",
+        "2019-02",
+        "2019-03",
+        "2019-04",
+        "2019-05",
+        "2019-06",
+        "2019-07",
+        "2019-08",
+        "2019-09",
+        "2019-10",
+        "2019-11",
+        "2019-12",
+        "2020-01",
+        "2020-02",
+        "2020-03",
+        "2020-04",
+        "2020-05",
+        "2020-06",
+        "2020-07",
+        "2020-08",
+        "2020-09",
+        "2020-10",
+        "2020-11",
+        "2020-12",
+        "2021-01",
+        "2021-02",
+        "2021-03",
+        "2021-04",
+        "2021-05",
+        "2021-06",
+        "2021-07",
+        "2021-08",
+        "2021-09",
+        "2021-10",
+        "2021-11",
+        "2021-12",
+        "2022-01",
+        "2022-02",
+        "2022-03",
+        "2022-04",
+        "2022-05",
+        "2022-06",
+        "2022-07",
+        "2022-08",
+        "2022-09",
+        "2022-10",
+        "2022-11",
+        "2022-12",
+        "2023-01",
+        "2023-02",
+        "2023-03",
+        "2023-04",
+        "2023-05",
+        "2023-06",
+        "2023-07",
+        "2023-08",
+        "2023-09",
+        "2023-10",
+        "2023-11"
+       ]
+      ]
+     },
+     "reason": "0 typed abstention(s); 1 labeled segment(s); continuous chain unbroken",
+     "status": "PASS"
+    },
+    {
+     "check": "benchmark_provenance",
+     "evidence": {
+      "economics_vs_tri_blocked": true,
+      "tri_basis": "total-return (dividends reinvested); price index is a separate series",
+      "tri_sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7"
+     },
+     "reason": "raw unadjusted fills cannot be compared with TRI as an economic conclusion (basis mismatch; unverified actions)",
+     "status": "FAIL"
+    },
+    {
+     "check": "nav_reconciliation",
+     "evidence": {
+      "n_fills_sampled": 50,
+      "n_segments": 1
+     },
+     "reason": "fill-ledger cash arithmetic, itemised paper-book fees, monthly means and per-segment NAV products recomputed independently",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_scenarios",
+     "evidence": {
+      "base": null,
+      "double_cost": null
+     },
+     "reason": "no net months inside the fee-covered window (paper fee schedule effective 2026-03-01; earlier fills stay gross with typed SCHEDULE_UNAVAILABLE)",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "concentration",
+     "evidence": {
+      "sector_dimension": "DATA_BLOCKED: no verified historical sector map ingested",
+      "top_names": []
+     },
+     "reason": "no positive contributions to weight",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "placebo_random_matched",
+     "evidence": {
+      "noise_seed": 20261112
+     },
+     "reason": "declared noise control; per-draw result recorded for the distribution (promotion impossible by rule)",
+     "status": "PASS"
+    },
+    {
+     "check": "dependence_aware_uncertainty",
+     "evidence": {
+      "block": 3,
+      "ci90_mean_monthly": [
+       -0.006048617170088815,
+       0.014544537665610324
+      ],
+      "n_periods": 102
+     },
+     "reason": "moving-block bootstrap (block=3 months, 2000 resamples) 90% CI of the monthly mean: [-0.6049%, +1.4545%] \u2014 months are the dependence unit, not single names/days",
+     "status": "PASS"
+    },
+    {
+     "check": "multiplicity",
+     "evidence": {},
+     "reason": "no sweep metadata attached to this run",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "holdout_window": [
+       "2024-06-21",
+       "2026-09-17"
+      ],
+      "seal": {
+       "journal": "D:\\Quant-Plus\\reports\\alpha_v3_1\\wave2_research_journal.jsonl",
+       "sealed_at": "2026-11-12T10:41:24.066451+00:00",
+       "sealed_before_runs": true,
+       "window": [
+        "2024-06-21",
+        "2026-09-17"
+       ]
+      }
+     },
+     "reason": "run evaluated train/validation only; holdout untouched",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 3,
+   "n_pass": 9,
+   "phase": "train_validation",
+   "run_id": "b43824b442bead5128d7a9968ffd08fd04fe368e55f9cfd8fa25f36e83eeda91",
+   "verdict": "REJECTED",
+   "verdict_reason": "declared negative control (noise_control) runs as designed and can never earn promotion; challenger caught: benchmark_provenance"
+  },
+  {
+   "checks": [
+    {
+     "check": "availability_provenance",
+     "evidence": {
+      "n_fills": 257
+     },
+     "reason": "every fill's entry references the first bar available after its decision; no unavailable data used",
+     "status": "PASS"
+    },
+    {
+     "check": "membership_survivorship",
+     "evidence": {
+      "n_months": 27,
+      "weak_rows_disclosed": 852
+     },
+     "reason": "every fill sits inside its as-of membership spell; 852 weak-row disclosures carried (snapshot_floor upper bound \u2014 not row-level first-known timestamps)",
+     "status": "PASS"
+    },
+    {
+     "check": "boundary_continuity",
+     "evidence": {
+      "n_pairs_checked": 26,
+      "n_segments": 1,
+      "violations": []
+     },
+     "reason": "exit equals the next rebalance's entry session; execution rolls price-to-price with no skipped move",
+     "status": "PASS"
+    },
+    {
+     "check": "purge_embargo",
+     "evidence": {
+      "bounds": [
+       "2024-06-21",
+       "2026-09-17"
+      ],
+      "phase": "holdout"
+     },
+     "reason": "embargo=21 sessions enforced structurally: entries/exit fills are confined to the phase bounds; the first validation entry occurs at/after 2022-01-01",
+     "status": "PASS"
+    },
+    {
+     "check": "missing_periods_nav",
+     "evidence": {
+      "abstained": [],
+      "continuous_blocked": null,
+      "segments": [
+       [
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12",
+        "2025-01",
+        "2025-02",
+        "2025-03",
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08"
+       ]
+      ]
+     },
+     "reason": "0 typed abstention(s); 1 labeled segment(s); continuous chain unbroken",
+     "status": "PASS"
+    },
+    {
+     "check": "benchmark_provenance",
+     "evidence": {
+      "economics_vs_tri_blocked": true,
+      "tri_basis": "total-return (dividends reinvested); price index is a separate series",
+      "tri_sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7"
+     },
+     "reason": "raw unadjusted fills cannot be compared with TRI as an economic conclusion (basis mismatch; unverified actions)",
+     "status": "FAIL"
+    },
+    {
+     "check": "nav_reconciliation",
+     "evidence": {
+      "n_fills_sampled": 50,
+      "n_segments": 1
+     },
+     "reason": "fill-ledger cash arithmetic, itemised paper-book fees, monthly means and per-segment NAV products recomputed independently",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_scenarios",
+     "evidence": {
+      "base": {
+       "charges_paise": 120047,
+       "n_net_months": 6,
+       "net_product": -0.0968974876449985
+      },
+      "double_cost": {
+       "charges_paise": 120151,
+       "n_net_months": 6,
+       "net_product": -0.10768373453954849
+      },
+      "note": "fees stay the exact paper-book model; slippage doubles (adverse paise rounding)"
+     },
+     "reason": "double-cost degrades net as expected",
+     "status": "PASS"
+    },
+    {
+     "check": "concentration",
+     "evidence": {
+      "sector_dimension": "DATA_BLOCKED: no verified historical sector map ingested",
+      "top_names": [
+       [
+        "HINDALCO",
+        96534
+       ],
+       [
+        "TITAN",
+        70333
+       ],
+       [
+        "ETERNAL",
+        64530
+       ],
+       [
+        "GRASIM",
+        46232
+       ],
+       [
+        "NESTLEIND",
+        25231
+       ]
+      ]
+     },
+     "reason": "largest positive contributor HINDALCO = 27% of positive net P&L",
+     "status": "PASS"
+    },
+    {
+     "check": "placebo_random_matched",
+     "evidence": {
+      "n_draws": 50,
+      "noise_median": -0.07615965497355759,
+      "percentile": 8.0,
+      "strategy_gross": -0.1953029380475052
+     },
+     "reason": "strategy beats only 8% of matched noise (threshold 90%) \u2014 no edge",
+     "status": "FAIL"
+    },
+    {
+     "check": "dependence_aware_uncertainty",
+     "evidence": {
+      "block": 3,
+      "ci90_mean_monthly": [
+       -0.021918666879795476,
+       0.005798148690695181
+      ],
+      "n_periods": 27
+     },
+     "reason": "moving-block bootstrap (block=3 months, 2000 resamples) 90% CI of the monthly mean: [-2.1919%, +0.5798%] \u2014 months are the dependence unit, not single names/days",
+     "status": "PASS"
+    },
+    {
+     "check": "multiplicity",
+     "evidence": {
+      "n_trials": 16
+     },
+     "reason": "16 configurations were tried; the selected variant must be judged against that many trials (selection-adjusted; a lone peak is a rejection signal)",
+     "status": "PASS"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "seal": {
+       "journal": "D:\\Quant-Plus\\reports\\alpha_v3_1\\wave2_research_journal.jsonl",
+       "sealed_at": "2026-11-12T10:41:24.066451+00:00",
+       "sealed_before_runs": true,
+       "window": [
+        "2024-06-21",
+        "2026-09-17"
+       ]
+      }
+     },
+     "reason": "holdout evaluated once, after a registered seal",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 2,
+   "n_inconclusive": 0,
+   "n_pass": 11,
+   "phase": "holdout",
+   "run_id": "71a89661988647276ae156d022cbd402348b3bc5e62feb8351b03def8e3559cc",
+   "verdict": "DATA_BLOCKED",
+   "verdict_reason": "integrity check(s) failed: benchmark_provenance"
+  },
+  {
+   "checks": [
+    {
+     "check": "availability_provenance",
+     "evidence": {
+      "n_fills": 251
+     },
+     "reason": "every fill's entry references the first bar available after its decision; no unavailable data used",
+     "status": "PASS"
+    },
+    {
+     "check": "membership_survivorship",
+     "evidence": {
+      "n_months": 27,
+      "weak_rows_disclosed": 852
+     },
+     "reason": "every fill sits inside its as-of membership spell; 852 weak-row disclosures carried (snapshot_floor upper bound \u2014 not row-level first-known timestamps)",
+     "status": "PASS"
+    },
+    {
+     "check": "boundary_continuity",
+     "evidence": {
+      "n_pairs_checked": 26,
+      "n_segments": 1,
+      "violations": []
+     },
+     "reason": "exit equals the next rebalance's entry session; execution rolls price-to-price with no skipped move",
+     "status": "PASS"
+    },
+    {
+     "check": "purge_embargo",
+     "evidence": {
+      "bounds": [
+       "2024-06-21",
+       "2026-09-17"
+      ],
+      "phase": "holdout"
+     },
+     "reason": "embargo=21 sessions enforced structurally: entries/exit fills are confined to the phase bounds; the first validation entry occurs at/after 2022-01-01",
+     "status": "PASS"
+    },
+    {
+     "check": "missing_periods_nav",
+     "evidence": {
+      "abstained": [],
+      "continuous_blocked": null,
+      "segments": [
+       [
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12",
+        "2025-01",
+        "2025-02",
+        "2025-03",
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08"
+       ]
+      ]
+     },
+     "reason": "0 typed abstention(s); 1 labeled segment(s); continuous chain unbroken",
+     "status": "PASS"
+    },
+    {
+     "check": "benchmark_provenance",
+     "evidence": {
+      "economics_vs_tri_blocked": true,
+      "tri_basis": "total-return (dividends reinvested); price index is a separate series",
+      "tri_sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7"
+     },
+     "reason": "raw unadjusted fills cannot be compared with TRI as an economic conclusion (basis mismatch; unverified actions)",
+     "status": "FAIL"
+    },
+    {
+     "check": "nav_reconciliation",
+     "evidence": {
+      "n_fills_sampled": 50,
+      "n_segments": 1
+     },
+     "reason": "fill-ledger cash arithmetic, itemised paper-book fees, monthly means and per-segment NAV products recomputed independently",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_scenarios",
+     "evidence": {
+      "base": {
+       "charges_paise": 116384,
+       "n_net_months": 6,
+       "net_product": -0.08252942657878592
+      },
+      "double_cost": {
+       "charges_paise": 116490,
+       "n_net_months": 6,
+       "net_product": -0.09348652364737531
+      },
+      "note": "fees stay the exact paper-book model; slippage doubles (adverse paise rounding)"
+     },
+     "reason": "double-cost degrades net as expected",
+     "status": "PASS"
+    },
+    {
+     "check": "concentration",
+     "evidence": {
+      "sector_dimension": "DATA_BLOCKED: no verified historical sector map ingested",
+      "top_names": [
+       [
+        "TITAN",
+        135351
+       ],
+       [
+        "SUNPHARMA",
+        80775
+       ],
+       [
+        "APOLLOHOSP",
+        63914
+       ],
+       [
+        "NTPC",
+        48624
+       ],
+       [
+        "GRASIM",
+        43850
+       ]
+      ]
+     },
+     "reason": "largest positive contributor TITAN = 31% of positive net P&L",
+     "status": "PASS"
+    },
+    {
+     "check": "placebo_random_matched",
+     "evidence": {
+      "n_draws": 50,
+      "noise_median": -0.050634761289855224,
+      "percentile": 12.0,
+      "strategy_gross": -0.2227202705728718
+     },
+     "reason": "strategy beats only 12% of matched noise (threshold 90%) \u2014 no edge",
+     "status": "FAIL"
+    },
+    {
+     "check": "dependence_aware_uncertainty",
+     "evidence": {
+      "block": 3,
+      "ci90_mean_monthly": [
+       -0.022487698581506278,
+       0.002536807806385367
+      ],
+      "n_periods": 27
+     },
+     "reason": "moving-block bootstrap (block=3 months, 2000 resamples) 90% CI of the monthly mean: [-2.2488%, +0.2537%] \u2014 months are the dependence unit, not single names/days",
+     "status": "PASS"
+    },
+    {
+     "check": "multiplicity",
+     "evidence": {
+      "n_trials": 4
+     },
+     "reason": "4 configurations were tried; the selected variant must be judged against that many trials (selection-adjusted; a lone peak is a rejection signal)",
+     "status": "PASS"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "seal": {
+       "journal": "D:\\Quant-Plus\\reports\\alpha_v3_1\\wave2_research_journal.jsonl",
+       "sealed_at": "2026-11-12T10:41:24.066451+00:00",
+       "sealed_before_runs": true,
+       "window": [
+        "2024-06-21",
+        "2026-09-17"
+       ]
+      }
+     },
+     "reason": "holdout evaluated once, after a registered seal",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 2,
+   "n_inconclusive": 0,
+   "n_pass": 11,
+   "phase": "holdout",
+   "run_id": "ce0ca755657af6b95ad31dace13e37f5ba01ed82d21649e2fb499f1a93c4000c",
+   "verdict": "DATA_BLOCKED",
+   "verdict_reason": "integrity check(s) failed: benchmark_provenance"
+  },
+  {
+   "checks": [
+    {
+     "check": "availability_provenance",
+     "evidence": {
+      "n_fills": 821
+     },
+     "reason": "every fill's entry references the first bar available after its decision; no unavailable data used",
+     "status": "PASS"
+    },
+    {
+     "check": "membership_survivorship",
+     "evidence": {
+      "n_months": 27,
+      "weak_rows_disclosed": 852
+     },
+     "reason": "every fill sits inside its as-of membership spell; 852 weak-row disclosures carried (snapshot_floor upper bound \u2014 not row-level first-known timestamps)",
+     "status": "PASS"
+    },
+    {
+     "check": "boundary_continuity",
+     "evidence": {
+      "n_pairs_checked": 26,
+      "n_segments": 1,
+      "violations": []
+     },
+     "reason": "exit equals the next rebalance's entry session; execution rolls price-to-price with no skipped move",
+     "status": "PASS"
+    },
+    {
+     "check": "purge_embargo",
+     "evidence": {
+      "bounds": [
+       "2024-06-21",
+       "2026-09-17"
+      ],
+      "phase": "holdout"
+     },
+     "reason": "embargo=21 sessions enforced structurally: entries/exit fills are confined to the phase bounds; the first validation entry occurs at/after 2022-01-01",
+     "status": "PASS"
+    },
+    {
+     "check": "missing_periods_nav",
+     "evidence": {
+      "abstained": [],
+      "continuous_blocked": null,
+      "segments": [
+       [
+        "2024-06",
+        "2024-07",
+        "2024-08",
+        "2024-09",
+        "2024-10",
+        "2024-11",
+        "2024-12",
+        "2025-01",
+        "2025-02",
+        "2025-03",
+        "2025-04",
+        "2025-05",
+        "2025-06",
+        "2025-07",
+        "2025-08",
+        "2025-09",
+        "2025-10",
+        "2025-11",
+        "2025-12",
+        "2026-01",
+        "2026-02",
+        "2026-03",
+        "2026-04",
+        "2026-05",
+        "2026-06",
+        "2026-07",
+        "2026-08"
+       ]
+      ]
+     },
+     "reason": "0 typed abstention(s); 1 labeled segment(s); continuous chain unbroken",
+     "status": "PASS"
+    },
+    {
+     "check": "benchmark_provenance",
+     "evidence": {
+      "economics_vs_tri_blocked": true,
+      "tri_basis": "total-return (dividends reinvested); price index is a separate series",
+      "tri_sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7"
+     },
+     "reason": "raw unadjusted fills cannot be compared with TRI as an economic conclusion (basis mismatch; unverified actions)",
+     "status": "FAIL"
+    },
+    {
+     "check": "nav_reconciliation",
+     "evidence": {
+      "n_fills_sampled": 50,
+      "n_segments": 1
+     },
+     "reason": "fill-ledger cash arithmetic, itemised paper-book fees, monthly means and per-segment NAV products recomputed independently",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_scenarios",
+     "evidence": {
+      "base": {
+       "charges_paise": 73879,
+       "n_net_months": 6,
+       "net_product": -0.02268351354240128
+      },
+      "double_cost": {
+       "charges_paise": 73877,
+       "n_net_months": 6,
+       "net_product": -0.0343494303979599
+      },
+      "note": "fees stay the exact paper-book model; slippage doubles (adverse paise rounding)"
+     },
+     "reason": "double-cost degrades net as expected",
+     "status": "PASS"
+    },
+    {
+     "check": "concentration",
+     "evidence": {
+      "sector_dimension": "DATA_BLOCKED: no verified historical sector map ingested",
+      "top_names": [
+       [
+        "ETERNAL",
+        56524
+       ],
+       [
+        "HINDALCO",
+        29325
+       ],
+       [
+        "ADANIENT",
+        28037
+       ],
+       [
+        "TECHM",
+        25907
+       ],
+       [
+        "BAJFINANCE",
+        25354
+       ]
+      ]
+     },
+     "reason": "largest positive contributor ETERNAL = 22% of positive net P&L",
+     "status": "PASS"
+    },
+    {
+     "check": "placebo_random_matched",
+     "evidence": {
+      "n_draws": 50,
+      "noise_median": -0.08152275983594326,
+      "percentile": 100.0,
+      "strategy_gross": 0.008215869914812712
+     },
+     "reason": "strategy beats 100% of 50 matched random portfolios drawn from the same eligible pools",
+     "status": "PASS"
+    },
+    {
+     "check": "dependence_aware_uncertainty",
+     "evidence": {
+      "block": 3,
+      "ci90_mean_monthly": [
+       -0.011870251543636766,
+       0.013171220224271307
+      ],
+      "n_periods": 27
+     },
+     "reason": "moving-block bootstrap (block=3 months, 2000 resamples) 90% CI of the monthly mean: [-1.1870%, +1.3171%] \u2014 months are the dependence unit, not single names/days",
+     "status": "PASS"
+    },
+    {
+     "check": "multiplicity",
+     "evidence": {},
+     "reason": "no sweep metadata attached to this run",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "seal": {
+       "journal": "D:\\Quant-Plus\\reports\\alpha_v3_1\\wave2_research_journal.jsonl",
+       "sealed_at": "2026-11-12T10:41:24.066451+00:00",
+       "sealed_before_runs": true,
+       "window": [
+        "2024-06-21",
+        "2026-09-17"
+       ]
+      }
+     },
+     "reason": "holdout evaluated once, after a registered seal",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 11,
+   "phase": "holdout",
+   "run_id": "a984897ac71642a1d777b0f85f3d9bc2a23d5594b9cdf05b9266d0ce194814aa",
+   "verdict": "DATA_BLOCKED",
+   "verdict_reason": "integrity check(s) failed: benchmark_provenance"
+  }
+ ],
+ "comparisons": {
+  "h1_vs_equal_weight": {
+   "comparable": true,
+   "mean_monthly_excess": -0.004348942927042383,
+   "n_common_periods": 100,
+   "n_only_a": 0,
+   "n_only_b": 0,
+   "note": "paired gross returns on identical windows/universe/execution; excess is a labelled not-cash comparison",
+   "run_a": "c8dd29d9cc33a8943bca597fb8da7d97f8832aa25da55ee91bc70919fc82b02e",
+   "run_b": "e8621bade78ceb25c52effe06f079351fb8712440b5598d33bf9fa01cd441dd5",
+   "segments": [
+    {
+     "excess_a_minus_b": -0.38666370577723236,
+     "gross_a": -0.0256046356536217,
+     "gross_b": 0.5886804246292845,
+     "n_periods": 100,
+     "segment": "2015-08..2023-11"
+    }
+   ],
+   "spec_a": "wave2.h1.momentum-6m",
+   "spec_b": "wave2.baseline.equal-weight"
+  },
+  "h1_vs_noise": {
+   "comparable": false,
+   "differing_fields": [
+    "declared_negative_control"
+   ],
+   "reason": "specs differ outside the signal fields; not a paired configuration"
+  },
+  "h2_vs_equal_weight": {
+   "comparable": true,
+   "mean_monthly_excess": -0.00633399763794587,
+   "n_common_periods": 94,
+   "n_only_a": 0,
+   "n_only_b": 6,
+   "note": "paired gross returns on identical windows/universe/execution; excess is a labelled not-cash comparison",
+   "run_a": "3cd201d69fd93333e1e9ce3e516dca6ab93fed61d6217abe087444dd916768e8",
+   "run_b": "e8621bade78ceb25c52effe06f079351fb8712440b5598d33bf9fa01cd441dd5",
+   "segments": [
+    {
+     "excess_a_minus_b": -0.4272202767141123,
+     "gross_a": 0.06457749648200295,
+     "gross_b": 0.8586158922924154,
+     "n_periods": 94,
+     "segment": "2016-02..2023-11"
+    }
+   ],
+   "spec_a": "wave2.h2.near-52w-high",
+   "spec_b": "wave2.baseline.equal-weight"
+  }
+ },
+ "generated_at": "2026-11-12T10:42:57.613576+00:00",
+ "sweep_plateaus": {
+  "wave2.h1.momentum-6m": {
+   "best": {
+    "lookback_sessions": 252,
+    "skip_sessions": 0,
+    "top_k": 20
+   },
+   "best_gross_product": 1.0333932859043293,
+   "n_neighbours": 5,
+   "neighbour_median": 0.47499646959844943,
+   "note": "isolated peak when neighbour median is far below best; a lucky single cell is a rejection signal (blueprint \u00a77.4)"
+  },
+  "wave2.h2.near-52w-high": {
+   "best": {
+    "high_window_sessions": 252,
+    "top_k": 20
+   },
+   "best_gross_product": 0.408172570295696,
+   "n_neighbours": 2,
+   "neighbour_median": 0.29254640998641457,
+   "note": "isolated peak when neighbour median is far below best; a lucky single cell is a rejection signal (blueprint \u00a77.4)"
+  }
+ },
+ "verdict_rules": "any blocking integrity FAIL -> DATA_BLOCKED; economics blocked (raw prices + unverified actions, weak membership) -> DATA_BLOCKED; declared negative control -> REJECTED; placebo fail -> NO_EDGE; otherwise RESEARCH (W2 never promotes)"
+}

@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-11-12T04:30:00+00:00",
+  "uptime": "CONDITIONAL",
+  "uptime_note": "Windows Task Scheduler + InteractiveToken: runs stop on sleep/logoff. CONDITIONAL until an always-on host runs the worker (see ops runbook).",
+  "session_today": "2026-11-12",
+  "session_is_trading_day": true,
+  "jobs": {
+    "settle": {
+      "state": "NOT_DUE_YET",
+      "runs_today": 0,
+      "due_at_ist": "16:15:00"
+    },
+    "daily": {
+      "state": "NOT_DUE_YET",
+      "runs_today": 0,
+      "due_at_ist": "16:30:00"
+    },
+    "tournament": {
+      "state": "NOT_DUE_YET",
+      "runs_today": 0,
+      "due_at_ist": "17:30:00"
+    },
+    "catchup": {
+      "state": "NOT_DUE_YET",
+      "runs_today": 0,
+      "due_at_ist": "21:00:00"
+    }
+  },
+  "missed_session": {
+    "last_completed_session": "2026-11-11",
+    "daily_heartbeat_covers_it": false,
+    "state": "UNMONITORED",
+    "note": "heartbeat monitoring started after 2026-11-11; no coverage exists for that session \u2014 verify manually via schedule_daily.log, or run `catchup` if the day must not be lost"
+  },
+  "alert_route": {
+    "configured": false,
+    "state": "NOT_CONFIGURED",
+    "url": null
+  },
+  "heartbeat_path": "data\\forecast_reports\\worker_heartbeat.jsonl",
+  "overall": "OK"
+}

@@ -1,0 +1,2274 @@
+[
+ {
+  "bar": 0,
+  "date": "2021-01-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 5,
+  "date": "2021-01-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 10,
+  "date": "2021-01-15",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 15,
+  "date": "2021-01-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 20,
+  "date": "2021-02-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 25,
+  "date": "2021-02-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 30,
+  "date": "2021-02-15",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 35,
+  "date": "2021-02-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 40,
+  "date": "2021-03-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 45,
+  "date": "2021-03-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 50,
+  "date": "2021-03-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 55,
+  "date": "2021-03-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "9aee8749648d4275",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 60,
+  "date": "2021-03-31",
+  "pit_status": "PARTIAL",
+  "membership_hash": "6d2eddc221e5b019",
+  "n_eligible": 51,
+  "frozen": false
+ },
+ {
+  "bar": 65,
+  "date": "2021-04-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 70,
+  "date": "2021-04-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 75,
+  "date": "2021-04-26",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 80,
+  "date": "2021-05-03",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 85,
+  "date": "2021-05-10",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 90,
+  "date": "2021-05-18",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 95,
+  "date": "2021-05-25",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 100,
+  "date": "2021-06-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 105,
+  "date": "2021-06-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 110,
+  "date": "2021-06-15",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 115,
+  "date": "2021-06-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 120,
+  "date": "2021-06-29",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 125,
+  "date": "2021-07-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 130,
+  "date": "2021-07-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 135,
+  "date": "2021-07-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 140,
+  "date": "2021-07-28",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 145,
+  "date": "2021-08-04",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 150,
+  "date": "2021-08-11",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 155,
+  "date": "2021-08-18",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 160,
+  "date": "2021-08-26",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 165,
+  "date": "2021-09-02",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 170,
+  "date": "2021-09-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 175,
+  "date": "2021-09-17",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 180,
+  "date": "2021-09-24",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 185,
+  "date": "2021-10-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 190,
+  "date": "2021-10-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 195,
+  "date": "2021-10-18",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 200,
+  "date": "2021-10-25",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 205,
+  "date": "2021-11-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 210,
+  "date": "2021-11-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 215,
+  "date": "2021-11-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 220,
+  "date": "2021-11-24",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 225,
+  "date": "2021-12-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 230,
+  "date": "2021-12-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 235,
+  "date": "2021-12-15",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 240,
+  "date": "2021-12-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 245,
+  "date": "2021-12-29",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 250,
+  "date": "2022-01-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 255,
+  "date": "2022-01-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 260,
+  "date": "2022-01-19",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 265,
+  "date": "2022-01-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 270,
+  "date": "2022-02-03",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 275,
+  "date": "2022-02-10",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 280,
+  "date": "2022-02-17",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 285,
+  "date": "2022-02-24",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 290,
+  "date": "2022-03-04",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 295,
+  "date": "2022-03-11",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 300,
+  "date": "2022-03-21",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 305,
+  "date": "2022-03-28",
+  "pit_status": "PARTIAL",
+  "membership_hash": "d303ead5f3ed3b08",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 310,
+  "date": "2022-04-04",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 315,
+  "date": "2022-04-11",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 320,
+  "date": "2022-04-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 325,
+  "date": "2022-04-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 330,
+  "date": "2022-05-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 335,
+  "date": "2022-05-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 340,
+  "date": "2022-05-19",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 345,
+  "date": "2022-05-26",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 350,
+  "date": "2022-06-02",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 355,
+  "date": "2022-06-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 360,
+  "date": "2022-06-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 365,
+  "date": "2022-06-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 370,
+  "date": "2022-06-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 375,
+  "date": "2022-07-07",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 380,
+  "date": "2022-07-14",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 385,
+  "date": "2022-07-21",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 390,
+  "date": "2022-07-28",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 395,
+  "date": "2022-08-04",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 400,
+  "date": "2022-08-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 405,
+  "date": "2022-08-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 410,
+  "date": "2022-08-29",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 415,
+  "date": "2022-09-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 420,
+  "date": "2022-09-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 425,
+  "date": "2022-09-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 430,
+  "date": "2022-09-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "399886a3e0be81b6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 435,
+  "date": "2022-10-04",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 440,
+  "date": "2022-10-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 445,
+  "date": "2022-10-19",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 450,
+  "date": "2022-10-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 455,
+  "date": "2022-11-03",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 460,
+  "date": "2022-11-11",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 465,
+  "date": "2022-11-18",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 470,
+  "date": "2022-11-25",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 475,
+  "date": "2022-12-02",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 480,
+  "date": "2022-12-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 485,
+  "date": "2022-12-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 490,
+  "date": "2022-12-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 495,
+  "date": "2022-12-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 500,
+  "date": "2023-01-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 505,
+  "date": "2023-01-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 510,
+  "date": "2023-01-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 515,
+  "date": "2023-01-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 520,
+  "date": "2023-02-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 525,
+  "date": "2023-02-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 530,
+  "date": "2023-02-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 535,
+  "date": "2023-02-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 540,
+  "date": "2023-03-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 545,
+  "date": "2023-03-14",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 550,
+  "date": "2023-03-21",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 555,
+  "date": "2023-03-28",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 560,
+  "date": "2023-04-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 565,
+  "date": "2023-04-17",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 570,
+  "date": "2023-04-24",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 575,
+  "date": "2023-05-02",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 580,
+  "date": "2023-05-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 585,
+  "date": "2023-05-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 590,
+  "date": "2023-05-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 595,
+  "date": "2023-05-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 600,
+  "date": "2023-06-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 605,
+  "date": "2023-06-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 610,
+  "date": "2023-06-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 615,
+  "date": "2023-06-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 620,
+  "date": "2023-07-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 625,
+  "date": "2023-07-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "db8cbbedc309cd2c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 630,
+  "date": "2023-07-19",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 635,
+  "date": "2023-07-26",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 640,
+  "date": "2023-08-02",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 645,
+  "date": "2023-08-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 650,
+  "date": "2023-08-17",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 655,
+  "date": "2023-08-24",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 660,
+  "date": "2023-08-31",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 665,
+  "date": "2023-09-07",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 670,
+  "date": "2023-09-14",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 675,
+  "date": "2023-09-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 680,
+  "date": "2023-09-29",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 685,
+  "date": "2023-10-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 690,
+  "date": "2023-10-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 695,
+  "date": "2023-10-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 700,
+  "date": "2023-10-31",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 705,
+  "date": "2023-11-07",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 710,
+  "date": "2023-11-15",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 715,
+  "date": "2023-11-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 720,
+  "date": "2023-11-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 725,
+  "date": "2023-12-07",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 730,
+  "date": "2023-12-14",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 735,
+  "date": "2023-12-21",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 740,
+  "date": "2023-12-29",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 745,
+  "date": "2024-01-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 750,
+  "date": "2024-01-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 755,
+  "date": "2024-01-19",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 760,
+  "date": "2024-01-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 765,
+  "date": "2024-02-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 770,
+  "date": "2024-02-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 775,
+  "date": "2024-02-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 780,
+  "date": "2024-02-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 785,
+  "date": "2024-03-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 790,
+  "date": "2024-03-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 795,
+  "date": "2024-03-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "434bed8fb596bad6",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 800,
+  "date": "2024-03-28",
+  "pit_status": "PARTIAL",
+  "membership_hash": "060f7e46b5dbb918",
+  "n_eligible": 51,
+  "frozen": false
+ },
+ {
+  "bar": 805,
+  "date": "2024-04-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 810,
+  "date": "2024-04-15",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 815,
+  "date": "2024-04-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 820,
+  "date": "2024-04-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 825,
+  "date": "2024-05-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 830,
+  "date": "2024-05-15",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 835,
+  "date": "2024-05-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 840,
+  "date": "2024-05-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 845,
+  "date": "2024-06-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 850,
+  "date": "2024-06-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 855,
+  "date": "2024-06-21",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 860,
+  "date": "2024-06-28",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 865,
+  "date": "2024-07-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 870,
+  "date": "2024-07-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 875,
+  "date": "2024-07-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 880,
+  "date": "2024-07-29",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 885,
+  "date": "2024-08-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 890,
+  "date": "2024-08-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 895,
+  "date": "2024-08-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 900,
+  "date": "2024-08-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 905,
+  "date": "2024-09-03",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 910,
+  "date": "2024-09-10",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 915,
+  "date": "2024-09-17",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 920,
+  "date": "2024-09-24",
+  "pit_status": "PARTIAL",
+  "membership_hash": "a27aa85662bcca99",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 925,
+  "date": "2024-10-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 930,
+  "date": "2024-10-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 935,
+  "date": "2024-10-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 940,
+  "date": "2024-10-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 945,
+  "date": "2024-10-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 950,
+  "date": "2024-11-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 955,
+  "date": "2024-11-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 960,
+  "date": "2024-11-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 965,
+  "date": "2024-11-29",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 970,
+  "date": "2024-12-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 975,
+  "date": "2024-12-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 980,
+  "date": "2024-12-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 985,
+  "date": "2024-12-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 990,
+  "date": "2025-01-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 995,
+  "date": "2025-01-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1000,
+  "date": "2025-01-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1005,
+  "date": "2025-01-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1010,
+  "date": "2025-02-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1015,
+  "date": "2025-02-07",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1020,
+  "date": "2025-02-14",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1025,
+  "date": "2025-02-21",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1030,
+  "date": "2025-03-03",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1035,
+  "date": "2025-03-10",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1040,
+  "date": "2025-03-18",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1045,
+  "date": "2025-03-25",
+  "pit_status": "PARTIAL",
+  "membership_hash": "398934d40a371658",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1050,
+  "date": "2025-04-02",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1055,
+  "date": "2025-04-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1060,
+  "date": "2025-04-21",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1065,
+  "date": "2025-04-28",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1070,
+  "date": "2025-05-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1075,
+  "date": "2025-05-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1080,
+  "date": "2025-05-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1085,
+  "date": "2025-05-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1090,
+  "date": "2025-06-03",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1095,
+  "date": "2025-06-10",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1100,
+  "date": "2025-06-17",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1105,
+  "date": "2025-06-24",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1110,
+  "date": "2025-07-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1115,
+  "date": "2025-07-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1120,
+  "date": "2025-07-15",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1125,
+  "date": "2025-07-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1130,
+  "date": "2025-07-29",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1135,
+  "date": "2025-08-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1140,
+  "date": "2025-08-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1145,
+  "date": "2025-08-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1150,
+  "date": "2025-08-28",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1155,
+  "date": "2025-09-04",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1160,
+  "date": "2025-09-11",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1165,
+  "date": "2025-09-18",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1170,
+  "date": "2025-09-25",
+  "pit_status": "PARTIAL",
+  "membership_hash": "342fbc884426cc5c",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1175,
+  "date": "2025-10-03",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1180,
+  "date": "2025-10-10",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1185,
+  "date": "2025-10-17",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1190,
+  "date": "2025-10-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1195,
+  "date": "2025-11-03",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1200,
+  "date": "2025-11-11",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1205,
+  "date": "2025-11-18",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1210,
+  "date": "2025-11-25",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1215,
+  "date": "2025-12-02",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1220,
+  "date": "2025-12-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1225,
+  "date": "2025-12-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1230,
+  "date": "2025-12-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1235,
+  "date": "2025-12-31",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1240,
+  "date": "2026-01-07",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1245,
+  "date": "2026-01-14",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1250,
+  "date": "2026-01-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1255,
+  "date": "2026-01-30",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1260,
+  "date": "2026-02-06",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1265,
+  "date": "2026-02-13",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1270,
+  "date": "2026-02-20",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1275,
+  "date": "2026-02-27",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1280,
+  "date": "2026-03-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1285,
+  "date": "2026-03-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1290,
+  "date": "2026-03-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1295,
+  "date": "2026-04-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1300,
+  "date": "2026-04-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1305,
+  "date": "2026-04-17",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1310,
+  "date": "2026-04-24",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1315,
+  "date": "2026-05-04",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1320,
+  "date": "2026-05-11",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1325,
+  "date": "2026-05-18",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1330,
+  "date": "2026-05-25",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1335,
+  "date": "2026-06-02",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1340,
+  "date": "2026-06-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1345,
+  "date": "2026-06-16",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1350,
+  "date": "2026-06-23",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1355,
+  "date": "2026-07-01",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1360,
+  "date": "2026-07-08",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1365,
+  "date": "2026-07-15",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1370,
+  "date": "2026-07-22",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1375,
+  "date": "2026-07-29",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1380,
+  "date": "2026-08-05",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1385,
+  "date": "2026-08-12",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1390,
+  "date": "2026-08-19",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1395,
+  "date": "2026-08-26",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1400,
+  "date": "2026-09-02",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1405,
+  "date": "2026-09-09",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1410,
+  "date": "2026-09-17",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ },
+ {
+  "bar": 1415,
+  "date": "2026-09-24",
+  "pit_status": "PARTIAL",
+  "membership_hash": "1a24b369ff57c173",
+  "n_eligible": 50,
+  "frozen": false
+ }
+]

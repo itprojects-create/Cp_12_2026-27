@@ -1,0 +1,213 @@
+{
+  "authority": "RESEARCH_ONLY",
+  "code_and_tests": {
+    "quantplus_intelligence/research_v3/crisis/__init__.py": "2c4167d7dca0879242c44879073c90501947af860b4240c6e1a929867bb6e618",
+    "quantplus_intelligence/research_v3/crisis/contracts.py": "04e59c26c3926afcb38655db42c2cfbdbd9867487e13e6361e81ee5067cbd71b",
+    "quantplus_intelligence/research_v3/crisis/replay.py": "dc7577287eed139001ea3b4d851723eaa3e9ce291e9ecd58c588e33da5f95d2a",
+    "quantplus_intelligence/research_v3/event_capture/__init__.py": "3a1510fca64b51903a003bf4c58d333e42cf72a8ecb2ad526e3db50c31a4abb2",
+    "quantplus_intelligence/research_v3/event_capture/collector.py": "210a722b2e28a1bf51579cfff2eff520a387d6dcbb5a575378a8a00758e577b5",
+    "quantplus_intelligence/research_v3/event_capture/contracts.py": "47b8c3f0dfe605b013dba513f5a4b7a1b51e78a0fee7140779ed11501b370412",
+    "quantplus_intelligence/research_v3/event_capture/goldset.py": "f7098b5aa10af454afdb3122781c4a9e2472566ee2f7e5f9d7a4b646379f2ef9",
+    "quantplus_intelligence/research_v3/event_capture/store.py": "8245716d4b2f8020e28fb02cb7a2ed59b04e29e2b6d9c53846c4413d36fa3f6e",
+    "quantplus_intelligence/research_v3/library/__init__.py": "23b68ae40d281564ccaad04d8195cb000818a0032b1e962070c3c149a2fa27bb",
+    "quantplus_intelligence/research_v3/library/catalog.py": "f3f1202f9e487d5f3d4ecdde7328df873bc54f40f9725ab64f6f91558383eb93",
+    "quantplus_intelligence/research_v3/library/contracts.py": "0e59facc3a48f22dcde6342f18fe7d23e9696964c20cd2cf8494f1c22ce4c9e8",
+    "quantplus_intelligence/research_v3/library/registry.py": "a6b774f3e14e9f8b48f6d6d981b2314f52e0e11765bb46c57ac59b7edf57282d",
+    "quantplus_intelligence/research_v3/monitor/__init__.py": "9d7c36fac5ebd1340f702a634f3ad9dacb1b452c8e843ba8018a968c18d69811",
+    "quantplus_intelligence/research_v3/monitor/checks.py": "c42ff6b3354ff1c1452236ea16dbddd3ae7d8c35ae7f01aa5847e5a9d5121be5",
+    "quantplus_intelligence/research_v3/monitor/contracts.py": "c541d74ca08f017007d9ffd9f75a7f0892165b156210bcc2a85759aefc905375",
+    "quantplus_intelligence/research_v3/monitor/journal.py": "be092869b821e12afc5ce3704fc394b4d30715bc357c766f7f433226389f2fe7",
+    "quantplus_intelligence/research_v3/wave5.py": "8778960a06f906340ba56085ccc295a43a5b3a07f6127c3fd4ba91f07ec72ede",
+    "quantplus_intelligence/research_v3/wave5_common.py": "23a253d9db52e1f0747e3452415cc4d0fceb282d071e3cc4c35ce9d94c88ed0d",
+    "scripts/wave5_generate_artifacts.py": "fb14099ee8f979e083a843f4ef6270b679389ef4196bd9f3765a45988ac3ce34",
+    "scripts/wave5_offline_pytest_plugin.py": "398943155cbddebecdc07fecabc82c129c7a56545bad5d02d812c673ec7dbe99",
+    "scripts/wave5_verify_controls.py": "4910c7a5a1911c05b73e6500f4889df604d85108b9a15a8fe7b2884b0bcd816d",
+    "scripts/wave5_verify_manifest.py": "e988ebee01f5ac96c4f5f0141ca2ccfe6e4bc05336ffcee03ed77b603cca2f60",
+    "tests/test_research_v3_wave5.py": "00a69eb9707cb20226988880ea6a323f40fafae52c60b242979b5f8eee544d24"
+  },
+  "determinism_notes": [
+    "strategy revision, replay, monitor check, alert, disclosure and label ids exclude incidental runtime clocks",
+    "first_local_observation is evidence and therefore intentionally part of stored capture records",
+    "report evidence_time is explicit input; use the same value for byte-identical report reruns",
+    "W2/W3/W4 reports and journals are inputs and are never rewritten"
+  ],
+  "deterministic_rerun_evidence": {
+    "artifact_hashes_stable": true,
+    "comparison_evidence_path": "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\wave5_generation_rerun_precheck.json",
+    "comparison_evidence_sha256": "9b8a1167cf9b2951f0233de21e7c063bb0151444dec7c8e5a1f6cd74b2b40f0e",
+    "note": "Two clean same-input generations were byte-identical across 17 W5/matrix artifacts; final flagged input is generated twice again.",
+    "runs": 2,
+    "semantic_ids_stable": true
+  },
+  "evidence_time": "2026-11-14T09:05:10.030883+00:00",
+  "evolving_artifacts": {
+    "wave_acceptance_matrix.md": {
+      "required_markers": [
+        "| W5 Library/crisis/journal/event capture |",
+        "ENGINEERING PASS / EVIDENCE PARTIAL_DATA_BLOCKED / ECONOMICS DATA_BLOCKED",
+        "wave5_acceptance_report.md`, `wave5_reproducibility_manifest.json"
+      ],
+      "wave5_snapshot_sha256": "d47bca87da7d86b8cd23e8749371597de69c86b5716b1d19d25cca5d36533c83"
+    }
+  },
+  "external_network_in_default_tests": false,
+  "frozen_controls": {
+    "w3_feature_hash": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+    "w3_label_hash": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e"
+  },
+  "manifest_payload_sha256": "776f840a056d2b5cd58abf491d5c6c98091d6fa917ad3d61620f51babb156fcd",
+  "manifest_version": "wave5_reproducibility_manifest/1",
+  "provider_calls": 0,
+  "report_artifacts": {
+    "wave5_acceptance_report.md": "f1fd44d1cb8f40aced3a67f8fdd1a3ad9a349f74263bda8e92971ed68ed814ab",
+    "wave5_crisis_catalog.json": "b658f861ddaa8dfa8ca56852d83c688b595267b57fd55428b336fcae2d55b077",
+    "wave5_crisis_replay.json": "f6ec576c5aeac0c86cb2e16bf2ae1fbb6053c0e47fcba06ed9c867a9a4ca4eec",
+    "wave5_crisis_replay.md": "a4e987e34a5633a79e8896d6a14c55aedcb152553f1b0710b93b879700ac5979",
+    "wave5_event_capture_manifest.json": "b13255d0f8a406c1f64130c210ba46c5713bf4ce9a9aea2374da42024cb90a1b",
+    "wave5_forward_event_capture_protocol.md": "0941068c1ec900813ba25b7964b3c19a2d8107b2dff83a6022bf055ec2683152",
+    "wave5_monitoring_and_alerts.md": "24fa75ad9e4fdcd7c3dac9d373559efce747e3455683242e240659e30cdc486a",
+    "wave5_preflight_and_source_rights.md": "ce83286dea6f77972b5145ec6f62f34a695ad9f9bf986f403d696182d8826697",
+    "wave5_preflight_git_status.json": "4910a50f47097c4172939255ebac6c1efee35ccb794189f2f6c4f6ea42ef5520",
+    "wave5_regression_and_prod_failures.md": "e164f5da8dcea35a5adbdd0482d959a0af5f6e156c6d4e1ab030980f089a5814",
+    "wave5_research_monitor_log.jsonl": "14390bb9390ed7f64436b64f07365a124aacdf94ce95cc632defc431e5ce869f",
+    "wave5_strategy_library_manifest.json": "5cea10be06b27ded17007b398d0d4888facd8e04831f3998ede95947083fbb7e",
+    "wave5_strategy_library_report.md": "886cd5e8e13fc36585cf82f3fb63cbb64a51b9668fcd3751d927c22bc27843ad",
+    "wave5_test_runs.json": "2ccbd412ffc12e5a525c03acd2f50fd8c2e7693251b93faff468026909422b39",
+    "wave5_w4_and_w3_control_reevaluation.json": "9fe06b3521434479cb1ad5cf2bc1aa51959eb3bc63bb26162cdcba22ecabc63f"
+  },
+  "rerun_commands": [
+    "cd backend-extension && python -m pytest tests/test_research_v3_wave5.py -q",
+    "cd backend-extension && python scripts/wave5_verify_controls.py --db data/research_v3/warehouse.sqlite3 --reports ../reports/alpha_v3_1 --output <new-output> --evidence-time <fixed>",
+    "cd backend-extension && python scripts/wave5_generate_artifacts.py <same explicit args>",
+    "cd backend-extension && python scripts/wave5_verify_manifest.py --manifest ../reports/alpha_v3_1/wave5_reproducibility_manifest.json --dev-root .. --prod-root D:/QP/agent-service"
+  ],
+  "semantic_ids": {
+    "crisis_alternative_result_id": "301d80ca7f1bc83024225e316411cba3955b34ddf85dfe4b91d9c1c79ab668ec",
+    "crisis_primary_result_id": "0da0487137ee19c763a9c24035bb6d94ff5bb1fc9d523c5acc539540dc1fd966",
+    "event_capture_actual_rows": 0,
+    "monitor_head_hash": "d1abaa95a561ce8ea87489846373bb9dabce0bf06859084b15caed7a25542bca",
+    "strategy_revision_ids": [
+      "near-52w-high-price-momentum@1.0.0:4bb4712c64049d18",
+      "nse-inspired-6-12m-price-momentum@1.0.0:9184d2fa805830dd",
+      "post-earnings-announcement-drift@1.0.0:ac18ed3540b4d7c9"
+    ]
+  },
+  "two_repo_sync": [
+    {
+      "byte_identical": true,
+      "development_sha256": "23a253d9db52e1f0747e3452415cc4d0fceb282d071e3cc4c35ce9d94c88ed0d",
+      "production_sha256": "23a253d9db52e1f0747e3452415cc4d0fceb282d071e3cc4c35ce9d94c88ed0d",
+      "relative_path": "quantplus_intelligence/research_v3/wave5_common.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "8778960a06f906340ba56085ccc295a43a5b3a07f6127c3fd4ba91f07ec72ede",
+      "production_sha256": "8778960a06f906340ba56085ccc295a43a5b3a07f6127c3fd4ba91f07ec72ede",
+      "relative_path": "quantplus_intelligence/research_v3/wave5.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "23b68ae40d281564ccaad04d8195cb000818a0032b1e962070c3c149a2fa27bb",
+      "production_sha256": "23b68ae40d281564ccaad04d8195cb000818a0032b1e962070c3c149a2fa27bb",
+      "relative_path": "quantplus_intelligence/research_v3/library/__init__.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "f3f1202f9e487d5f3d4ecdde7328df873bc54f40f9725ab64f6f91558383eb93",
+      "production_sha256": "f3f1202f9e487d5f3d4ecdde7328df873bc54f40f9725ab64f6f91558383eb93",
+      "relative_path": "quantplus_intelligence/research_v3/library/catalog.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "0e59facc3a48f22dcde6342f18fe7d23e9696964c20cd2cf8494f1c22ce4c9e8",
+      "production_sha256": "0e59facc3a48f22dcde6342f18fe7d23e9696964c20cd2cf8494f1c22ce4c9e8",
+      "relative_path": "quantplus_intelligence/research_v3/library/contracts.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "a6b774f3e14e9f8b48f6d6d981b2314f52e0e11765bb46c57ac59b7edf57282d",
+      "production_sha256": "a6b774f3e14e9f8b48f6d6d981b2314f52e0e11765bb46c57ac59b7edf57282d",
+      "relative_path": "quantplus_intelligence/research_v3/library/registry.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "2c4167d7dca0879242c44879073c90501947af860b4240c6e1a929867bb6e618",
+      "production_sha256": "2c4167d7dca0879242c44879073c90501947af860b4240c6e1a929867bb6e618",
+      "relative_path": "quantplus_intelligence/research_v3/crisis/__init__.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "04e59c26c3926afcb38655db42c2cfbdbd9867487e13e6361e81ee5067cbd71b",
+      "production_sha256": "04e59c26c3926afcb38655db42c2cfbdbd9867487e13e6361e81ee5067cbd71b",
+      "relative_path": "quantplus_intelligence/research_v3/crisis/contracts.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "dc7577287eed139001ea3b4d851723eaa3e9ce291e9ecd58c588e33da5f95d2a",
+      "production_sha256": "dc7577287eed139001ea3b4d851723eaa3e9ce291e9ecd58c588e33da5f95d2a",
+      "relative_path": "quantplus_intelligence/research_v3/crisis/replay.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "9d7c36fac5ebd1340f702a634f3ad9dacb1b452c8e843ba8018a968c18d69811",
+      "production_sha256": "9d7c36fac5ebd1340f702a634f3ad9dacb1b452c8e843ba8018a968c18d69811",
+      "relative_path": "quantplus_intelligence/research_v3/monitor/__init__.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "c42ff6b3354ff1c1452236ea16dbddd3ae7d8c35ae7f01aa5847e5a9d5121be5",
+      "production_sha256": "c42ff6b3354ff1c1452236ea16dbddd3ae7d8c35ae7f01aa5847e5a9d5121be5",
+      "relative_path": "quantplus_intelligence/research_v3/monitor/checks.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "c541d74ca08f017007d9ffd9f75a7f0892165b156210bcc2a85759aefc905375",
+      "production_sha256": "c541d74ca08f017007d9ffd9f75a7f0892165b156210bcc2a85759aefc905375",
+      "relative_path": "quantplus_intelligence/research_v3/monitor/contracts.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "be092869b821e12afc5ce3704fc394b4d30715bc357c766f7f433226389f2fe7",
+      "production_sha256": "be092869b821e12afc5ce3704fc394b4d30715bc357c766f7f433226389f2fe7",
+      "relative_path": "quantplus_intelligence/research_v3/monitor/journal.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "3a1510fca64b51903a003bf4c58d333e42cf72a8ecb2ad526e3db50c31a4abb2",
+      "production_sha256": "3a1510fca64b51903a003bf4c58d333e42cf72a8ecb2ad526e3db50c31a4abb2",
+      "relative_path": "quantplus_intelligence/research_v3/event_capture/__init__.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "210a722b2e28a1bf51579cfff2eff520a387d6dcbb5a575378a8a00758e577b5",
+      "production_sha256": "210a722b2e28a1bf51579cfff2eff520a387d6dcbb5a575378a8a00758e577b5",
+      "relative_path": "quantplus_intelligence/research_v3/event_capture/collector.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "47b8c3f0dfe605b013dba513f5a4b7a1b51e78a0fee7140779ed11501b370412",
+      "production_sha256": "47b8c3f0dfe605b013dba513f5a4b7a1b51e78a0fee7140779ed11501b370412",
+      "relative_path": "quantplus_intelligence/research_v3/event_capture/contracts.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "f7098b5aa10af454afdb3122781c4a9e2472566ee2f7e5f9d7a4b646379f2ef9",
+      "production_sha256": "f7098b5aa10af454afdb3122781c4a9e2472566ee2f7e5f9d7a4b646379f2ef9",
+      "relative_path": "quantplus_intelligence/research_v3/event_capture/goldset.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "8245716d4b2f8020e28fb02cb7a2ed59b04e29e2b6d9c53846c4413d36fa3f6e",
+      "production_sha256": "8245716d4b2f8020e28fb02cb7a2ed59b04e29e2b6d9c53846c4413d36fa3f6e",
+      "relative_path": "quantplus_intelligence/research_v3/event_capture/store.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "00a69eb9707cb20226988880ea6a323f40fafae52c60b242979b5f8eee544d24",
+      "production_sha256": "00a69eb9707cb20226988880ea6a323f40fafae52c60b242979b5f8eee544d24",
+      "relative_path": "tests/test_research_v3_wave5.py"
+    }
+  ],
+  "two_repo_sync_all_byte_identical": true,
+  "verification_script": "backend-extension/scripts/wave5_verify_manifest.py"
+}

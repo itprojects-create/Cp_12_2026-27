@@ -1,0 +1,260 @@
+[
+  {
+    "name": "01-landing",
+    "url": "http://127.0.0.1:4180/",
+    "status": "200 → /",
+    "errors": []
+  },
+  {
+    "name": "02-login",
+    "url": "http://127.0.0.1:8080/auth",
+    "status": "200 → /auth",
+    "errors": []
+  },
+  {
+    "name": "03-platform",
+    "url": "http://127.0.0.1:4180/platform",
+    "status": "200 → /platform",
+    "errors": []
+  },
+  {
+    "name": "04-markets-public",
+    "url": "http://127.0.0.1:4180/markets",
+    "status": "200 → /markets",
+    "errors": []
+  },
+  {
+    "name": "05-research-public",
+    "url": "http://127.0.0.1:4180/research",
+    "status": "200 → /research",
+    "errors": []
+  },
+  {
+    "name": "06-ai-public",
+    "url": "http://127.0.0.1:4180/ai",
+    "status": "200 → /ai",
+    "errors": []
+  },
+  {
+    "name": "10-home-dashboard",
+    "url": "http://127.0.0.1:4180/app/dashboard",
+    "status": "200 → /app/dashboard",
+    "errors": []
+  },
+  {
+    "name": "11-discover-markets",
+    "url": "http://127.0.0.1:4180/app/markets",
+    "status": "200 → /app/markets",
+    "errors": []
+  },
+  {
+    "name": "12-stock-trading-RELIANCE",
+    "url": "http://127.0.0.1:4180/app/stocks/RELIANCE",
+    "status": "200 → /app/stocks/RELIANCE",
+    "errors": []
+  },
+  {
+    "name": "13-watchlist",
+    "url": "http://127.0.0.1:4180/app/watchlist",
+    "status": "200 → /app/watchlist",
+    "errors": []
+  },
+  {
+    "name": "14-screener",
+    "url": "http://127.0.0.1:4180/app/screener",
+    "status": "200 → /app/screener",
+    "errors": []
+  },
+  {
+    "name": "15-events-news-sentiment",
+    "url": "http://127.0.0.1:4180/app/events",
+    "status": "200 → /app/events",
+    "errors": []
+  },
+  {
+    "name": "16-ripple-map",
+    "url": "http://127.0.0.1:4180/app/ripple",
+    "status": "200 → /app/ripple",
+    "errors": []
+  },
+  {
+    "name": "17-market-context-regime",
+    "url": "http://127.0.0.1:4180/app/regime",
+    "status": "200 → /app/regime",
+    "errors": []
+  },
+  {
+    "name": "18-research",
+    "url": "http://127.0.0.1:4180/app/research",
+    "status": "200 → /app/research",
+    "errors": []
+  },
+  {
+    "name": "19-option-chain",
+    "url": "http://127.0.0.1:4180/app/options",
+    "status": "200 → /app/options",
+    "errors": []
+  },
+  {
+    "name": "20-portfolio",
+    "url": "http://127.0.0.1:4180/app/portfolio",
+    "status": "200 → /app/portfolio",
+    "errors": []
+  },
+  {
+    "name": "21-orders",
+    "url": "http://127.0.0.1:4180/app/orders",
+    "status": "200 → /app/orders",
+    "errors": []
+  },
+  {
+    "name": "22-wallet",
+    "url": "http://127.0.0.1:4180/app/wallet",
+    "status": "200 → /app/wallet",
+    "errors": []
+  },
+  {
+    "name": "23-risk",
+    "url": "http://127.0.0.1:4180/app/risk",
+    "status": "200 → /app/risk",
+    "errors": []
+  },
+  {
+    "name": "24-alerts",
+    "url": "http://127.0.0.1:4180/app/alerts",
+    "status": "200 → /app/alerts",
+    "errors": []
+  },
+  {
+    "name": "25-basket",
+    "url": "http://127.0.0.1:4180/app/basket",
+    "status": "200 → /app/basket",
+    "errors": []
+  },
+  {
+    "name": "26-exposure-xray",
+    "url": "http://127.0.0.1:4180/app/xray",
+    "status": "200 → /app/xray",
+    "errors": []
+  },
+  {
+    "name": "27-ai-assistant",
+    "url": "http://127.0.0.1:4180/app/quant-ai",
+    "status": "200 → /app/quant-ai",
+    "errors": []
+  },
+  {
+    "name": "28-ai-debate-committee",
+    "url": "http://127.0.0.1:4180/app/committee",
+    "status": "200 → /app/committee",
+    "errors": []
+  },
+  {
+    "name": "29-research-trace",
+    "url": "http://127.0.0.1:4180/app/agent-activity",
+    "status": "200 → /app/agent-activity",
+    "errors": []
+  },
+  {
+    "name": "30-verdict-details",
+    "url": "http://127.0.0.1:4180/app/decisions",
+    "status": "200 → /app/decisions",
+    "errors": []
+  },
+  {
+    "name": "31-track-record",
+    "url": "http://127.0.0.1:4180/app/track-record",
+    "status": "200 → /app/track-record",
+    "errors": []
+  },
+  {
+    "name": "32-strategy-lab",
+    "url": "http://127.0.0.1:4180/app/strategy-lab",
+    "status": "200 → /app/strategy-lab",
+    "errors": []
+  },
+  {
+    "name": "33-history",
+    "url": "http://127.0.0.1:4180/app/history",
+    "status": "200 → /app/history",
+    "errors": []
+  },
+  {
+    "name": "34-review-journal",
+    "url": "http://127.0.0.1:4180/app/journal",
+    "status": "200 → /app/journal",
+    "errors": []
+  },
+  {
+    "name": "35-trading-habits",
+    "url": "http://127.0.0.1:4180/app/behavior",
+    "status": "200 → /app/behavior",
+    "errors": []
+  },
+  {
+    "name": "36-replay",
+    "url": "http://127.0.0.1:4180/app/replay",
+    "status": "200 → /app/replay",
+    "errors": []
+  },
+  {
+    "name": "37-learn",
+    "url": "http://127.0.0.1:4180/app/learn",
+    "status": "200 → /app/learn",
+    "errors": []
+  },
+  {
+    "name": "38-investor-dna",
+    "url": "http://127.0.0.1:4180/app/investor-dna",
+    "status": "200 → /app/investor-dna",
+    "errors": []
+  },
+  {
+    "name": "39-be-the-company",
+    "url": "http://127.0.0.1:4180/app/be-the-company",
+    "status": "200 → /app/be-the-company",
+    "errors": []
+  },
+  {
+    "name": "40-ai-tutor",
+    "url": "http://127.0.0.1:4180/app/tutor",
+    "status": "200 → /app/tutor",
+    "errors": []
+  },
+  {
+    "name": "41-research-review",
+    "url": "http://127.0.0.1:4180/app/research-network",
+    "status": "200 → /app/research-network",
+    "errors": []
+  },
+  {
+    "name": "42-data-status",
+    "url": "http://127.0.0.1:4180/app/data-sources",
+    "status": "200 → /app/data-sources",
+    "errors": []
+  },
+  {
+    "name": "43-settings",
+    "url": "http://127.0.0.1:4180/app/settings",
+    "status": "200 → /app/settings",
+    "errors": []
+  },
+  {
+    "name": "44-roadmap",
+    "url": "http://127.0.0.1:4180/app/capabilities",
+    "status": "200 → /app/capabilities",
+    "errors": []
+  },
+  {
+    "name": "45-help",
+    "url": "http://127.0.0.1:4180/app/help",
+    "status": "200 → /app/help",
+    "errors": []
+  },
+  {
+    "name": "46-more",
+    "url": "http://127.0.0.1:4180/app/more",
+    "status": "200 → /app/more",
+    "errors": []
+  }
+]

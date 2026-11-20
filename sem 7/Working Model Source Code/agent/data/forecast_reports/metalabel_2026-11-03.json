@@ -1,0 +1,9 @@
+{
+  "job": "metalabel",
+  "joined": 0,
+  "decisions": 0,
+  "status": "INSUFFICIENT",
+  "train": 0,
+  "needed": 50,
+  "rule": "promotion to the money path still requires the backend's G1-G5 gates"
+}

@@ -1,0 +1,528 @@
+{
+  "label": "DEMO — isolated virtual account; not a V2/V3.1 forward-study trade; no real order",
+  "status": "LIVE_PAPER_DEMO_EXECUTED",
+  "book_id": "demo:final-submission-2026-11-20",
+  "generated_at": "2026-11-20T08:35:12.898Z",
+  "fee_schedule": {
+    "id": "nse-cm-delivery-2026-03-01",
+    "brokerage": "BROKER_ASSUMPTION = ₹0. Assumed zero; NOT verified against the operator's FYERS account.",
+    "v31_fee_gate": "Unchanged: DATA_BLOCKED / OPERATOR_ACCOUNT_PLAN_NOT_CONFIRMED (not used here)."
+  },
+  "validation_checks": [
+    {
+      "check": "fee_schedule_id",
+      "result": "PASS",
+      "detail": "nse-cm-delivery-2026-03-01"
+    },
+    {
+      "check": "brokerage_is_disclosed_assumption",
+      "result": "PASS",
+      "detail": "BROKER_ASSUMPTION 0 paise — assumed zero, NOT verified against the FYERS account"
+    },
+    {
+      "check": "exchange_session_verified_open",
+      "result": "PASS",
+      "detail": "{\"date\":\"2026-11-20\",\"calendar_version\":\"nse-cm-2026.2\",\"status\":\"TRADING\",\"reason\":null,\"open_at\":1795146300000,\"close_at\":1795168800000}"
+    },
+    {
+      "check": "quote_execution_policy_LIVE",
+      "result": "PASS",
+      "detail": "source=fyers, not delayed, not stale, open session, <=60s old"
+    },
+    {
+      "check": "quote_source_fyers",
+      "result": "PASS",
+      "detail": "fyers"
+    },
+    {
+      "check": "quote_has_bid_ask",
+      "result": "PASS",
+      "detail": "bid 237660 / ask 237670 paise"
+    },
+    {
+      "check": "book_isolated_no_research_forward",
+      "result": "PASS",
+      "detail": "no V3.1 config attached"
+    },
+    {
+      "check": "risk_guard_rejects_oversized_order",
+      "result": "PASS",
+      "detail": "20 × TCS → POSITION_VALUE_LIMIT (max 25% of equity); scratch copy discarded"
+    },
+    {
+      "check": "order_filled",
+      "result": "PASS",
+      "detail": "FILLED 10/10"
+    },
+    {
+      "check": "reconciliation_after_fill",
+      "result": "PASS",
+      "detail": "cash=ledger, positions=fills, charges, seq OK"
+    },
+    {
+      "check": "reconciliation_after_mark",
+      "result": "PASS",
+      "detail": "OK"
+    }
+  ],
+  "quote_used_for_fill": {
+    "symbol": "TCS",
+    "price": 2376.8,
+    "bid": 2376.6,
+    "ask": 2376.7,
+    "bid_size": 45,
+    "ask_size": 39,
+    "source": "fyers",
+    "as_of": "2026-11-20T08:35:06+00:00",
+    "received_at": "2026-11-20T08:35:06.515Z",
+    "decision_at": "2026-11-20T08:35:06.515Z",
+    "market_session": "open",
+    "delayed": false,
+    "stale": false,
+    "change_pct": 1.4555854356085085
+  },
+  "quote_used_for_mark": {
+    "symbol": "TCS",
+    "price": 2376.8,
+    "bid": 2376.6,
+    "ask": 2376.7,
+    "bid_size": 45,
+    "ask_size": 39,
+    "source": "fyers",
+    "as_of": "2026-11-20T08:35:06+00:00",
+    "received_at": "2026-11-20T08:35:06.526Z",
+    "decision_at": "2026-11-20T08:35:06.526Z",
+    "market_session": "open",
+    "delayed": false,
+    "stale": false,
+    "change_pct": 1.4555854356085085,
+    "note": "mark = second fresh FYERS observation"
+  },
+  "pre_trade_estimate": {
+    "schedule": "nse-cm-delivery-2026-03-01",
+    "items": [
+      {
+        "code": "STT",
+        "label": "Securities transaction tax",
+        "category": "STATUTORY",
+        "amount_paise": 2400,
+        "basis": "0.1% of delivery turnover, rounded to the rupee per fill"
+      },
+      {
+        "code": "EXCHANGE",
+        "label": "Exchange transaction charge",
+        "category": "EXCHANGE",
+        "amount_paise": 73,
+        "basis": "Rs 307 per crore each side"
+      },
+      {
+        "code": "SEBI",
+        "label": "SEBI turnover fee",
+        "category": "REGULATOR",
+        "amount_paise": 2,
+        "basis": "Rs 10 per crore"
+      },
+      {
+        "code": "STAMP",
+        "label": "Stamp duty",
+        "category": "STATUTORY",
+        "amount_paise": 357,
+        "basis": "0.015% of delivery purchase value"
+      },
+      {
+        "code": "BROKERAGE",
+        "label": "Brokerage",
+        "category": "BROKER_ASSUMPTION",
+        "amount_paise": 0,
+        "basis": "Assumed zero-brokerage delivery"
+      },
+      {
+        "code": "GST",
+        "label": "GST",
+        "category": "STATUTORY",
+        "amount_paise": 14,
+        "basis": "18% of brokerage, exchange charge and SEBI fee"
+      }
+    ],
+    "total_paise": 2846
+  },
+  "order": {
+    "id": "266f3402-3ec7-4f75-b77b-9b951fe1e1f8",
+    "intent_id": "demo-final-submission-tcs-buy-0001",
+    "symbol": "TCS",
+    "company": "Tata Consultancy Services",
+    "side": "BUY",
+    "order_type": "MARKET",
+    "quantity": 10,
+    "filled_quantity": 10,
+    "limit_price": null,
+    "price": 2376.7,
+    "avg_fill_price": 2376.7,
+    "status": "FILLED",
+    "status_reason": null,
+    "filled_at": "2026-11-20T08:35:06.515Z",
+    "created_at": "2026-11-20T08:35:06.515Z",
+    "updated_at": "2026-11-20T08:35:06.515Z",
+    "expires_at": "2026-11-20T10:00:00.000Z",
+    "product": "DELIVERY",
+    "validity": "DAY",
+    "charges": 28.46,
+    "estimated_charges": 28.46,
+    "stop_loss": 2305.4,
+    "target_price": 2495.55,
+    "trailing_stop": null,
+    "execution_mode": "LIVE",
+    "quote_snapshot": {
+      "symbol": "TCS",
+      "price": 2376.8,
+      "bid": 2376.6,
+      "ask": 2376.7,
+      "bid_size": 45,
+      "ask_size": 39,
+      "source": "fyers",
+      "as_of": "2026-11-20T08:35:06+00:00",
+      "received_at": "2026-11-20T08:35:06.515Z",
+      "decision_at": "2026-11-20T08:35:06.515Z",
+      "market_session": "open",
+      "delayed": false,
+      "stale": false,
+      "change_pct": 1.4555854356085085
+    },
+    "parent_order_id": null,
+    "protection_id": "fa89237f-213e-4285-b6e3-b7fabfe9fa60",
+    "oco_group_id": null,
+    "version": 2
+  },
+  "fills": [
+    {
+      "settlement_due_at": "2026-11-23T18:30:00.000Z",
+      "id": "5367ac8e-fdf0-4485-a8a4-2940987c68a0",
+      "seq": 7,
+      "order_id": "266f3402-3ec7-4f75-b77b-9b951fe1e1f8",
+      "symbol": "TCS",
+      "side": "BUY",
+      "quantity": 10,
+      "price": 2376.7,
+      "reference_price": 2376.8,
+      "method": "QUOTE_BID_ASK",
+      "liquidity_limited": false,
+      "slippage_bps": 0,
+      "charges": {
+        "schedule": "nse-cm-delivery-2026-03-01",
+        "total": 28.46,
+        "items": [
+          {
+            "code": "STT",
+            "label": "Securities transaction tax",
+            "category": "STATUTORY",
+            "amount_paise": 2400,
+            "basis": "0.1% of delivery turnover, rounded to the rupee per fill",
+            "amount": 24
+          },
+          {
+            "code": "EXCHANGE",
+            "label": "Exchange transaction charge",
+            "category": "EXCHANGE",
+            "amount_paise": 73,
+            "basis": "Rs 307 per crore each side",
+            "amount": 0.73
+          },
+          {
+            "code": "SEBI",
+            "label": "SEBI turnover fee",
+            "category": "REGULATOR",
+            "amount_paise": 2,
+            "basis": "Rs 10 per crore",
+            "amount": 0.02
+          },
+          {
+            "code": "STAMP",
+            "label": "Stamp duty",
+            "category": "STATUTORY",
+            "amount_paise": 357,
+            "basis": "0.015% of delivery purchase value",
+            "amount": 3.57
+          },
+          {
+            "code": "BROKERAGE",
+            "label": "Brokerage",
+            "category": "BROKER_ASSUMPTION",
+            "amount_paise": 0,
+            "basis": "Assumed zero-brokerage delivery",
+            "amount": 0
+          },
+          {
+            "code": "GST",
+            "label": "GST",
+            "category": "STATUTORY",
+            "amount_paise": 14,
+            "basis": "18% of brokerage, exchange charge and SEBI fee",
+            "amount": 0.14
+          }
+        ]
+      },
+      "charges_debited": true,
+      "quote": {
+        "symbol": "TCS",
+        "price": 2376.8,
+        "bid": 2376.6,
+        "ask": 2376.7,
+        "bid_size": 45,
+        "ask_size": 39,
+        "source": "fyers",
+        "as_of": "2026-11-20T08:35:06+00:00",
+        "received_at": "2026-11-20T08:35:06.515Z",
+        "decision_at": "2026-11-20T08:35:06.515Z",
+        "market_session": "open",
+        "delayed": false,
+        "stale": false,
+        "change_pct": 1.4555854356085085
+      },
+      "created_at": "2026-11-20T08:35:06.515Z"
+    }
+  ],
+  "account": {
+    "currency": "INR",
+    "total_funds": 100000,
+    "funds_used": 23767,
+    "profit": -28.46,
+    "realised_gross": 0,
+    "charges_paid": 28.46,
+    "profit_pct": -0.02846,
+    "wallet_balance": 76204.54,
+    "reserved_cash": 0,
+    "available_cash": 76204.54,
+    "settled_cash": 76204.54,
+    "unsettled_cash": 0,
+    "withdrawable_cash": 76204.54,
+    "settlement_status": "VERIFIED_CALENDAR",
+    "settlement_policy": "Paper T+1: release after the next clearing day finishes; no T+0",
+    "settlement_calendar_version": "ncl-cm-2026.1",
+    "onboarded": true,
+    "updated_at": "2026-11-20T08:35:06.515Z"
+  },
+  "holdings": [
+    {
+      "settled_quantity": 0,
+      "unsettled_quantity": 10,
+      "id": "94fe31c9-7cd8-490f-9c8e-b7f15b106c2a",
+      "symbol": "TCS",
+      "company": "Tata Consultancy Services",
+      "sector": null,
+      "quantity": 10,
+      "avg_price": 2376.7,
+      "cost_basis": 23767,
+      "last_price": 2376.8,
+      "marked_at": "2026-11-20T08:35:06.000Z",
+      "mark_source": "fyers",
+      "mark_fresh": true,
+      "available_quantity": 10
+    }
+  ],
+  "protections": [
+    {
+      "id": "fa89237f-213e-4285-b6e3-b7fabfe9fa60",
+      "parent_order_id": "266f3402-3ec7-4f75-b77b-9b951fe1e1f8",
+      "symbol": "TCS",
+      "company": "Tata Consultancy Services",
+      "quantity": 10,
+      "remaining_quantity": 10,
+      "stop_loss": 2305.4,
+      "target_price": 2495.55,
+      "trailing_stop": null,
+      "peak_price": 2376.7,
+      "status": "ACTIVE",
+      "exits": [],
+      "last_error": null,
+      "attempts": 0,
+      "created_at": "2026-11-20T08:35:06.515Z",
+      "updated_at": "2026-11-20T08:35:06.515Z"
+    }
+  ],
+  "cash_ledger": [
+    {
+      "id": "bb3bf6c9-8024-4639-a677-a9ba8f22deb9",
+      "seq": 2,
+      "kind": "DEPOSIT",
+      "amount": 100000,
+      "balance_after": 100000,
+      "note": "Local paper deposit",
+      "order_id": null,
+      "fill_id": null,
+      "created_at": "2026-11-20T08:35:06.515Z"
+    },
+    {
+      "id": "6ea927f7-98ef-4ab8-8877-be1cd9fa6a77",
+      "seq": 5,
+      "kind": "BUY",
+      "amount": -23767,
+      "balance_after": 76233,
+      "note": "BUY 10 TCS",
+      "order_id": "266f3402-3ec7-4f75-b77b-9b951fe1e1f8",
+      "fill_id": "5367ac8e-fdf0-4485-a8a4-2940987c68a0",
+      "created_at": "2026-11-20T08:35:06.515Z"
+    },
+    {
+      "id": "4eaa97fb-09d1-4eec-abbf-67063470d868",
+      "seq": 6,
+      "kind": "CHARGES",
+      "amount": -28.46,
+      "balance_after": 76204.54,
+      "note": "Charges BUY 10 TCS",
+      "order_id": "266f3402-3ec7-4f75-b77b-9b951fe1e1f8",
+      "fill_id": "5367ac8e-fdf0-4485-a8a4-2940987c68a0",
+      "created_at": "2026-11-20T08:35:06.515Z"
+    }
+  ],
+  "risk_limits": {
+    "user_id": "demo:final-submission-2026-11-20",
+    "daily_loss_limit": 50000,
+    "max_order_value": 1000000,
+    "max_position_pct": 25,
+    "confirmation_above": 500000,
+    "trading_paused": false,
+    "updated_at": "2026-11-20T08:35:06.515Z"
+  },
+  "risk_status": {
+    "session_date": "2026-11-20",
+    "anchor_equity": 0,
+    "anchor_source": "FIRST_MUTATION",
+    "anchored_at": "2026-11-20T08:35:06.515Z",
+    "cash_flows": 100000,
+    "marked_equity": 99972.54,
+    "day_loss": 27.46,
+    "day_pnl": -27.46,
+    "daily_loss_limit": 50000,
+    "blocked": false,
+    "blocked_reason": null,
+    "stale_marks": [],
+    "valuation_policy": "Positions are valued at their latest provider mark. Stale marks are carried at the last observed price and listed here; no price is invented.",
+    "reserved_cash": 0,
+    "available_cash": 76204.54
+  },
+  "nav": {
+    "nav_paise": 9997254,
+    "nav_rupees": 99972.54,
+    "stale_marks": [],
+    "change_vs_capital_rupees": -27.46,
+    "note": "Mark-to-market of an open demo position minutes after entry. Not realised profit, not a performance claim."
+  },
+  "order_audit_events": [
+    {
+      "seq": 1,
+      "type": "RISK_DAY_ANCHORED",
+      "entity": "risk_day",
+      "entity_id": "2026-11-20",
+      "at": "2026-11-20T08:35:06.515Z",
+      "notify": false,
+      "data": {
+        "anchor_equity_paise": 0,
+        "source": "FIRST_MUTATION"
+      }
+    },
+    {
+      "seq": 3,
+      "type": "WALLET_DEPOSIT",
+      "entity": "account",
+      "entity_id": "demo:final-submission-2026-11-20",
+      "at": "2026-11-20T08:35:06.515Z",
+      "notify": false,
+      "data": {
+        "amount_paise": 10000000
+      }
+    },
+    {
+      "seq": 4,
+      "type": "ORDER_ACCEPTED",
+      "entity": "order",
+      "entity_id": "266f3402-3ec7-4f75-b77b-9b951fe1e1f8",
+      "at": "2026-11-20T08:35:06.515Z",
+      "notify": false,
+      "data": {
+        "intent_id": "demo-final-submission-tcs-buy-0001",
+        "symbol": "TCS",
+        "side": "BUY",
+        "order_type": "MARKET",
+        "quantity": 10,
+        "limit_price_paise": null,
+        "execution_mode": "LIVE",
+        "quote_provider_time": "2026-11-20T08:35:06+00:00"
+      }
+    },
+    {
+      "seq": 8,
+      "type": "PROTECTION_CREATED",
+      "entity": "protection",
+      "entity_id": "fa89237f-213e-4285-b6e3-b7fabfe9fa60",
+      "at": "2026-11-20T08:35:06.515Z",
+      "notify": false,
+      "data": {
+        "parent_order_id": "266f3402-3ec7-4f75-b77b-9b951fe1e1f8"
+      }
+    },
+    {
+      "seq": 9,
+      "type": "ORDER_FILLED",
+      "entity": "order",
+      "entity_id": "266f3402-3ec7-4f75-b77b-9b951fe1e1f8",
+      "at": "2026-11-20T08:35:06.515Z",
+      "notify": true,
+      "data": {
+        "fill_id": "5367ac8e-fdf0-4485-a8a4-2940987c68a0",
+        "quantity": 10,
+        "price_paise": 237670,
+        "method": "QUOTE_BID_ASK",
+        "charges_paise": 2846,
+        "symbol": "TCS",
+        "side": "BUY"
+      }
+    }
+  ],
+  "book_report": {
+    "version": 2,
+    "migrated_from": null,
+    "seq": 9,
+    "reconciliation": [],
+    "quarantine": [],
+    "counts": {
+      "orders": 1,
+      "fills": 1,
+      "ledger": 3,
+      "events": 5,
+      "holdings": 1,
+      "protections": 1
+    },
+    "worker": {
+      "owner": null,
+      "lease_until": null,
+      "heartbeat_at": null
+    }
+  },
+  "isolation": {
+    "protected_files_sha256_before": {
+      ".local-data/workspace.json": "e1a9220eca2ff9968c7412f7e09105221185c9e02f6a22e55a88d063e83e7de4",
+      "reports/alpha_v3_1/wave6_engineering_fixture_ledger.jsonl": "d47f77a70b9b499dca3fde5520f2954307cf382b72755c28e42f26e8e62a5ae9",
+      "reports/alpha_v3_1/wave6_signal_and_paper_ledger.jsonl": "918013a014ac66ff753bbb50173ea9b09ad62109ce98f44111aba98e2fc90549",
+      "reports/alpha_v3_1/wave6_paper_nav_and_benchmark.json": "5c8ba042ef9cdf9b002effcdcf1e1e4bc740334db231fee44910ee027db3c9c2",
+      "backend-extension/data/forecast_reports/ledger_heads.jsonl": "ABSENT",
+      "backend-extension/data/forecast_reports/paper_pnl.jsonl": "ABSENT",
+      "backend-extension/data/research_v3/warehouse.sqlite3": "21787a7d07fca1f5126d0c33ce3d73842f6268411624543dbf15217ce9d4e8a4",
+      "src/lib/paper-book/engine.ts": "f0bbc1de7940bfa38d35ce5ac575b37ff91e780d3eef0d57d5c809c7ddfc9374",
+      "src/lib/paper-fees.ts": "d185b6346777719496f405111997d7a3e5404a6c6f109989fa3b2cf4947a44dd"
+    },
+    "protected_files_sha256_after": {
+      ".local-data/workspace.json": "e1a9220eca2ff9968c7412f7e09105221185c9e02f6a22e55a88d063e83e7de4",
+      "reports/alpha_v3_1/wave6_engineering_fixture_ledger.jsonl": "d47f77a70b9b499dca3fde5520f2954307cf382b72755c28e42f26e8e62a5ae9",
+      "reports/alpha_v3_1/wave6_signal_and_paper_ledger.jsonl": "918013a014ac66ff753bbb50173ea9b09ad62109ce98f44111aba98e2fc90549",
+      "reports/alpha_v3_1/wave6_paper_nav_and_benchmark.json": "5c8ba042ef9cdf9b002effcdcf1e1e4bc740334db231fee44910ee027db3c9c2",
+      "backend-extension/data/forecast_reports/ledger_heads.jsonl": "ABSENT",
+      "backend-extension/data/forecast_reports/paper_pnl.jsonl": "ABSENT",
+      "backend-extension/data/research_v3/warehouse.sqlite3": "21787a7d07fca1f5126d0c33ce3d73842f6268411624543dbf15217ce9d4e8a4",
+      "src/lib/paper-book/engine.ts": "f0bbc1de7940bfa38d35ce5ac575b37ff91e780d3eef0d57d5c809c7ddfc9374",
+      "src/lib/paper-fees.ts": "d185b6346777719496f405111997d7a3e5404a6c6f109989fa3b2cf4947a44dd"
+    },
+    "changed_protected_files": [],
+    "writes": "Only files in audit/demo/final-submission-2026-11-20/",
+    "broker_order_api_called": false
+  }
+}

@@ -1,0 +1,14 @@
+{$APP_DOMAIN} {
+    header Referrer-Policy "no-referrer"
+    header X-Content-Type-Options "nosniff"
+
+    # Only the state-validated broker callbacks bypass the authenticated web proxy.
+    @fyers path /api/v1/fyers/callback /fyers/callback
+    handle @fyers {
+        reverse_proxy agent:8000
+    }
+    handle {
+        reverse_proxy web:3000
+    }
+    # Access logging stays off: callback URLs can contain OAuth codes.
+}

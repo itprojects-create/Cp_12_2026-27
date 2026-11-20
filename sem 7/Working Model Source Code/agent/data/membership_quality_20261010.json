@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-11-20T12:35:06.064727+00:00",
+  "source": "vendored nse_index_membership_history.csv (NEVER edited)",
+  "source_version": "75ebfac3b5d1fb22",
+  "n_intervals_strict": 4066,
+  "n_intervals_nonstrict": 6525,
+  "by_source": {
+    "snapshot_floor": 2435,
+    "press_release": 4061,
+    "snapshot": 24,
+    "merger": 4,
+    "amendment": 1
+  },
+  "source_classes": {
+    "OFFICIAL_SUBSCRIPTION": "none in repo (import path ready, not required)",
+    "PRESS_RELEASE_RECONSTRUCTION": "current CSV (press_release/merger/amendment VERIFIED; snapshot_floor PARTIAL)",
+    "LEGACY_FILE": "n/a",
+    "UNKNOWN": "n/a"
+  },
+  "ambiguous_cross_source_overlaps": 4,
+  "sampled_rebalances": 6,
+  "strict_members_avg": 15.5,
+  "nonstrict_members_avg": 50.2,
+  "strict_coverage_ratio": 0.31,
+  "strict_degeneracy": "CONFIRMED: strict mode yields ~15-20/50 members \u2014 non-strict + disclosure remains the working mode (\u00a739)",
+  "pit_confidence_mix": "VERIFIED where strict-sourced; PARTIAL elsewhere; UNKNOWN only pre-history/unknown-universe",
+  "known_gaps": [
+    "no per-row announcement timestamps (effective_from proxy)",
+    "no OFFICIAL_SUBSCRIPTION feed (manual import ready)"
+  ]
+}

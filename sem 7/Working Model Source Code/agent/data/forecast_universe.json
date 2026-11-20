@@ -1,0 +1,611 @@
+{
+  "source": "https://archives.nseindia.com/content/indices/ (official NSE constituent CSVs)",
+  "retrieved_at": "2026-11-01T15:43:38.904881+00:00",
+  "indices": [
+    "NIFTY 50",
+    "NIFTY NEXT 50"
+  ],
+  "rows": [
+    {
+      "symbol": "ADANIENT",
+      "name": "Adani Enterprises Ltd.",
+      "sector": "Metals & Mining",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "name": "Adani Ports and Special Economic Zone Ltd.",
+      "sector": "Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "name": "Apollo Hospitals Enterprise Ltd.",
+      "sector": "Healthcare",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "name": "Asian Paints Ltd.",
+      "sector": "Consumer Durables",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "AXISBANK",
+      "name": "Axis Bank Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "BSE",
+      "name": "BSE Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "name": "Bajaj Auto Ltd.",
+      "sector": "Automobile and Auto Components",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "name": "Bajaj Finance Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "name": "Bajaj Finserv Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "BEL",
+      "name": "Bharat Electronics Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "name": "Bharti Airtel Ltd.",
+      "sector": "Telecommunication",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "CIPLA",
+      "name": "Cipla Ltd.",
+      "sector": "Healthcare",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "COALINDIA",
+      "name": "Coal India Ltd.",
+      "sector": "Oil Gas & Consumable Fuels",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "DRREDDY",
+      "name": "Dr. Reddy's Laboratories Ltd.",
+      "sector": "Healthcare",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "EICHERMOT",
+      "name": "Eicher Motors Ltd.",
+      "sector": "Automobile and Auto Components",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "ETERNAL",
+      "name": "Eternal Ltd.",
+      "sector": "Consumer Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "GRASIM",
+      "name": "Grasim Industries Ltd.",
+      "sector": "Construction Materials",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "HCLTECH",
+      "name": "HCL Technologies Ltd.",
+      "sector": "Information Technology",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "name": "HDFC Bank Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "name": "HDFC Life Insurance Company Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "HINDALCO",
+      "name": "Hindalco Industries Ltd.",
+      "sector": "Metals & Mining",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "name": "Hindustan Unilever Ltd.",
+      "sector": "Fast Moving Consumer Goods",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "name": "ICICI Bank Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "ITC",
+      "name": "ITC Ltd.",
+      "sector": "Fast Moving Consumer Goods",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "INFY",
+      "name": "Infosys Ltd.",
+      "sector": "Information Technology",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "INDIGO",
+      "name": "InterGlobe Aviation Ltd.",
+      "sector": "Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "name": "JSW Steel Ltd.",
+      "sector": "Metals & Mining",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "JIOFIN",
+      "name": "Jio Financial Services Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "name": "Kotak Mahindra Bank Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "LT",
+      "name": "Larsen & Toubro Ltd.",
+      "sector": "Construction",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "M&M",
+      "name": "Mahindra & Mahindra Ltd.",
+      "sector": "Automobile and Auto Components",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "MARUTI",
+      "name": "Maruti Suzuki India Ltd.",
+      "sector": "Automobile and Auto Components",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "MAXHEALTH",
+      "name": "Max Healthcare Institute Ltd.",
+      "sector": "Healthcare",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "NTPC",
+      "name": "NTPC Ltd.",
+      "sector": "Power",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "NESTLEIND",
+      "name": "Nestle India Ltd.",
+      "sector": "Fast Moving Consumer Goods",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "ONGC",
+      "name": "Oil & Natural Gas Corporation Ltd.",
+      "sector": "Oil Gas & Consumable Fuels",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "POWERGRID",
+      "name": "Power Grid Corporation of India Ltd.",
+      "sector": "Power",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "RELIANCE",
+      "name": "Reliance Industries Ltd.",
+      "sector": "Oil Gas & Consumable Fuels",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "SBILIFE",
+      "name": "SBI Life Insurance Company Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "name": "Shriram Finance Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "SBIN",
+      "name": "State Bank of India",
+      "sector": "Financial Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "name": "Sun Pharmaceutical Industries Ltd.",
+      "sector": "Healthcare",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "TCS",
+      "name": "Tata Consultancy Services Ltd.",
+      "sector": "Information Technology",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "TATACONSUM",
+      "name": "Tata Consumer Products Ltd.",
+      "sector": "Fast Moving Consumer Goods",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "TMPV",
+      "name": "Tata Motors Passenger Vehicles Ltd.",
+      "sector": "Automobile and Auto Components",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "TATASTEEL",
+      "name": "Tata Steel Ltd.",
+      "sector": "Metals & Mining",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "TECHM",
+      "name": "Tech Mahindra Ltd.",
+      "sector": "Information Technology",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "TITAN",
+      "name": "Titan Company Ltd.",
+      "sector": "Consumer Durables",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "TRENT",
+      "name": "Trent Ltd.",
+      "sector": "Consumer Services",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "name": "UltraTech Cement Ltd.",
+      "sector": "Construction Materials",
+      "index": "NIFTY 50"
+    },
+    {
+      "symbol": "ABB",
+      "name": "ABB India Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "ADANIENSOL",
+      "name": "Adani Energy Solutions Ltd.",
+      "sector": "Power",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "ADANIGREEN",
+      "name": "Adani Green Energy Ltd.",
+      "sector": "Power",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "ADANIPOWER",
+      "name": "Adani Power Ltd.",
+      "sector": "Power",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "AMBUJACEM",
+      "name": "Ambuja Cements Ltd.",
+      "sector": "Construction Materials",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "DMART",
+      "name": "Avenue Supermarts Ltd.",
+      "sector": "Consumer Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "BAJAJHLDNG",
+      "name": "Bajaj Holdings & Investment Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "BANKBARODA",
+      "name": "Bank of Baroda",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "BPCL",
+      "name": "Bharat Petroleum Corporation Ltd.",
+      "sector": "Oil Gas & Consumable Fuels",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "BOSCHLTD",
+      "name": "Bosch Ltd.",
+      "sector": "Automobile and Auto Components",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "BRITANNIA",
+      "name": "Britannia Industries Ltd.",
+      "sector": "Fast Moving Consumer Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "CGPOWER",
+      "name": "CG Power and Industrial Solutions Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "CANBK",
+      "name": "Canara Bank",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "name": "Cholamandalam Investment and Finance Company Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "CUMMINSIND",
+      "name": "Cummins India Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "DLF",
+      "name": "DLF Ltd.",
+      "sector": "Realty",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "Divi's Laboratories Ltd.",
+      "sector": "Healthcare",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "GAIL",
+      "name": "GAIL (India) Ltd.",
+      "sector": "Oil Gas & Consumable Fuels",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "GODREJCP",
+      "name": "Godrej Consumer Products Ltd.",
+      "sector": "Fast Moving Consumer Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "HDFCAMC",
+      "name": "HDFC Asset Management Company Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "HAL",
+      "name": "Hindustan Aeronautics Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "HINDZINC",
+      "name": "Hindustan Zinc Ltd.",
+      "sector": "Metals & Mining",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "POWERINDIA",
+      "name": "Hitachi Energy India Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "HYUNDAI",
+      "name": "Hyundai Motor India Ltd.",
+      "sector": "Automobile and Auto Components",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "IOC",
+      "name": "Indian Oil Corporation Ltd.",
+      "sector": "Oil Gas & Consumable Fuels",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "IRFC",
+      "name": "Indian Railway Finance Corporation Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "JINDALSTEL",
+      "name": "Jindal Steel Ltd.",
+      "sector": "Metals & Mining",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "LTM",
+      "name": "LTM Ltd.",
+      "sector": "Information Technology",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "MAZDOCK",
+      "name": "Mazagoan Dock Shipbuilders Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "MUTHOOTFIN",
+      "name": "Muthoot Finance Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "PIDILITIND",
+      "name": "Pidilite Industries Ltd.",
+      "sector": "Chemicals",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "POLYCAB",
+      "name": "Polycab India Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "PFC",
+      "name": "Power Finance Corporation Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "PNB",
+      "name": "Punjab National Bank",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "MOTHERSON",
+      "name": "Samvardhana Motherson International Ltd.",
+      "sector": "Automobile and Auto Components",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "ENRIN",
+      "name": "Siemens Energy India Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "SIEMENS",
+      "name": "Siemens Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "SOLARINDS",
+      "name": "Solar Industries India Ltd.",
+      "sector": "Chemicals",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "TVS Motor Company Ltd.",
+      "sector": "Automobile and Auto Components",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "TATACAP",
+      "name": "Tata Capital Ltd.",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "TMCV",
+      "name": "Tata Motors Ltd.",
+      "sector": "Capital Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "TATAPOWER",
+      "name": "Tata Power Co. Ltd.",
+      "sector": "Power",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "name": "Torrent Pharmaceuticals Ltd.",
+      "sector": "Healthcare",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "UNIONBANK",
+      "name": "Union Bank of India",
+      "sector": "Financial Services",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "VBL",
+      "name": "Varun Beverages Ltd.",
+      "sector": "Fast Moving Consumer Goods",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "VAML",
+      "name": "Vedanta Aluminium Metal Ltd.",
+      "sector": "Metals & Mining",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "VEDL",
+      "name": "Vedanta Ltd.",
+      "sector": "Metals & Mining",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "IDEA",
+      "name": "Vodafone Idea Ltd.",
+      "sector": "Telecommunication",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "WIPRO",
+      "name": "Wipro Ltd.",
+      "sector": "Information Technology",
+      "index": "NIFTY NEXT 50"
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "name": "Zydus Lifesciences Ltd.",
+      "sector": "Healthcare",
+      "index": "NIFTY NEXT 50"
+    }
+  ],
+  "failures": []
+}

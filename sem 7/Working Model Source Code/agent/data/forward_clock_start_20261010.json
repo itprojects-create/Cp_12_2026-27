@@ -1,0 +1,152 @@
+{
+  "clock_start": "2026-10-10T13:51:55.372639+00:00",
+  "rule": "forward-only: no admission/kill on backtest; 8 frozen founders equal-weight; two-strike death + token starvation; IR-weighted allocation after window 1",
+  "money_path": "deterministic core only (scripts/paper_trade_10L.py zero-LLM); LLM via llm_overlay_size veto/resize only (tests/test_money_path_boundary.py)",
+  "research_pipeline": "DIRECTION_POLICY=llm (research/explainability only, not money)",
+  "living": [
+    {
+      "id": "FP-01-F1-v4-as-shipped",
+      "name": "F1-v4-as-shipped",
+      "genome": {
+        "gross_cap": 1.0,
+        "topK": 50,
+        "turnover_delta": 0.015,
+        "veto_off": false,
+        "veto_strictness": 1.0,
+        "vix_gate": "on"
+      },
+      "status": "ALIVE",
+      "strikes": 0,
+      "probation": false,
+      "parent_id": null
+    },
+    {
+      "id": "FP-02-F2-narrow-focus",
+      "name": "F2-narrow-focus",
+      "genome": {
+        "gross_cap": 1.0,
+        "topK": 30,
+        "turnover_delta": 0.015,
+        "veto_off": false,
+        "veto_strictness": 1.0,
+        "vix_gate": "on"
+      },
+      "status": "ALIVE",
+      "strikes": 0,
+      "probation": false,
+      "parent_id": null
+    },
+    {
+      "id": "FP-03-F3-wide-net",
+      "name": "F3-wide-net",
+      "genome": {
+        "gross_cap": 1.0,
+        "topK": 70,
+        "turnover_delta": 0.015,
+        "veto_off": false,
+        "veto_strictness": 1.0,
+        "vix_gate": "on"
+      },
+      "status": "ALIVE",
+      "strikes": 0,
+      "probation": false,
+      "parent_id": null
+    },
+    {
+      "id": "FP-04-F4-v3-narrow-control",
+      "name": "F4-v3-narrow-control",
+      "genome": {
+        "gross_cap": 1.0,
+        "topK": 50,
+        "turnover_delta": 0.015,
+        "veto_off": true,
+        "veto_strictness": 1.0,
+        "vix_gate": "on"
+      },
+      "status": "ALIVE",
+      "strikes": 0,
+      "probation": false,
+      "parent_id": null
+    },
+    {
+      "id": "FP-05-F5-no-vix",
+      "name": "F5-no-vix",
+      "genome": {
+        "gross_cap": 1.0,
+        "topK": 50,
+        "turnover_delta": 0.015,
+        "veto_off": false,
+        "veto_strictness": 1.0,
+        "vix_gate": "off"
+      },
+      "status": "ALIVE",
+      "strikes": 0,
+      "probation": false,
+      "parent_id": null
+    },
+    {
+      "id": "FP-06-F6-strict-veto",
+      "name": "F6-strict-veto",
+      "genome": {
+        "gross_cap": 1.0,
+        "topK": 50,
+        "turnover_delta": 0.015,
+        "veto_off": false,
+        "veto_strictness": 2.0,
+        "vix_gate": "on"
+      },
+      "status": "ALIVE",
+      "strikes": 0,
+      "probation": false,
+      "parent_id": null
+    },
+    {
+      "id": "FP-07-F7-loose-veto",
+      "name": "F7-loose-veto",
+      "genome": {
+        "gross_cap": 1.0,
+        "topK": 50,
+        "turnover_delta": 0.015,
+        "veto_off": false,
+        "veto_strictness": 0.5,
+        "vix_gate": "on"
+      },
+      "status": "ALIVE",
+      "strikes": 0,
+      "probation": false,
+      "parent_id": null
+    },
+    {
+      "id": "FP-08-F8-low-gross",
+      "name": "F8-low-gross",
+      "genome": {
+        "gross_cap": 0.5,
+        "topK": 50,
+        "turnover_delta": 0.02,
+        "veto_off": false,
+        "veto_strictness": 1.0,
+        "vix_gate": "on"
+      },
+      "status": "ALIVE",
+      "strikes": 0,
+      "probation": false,
+      "parent_id": null
+    }
+  ],
+  "allocation": {
+    "FP-01-F1-v4-as-shipped": 0.125,
+    "FP-02-F2-narrow-focus": 0.125,
+    "FP-03-F3-wide-net": 0.125,
+    "FP-04-F4-v3-narrow-control": 0.125,
+    "FP-05-F5-no-vix": 0.125,
+    "FP-06-F6-strict-veto": 0.125,
+    "FP-07-F7-loose-veto": 0.125,
+    "FP-08-F8-low-gross": 0.125
+  },
+  "cap": 8,
+  "prereg": [
+    "data/prereg_evo_founders.md",
+    "data/ship_money_path_20261010.md"
+  ],
+  "no_more": "2021-2026 backtests burned (12 DSR trials); next judgments forward only"
+}

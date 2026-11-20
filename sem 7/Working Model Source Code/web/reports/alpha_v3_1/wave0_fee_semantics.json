@@ -1,0 +1,159 @@
+{
+  "generated_at": "2026-11-12T07:35:50.550911+00:00",
+  "w0_defect": "bridge.py edge_gate and shadow.py settled lines compute 'realised benchmark-relative excess - 0.004 flat' and label it long_edge_after_costs / net: not executable absolute net cash profit.",
+  "reproduction": {
+    "bridge.py:59": "long_edge = mean(r['outcome']['excess_return']) - cost_hurdle",
+    "shadow.py:189": "net = float(excess) - COST_HURDLE",
+    "status": "REPRODUCED (code inspection + test fixture; formulas unchanged, correction labels added additively)"
+  },
+  "correction": {
+    "module": "quantplus_intelligence.research_v3.economics",
+    "metric_semantics": {
+      "v3_benchmark_relative": "excess return vs benchmark; never display as investor profit",
+      "v3_net_absolute": "absolute net return of the trade after itemised charges",
+      "v3_trade_cash_pnl": "absolute net cash P&L in integer paise after itemised charges",
+      "v2_excess_minus_flat_cost (legacy bridge/shadow)": "benchmark-relative excess minus a flat 0.4% hurdle; research evidence, not executable cash P&L (flat hurdle ignores size)"
+    },
+    "v2_series_untouched": true,
+    "additive_labels": [
+      "bridge.edge_gate().metric_semantics",
+      "shadow.summary().metric_semantics"
+    ],
+    "ui_trace": {
+      "ForecastCard.tsx": "excess labelled 'vs NIFTY (outperformed/underperformed)' - correct",
+      "StrategyLabPage mean_net": "per-trade gross minus flat round-trip cost - absolute basis with declared survivorship bias; paise-exact upgrade assigned to W2 engine"
+    }
+  },
+  "fee_schedule": {
+    "mirror_of": "src/lib/paper-fees.ts schedule nse-cm-delivery-2026-03-01",
+    "rounding": "round half away from zero (money.ts semantics); STT to rupee per fill",
+    "money_unit": "integer paise only"
+  },
+  "fee_cases": {
+    "10k_buy": {
+      "turnover_paise": 1000000,
+      "schedule": "nse-cm-delivery-2026-03-01",
+      "items": {
+        "STT": 1000,
+        "EXCHANGE": 31,
+        "SEBI": 1,
+        "STAMP": 150,
+        "BROKERAGE": 0,
+        "GST": 6
+      },
+      "total_paise": 1188,
+      "fraction_of_turnover": 0.001188
+    },
+    "10k_sell": {
+      "turnover_paise": 1000000,
+      "schedule": "nse-cm-delivery-2026-03-01",
+      "items": {
+        "STT": 1000,
+        "EXCHANGE": 31,
+        "SEBI": 1,
+        "BROKERAGE": 0,
+        "DP": 0,
+        "GST": 6
+      },
+      "total_paise": 1038,
+      "fraction_of_turnover": 0.001038
+    },
+    "1L_buy": {
+      "turnover_paise": 10000000,
+      "schedule": "nse-cm-delivery-2026-03-01",
+      "items": {
+        "STT": 10000,
+        "EXCHANGE": 307,
+        "SEBI": 10,
+        "STAMP": 1500,
+        "BROKERAGE": 0,
+        "GST": 57
+      },
+      "total_paise": 11874,
+      "fraction_of_turnover": 0.0011874
+    },
+    "1L_sell": {
+      "turnover_paise": 10000000,
+      "schedule": "nse-cm-delivery-2026-03-01",
+      "items": {
+        "STT": 10000,
+        "EXCHANGE": 307,
+        "SEBI": 10,
+        "BROKERAGE": 0,
+        "DP": 0,
+        "GST": 57
+      },
+      "total_paise": 10374,
+      "fraction_of_turnover": 0.0010374
+    },
+    "50k_buy": {
+      "turnover_paise": 5000000,
+      "schedule": "nse-cm-delivery-2026-03-01",
+      "items": {
+        "STT": 5000,
+        "EXCHANGE": 154,
+        "SEBI": 5,
+        "STAMP": 750,
+        "BROKERAGE": 0,
+        "GST": 29
+      },
+      "total_paise": 5938,
+      "fraction_of_turnover": 0.0011876
+    },
+    "10k_buy_fyers_brokerage": {
+      "turnover_paise": 1000000,
+      "broker_component": "fyers_delivery_2026",
+      "items": {
+        "STT": 1000,
+        "EXCHANGE": 31,
+        "SEBI": 1,
+        "STAMP": 150,
+        "BROKERAGE": 2000,
+        "GST": 366
+      },
+      "total_paise": 3548,
+      "fraction_of_turnover": 0.003548
+    }
+  },
+  "fixture": {
+    "negative_absolute_return_not_profitable": {
+      "stock_gross": -0.05,
+      "benchmark_gross": -0.06,
+      "v3_benchmark_relative": 0.009999999999999995,
+      "v2_style_flattering_number": 0.005999999999999995,
+      "v3_net_absolute": -0.052173,
+      "v3_trade_cash_pnl_paise": -521730,
+      "verdict": "positive benchmark-relative spread with a NEGATIVE absolute net cash P&L"
+    }
+  },
+  "typescript_parity": {
+    "available": true,
+    "engine": "bun + src/lib/paper-fees.ts",
+    "checks": [
+      {
+        "case": "BUY@1000000",
+        "match": true
+      },
+      {
+        "case": "SELL@1000000",
+        "match": true
+      },
+      {
+        "case": "BUY@10000000",
+        "match": true
+      },
+      {
+        "case": "SELL@10000000",
+        "match": true
+      },
+      {
+        "case": "BUY@5000000",
+        "match": true
+      }
+    ],
+    "all_match": true
+  },
+  "tests": [
+    "backend-extension/tests/test_research_v3_economics.py"
+  ]
+}

@@ -1,0 +1,528 @@
+{
+ "metrics_version": "wave4_goldset_metrics/1",
+ "generated_at": "2026-11-14T08:28:47.860313+00:00",
+ "goldset_version": "events_ai_goldset/synthetic_v1",
+ "fixture_sha256": "870c303e7b239ea305d4b6ac448cddd97f49d2baf2ca33f01bc2860f40880dd6",
+ "rubric_version": "events_ai_rubric/1",
+ "review_confidence_threshold": 0.6,
+ "evidence_class": "ENGINEERING_CHECK_SYNTHETIC — NOT a measurement of real Jev quality; no financial performance claim is made or implied by any number in this file",
+ "label_provenance": {
+  "labeler": "w4_implementer_authored",
+  "label_blind_to": [
+   "model outputs",
+   "market outcomes"
+  ],
+  "authored_before": "any model call / any metric computation"
+ },
+ "model_plane": {
+  "provider": "scripted fake SystemOne transport (offline_check.py), deliberately imperfect answers fixed in code",
+  "n_classified_by_adapter": 19
+ },
+ "determinism": {
+  "runs": 2,
+  "classification_ids_identical": true,
+  "store_record_hashes_identical": true,
+  "chain_verified_a": [
+   true,
+   null
+  ],
+  "chain_verified_b": [
+   true,
+   null
+  ],
+  "metrics_identical": true,
+  "store_written": "temp dir only (records carry hashes, no excerpt bodies)"
+ },
+ "metrics": {
+  "sample": {
+   "n_gold": 19,
+   "n_baseline_predictions": 19,
+   "n_model_predictions": 19,
+   "needs_review_gold": 0
+  },
+  "prevalence": {
+   "financial_results": 0.10526315789473684,
+   "guidance_change": 0.15789473684210525,
+   "governance": 0.21052631578947367,
+   "contract": 0.10526315789473684,
+   "capital_action": 0.15789473684210525,
+   "other": 0.15789473684210525,
+   "none": 0.10526315789473684,
+   "n": 19
+  },
+  "baseline": {
+   "confusion": {
+    "labels": [
+     "financial_results",
+     "guidance_change",
+     "governance",
+     "contract",
+     "capital_action",
+     "other",
+     "none",
+     "__ABSTAIN__"
+    ],
+    "columns": [
+     "financial_results",
+     "guidance_change",
+     "governance",
+     "contract",
+     "capital_action",
+     "other",
+     "none",
+     "__ABSTAIN__",
+     "__REVIEW__"
+    ],
+    "matrix": {
+     "financial_results": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 2,
+      "__REVIEW__": 0
+     },
+     "guidance_change": {
+      "financial_results": 0,
+      "guidance_change": 3,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     },
+     "governance": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 4,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     },
+     "contract": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 2,
+      "__REVIEW__": 0
+     },
+     "capital_action": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 3,
+      "__REVIEW__": 0
+     },
+     "other": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 2,
+      "none": 0,
+      "__ABSTAIN__": 1,
+      "__REVIEW__": 0
+     },
+     "none": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 2,
+      "__REVIEW__": 0
+     },
+     "__ABSTAIN__": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     }
+    },
+    "paired_n": 19,
+    "gold_only_uids": [],
+    "prediction_only_uids": []
+   },
+   "per_class": {
+    "financial_results": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 2,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "guidance_change": {
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "governance": {
+     "tp": 4,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "contract": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 2,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "capital_action": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 3,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "other": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 1,
+     "precision": 1.0,
+     "recall": 0.6666666666666666,
+     "f1": 0.8
+    },
+    "none": {
+     "tp": 0,
+     "fp": 0,
+     "fn": 2,
+     "precision": null,
+     "recall": 0.0,
+     "f1": null
+    },
+    "macro_f1": 0.9333333333333332,
+    "n_scored_classes": 3
+   },
+   "status_rates": {
+    "VALID": 9,
+    "NEEDS_REVIEW": 0,
+    "ABSTAIN": 10,
+    "INVALID": 0,
+    "UNAVAILABLE": 0,
+    "n": 19,
+    "abstain_or_review_rate": 0.5263157894736842
+   },
+   "guidance": {
+    "n_scored": 4,
+    "skipped_gold_unknown": 15,
+    "skipped_no_prediction": 0,
+    "tp": 1,
+    "fp": 1,
+    "tn": 0,
+    "fn": 2,
+    "false_positive_rate": 0.25,
+    "false_negative_rate": 0.5,
+    "brier": 0.5625
+   }
+  },
+  "model": {
+   "confusion": {
+    "labels": [
+     "financial_results",
+     "guidance_change",
+     "governance",
+     "contract",
+     "capital_action",
+     "other",
+     "none",
+     "__ABSTAIN__"
+    ],
+    "columns": [
+     "financial_results",
+     "guidance_change",
+     "governance",
+     "contract",
+     "capital_action",
+     "other",
+     "none",
+     "__ABSTAIN__",
+     "__REVIEW__"
+    ],
+    "matrix": {
+     "financial_results": {
+      "financial_results": 2,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     },
+     "guidance_change": {
+      "financial_results": 1,
+      "guidance_change": 2,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     },
+     "governance": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 4,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     },
+     "contract": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 1,
+      "capital_action": 0,
+      "other": 1,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     },
+     "capital_action": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 3,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     },
+     "other": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 1,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 1,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 1
+     },
+     "none": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 2,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     },
+     "__ABSTAIN__": {
+      "financial_results": 0,
+      "guidance_change": 0,
+      "governance": 0,
+      "contract": 0,
+      "capital_action": 0,
+      "other": 0,
+      "none": 0,
+      "__ABSTAIN__": 0,
+      "__REVIEW__": 0
+     }
+    },
+    "paired_n": 19,
+    "gold_only_uids": [],
+    "prediction_only_uids": []
+   },
+   "per_class": {
+    "financial_results": {
+     "tp": 2,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.6666666666666666,
+     "recall": 1.0,
+     "f1": 0.8
+    },
+    "guidance_change": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 1,
+     "precision": 1.0,
+     "recall": 0.6666666666666666,
+     "f1": 0.8
+    },
+    "governance": {
+     "tp": 4,
+     "fp": 1,
+     "fn": 0,
+     "precision": 0.8,
+     "recall": 1.0,
+     "f1": 0.888888888888889
+    },
+    "contract": {
+     "tp": 1,
+     "fp": 0,
+     "fn": 1,
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.6666666666666666
+    },
+    "capital_action": {
+     "tp": 3,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "other": {
+     "tp": 1,
+     "fp": 1,
+     "fn": 2,
+     "precision": 0.5,
+     "recall": 0.3333333333333333,
+     "f1": 0.4
+    },
+    "none": {
+     "tp": 2,
+     "fp": 0,
+     "fn": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0
+    },
+    "macro_f1": 0.7936507936507936,
+    "n_scored_classes": 7
+   },
+   "status_rates": {
+    "VALID": 18,
+    "NEEDS_REVIEW": 1,
+    "ABSTAIN": 0,
+    "INVALID": 0,
+    "UNAVAILABLE": 0,
+    "n": 19,
+    "abstain_or_review_rate": 0.05263157894736842
+   },
+   "guidance": {
+    "n_scored": 4,
+    "skipped_gold_unknown": 15,
+    "skipped_no_prediction": 0,
+    "tp": 3,
+    "fp": 0,
+    "tn": 1,
+    "fn": 0,
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.0,
+    "brier": 0.048750000000000016
+   },
+   "choice_confidence_reliability": [
+    {
+     "bin": 0,
+     "lo": 0.0,
+     "hi": 0.2,
+     "n": 0,
+     "mean_prob": null,
+     "mean_outcome": null
+    },
+    {
+     "bin": 1,
+     "lo": 0.2,
+     "hi": 0.4,
+     "n": 0,
+     "mean_prob": null,
+     "mean_outcome": null
+    },
+    {
+     "bin": 2,
+     "lo": 0.4,
+     "hi": 0.6,
+     "n": 1,
+     "mean_prob": 0.4,
+     "mean_outcome": 0.0
+    },
+    {
+     "bin": 3,
+     "lo": 0.6,
+     "hi": 0.8,
+     "n": 9,
+     "mean_prob": 0.7055555555555555,
+     "mean_outcome": 0.7777777777777778
+    },
+    {
+     "bin": 4,
+     "lo": 0.8,
+     "hi": 1.0,
+     "n": 9,
+     "mean_prob": 0.8222222222222222,
+     "mean_outcome": 0.8888888888888888
+    }
+   ]
+  },
+  "paired": {
+   "paired_n": 19,
+   "baseline_only_coverage_n": 0,
+   "model_only_coverage_n": 0,
+   "both_correct": 7,
+   "baseline_correct_model_wrong": 2,
+   "model_correct_baseline_wrong": 8,
+   "both_wrong": 2,
+   "correct_side_sequence": [
+    "model",
+    "baseline",
+    "model",
+    "model",
+    "model",
+    "model",
+    "model",
+    "baseline",
+    "model",
+    "model"
+   ],
+   "paired_accuracy_baseline": 0.47368421052631576,
+   "paired_accuracy_model": 0.7894736842105263,
+   "interpretation_guard": "paired same-sample comparison only; coverage differences are reported separately and never counted as accuracy"
+  },
+  "review_threshold": 0.6
+ },
+ "hand_computed_expectations_pinned_by_tests": {
+  "paired_n": 19,
+  "paired_accuracy_baseline": "9/19",
+  "paired_accuracy_model": "15/19",
+  "guidance_brier_model": 0.04875,
+  "guidance_n_scored": 4,
+  "guidance_tp": 3,
+  "guidance_tn": 1
+ }
+}

@@ -1,0 +1,3267 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "QuantPlus Agentic OS",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/v1/sessions": {
+      "post": {
+        "summary": "Create Session",
+        "operationId": "create_session_api_v1_sessions_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SessionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionStatus"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/sessions/{sid}": {
+      "get": {
+        "summary": "Get Session",
+        "operationId": "get_session_api_v1_sessions__sid__get",
+        "parameters": [
+          {
+            "name": "sid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Sid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SessionStatus"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/theses/{instrument}": {
+      "get": {
+        "summary": "Get Theses",
+        "operationId": "get_theses_api_v1_theses__instrument__get",
+        "parameters": [
+          {
+            "name": "instrument",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Instrument"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/theses/{instrument}/diff/{v1}/{v2}": {
+      "get": {
+        "summary": "Diff Theses",
+        "operationId": "diff_theses_api_v1_theses__instrument__diff__v1___v2__get",
+        "parameters": [
+          {
+            "name": "instrument",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Instrument"
+            }
+          },
+          {
+            "name": "v1",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "V1"
+            }
+          },
+          {
+            "name": "v2",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "title": "V2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/eval/run": {
+      "post": {
+        "summary": "Eval Run",
+        "operationId": "eval_run_api_v1_eval_run_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/arena": {
+      "get": {
+        "summary": "Get Arena",
+        "operationId": "get_arena_api_v1_arena_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ArenaState"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/arena/founders": {
+      "post": {
+        "summary": "Bootstrap Founders",
+        "description": "Birth the 8 preregistered founders once (idempotent; frontend clock start).",
+        "operationId": "bootstrap_founders_api_v1_arena_founders_post",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/arena/events": {
+      "get": {
+        "summary": "Arena Events",
+        "operationId": "arena_events_api_v1_arena_events_get",
+        "parameters": [
+          {
+            "name": "since",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 0,
+              "title": "Since"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/killswitch": {
+      "get": {
+        "summary": "Killswitch Status",
+        "operationId": "killswitch_status_api_v1_killswitch_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KillSwitchState"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Killswitch Set",
+        "operationId": "killswitch_set_api_v1_killswitch_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ControlRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/KillSwitchState"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/audit/export": {
+      "get": {
+        "summary": "Audit Export",
+        "operationId": "audit_export_api_v1_audit_export_get",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 1000,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_api_v1_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/hypotheses": {
+      "post": {
+        "summary": "Submit Hypothesis",
+        "operationId": "submit_hypothesis_api_v1_research_hypotheses_post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HypothesisIn"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "List Hypotheses",
+        "operationId": "list_hypotheses_api_v1_research_hypotheses_get",
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Status"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/corpses": {
+      "get": {
+        "summary": "List Corpses",
+        "operationId": "list_corpses_api_v1_research_corpses_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/corpses/{fp}": {
+      "get": {
+        "summary": "Corpse Detail",
+        "operationId": "corpse_detail_api_v1_research_corpses__fp__get",
+        "parameters": [
+          {
+            "name": "fp",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Fp"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/champion": {
+      "get": {
+        "summary": "Champion",
+        "operationId": "champion_api_v1_research_champion_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/challengers": {
+      "get": {
+        "summary": "Challengers",
+        "operationId": "challengers_api_v1_research_challengers_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/lineage/{fp}": {
+      "get": {
+        "summary": "Lineage",
+        "operationId": "lineage_api_v1_research_lineage__fp__get",
+        "parameters": [
+          {
+            "name": "fp",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Fp"
+            }
+          },
+          {
+            "name": "depth",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 4,
+              "title": "Depth"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/experiments": {
+      "post": {
+        "summary": "Record Experiment",
+        "operationId": "record_experiment_api_v1_research_experiments_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ExperimentIn"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/data-registry": {
+      "get": {
+        "summary": "Data Registry",
+        "operationId": "data_registry_api_v1_research_data_registry_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/events": {
+      "get": {
+        "summary": "Events",
+        "operationId": "events_api_v1_research_events_get",
+        "parameters": [
+          {
+            "name": "since",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "2026-10-01",
+              "title": "Since"
+            }
+          },
+          {
+            "name": "until",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "2026-12-31",
+              "title": "Until"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/events/{record_id}": {
+      "get": {
+        "summary": "Event Detail",
+        "operationId": "event_detail_api_v1_research_events__record_id__get",
+        "parameters": [
+          {
+            "name": "record_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Record Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/pit/{universe}/{timestamp}": {
+      "get": {
+        "summary": "Pit Snapshot",
+        "operationId": "pit_snapshot_api_v1_research_pit__universe___timestamp__get",
+        "parameters": [
+          {
+            "name": "universe",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Universe"
+            }
+          },
+          {
+            "name": "timestamp",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Timestamp"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/calibration": {
+      "get": {
+        "summary": "Calibration",
+        "operationId": "calibration_api_v1_research_calibration_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/research/experiments/{exp_id}/evidence": {
+      "get": {
+        "summary": "Experiment Evidence",
+        "operationId": "experiment_evidence_api_v1_research_experiments__exp_id__evidence_get",
+        "parameters": [
+          {
+            "name": "exp_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Exp Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/search": {
+      "get": {
+        "summary": "Search Stocks",
+        "operationId": "search_stocks_api_v1_stocks_search_get",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Q"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/universe": {
+      "get": {
+        "summary": "Universe",
+        "description": "Return the current official NIFTY 50 membership used by live analytics.",
+        "operationId": "universe_api_v1_stocks_universe_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/quota": {
+      "get": {
+        "summary": "Prediction Quota",
+        "description": "Provider request-quota truth for the chat route and trust room.\n\nThe OpenRouter free tier caps 50 requests/day for the WHOLE account; the\nfrontend chat and the prediction pipeline share it. Surfacing the gateway's\nledger lets the chat refuse doomed calls and state the reset time instead\nof a vague 'busy'.",
+        "operationId": "prediction_quota_api_v1_stocks_quota_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/predictions": {
+      "get": {
+        "summary": "Prediction Snapshots",
+        "description": "Read-only preload: no model calls, no speculative jobs on hover.",
+        "operationId": "prediction_snapshots_api_v1_stocks_predictions_get",
+        "parameters": [
+          {
+            "name": "symbols",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbols"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/{symbol}/prediction": {
+      "get": {
+        "summary": "Prediction Snapshot",
+        "operationId": "prediction_snapshot_api_v1_stocks__symbol__prediction_get",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Prediction",
+        "operationId": "prediction_api_v1_stocks__symbol__prediction_post",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "retry",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": false,
+              "title": "Retry"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/{symbol}/profile": {
+      "get": {
+        "summary": "Stock Profile",
+        "operationId": "stock_profile_api_v1_stocks__symbol__profile_get",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/sessions/{sid}": {
+      "get": {
+        "summary": "Stock Session",
+        "operationId": "stock_session_api_v1_stocks_sessions__sid__get",
+        "parameters": [
+          {
+            "name": "sid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Sid"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/terminal/indices/{symbol}/history": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Live terminal"
+        ],
+        "summary": "History",
+        "operationId": "history_api_v1_terminal_indices__symbol__history_get",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "range",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(1D|1W|1M|3M|6M|1Y)$",
+              "default": "1D",
+              "title": "Range"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/terminal/quotes": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Live terminal"
+        ],
+        "summary": "Quotes",
+        "operationId": "quotes_api_v1_terminal_quotes_get",
+        "parameters": [
+          {
+            "name": "symbols",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbols"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/terminal/metrics": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Live terminal"
+        ],
+        "summary": "Metrics",
+        "operationId": "metrics_api_v1_terminal_metrics_get",
+        "parameters": [
+          {
+            "name": "symbols",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbols"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/terminal/structure/{symbol}": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Live terminal"
+        ],
+        "summary": "Structure",
+        "operationId": "structure_api_v1_terminal_structure__symbol__get",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "range",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(1D|1W|1M)$",
+              "default": "1D",
+              "title": "Range"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/terminal/structure-board": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Live terminal"
+        ],
+        "summary": "Structure Board",
+        "operationId": "structure_board_api_v1_terminal_structure_board_get",
+        "parameters": [
+          {
+            "name": "symbols",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Symbols"
+            }
+          },
+          {
+            "name": "range",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(1D|1W|1M)$",
+              "default": "1D",
+              "title": "Range"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/terminal/fundamentals/{symbol}": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Live terminal"
+        ],
+        "summary": "Fundamentals",
+        "operationId": "fundamentals_api_v1_terminal_fundamentals__symbol__get",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/terminal/calendar": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Live terminal"
+        ],
+        "summary": "Calendar",
+        "operationId": "calendar_api_v1_terminal_calendar_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/terminal/research": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Live terminal"
+        ],
+        "summary": "Research",
+        "operationId": "research_api_v1_terminal_research_get",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 50,
+              "title": "Limit"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/{stock}/forecast": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Forecast cards"
+        ],
+        "summary": "Latest",
+        "operationId": "latest_api_v1_stocks__stock__forecast_get",
+        "parameters": [
+          {
+            "name": "stock",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Stock"
+            }
+          },
+          {
+            "name": "horizon",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 5,
+              "title": "Horizon"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Forecast cards"
+        ],
+        "summary": "Generate",
+        "operationId": "generate_api_v1_stocks__stock__forecast_post",
+        "parameters": [
+          {
+            "name": "stock",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Stock"
+            }
+          },
+          {
+            "name": "horizon",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 5,
+              "title": "Horizon"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/{stock}/forecast/status": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Forecast cards"
+        ],
+        "summary": "Tripwires",
+        "operationId": "tripwires_api_v1_stocks__stock__forecast_status_get",
+        "parameters": [
+          {
+            "name": "stock",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Stock"
+            }
+          },
+          {
+            "name": "horizon",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 5,
+              "title": "Horizon"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/{stock}/forecast/personal": {
+      "post": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Forecast cards"
+        ],
+        "summary": "Personal",
+        "operationId": "personal_api_v1_stocks__stock__forecast_personal_post",
+        "parameters": [
+          {
+            "name": "stock",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Stock"
+            }
+          },
+          {
+            "name": "horizon",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 5,
+              "title": "Horizon"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": true,
+                "title": "Body"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/forecast/scoreboard": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Forecast cards"
+        ],
+        "summary": "Scoreboard",
+        "operationId": "scoreboard_api_v1_forecast_scoreboard_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/forecast/settle": {
+      "post": {
+        "tags": [
+          "QuantPlus intelligence",
+          "Forecast cards"
+        ],
+        "summary": "Settle",
+        "description": "Operator/scheduler route (not proxied to browsers): settle matured cards exactly once.",
+        "operationId": "settle_api_v1_forecast_settle_post",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/{stock}/news": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence"
+        ],
+        "summary": "Stock News",
+        "operationId": "stock_news_api_v1_stocks__stock__news_get",
+        "parameters": [
+          {
+            "name": "stock",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Stock"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/{stock}/news-sentiment": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence"
+        ],
+        "summary": "Stock Sentiment",
+        "operationId": "stock_sentiment_api_v1_stocks__stock__news_sentiment_get",
+        "parameters": [
+          {
+            "name": "stock",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Stock"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stocks/{stock}/intelligence": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence"
+        ],
+        "summary": "Stock Combined",
+        "operationId": "stock_combined_api_v1_stocks__stock__intelligence_get",
+        "parameters": [
+          {
+            "name": "stock",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Stock"
+            }
+          },
+          {
+            "name": "explain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": true,
+              "title": "Explain"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/sentiment": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence"
+        ],
+        "summary": "Sentiment",
+        "operationId": "sentiment_api_v1_market_sentiment_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/sentiment/history": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence"
+        ],
+        "summary": "Sentiment History",
+        "operationId": "sentiment_history_api_v1_market_sentiment_history_get",
+        "parameters": [
+          {
+            "name": "range",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(1h|1d|5d)$",
+              "default": "1h",
+              "title": "Range"
+            }
+          },
+          {
+            "name": "interval",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^(5m|15m|1h)$"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Interval"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/intelligence": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence"
+        ],
+        "summary": "Intelligence",
+        "operationId": "intelligence_api_v1_market_intelligence_get",
+        "parameters": [
+          {
+            "name": "explain",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "boolean",
+              "default": true,
+              "title": "Explain"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/news": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence"
+        ],
+        "summary": "Market News",
+        "operationId": "market_news_api_v1_market_news_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/sectors": {
+      "get": {
+        "tags": [
+          "QuantPlus intelligence"
+        ],
+        "summary": "Sectors",
+        "operationId": "sectors_api_v1_market_sectors_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/overview": {
+      "get": {
+        "summary": "Overview",
+        "description": "Provider-backed index overview for the authenticated terminal dashboard.",
+        "operationId": "overview_api_v1_market_overview_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/overview/stream": {
+      "get": {
+        "summary": "Overview Stream",
+        "description": "Server-sent index overview: a full snapshot, then each index tick as it arrives.\n\nThe snapshot repeats every 30 seconds so indices without a socket feed\n(SENSEX, or every index while FYERS is signed out) still update.",
+        "operationId": "overview_stream_api_v1_market_overview_stream_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/{symbol}/option-chain": {
+      "get": {
+        "summary": "Option Chain",
+        "description": "Observed FYERS option chain for an index or F&O stock (display only).",
+        "operationId": "option_chain_api_v1_market__symbol__option_chain_get",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "strikes",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "default": 12,
+              "title": "Strikes"
+            }
+          },
+          {
+            "name": "expiry",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Expiry"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/{symbol}/quote": {
+      "get": {
+        "summary": "Quote Snapshot",
+        "description": "Return one current stock quote for live valuation and grounded AI context.",
+        "operationId": "quote_snapshot_api_v1_market__symbol__quote_get",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/stream": {
+      "get": {
+        "summary": "Stream Many",
+        "operationId": "stream_many_api_v1_market_stream_get",
+        "parameters": [
+          {
+            "name": "symbols",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbols"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/{symbol}/history": {
+      "get": {
+        "summary": "History",
+        "operationId": "history_api_v1_market__symbol__history_get",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "range",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "1D",
+                "1W",
+                "1M",
+                "6M",
+                "1Y",
+                "5Y"
+              ],
+              "type": "string",
+              "default": "1D",
+              "title": "Range"
+            }
+          },
+          {
+            "name": "interval",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "1m",
+                    "5m",
+                    "15m",
+                    "60m",
+                    "1d"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Interval"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/market/{symbol}/stream": {
+      "get": {
+        "summary": "Stream",
+        "operationId": "stream_api_v1_market__symbol__stream_get",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Symbol"
+            }
+          },
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/fyers/status": {
+      "get": {
+        "summary": "Status",
+        "operationId": "status_api_v1_fyers_status_get",
+        "parameters": [
+          {
+            "name": "x-quantplus-key",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "X-Quantplus-Key"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/fyers/callback": {
+      "get": {
+        "summary": "Callback",
+        "operationId": "callback_api_v1_fyers_callback_get",
+        "parameters": [
+          {
+            "name": "auth_code",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Auth Code"
+            }
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "State"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/fyers/callback": {
+      "get": {
+        "summary": "Callback",
+        "operationId": "callback_fyers_callback_get",
+        "parameters": [
+          {
+            "name": "auth_code",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "Auth Code"
+            }
+          },
+          {
+            "name": "state",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "",
+              "title": "State"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ArenaState": {
+        "properties": {
+          "living": {
+            "items": {
+              "$ref": "#/components/schemas/ArenaVariant"
+            },
+            "type": "array",
+            "title": "Living"
+          },
+          "seed_bank": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "title": "Seed Bank"
+          },
+          "allocation": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Allocation"
+          },
+          "cap": {
+            "type": "integer",
+            "title": "Cap"
+          },
+          "as_of": {
+            "type": "string",
+            "title": "As Of"
+          }
+        },
+        "type": "object",
+        "required": [
+          "living",
+          "seed_bank",
+          "allocation",
+          "cap",
+          "as_of"
+        ],
+        "title": "ArenaState"
+      },
+      "ArenaVariant": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "strikes": {
+            "type": "integer",
+            "title": "Strikes"
+          },
+          "probation": {
+            "type": "boolean",
+            "title": "Probation"
+          },
+          "parent_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Parent Id"
+          },
+          "genome": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Genome"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "status",
+          "strikes",
+          "probation",
+          "genome"
+        ],
+        "title": "ArenaVariant"
+      },
+      "ControlRequest": {
+        "properties": {
+          "engage": {
+            "type": "boolean",
+            "title": "Engage"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "engage"
+        ],
+        "title": "ControlRequest"
+      },
+      "ExperimentIn": {
+        "properties": {
+          "hypothesis_fp": {
+            "type": "string",
+            "title": "Hypothesis Fp"
+          },
+          "body": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Body"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status",
+            "default": "EXPERIMENTING"
+          }
+        },
+        "type": "object",
+        "required": [
+          "hypothesis_fp",
+          "body"
+        ],
+        "title": "ExperimentIn"
+      },
+      "FinalDecision": {
+        "properties": {
+          "action": {
+            "type": "string",
+            "pattern": "^(buy|sell|hold)$",
+            "title": "Action"
+          },
+          "size": {
+            "type": "number",
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Size"
+          },
+          "rationale": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 10,
+            "title": "Rationale"
+          },
+          "thesis_version": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Thesis Version"
+          },
+          "authority": {
+            "type": "string",
+            "pattern": "^RESEARCH_ONLY$",
+            "title": "Authority",
+            "default": "RESEARCH_ONLY"
+          },
+          "cannot_create_position": {
+            "type": "boolean",
+            "title": "Cannot Create Position",
+            "default": true
+          },
+          "cannot_reverse_position": {
+            "type": "boolean",
+            "title": "Cannot Reverse Position",
+            "default": true
+          },
+          "cannot_increase_exposure": {
+            "type": "boolean",
+            "title": "Cannot Increase Exposure",
+            "default": true
+          }
+        },
+        "type": "object",
+        "required": [
+          "action",
+          "size",
+          "rationale",
+          "thesis_version"
+        ],
+        "title": "FinalDecision"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HypothesisIn": {
+        "properties": {
+          "hypothesis": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Hypothesis"
+          },
+          "new_evidence": {
+            "type": "string",
+            "title": "New Evidence",
+            "default": ""
+          }
+        },
+        "type": "object",
+        "required": [
+          "hypothesis"
+        ],
+        "title": "HypothesisIn"
+      },
+      "KillSwitchState": {
+        "properties": {
+          "engaged": {
+            "type": "boolean",
+            "title": "Engaged"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason",
+            "default": ""
+          },
+          "updated_ts": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Updated Ts"
+          }
+        },
+        "type": "object",
+        "required": [
+          "engaged"
+        ],
+        "title": "KillSwitchState"
+      },
+      "SessionRequest": {
+        "properties": {
+          "instrument": {
+            "type": "string",
+            "title": "Instrument",
+            "examples": [
+              "RELIANCE.NS"
+            ]
+          },
+          "as_of": {
+            "type": "string",
+            "format": "date-time",
+            "title": "As Of"
+          },
+          "interval": {
+            "type": "string",
+            "pattern": "^(1d|60m|15m)$",
+            "title": "Interval",
+            "default": "1d"
+          },
+          "force_rerun": {
+            "type": "boolean",
+            "title": "Force Rerun",
+            "default": false
+          },
+          "portfolio": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Portfolio"
+          },
+          "manager_mode": {
+            "type": "string",
+            "pattern": "^(frozen|retry)$",
+            "title": "Manager Mode",
+            "default": "frozen"
+          }
+        },
+        "type": "object",
+        "required": [
+          "instrument",
+          "as_of"
+        ],
+        "title": "SessionRequest"
+      },
+      "SessionStatus": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "decision": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/FinalDecision"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "status"
+        ],
+        "title": "SessionStatus"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

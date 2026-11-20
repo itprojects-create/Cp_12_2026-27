@@ -1,0 +1,67 @@
+{
+  "family_version": "BLACKOUT_FAMILY_V1",
+  "frozen_at": "2026-10-10T16:05:25.618410+00:00",
+  "note": "Predeclared before forward economic outcomes (\u00a729). B0 control; B1 event session; B2 +next; B3 two-session. Immutable: changes require a new family version.",
+  "rules": [
+    {
+      "rule_id": "B0",
+      "taxonomy_version": "EVENT_TAXONOMY_V1",
+      "eligible_event_types": [
+        "BOARD_MEETING",
+        "EARNINGS"
+      ],
+      "pre_event_sessions": 0,
+      "post_event_sessions": 0,
+      "severity_threshold": null,
+      "applies_to_entries": false,
+      "applies_to_exits": false,
+      "applies_to_existing_positions": false,
+      "version": "BLACKOUT_FAMILY_V1"
+    },
+    {
+      "rule_id": "B1",
+      "taxonomy_version": "EVENT_TAXONOMY_V1",
+      "eligible_event_types": [
+        "BOARD_MEETING",
+        "EARNINGS"
+      ],
+      "pre_event_sessions": 0,
+      "post_event_sessions": 0,
+      "severity_threshold": null,
+      "applies_to_entries": true,
+      "applies_to_exits": false,
+      "applies_to_existing_positions": false,
+      "version": "BLACKOUT_FAMILY_V1"
+    },
+    {
+      "rule_id": "B2",
+      "taxonomy_version": "EVENT_TAXONOMY_V1",
+      "eligible_event_types": [
+        "BOARD_MEETING",
+        "EARNINGS"
+      ],
+      "pre_event_sessions": 0,
+      "post_event_sessions": 1,
+      "severity_threshold": null,
+      "applies_to_entries": true,
+      "applies_to_exits": false,
+      "applies_to_existing_positions": false,
+      "version": "BLACKOUT_FAMILY_V1"
+    },
+    {
+      "rule_id": "B3",
+      "taxonomy_version": "EVENT_TAXONOMY_V1",
+      "eligible_event_types": [
+        "BOARD_MEETING",
+        "EARNINGS"
+      ],
+      "pre_event_sessions": 1,
+      "post_event_sessions": 1,
+      "severity_threshold": null,
+      "applies_to_entries": true,
+      "applies_to_exits": false,
+      "applies_to_existing_positions": false,
+      "version": "BLACKOUT_FAMILY_V1"
+    }
+  ]
+}

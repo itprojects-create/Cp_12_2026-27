@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-06T18:24:17.026554",
+  "batch_as_of": "2026-11-05T00:00:00+00:00",
+  "batch_cards": -1,
+  "batch_complete": false,
+  "paper": {
+    "skipped": true,
+    "reason": "batch incomplete by the deadline; the 21:00 catch-up picks it"
+  },
+  "export": {
+    "rc": 0,
+    "tail": "ts...\nCross-check OK: WIPRO.NS 2026-11-03 cached 198.0 == fetched 198.0\nCross-check OK: ADANIENT.NS 2026-11-05 cached 2733.300048828125 == fetched 2733.300048828125\n{\n  \"written\": \"D:\\\\Quant-Plus\\\\reports\\\\agentic-ai-week-results.xlsx\",\n  \"cards\": 317,\n  \"answerable\": 86,\n  \"with_interim_actuals\": 317,\n  \"priced_through\": \"2026-11-06\",\n  \"settled_rows\": 2,\n  \"scored_rows\": 1,\n  \"paper_picks\": 0\n}\n"
+  }
+}

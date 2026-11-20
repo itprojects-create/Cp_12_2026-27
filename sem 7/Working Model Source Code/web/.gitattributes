@@ -1,0 +1,12 @@
+deploy/free-tier/*.sh text eol=lf
+
+# These research snapshots are pinned by raw-byte SHA-256 in the release tests.
+backend-extension/quantplus_intelligence/research_v3/warehouse.py text eol=lf
+backend-extension/quantplus_intelligence/research_v3/lab/spec.py text eol=lf
+backend-extension/quantplus_intelligence/research_v3/lab/journal.py text eol=lf
+backend-extension/quantplus_intelligence/research_v3/quantlab/contracts.py text eol=lf
+backend-extension/quantplus_intelligence/research_v3/quantlab/features.py text eol=lf
+backend-extension/quantplus_intelligence/research_v3/quantlab/labeling.py text eol=lf
+backend-extension/quantplus_intelligence/research_v3/events_ai/contracts.py text eol=lf
+backend-extension/quantplus_intelligence/research_v3/events_ai/mercury_tools.py text eol=lf
+backend-extension/quantplus_intelligence/research_v3/events_ai/goldset/synthetic_v1.json text eol=lf

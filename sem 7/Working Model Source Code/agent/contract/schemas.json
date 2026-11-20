@@ -1,0 +1,839 @@
+{
+  "AnalystReport": {
+    "$defs": {
+      "Evidence": {
+        "properties": {
+          "source": {
+            "title": "Source",
+            "type": "string"
+          },
+          "ref": {
+            "title": "Ref",
+            "type": "string"
+          },
+          "available_at": {
+            "format": "date-time",
+            "title": "Available At",
+            "type": "string"
+          }
+        },
+        "required": [
+          "source",
+          "ref",
+          "available_at"
+        ],
+        "title": "Evidence",
+        "type": "object"
+      },
+      "Signal": {
+        "properties": {
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "value": {
+            "title": "Value",
+            "type": "number"
+          },
+          "direction": {
+            "pattern": "^(bullish|bearish|neutral)$",
+            "title": "Direction",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "value",
+          "direction"
+        ],
+        "title": "Signal",
+        "type": "object"
+      }
+    },
+    "properties": {
+      "agent": {
+        "title": "Agent",
+        "type": "string"
+      },
+      "summary": {
+        "maxLength": 2000,
+        "minLength": 10,
+        "title": "Summary",
+        "type": "string"
+      },
+      "signals": {
+        "items": {
+          "$ref": "#/components/schemas/Signal"
+        },
+        "title": "Signals",
+        "type": "array"
+      },
+      "confidence": {
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "title": "Confidence",
+        "type": "number"
+      },
+      "evidence": {
+        "items": {
+          "$ref": "#/components/schemas/Evidence"
+        },
+        "title": "Evidence",
+        "type": "array"
+      }
+    },
+    "required": [
+      "agent",
+      "summary",
+      "confidence"
+    ],
+    "title": "AnalystReport",
+    "type": "object"
+  },
+  "ArenaEvent": {
+    "properties": {
+      "seq": {
+        "title": "Seq",
+        "type": "integer"
+      },
+      "ts": {
+        "title": "Ts",
+        "type": "string"
+      },
+      "variant_id": {
+        "title": "Variant Id",
+        "type": "string"
+      },
+      "event": {
+        "title": "Event",
+        "type": "string"
+      },
+      "detail": {
+        "default": "",
+        "title": "Detail",
+        "type": "string"
+      }
+    },
+    "required": [
+      "seq",
+      "ts",
+      "variant_id",
+      "event"
+    ],
+    "title": "ArenaEvent",
+    "type": "object"
+  },
+  "ArenaState": {
+    "$defs": {
+      "ArenaVariant": {
+        "properties": {
+          "id": {
+            "title": "Id",
+            "type": "string"
+          },
+          "name": {
+            "title": "Name",
+            "type": "string"
+          },
+          "status": {
+            "title": "Status",
+            "type": "string"
+          },
+          "strikes": {
+            "title": "Strikes",
+            "type": "integer"
+          },
+          "probation": {
+            "title": "Probation",
+            "type": "boolean"
+          },
+          "parent_id": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "default": null,
+            "title": "Parent Id"
+          },
+          "genome": {
+            "additionalProperties": true,
+            "title": "Genome",
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "status",
+          "strikes",
+          "probation",
+          "genome"
+        ],
+        "title": "ArenaVariant",
+        "type": "object"
+      }
+    },
+    "properties": {
+      "living": {
+        "items": {
+          "$ref": "#/components/schemas/ArenaVariant"
+        },
+        "title": "Living",
+        "type": "array"
+      },
+      "seed_bank": {
+        "items": {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        "title": "Seed Bank",
+        "type": "array"
+      },
+      "allocation": {
+        "additionalProperties": {
+          "type": "number"
+        },
+        "title": "Allocation",
+        "type": "object"
+      },
+      "cap": {
+        "title": "Cap",
+        "type": "integer"
+      },
+      "as_of": {
+        "title": "As Of",
+        "type": "string"
+      }
+    },
+    "required": [
+      "living",
+      "seed_bank",
+      "allocation",
+      "cap",
+      "as_of"
+    ],
+    "title": "ArenaState",
+    "type": "object"
+  },
+  "ArenaVariant": {
+    "properties": {
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "name": {
+        "title": "Name",
+        "type": "string"
+      },
+      "status": {
+        "title": "Status",
+        "type": "string"
+      },
+      "strikes": {
+        "title": "Strikes",
+        "type": "integer"
+      },
+      "probation": {
+        "title": "Probation",
+        "type": "boolean"
+      },
+      "parent_id": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Parent Id"
+      },
+      "genome": {
+        "additionalProperties": true,
+        "title": "Genome",
+        "type": "object"
+      }
+    },
+    "required": [
+      "id",
+      "name",
+      "status",
+      "strikes",
+      "probation",
+      "genome"
+    ],
+    "title": "ArenaVariant",
+    "type": "object"
+  },
+  "Challenge": {
+    "$defs": {
+      "ThesisStatus": {
+        "enum": [
+          "HEALTHY",
+          "WEAKENED",
+          "BROKEN"
+        ],
+        "title": "ThesisStatus",
+        "type": "string"
+      }
+    },
+    "properties": {
+      "status": {
+        "$ref": "#/components/schemas/ThesisStatus"
+      },
+      "core_claim_restated": {
+        "maxLength": 500,
+        "minLength": 10,
+        "title": "Core Claim Restated",
+        "type": "string"
+      },
+      "new_evidence_considered": {
+        "items": {
+          "type": "string"
+        },
+        "title": "New Evidence Considered",
+        "type": "array"
+      },
+      "duplicate_risks_discarded": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Duplicate Risks Discarded",
+        "type": "array"
+      },
+      "direction_symmetry_check_passed": {
+        "title": "Direction Symmetry Check Passed",
+        "type": "boolean"
+      },
+      "raw_override_applied": {
+        "default": false,
+        "title": "Raw Override Applied",
+        "type": "boolean"
+      },
+      "reasons": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Reasons",
+        "type": "array"
+      }
+    },
+    "required": [
+      "status",
+      "core_claim_restated",
+      "direction_symmetry_check_passed"
+    ],
+    "title": "Challenge",
+    "type": "object"
+  },
+  "ControlRequest": {
+    "properties": {
+      "engage": {
+        "title": "Engage",
+        "type": "boolean"
+      },
+      "reason": {
+        "default": "",
+        "title": "Reason",
+        "type": "string"
+      }
+    },
+    "required": [
+      "engage"
+    ],
+    "title": "ControlRequest",
+    "type": "object"
+  },
+  "DebateTurn": {
+    "properties": {
+      "stance": {
+        "pattern": "^(long|short)$",
+        "title": "Stance",
+        "type": "string"
+      },
+      "argument": {
+        "maxLength": 2000,
+        "minLength": 10,
+        "title": "Argument",
+        "type": "string"
+      },
+      "rebuttal_to": {
+        "default": "",
+        "title": "Rebuttal To",
+        "type": "string"
+      },
+      "confidence_delta": {
+        "maximum": 1.0,
+        "minimum": -1.0,
+        "title": "Confidence Delta",
+        "type": "number"
+      }
+    },
+    "required": [
+      "stance",
+      "argument",
+      "confidence_delta"
+    ],
+    "title": "DebateTurn",
+    "type": "object"
+  },
+  "Evidence": {
+    "properties": {
+      "source": {
+        "title": "Source",
+        "type": "string"
+      },
+      "ref": {
+        "title": "Ref",
+        "type": "string"
+      },
+      "available_at": {
+        "format": "date-time",
+        "title": "Available At",
+        "type": "string"
+      }
+    },
+    "required": [
+      "source",
+      "ref",
+      "available_at"
+    ],
+    "title": "Evidence",
+    "type": "object"
+  },
+  "FinalDecision": {
+    "properties": {
+      "action": {
+        "pattern": "^(buy|sell|hold)$",
+        "title": "Action",
+        "type": "string"
+      },
+      "size": {
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "title": "Size",
+        "type": "number"
+      },
+      "rationale": {
+        "maxLength": 2000,
+        "minLength": 10,
+        "title": "Rationale",
+        "type": "string"
+      },
+      "thesis_version": {
+        "minimum": 1,
+        "title": "Thesis Version",
+        "type": "integer"
+      },
+      "authority": {
+        "default": "RESEARCH_ONLY",
+        "pattern": "^RESEARCH_ONLY$",
+        "title": "Authority",
+        "type": "string"
+      },
+      "cannot_create_position": {
+        "default": true,
+        "title": "Cannot Create Position",
+        "type": "boolean"
+      },
+      "cannot_reverse_position": {
+        "default": true,
+        "title": "Cannot Reverse Position",
+        "type": "boolean"
+      },
+      "cannot_increase_exposure": {
+        "default": true,
+        "title": "Cannot Increase Exposure",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "action",
+      "size",
+      "rationale",
+      "thesis_version"
+    ],
+    "title": "FinalDecision",
+    "type": "object"
+  },
+  "KillSwitchState": {
+    "properties": {
+      "engaged": {
+        "title": "Engaged",
+        "type": "boolean"
+      },
+      "reason": {
+        "default": "",
+        "title": "Reason",
+        "type": "string"
+      },
+      "updated_ts": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Updated Ts"
+      }
+    },
+    "required": [
+      "engaged"
+    ],
+    "title": "KillSwitchState",
+    "type": "object"
+  },
+  "RawExhaustionSignals": {
+    "description": "Typed Devil input (Part A): raw numeric exhaustion facts, NOT analyst narrative.\n\nSourced from the same exhaustion_features() dict computed for the Technical\nAnalyst and passed through session checkpoints \u2014 never recomputed downstream,\nso the Devil evaluates exactly what the Technical saw.",
+    "properties": {
+      "flush_flag": {
+        "title": "Flush Flag",
+        "type": "boolean"
+      },
+      "blowoff_flag": {
+        "title": "Blowoff Flag",
+        "type": "boolean"
+      },
+      "ret_5d_pct": {
+        "title": "Ret 5D Pct",
+        "type": "number"
+      },
+      "dist_from_20d_low_pct": {
+        "title": "Dist From 20D Low Pct",
+        "type": "number"
+      },
+      "dist_from_20d_high_pct": {
+        "title": "Dist From 20D High Pct",
+        "type": "number"
+      }
+    },
+    "required": [
+      "flush_flag",
+      "blowoff_flag",
+      "ret_5d_pct",
+      "dist_from_20d_low_pct",
+      "dist_from_20d_high_pct"
+    ],
+    "title": "RawExhaustionSignals",
+    "type": "object"
+  },
+  "RiskVerdict": {
+    "properties": {
+      "approve": {
+        "title": "Approve",
+        "type": "boolean"
+      },
+      "adjusted_size": {
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "title": "Adjusted Size",
+        "type": "number"
+      },
+      "notes": {
+        "default": "",
+        "maxLength": 2000,
+        "title": "Notes",
+        "type": "string"
+      }
+    },
+    "required": [
+      "approve",
+      "adjusted_size"
+    ],
+    "title": "RiskVerdict",
+    "type": "object"
+  },
+  "SessionRequest": {
+    "properties": {
+      "instrument": {
+        "examples": [
+          "RELIANCE.NS"
+        ],
+        "title": "Instrument",
+        "type": "string"
+      },
+      "as_of": {
+        "format": "date-time",
+        "title": "As Of",
+        "type": "string"
+      },
+      "interval": {
+        "default": "1d",
+        "pattern": "^(1d|60m|15m)$",
+        "title": "Interval",
+        "type": "string"
+      },
+      "force_rerun": {
+        "default": false,
+        "title": "Force Rerun",
+        "type": "boolean"
+      },
+      "portfolio": {
+        "anyOf": [
+          {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null,
+        "title": "Portfolio"
+      },
+      "manager_mode": {
+        "default": "frozen",
+        "pattern": "^(frozen|retry)$",
+        "title": "Manager Mode",
+        "type": "string"
+      }
+    },
+    "required": [
+      "instrument",
+      "as_of"
+    ],
+    "title": "SessionRequest",
+    "type": "object"
+  },
+  "SessionStatus": {
+    "$defs": {
+      "FinalDecision": {
+        "properties": {
+          "action": {
+            "pattern": "^(buy|sell|hold)$",
+            "title": "Action",
+            "type": "string"
+          },
+          "size": {
+            "maximum": 1.0,
+            "minimum": 0.0,
+            "title": "Size",
+            "type": "number"
+          },
+          "rationale": {
+            "maxLength": 2000,
+            "minLength": 10,
+            "title": "Rationale",
+            "type": "string"
+          },
+          "thesis_version": {
+            "minimum": 1,
+            "title": "Thesis Version",
+            "type": "integer"
+          },
+          "authority": {
+            "default": "RESEARCH_ONLY",
+            "pattern": "^RESEARCH_ONLY$",
+            "title": "Authority",
+            "type": "string"
+          },
+          "cannot_create_position": {
+            "default": true,
+            "title": "Cannot Create Position",
+            "type": "boolean"
+          },
+          "cannot_reverse_position": {
+            "default": true,
+            "title": "Cannot Reverse Position",
+            "type": "boolean"
+          },
+          "cannot_increase_exposure": {
+            "default": true,
+            "title": "Cannot Increase Exposure",
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "action",
+          "size",
+          "rationale",
+          "thesis_version"
+        ],
+        "title": "FinalDecision",
+        "type": "object"
+      }
+    },
+    "properties": {
+      "id": {
+        "title": "Id",
+        "type": "string"
+      },
+      "status": {
+        "title": "Status",
+        "type": "string"
+      },
+      "decision": {
+        "anyOf": [
+          {
+            "$ref": "#/components/schemas/FinalDecision"
+          },
+          {
+            "type": "null"
+          }
+        ],
+        "default": null
+      }
+    },
+    "required": [
+      "id",
+      "status"
+    ],
+    "title": "SessionStatus",
+    "type": "object"
+  },
+  "Signal": {
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string"
+      },
+      "value": {
+        "title": "Value",
+        "type": "number"
+      },
+      "direction": {
+        "pattern": "^(bullish|bearish|neutral)$",
+        "title": "Direction",
+        "type": "string"
+      }
+    },
+    "required": [
+      "name",
+      "value",
+      "direction"
+    ],
+    "title": "Signal",
+    "type": "object"
+  },
+  "StageEvent": {
+    "properties": {
+      "stage": {
+        "title": "Stage",
+        "type": "string"
+      },
+      "agent": {
+        "title": "Agent",
+        "type": "string"
+      },
+      "status": {
+        "title": "Status",
+        "type": "string"
+      },
+      "output_ref": {
+        "default": "",
+        "title": "Output Ref",
+        "type": "string"
+      }
+    },
+    "required": [
+      "stage",
+      "agent",
+      "status"
+    ],
+    "title": "StageEvent",
+    "type": "object"
+  },
+  "Thesis": {
+    "$defs": {
+      "MechanismType": {
+        "enum": [
+          "MOMENTUM_CONTINUATION",
+          "MEAN_REVERSION",
+          "EVENT_DRIVEN",
+          "OTHER"
+        ],
+        "title": "MechanismType",
+        "type": "string"
+      }
+    },
+    "properties": {
+      "direction": {
+        "pattern": "^(long|short|flat)$",
+        "title": "Direction",
+        "type": "string"
+      },
+      "conviction": {
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "title": "Conviction",
+        "type": "number"
+      },
+      "key_evidence": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Key Evidence",
+        "type": "array"
+      },
+      "key_risks": {
+        "items": {
+          "type": "string"
+        },
+        "title": "Key Risks",
+        "type": "array"
+      },
+      "mechanism_type": {
+        "$ref": "#/components/schemas/MechanismType",
+        "default": "OTHER"
+      }
+    },
+    "required": [
+      "direction",
+      "conviction"
+    ],
+    "title": "Thesis",
+    "type": "object"
+  },
+  "TradeProposal": {
+    "properties": {
+      "instrument": {
+        "title": "Instrument",
+        "type": "string"
+      },
+      "direction": {
+        "pattern": "^(long|short|flat)$",
+        "title": "Direction",
+        "type": "string"
+      },
+      "size_pct": {
+        "maximum": 1.0,
+        "minimum": 0.0,
+        "title": "Size Pct",
+        "type": "number"
+      },
+      "entry": {
+        "exclusiveMinimum": 0,
+        "title": "Entry",
+        "type": "number"
+      },
+      "stop": {
+        "exclusiveMinimum": 0,
+        "title": "Stop",
+        "type": "number"
+      },
+      "target": {
+        "exclusiveMinimum": 0,
+        "title": "Target",
+        "type": "number"
+      }
+    },
+    "required": [
+      "instrument",
+      "direction",
+      "size_pct",
+      "entry",
+      "stop",
+      "target"
+    ],
+    "title": "TradeProposal",
+    "type": "object"
+  }
+}

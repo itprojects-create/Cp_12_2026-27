@@ -1,0 +1,46 @@
+{
+  "experiment_id": "event_blackout_v1",
+  "evidence_class": "RISK_CONTROL",
+  "created_at": "2026-10-10T16:07:30.929250+00:00",
+  "freeze_at": "2026-10-10T16:07:30.929250+00:00",
+  "control": "v4_core (champion F1-v4-as-shipped, no blackout)",
+  "candidate_family": [
+    "B0",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "taxonomy_version": "EVENT_TAXONOMY_V1",
+  "blackout_family_version": "BLACKOUT_FAMILY_V1",
+  "normalizer_version": "NORM_V1",
+  "ingestor_version": "INGEST_V1",
+  "classifier_version": "classifier-v1",
+  "primary_metrics": [
+    "event_gap_loss",
+    "cvar95",
+    "max_drawdown"
+  ],
+  "secondary_metrics": [
+    "cagr",
+    "sharpe",
+    "missed_upside",
+    "turnover"
+  ],
+  "minimum_forward_evidence": {
+    "eligible_events": 30,
+    "companies": 10,
+    "event_days": 20
+  },
+  "promotion_gate_version": "RISK_GATESET_V1 (defined P4, frozen before outcomes)",
+  "membership_source_version": "75ebfac3b5d1fb22",
+  "data_registry_version": "registry-v1 (defined P7)",
+  "forward_start": "2026-10-10T16:07:30.929250+00:00",
+  "forward_start_note": "max(freeze, feed start [no live feed yet -> freeze], classifier freeze)",
+  "capital": "unit equity (return-space; same for all arms)",
+  "universe": "forward PIT members at each rebalance",
+  "risk_caps": "frozen v4 caps (gross/sector/vol/turnover)",
+  "cost_model": "env-v1 + 0.21pct roundtrip",
+  "rebalance_schedule": "every 5 daily bars",
+  "strategy_version": "v4 core (frozen)",
+  "status": "FROZEN_BEFORE_OUTCOMES"
+}

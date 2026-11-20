@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-11-12T07:22:36.184149+00:00",
+  "production_ledger": {
+    "path": "D:\\QP\\agent-service\\data\\forecast_ledger.sqlite3",
+    "bytes": 1798144,
+    "sha256": "3f6e84c56b4e49ce0373cc705506f721f815fed7d7e7dd92deb667557d69b8e0"
+  },
+  "backup": {
+    "path": "D:\\Quant-Plus\\reports\\alpha_v3_1\\backups\\forecast_ledger_w0_backup.sqlite3",
+    "bytes": 1798144,
+    "sha256": "f5b21ed78ce48770feb9aca8a42163de1e5f1183910f1a1cfb1218bf8e6288ab"
+  },
+  "chain": {
+    "valid": true,
+    "checked": 608,
+    "head": "fc7cea45cb0d81a2ea5b281e3adc26f6ecb1c515218336d47d01c78430d5fc67",
+    "broken_at": null
+  },
+  "inventory": {
+    "total_cards": 608,
+    "settled_rows": 152,
+    "abstained": 116,
+    "scored": 36,
+    "unsettled": 456,
+    "by_horizon": {
+      "5": 305,
+      "20": 303
+    },
+    "abstained_by_horizon": {
+      "5": 232,
+      "20": 233
+    }
+  },
+  "artifact_hashes": {
+    "prod_forecast_ledger": "3f6e84c56b4e49ce0373cc705506f721f815fed7d7e7dd92deb667557d69b8e0",
+    "prod_paper_pnl_jsonl": "efc699883ec27d44d3edc0ffe1d24738a4d2dee31334fe9d6a345fd574d2e4e6",
+    "prod_ledger_heads_jsonl": "666b7c90b77316f736a3567458fcd6e4655394b4c6fa0e0ea4c33d712dd75a01",
+    "prod_bridge_reports": [
+      "df25025bed35e1d9bf089670992229f4ab5746f5622e98b8db8ea607fe35b76d",
+      "48eee78a95928125d89670f0eeb77abfd3c4738daeb16afadd0f5a806054db5a"
+    ],
+    "prod_schedule_logs": {
+      "schedule_catchup.log": "2461760a5ee4db65fef0404f13159c2d1f4daac9a16f54799ecbadc593230599",
+      "schedule_daily.log": "67d9d644c2bd7300d07d3a1ba6951901554d763c1e3ae5952f1de9812626f54a",
+      "schedule_settle.log": "9fe91f10bfa5c703754bcab46722672f02526be20e2690061d98f1dcfac83790",
+      "schedule_tournament.log": "f152311ad607717a55a8c8d4f3a8ca81ba63767d91ce4de21d23d8ca9cbed01d"
+    }
+  },
+  "quarantine_note": "oracle_tainted_*_DO_NOT_USE.json remain quarantined (DO_NOT_USE); not touched.",
+  "claim": "pre-change baseline: chain valid, counts recorded; no mutation performed"
+}

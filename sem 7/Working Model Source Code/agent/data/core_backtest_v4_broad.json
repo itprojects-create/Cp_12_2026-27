@@ -1,0 +1,76 @@
+{
+  "frozen_rule": "app/core/trend_core_v4.py (prereg data/prereg_core_v4.md, one run)",
+  "universe": "broad",
+  "n_days": 1420,
+  "n_names": 387,
+  "n_excluded": 108,
+  "excluded_sample": [
+    "AADHARHFC.NS",
+    "ABDL.NS",
+    "ABSLAMC.NS",
+    "ACMESOLAR.NS",
+    "ACUTAAS.NS",
+    "AEGISVOPAK.NS",
+    "AETHER.NS",
+    "AFCONS.NS",
+    "AIIL.NS",
+    "AMBER.NS",
+    "ANANDRATHI.NS",
+    "ANTHEM.NS",
+    "APTUS.NS",
+    "ASHOKLEY.NS",
+    "ATHERENERG.NS",
+    "AWL.NS",
+    "AZAD.NS",
+    "BAJAJHFL.NS",
+    "BELRISE.NS",
+    "BHARATCOAL.NS",
+    "BHARTIHEXA.NS",
+    "CANHLIFE.NS",
+    "CARTRADE.NS",
+    "CHOICEIN.NS",
+    "CLEANMAX.NS",
+    "CMPDI.NS",
+    "CONCORDBIO.NS",
+    "CPPLUS.NS",
+    "DATAPATTNS.NS",
+    "DELHIVERY.NS"
+  ],
+  "total_return": 1.6254,
+  "cagr": 0.1868,
+  "ann_vol": 0.1182,
+  "sharpe": 1.509,
+  "max_drawdown": 0.1539,
+  "total_cost": 0.04313,
+  "avg_exposure": 0.5007,
+  "n_switches": 1801,
+  "yearly": {
+    "2021": {
+      "ret": 0.2323,
+      "intra_yr_dd": -0.2413
+    },
+    "2022": {
+      "ret": 0.0903,
+      "intra_yr_dd": -0.224
+    },
+    "2023": {
+      "ret": 0.5649,
+      "intra_yr_dd": -0.3851
+    },
+    "2024": {
+      "ret": 0.1619,
+      "intra_yr_dd": -0.1668
+    },
+    "2025": {
+      "ret": 0.0549,
+      "intra_yr_dd": -0.091
+    },
+    "2026": {
+      "ret": 0.0189,
+      "intra_yr_dd": -0.0486
+    }
+  },
+  "bench_cagr_corrected": 0.3567,
+  "bench_note": "corrected math (mean of total returns); v2/v3 bench numbers keep old formula",
+  "generated_at": "2026-10-06T16:14:40.076111+00:00"
+}

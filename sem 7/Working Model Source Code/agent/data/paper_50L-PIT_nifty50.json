@@ -1,0 +1,76 @@
+{
+  "rule": "frozen v4 + baked veto + per-rebalance PIT membership (CORRECTNESS_REISSUE \u2014 same rule, bias-corrected universe)",
+  "universe": "nifty50",
+  "capital": 5000000.0,
+  "n_names": 36,
+  "n_excluded": 1,
+  "initial": 5000000.0,
+  "final": 6611706.02,
+  "profit": 1611706.02,
+  "profit_pct": 32.23,
+  "cagr_pct": 5.08,
+  "max_drawdown_pct": 12.72,
+  "costs_rupees": 222099.14,
+  "cash_leftover": 6611706.02,
+  "n_holdings_end": 0,
+  "yearly": {
+    "2021": {
+      "start": 5000000.0,
+      "end": 5687235.94,
+      "pnl": 687235.94
+    },
+    "2022": {
+      "start": 5687235.94,
+      "end": 5319410.72,
+      "pnl": -367825.23
+    },
+    "2023": {
+      "start": 5319410.72,
+      "end": 6068048.64,
+      "pnl": 748637.92
+    },
+    "2024": {
+      "start": 6068048.64,
+      "end": 6412877.17,
+      "pnl": 344828.54
+    },
+    "2025": {
+      "start": 6412877.17,
+      "end": 6725869.17,
+      "pnl": 312992.0
+    },
+    "2026": {
+      "start": 6725869.17,
+      "end": 6611706.02,
+      "pnl": -114163.15
+    }
+  },
+  "top_holdings_end": [],
+  "approx_note": "adjusted closes; integer shares; split-timing effects approx",
+  "generated_at": "2026-10-10T17:19:04.055005+00:00",
+  "decision_audit": {
+    "n_rebalances": 284,
+    "n_rebalances_with_trades": 223,
+    "n_trades": 4000,
+    "n_buys": 2020,
+    "n_sells": 1980,
+    "total_veto_blocks": 9,
+    "total_stressed_blocks": 99,
+    "rebalance_cost_check": 222099.08
+  },
+  "decisions_file": "data\\paper_50L-PIT_nifty50_decisions.json",
+  "pit_reissue": {
+    "mode": "CORRECTNESS_REISSUE (not a new strategy)",
+    "universe_id": "nifty50",
+    "strict": false,
+    "note": "non-strict with disclosure (Amendment-1: strict degenerates)",
+    "membership_source_version": "75ebfac3b5d1fb22",
+    "n_frozen_unknown": 0,
+    "pit_status_counts": {
+      "PARTIAL": 284
+    },
+    "first_hash": "9aee8749648d4275",
+    "last_hash": "1a24b369ff57c173"
+  },
+  "pit_log_file": "data\\paper_50L-PIT_nifty50_pitlog.json"
+}

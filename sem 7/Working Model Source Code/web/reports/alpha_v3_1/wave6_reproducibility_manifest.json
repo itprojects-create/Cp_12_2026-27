@@ -1,0 +1,276 @@
+{
+  "authority": "RESEARCH_ONLY_PAPER_ONLY_NO_LIVE_BROKER_SURFACE",
+  "code_and_tests": {
+    "quantplus_intelligence/research_v3/forward/__init__.py": "7e0ca9d8b7f63e926566f666c321751a25f268dd330341f1e641e16f70685ce5",
+    "quantplus_intelligence/research_v3/forward/benchmarks.py": "bbbad3efa99832dfbbc4fdfb06cf2431ca8a482a567bcd274fdd2bce373ae0c1",
+    "quantplus_intelligence/research_v3/forward/contracts.py": "2b8a666d304c6e2d78d535f426c6c9a6f4f33e8a1556defceb18c210defddb6f",
+    "quantplus_intelligence/research_v3/forward/fee_sources.py": "39ad496ea664026064da7d58c9d9a181ad95ca1b8fd04146768e626158299012",
+    "quantplus_intelligence/research_v3/forward/ledger.py": "fb45f70de0589dd5c774f59bdb9e54dd0af7f249f72abba8c440a5d7c57c30cc",
+    "quantplus_intelligence/research_v3/forward/paper_book.py": "7c9c57316f3b16b2ca422f689dc79459508718a1c435e9eb5106b4eacc9b2ffc",
+    "quantplus_intelligence/research_v3/forward/preregistration.py": "35d6db5216898734890a02e81ededeb0ca394ae2d53e064675c098705cbff186",
+    "quantplus_intelligence/research_v3/forward/signals.py": "46fede0bd4b941795decc136570eba863f21b3c514d3571830c662b7fbaf8121",
+    "quantplus_intelligence/research_v3/forward/worker.py": "484d0a13678877813a732fc785522648fadfdaf33a7e47966d7b6832dbba7ca6",
+    "quantplus_intelligence/research_v3/wave6.py": "ab777725e0aee5d9d13e261eab6ae151a870cd6761cb1031f1507e832df28f17",
+    "scripts/wave6_generate_artifacts.py": "21a38cceee38d7ab0298b9af1a685660116f17b97ac8376252691be789d8f384",
+    "scripts/wave6_offline_pytest_plugin.py": "42a51c81e5f147c3c62368f5aff2d601cdad2233216b7bd3431017848c99bf23",
+    "scripts/wave6_verify_controls.py": "2bcb4d668ddaa6a5c906aa99af68c1beb63df46fe5e713b8b2e9093ae10e114f",
+    "scripts/wave6_verify_manifest.py": "e127719644493ee2c43ec043a71c927de4a10155a6e58c59633e4116a010642c",
+    "scripts/wave6_worker_service.py": "6faa3197230d64281e47fe3f558d05ba6f0985511c51f8df395684e734c939c6",
+    "tests/test_research_v3_wave6.py": "88e682b4fb5c29ddae18bf029acf11aadb62b2684d763b8449badee9a834c79c"
+  },
+  "determinism": {
+    "comparison_evidence": {
+      "all_artifact_hashes_identical": true,
+      "comparison_evidence_path": "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w6_two_run_comparison.json",
+      "comparison_evidence_sha256": "d6fd46a5977637d6a9fa3e4f1985dbf521bfd53154fe5cd2524ea296d1f487b4",
+      "files_each": 17,
+      "note": "two clean same-input complete pack generations; final proof is independently repeated after manifest metadata update",
+      "runs": 2,
+      "semantic_ids_identical": true
+    },
+    "complete_fixture_runs": 2,
+    "real_timestamps_are_explicit_inputs_not_test-clock_substitutions": true,
+    "semantic_ids_and_artifact_hashes_identical": true
+  },
+  "evidence_time": "2026-11-14T16:42:00+00:00",
+  "external_network_in_default_tests": false,
+  "frontend_authoritative_adapter": {
+    "package.json": "afd52b274bfc31be315d646379e5345a77fabb851e05c655a4c297d2d864c5ab",
+    "src/lib/paper-book/commands.ts": "c30fca6d71171f36360a87d578c2e350b9296bb3121b73969f6dde9fd798c11e",
+    "src/lib/paper-book/engine.ts": "f0bbc1de7940bfa38d35ce5ac575b37ff91e780d3eef0d57d5c809c7ddfc9374",
+    "src/lib/paper-book/types.ts": "2c385d2dffa1aef53807fc0dec238fdb5316646390245224fc817a32c96cab6a",
+    "src/lib/paper-fees.ts": "d185b6346777719496f405111997d7a3e5404a6c6f109989fa3b2cf4947a44dd",
+    "src/lib/research-forward-paper.test.ts": "196f5470323f11ef5c96a95584c09e0aabba5c73bd33b791c3dd5adab822deab",
+    "src/lib/research-forward-paper.ts": "c82f71e40f5e124112dd756d8f039be8cb3357210acdaa4a2402954b3a8565d2"
+  },
+  "frozen_controls": {
+    "w3_feature_hash": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+    "w3_label_hash": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e"
+  },
+  "intentional_repo_differences": [
+    "TypeScript existing-book adapter exists only in the development/frontend repo",
+    "wave6_generate_artifacts.py is development-run; service-safe copies of runtime/test verifiers are pinned"
+  ],
+  "manifest_payload_sha256": "c98dd24eab4d0bf63df3df4846a0e70dd4fce95d1551a06fc6116ecb46ecda2e",
+  "manifest_version": "wave6_reproducibility_manifest/1",
+  "preexisting_partial_w6_code_before_handoff": [
+    {
+      "bytes": 1661,
+      "last_write_utc": "2026-11-14T14:04:54.0980341Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/forward/__init__.py",
+      "sha256": "bf089ce0349704a7117037a77729b6a570eb3654388332ee264c4ca1a50a4fc7"
+    },
+    {
+      "bytes": 12088,
+      "last_write_utc": "2026-11-14T14:03:16.5671380Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/forward/benchmarks.py",
+      "sha256": "0268db2fea6ad40dee39c51cdf56dfa7ca89e0b04996e240999d60c740e92974"
+    },
+    {
+      "bytes": 27833,
+      "last_write_utc": "2026-11-14T13:59:47.6739792Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/forward/contracts.py",
+      "sha256": "5728101b713ace6a43f2b5ae0c293e94e88f6326227f5e30af30b3c9278a7add"
+    },
+    {
+      "bytes": 7283,
+      "last_write_utc": "2026-11-14T14:01:01.6844667Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/forward/fee_sources.py",
+      "sha256": "32a93fbca76dbb27f12f2395d81d9fb2937e0bce7d2cf9e5318214e83a6bcf00"
+    },
+    {
+      "bytes": 8626,
+      "last_write_utc": "2026-11-14T13:50:27.4897604Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/forward/ledger.py",
+      "sha256": "0514e8530c4c7faa5a9fa2c675c290d40a5fcde53412729f85db3e46609d6a72"
+    },
+    {
+      "bytes": 41218,
+      "last_write_utc": "2026-11-14T14:02:04.7852265Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/forward/paper_book.py",
+      "sha256": "cb1a301f284cf017ab24678843771c85fca405caec8c079fb9f2b9d82e884891"
+    },
+    {
+      "bytes": 12410,
+      "last_write_utc": "2026-11-14T13:52:24.0241448Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/forward/preregistration.py",
+      "sha256": "5557de7c33c4880ae50943734f3d00b1b17ad20cff982ee7a83252214ffab1b2"
+    },
+    {
+      "bytes": 7315,
+      "last_write_utc": "2026-11-14T14:02:30.7476357Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/forward/signals.py",
+      "sha256": "660be2653ac8e61f805b95bcac9931501c1ba4c1777269aa23af7fc9a5133747"
+    },
+    {
+      "bytes": 13861,
+      "last_write_utc": "2026-11-14T14:04:04.5632239Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/forward/worker.py",
+      "sha256": "12383cce0389596d12b04639ceb3a2600778a4250837d17ac757936ccd6d02c3"
+    },
+    {
+      "bytes": 3755,
+      "last_write_utc": "2026-11-14T14:04:31.9044578Z",
+      "path": "backend-extension/quantplus_intelligence/research_v3/wave6.py",
+      "sha256": "dd656a72b32f07b90b2f4eace0c4de687663bc9f0e47a9ec4bce6fac23b8d6be"
+    }
+  ],
+  "provider_calls": {
+    "jev": 0,
+    "mercury": 0,
+    "other_model": 0,
+    "public_document_requests": 6
+  },
+  "report_artifacts": {
+    "wave6_acceptance_report.md": "36684ebf63b058f87985963ddc5f24b116c4bd7f27f0521db3517df2e4dcd587",
+    "wave6_engineering_fixture_ledger.jsonl": "d47f77a70b9b499dca3fde5520f2954307cf382b72755c28e42f26e8e62a5ae9",
+    "wave6_execution_contract_and_fee_reconciliation.json": "3e63821b0bd50994c4b7df8a473dd699b9ba2996e0d8af2efd73bfe475ea102f",
+    "wave6_execution_contract_and_fee_reconciliation.md": "e269eecdf21f8b2eb43a679725e64da04a51d0407d341b1bff806b92e40c19a0",
+    "wave6_forward_data_and_rights.md": "33ccc0a575ecc4f2cfe6dada1d71e8f73a07e066250a2ec4127ee2c9b71bde51",
+    "wave6_job_receipts.jsonl": "bff75ee1920a03249d6ede9583f28d872d2d7294165afbe61a5be9738797d164",
+    "wave6_paper_nav_and_benchmark.json": "5c8ba042ef9cdf9b002effcdcf1e1e4bc740334db231fee44910ee027db3c9c2",
+    "wave6_paper_nav_and_benchmark.md": "559a1fde764062a498dde6c2166460de98bd84dae349ce0d06042cd478337b6b",
+    "wave6_preflight_and_hygiene.md": "2259e312445566e53430c2b571569fc9a75da5763c3d73af8b787d5c8de23da3",
+    "wave6_preflight_git_status.json": "14443983c0e8577877a296b3d9692ee68c1867b67cb64b285be6b6bbe02665c7",
+    "wave6_protocol_and_candidate_freeze.json": "fc9e5ab408f4efba96f197152ceb1c111e3a3b5f8b94023775305b586f115f6e",
+    "wave6_protocol_and_candidate_freeze.md": "ab7f7e8b7a044571218c7def203e0c158dbe392670aba6fad382eeb6709d3d13",
+    "wave6_regression_and_prod_failures.md": "840767d341346aecb78c898e2ffb81a013d6a12a70ba04a5918c77c9c1f08386",
+    "wave6_signal_and_paper_ledger.jsonl": "918013a014ac66ff753bbb50173ea9b09ad62109ce98f44111aba98e2fc90549",
+    "wave6_w0_w5_frozen_controls.json": "0ea641af2834bbc104293626fcf323f28074029f0f9c0dfa1796c0272cdca8ab",
+    "wave6_worker_resilience_and_alerts.md": "704b2b7b11acbd3db0bd9015f0e02b7e1db5bbca9aa88ea7f6dcfa0a552e7610",
+    "wave_acceptance_matrix.md": "daadaece09153c9ab976af959c240edd3e6d182359db8e03cdcfe28c5c7f6933"
+  },
+  "self_reference_convention": "This manifest hashes every W6 artifact except itself. Its canonical payload hash excludes manifest_payload_sha256. Post-hoc audit additions must mint a revision and are never represented as pre-sealed.",
+  "semantic_ids": {
+    "fixture_ledger_events": 21,
+    "fixture_ledger_head": "bd8bee4af4bb20270c346736007eb4b24d6b1222d8398387fb695048f7c99c58",
+    "fixture_stream": {
+      "event_hash": "392cad0c8daeeb2cebf04c70b5b2c6503db105f40e3cc96af58ca1b3a5a2860b",
+      "event_seq": 1,
+      "is_new_stream": true,
+      "protocol_hash": "b57d64cfc0380303b407ff4d7e336ca4b83b19084431edc41cf13483d0f1da97",
+      "sealed_at_ist": "2026-11-14T22:11:47.501213+05:30",
+      "sealed_at_utc": "2026-11-14T16:41:47.501213+00:00",
+      "stream_id": "w6-engineering-fixture-v1"
+    },
+    "job_receipt_ids": [
+      "70b5b8e3d9f3ad7ab6afba9025feb8dae241b72b3a009052c5ab5abb9929528d",
+      "c614442773af84fee36660357287666882ab9fd7673557e0652d18eab596f908",
+      "beccbbe3fd5b8e98d97b6b59e48614dc44d239df3e0ac464484b83fb9ffc8147"
+    ],
+    "prior_real_stream": {
+      "event_hash": "01c30828677752763d759b4bf36fa91e171206647ba27bce8bee3ced0b9ff3b0",
+      "event_seq": 1,
+      "is_new_stream": true,
+      "protocol_hash": "80a4e2ff5d25e9dea61ff8d5e6c8a197fa55a3480cf36d6f9638f7c580846c7b",
+      "sealed_at_ist": "2026-11-14T21:44:51.4288552+05:30",
+      "sealed_at_utc": "2026-11-14T16:14:51.4288552+00:00",
+      "stream_id": "w6-observed-null-no-trade-v1"
+    },
+    "real_ledger_events": 2,
+    "real_ledger_head": "9cbc0ea914fbbdc9f404ec8db53ef94a6989aedcf7d34279d5628dc014ab80bd",
+    "real_stream": {
+      "event_hash": "9cbc0ea914fbbdc9f404ec8db53ef94a6989aedcf7d34279d5628dc014ab80bd",
+      "event_seq": 2,
+      "is_new_stream": true,
+      "protocol_hash": "adc8b8e2a7a29fb77e07505d2355ab9dc8c3cb389a1357c8940103971538f23c",
+      "sealed_at_ist": "2026-11-14T22:11:46.5012139+05:30",
+      "sealed_at_utc": "2026-11-14T16:41:46.5012139+00:00",
+      "stream_id": "w6-observed-null-no-trade-v2"
+    }
+  },
+  "two_repo_sync": [
+    {
+      "byte_identical": true,
+      "development_sha256": "7e0ca9d8b7f63e926566f666c321751a25f268dd330341f1e641e16f70685ce5",
+      "production_sha256": "7e0ca9d8b7f63e926566f666c321751a25f268dd330341f1e641e16f70685ce5",
+      "relative_path": "quantplus_intelligence/research_v3/forward/__init__.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "bbbad3efa99832dfbbc4fdfb06cf2431ca8a482a567bcd274fdd2bce373ae0c1",
+      "production_sha256": "bbbad3efa99832dfbbc4fdfb06cf2431ca8a482a567bcd274fdd2bce373ae0c1",
+      "relative_path": "quantplus_intelligence/research_v3/forward/benchmarks.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "2b8a666d304c6e2d78d535f426c6c9a6f4f33e8a1556defceb18c210defddb6f",
+      "production_sha256": "2b8a666d304c6e2d78d535f426c6c9a6f4f33e8a1556defceb18c210defddb6f",
+      "relative_path": "quantplus_intelligence/research_v3/forward/contracts.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "39ad496ea664026064da7d58c9d9a181ad95ca1b8fd04146768e626158299012",
+      "production_sha256": "39ad496ea664026064da7d58c9d9a181ad95ca1b8fd04146768e626158299012",
+      "relative_path": "quantplus_intelligence/research_v3/forward/fee_sources.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "fb45f70de0589dd5c774f59bdb9e54dd0af7f249f72abba8c440a5d7c57c30cc",
+      "production_sha256": "fb45f70de0589dd5c774f59bdb9e54dd0af7f249f72abba8c440a5d7c57c30cc",
+      "relative_path": "quantplus_intelligence/research_v3/forward/ledger.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "7c9c57316f3b16b2ca422f689dc79459508718a1c435e9eb5106b4eacc9b2ffc",
+      "production_sha256": "7c9c57316f3b16b2ca422f689dc79459508718a1c435e9eb5106b4eacc9b2ffc",
+      "relative_path": "quantplus_intelligence/research_v3/forward/paper_book.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "35d6db5216898734890a02e81ededeb0ca394ae2d53e064675c098705cbff186",
+      "production_sha256": "35d6db5216898734890a02e81ededeb0ca394ae2d53e064675c098705cbff186",
+      "relative_path": "quantplus_intelligence/research_v3/forward/preregistration.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "46fede0bd4b941795decc136570eba863f21b3c514d3571830c662b7fbaf8121",
+      "production_sha256": "46fede0bd4b941795decc136570eba863f21b3c514d3571830c662b7fbaf8121",
+      "relative_path": "quantplus_intelligence/research_v3/forward/signals.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "484d0a13678877813a732fc785522648fadfdaf33a7e47966d7b6832dbba7ca6",
+      "production_sha256": "484d0a13678877813a732fc785522648fadfdaf33a7e47966d7b6832dbba7ca6",
+      "relative_path": "quantplus_intelligence/research_v3/forward/worker.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "ab777725e0aee5d9d13e261eab6ae151a870cd6761cb1031f1507e832df28f17",
+      "production_sha256": "ab777725e0aee5d9d13e261eab6ae151a870cd6761cb1031f1507e832df28f17",
+      "relative_path": "quantplus_intelligence/research_v3/wave6.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "42a51c81e5f147c3c62368f5aff2d601cdad2233216b7bd3431017848c99bf23",
+      "production_sha256": "42a51c81e5f147c3c62368f5aff2d601cdad2233216b7bd3431017848c99bf23",
+      "relative_path": "scripts/wave6_offline_pytest_plugin.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "2bcb4d668ddaa6a5c906aa99af68c1beb63df46fe5e713b8b2e9093ae10e114f",
+      "production_sha256": "2bcb4d668ddaa6a5c906aa99af68c1beb63df46fe5e713b8b2e9093ae10e114f",
+      "relative_path": "scripts/wave6_verify_controls.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "e127719644493ee2c43ec043a71c927de4a10155a6e58c59633e4116a010642c",
+      "production_sha256": "e127719644493ee2c43ec043a71c927de4a10155a6e58c59633e4116a010642c",
+      "relative_path": "scripts/wave6_verify_manifest.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "6faa3197230d64281e47fe3f558d05ba6f0985511c51f8df395684e734c939c6",
+      "production_sha256": "6faa3197230d64281e47fe3f558d05ba6f0985511c51f8df395684e734c939c6",
+      "relative_path": "scripts/wave6_worker_service.py"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "88e682b4fb5c29ddae18bf029acf11aadb62b2684d763b8449badee9a834c79c",
+      "production_sha256": "88e682b4fb5c29ddae18bf029acf11aadb62b2684d763b8449badee9a834c79c",
+      "relative_path": "tests/test_research_v3_wave6.py"
+    }
+  ],
+  "two_repo_sync_all_byte_identical": true,
+  "verification_script": "backend-extension/scripts/wave6_verify_manifest.py"
+}

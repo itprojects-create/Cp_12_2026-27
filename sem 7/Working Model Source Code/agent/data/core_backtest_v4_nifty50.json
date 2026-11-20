@@ -1,0 +1,48 @@
+{
+  "frozen_rule": "app/core/trend_core_v4.py (prereg data/prereg_core_v4.md, one run)",
+  "universe": "nifty50",
+  "n_days": 1420,
+  "n_names": 35,
+  "n_excluded": 2,
+  "excluded_sample": [
+    "KOTAKBANK.NS",
+    "TATAMOTORS.NS"
+  ],
+  "total_return": 0.3741,
+  "cagr": 0.058,
+  "ann_vol": 0.0878,
+  "sharpe": 0.687,
+  "max_drawdown": 0.1265,
+  "total_cost": 0.03673,
+  "avg_exposure": 0.4782,
+  "n_switches": 1099,
+  "yearly": {
+    "2021": {
+      "ret": 0.1457,
+      "intra_yr_dd": -0.175
+    },
+    "2022": {
+      "ret": -0.0555,
+      "intra_yr_dd": -0.0831
+    },
+    "2023": {
+      "ret": 0.1359,
+      "intra_yr_dd": -0.1253
+    },
+    "2024": {
+      "ret": 0.0769,
+      "intra_yr_dd": -0.1208
+    },
+    "2025": {
+      "ret": 0.0395,
+      "intra_yr_dd": -0.0727
+    },
+    "2026": {
+      "ret": -0.0014,
+      "intra_yr_dd": -0.0576
+    }
+  },
+  "bench_cagr_corrected": 0.1838,
+  "bench_note": "corrected math (mean of total returns); v2/v3 bench numbers keep old formula",
+  "generated_at": "2026-10-06T16:11:08.735355+00:00"
+}

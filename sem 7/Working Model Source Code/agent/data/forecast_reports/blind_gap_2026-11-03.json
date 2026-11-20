@@ -1,0 +1,96 @@
+{
+  "job": "blind-gap",
+  "horizon": 5,
+  "per_symbol": {
+    "ADANIENT": {
+      "mean_gap": 0.014000000000000012,
+      "per_forecaster": {
+        "technical": 0.010000000000000009,
+        "relative": 0.06000000000000005,
+        "generalist_blind": 0.0,
+        "momentum": 0.0,
+        "reversal": 0.0
+      },
+      "suspect": []
+    },
+    "ADANIPORTS": {
+      "mean_gap": 0.005999999999999994,
+      "per_forecaster": {
+        "technical": 0.019999999999999962,
+        "relative": 0.0,
+        "generalist_blind": 0.010000000000000009,
+        "momentum": 0.0,
+        "reversal": 0.0
+      },
+      "suspect": []
+    },
+    "APOLLOHOSP": {
+      "mean_gap": 0.016000000000000004,
+      "per_forecaster": {
+        "technical": 0.07,
+        "relative": 0.010000000000000009,
+        "generalist_blind": 0.0,
+        "momentum": 0.0,
+        "reversal": 0.0
+      },
+      "suspect": []
+    },
+    "ASIANPAINT": {
+      "mean_gap": 0.009999999999999998,
+      "per_forecaster": {
+        "technical": 0.020000000000000018,
+        "relative": 0.02999999999999997,
+        "generalist_blind": 0.0,
+        "momentum": 0.0,
+        "reversal": 0.0
+      },
+      "suspect": []
+    },
+    "AXISBANK": {
+      "mean_gap": 0.0,
+      "per_forecaster": {
+        "technical": 0.0,
+        "relative": 0.0,
+        "generalist_blind": 0.0,
+        "momentum": 0.0,
+        "reversal": 0.0
+      },
+      "suspect": []
+    },
+    "BSE": {
+      "mean_gap": 0.018000000000000016,
+      "per_forecaster": {
+        "technical": 0.08000000000000007,
+        "relative": 0.010000000000000009,
+        "generalist_blind": 0.0,
+        "momentum": 0.0,
+        "reversal": 0.0
+      },
+      "suspect": []
+    },
+    "BAJAJ-AUTO": {
+      "mean_gap": 0.010000000000000009,
+      "per_forecaster": {
+        "technical": 0.010000000000000009,
+        "relative": 0.020000000000000018,
+        "generalist_blind": 0.020000000000000018,
+        "momentum": 0.0,
+        "reversal": 0.0
+      },
+      "suspect": []
+    },
+    "BAJFINANCE": {
+      "mean_gap": 0.006000000000000005,
+      "per_forecaster": {
+        "technical": 0.0,
+        "relative": 0.020000000000000018,
+        "generalist_blind": 0.010000000000000009,
+        "momentum": 0.0,
+        "reversal": 0.0
+      },
+      "suspect": []
+    }
+  },
+  "mean_gap": 0.010000000000000005,
+  "note": "Diagnostic only; promotion still requires forward-settled scores."
+}

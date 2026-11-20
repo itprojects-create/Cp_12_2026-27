@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'">
+<title>QuantPlus — Core v2 vs v3 + Honesty Report</title>
+<style>body{font-family:system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#111}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid #ccc;padding:.4rem .6rem;text-align:right}
+td:first-child,th:first-child{text-align:left}.good{color:#0a6b0a}.bad{color:#a00}</style>
+</head><body>
+<h1>QuantPlus Agentic OS — Profit Baseline + Honest Eval</h1>
+<p>Generated 2026-10-06T17:37:42.651995+00:00 · Costs 0.21% round-trip · PIT-enforced · Gates frozen 2026-09-18</p>
+<h2>Core backtest (2021-2026, same window, zero tokens)</h2>
+<table><tr><th>Rule</th><th>CAGR</th><th>Sharpe</th><th>MaxDD</th><th>Exposure</th><th>Costs</th><th>Switches</th></tr>
+<tr><td>Core v2 (frozen, GROSS_CAP=1.00)</td><td>0.0615</td><td>0.698</td><td>0.1635</td><td>0.4965</td><td>0.06414</td><td>3968</td></tr><tr><td>Core v3 (VIX+turnover+vol-target)</td><td>0.0525</td><td>0.705</td><td>0.1246</td><td>0.4639</td><td>0.0351</td><td>1081</td></tr></table>
+<h3>Whipsaw check (2022)</h3><ul><li>v2 2022: -0.1025 (intra-dd -0.1025)</li><li>v3 2022: -0.0543 (intra-dd -0.0845)</li></ul>
+<p>v3 gate: MaxDD&lt;16.35% OR Sharpe&gt;0.698 AND 2022&gt;-10.25%. v2 file untouched; v3 in <code>app/core/trend_core_v3.py</code> (prereg <code>data/prereg_core_v3.md</code>).</p>
+<h2>LLM direction: 13 FAILs, honestly recorded</h2>
+<p>Agent selection never beats the best constant rule (11/11 + H1 0.111 vs 0.556). Per prereg rule the LLM never picks direction on the money path — veto/resize only (overlay contract <code>data/prereg_overlay_retry.md</code>), or explainability-only on FAIL.</p>
+<h2>What beats TradingAgents here</h2>
+<ul><li>PIT enforced in code + tested (prefix-invariance, gross-cap, cost bounds)</li>
+<li>Cost-realistic paper fills + turnover-aware core (switches 3968→1081, costs 6.4%→3.5%)</li>
+<li>Frozen gates + beats-best-constant + binomial anchor (no goalpost moves)</li>
+<li>Versioned thesis HEALTHY→BROKEN + settle/reflect memory (PIT-clean lessons)</li>
+<li>Portfolio-aware sizing + 5-tier + REVIEW + India moat (delivery, VIX, earnings blackout, AngelOne paper next)</li></ul>
+</body></html>

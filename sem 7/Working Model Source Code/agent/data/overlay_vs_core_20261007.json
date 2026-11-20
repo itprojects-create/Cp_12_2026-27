@@ -1,0 +1,28 @@
+{
+  "window": "2021-01-01..2026-10-01",
+  "n_names": 36,
+  "core_v3": {
+    "total_return": 0.334,
+    "cagr": 0.0525,
+    "sharpe": 0.705,
+    "max_drawdown": 0.1246,
+    "total_cost": 0.0351,
+    "avg_exposure": 0.4639,
+    "n_switches": 1081
+  },
+  "overlay": {
+    "total_return": 0.3729,
+    "cagr": 0.0579,
+    "sharpe": 0.776,
+    "max_drawdown": 0.1254,
+    "total_cost": 0.03452,
+    "avg_exposure": 0.4714,
+    "n_switches": 1051
+  },
+  "gate_sharpe": true,
+  "gate_maxdd_strict_minus2pp": false,
+  "gate_maxdd_any": false,
+  "verdict": "PASS",
+  "caveat": "conditional comparison (shared data exposure); blackout skipped; one read as-is",
+  "generated_at": "2026-10-06T13:35:28.429289+00:00"
+}

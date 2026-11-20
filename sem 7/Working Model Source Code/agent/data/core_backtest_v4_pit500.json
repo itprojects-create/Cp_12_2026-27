@@ -1,0 +1,82 @@
+{
+  "frozen_rule": "app/core/trend_core_v4.py (prereg data/prereg_core_v4.md, one run)",
+  "universe": "pit500",
+  "n_days": 1420,
+  "n_names": 473,
+  "universe_meta": {
+    "weak_rows_included": 518,
+    "strict": false,
+    "index_id": "221",
+    "start": "2021-01-01",
+    "attribution": "Membership: Jha, A. (2026). NSE Historical Membership (Point-in-Time). github.com/aditya-jha/nse-historical-membership. Derived from public NSE Indices press releases and NSE circulars. CC BY 4.0."
+  },
+  "n_excluded": 29,
+  "excluded_sample": [
+    "AKZOINDIA.NS",
+    "DHANI.NS",
+    "EPIGRAL.NS",
+    "EQUITAS.NS",
+    "GEPIL.NS",
+    "GSPL.NS",
+    "GUJGASLTD.NS",
+    "HDFC.NS",
+    "HEG.NS",
+    "IBREALEST.NS",
+    "IDFC.NS",
+    "INOXLEISUR.NS",
+    "ISEC.NS",
+    "JBCHEPHARM.NS",
+    "JSLHISAR.NS",
+    "LAXMIMACH.NS",
+    "MAHINDCIE.NS",
+    "PEL.NS",
+    "SEQUENT.NS",
+    "SGPC.NS",
+    "SHRIRAMCIT.NS",
+    "SHTV.NS",
+    "SPICEJET.NS",
+    "SUPPETRO.NS",
+    "SWANENERGY.NS",
+    "TATASTLBSL.NS",
+    "TCNSBRANDS.NS",
+    "TV18BRDCST.NS",
+    "UJJIVAN.NS"
+  ],
+  "total_return": 1.0795,
+  "cagr": 0.1387,
+  "ann_vol": 0.1107,
+  "sharpe": 1.23,
+  "max_drawdown": 0.1289,
+  "total_cost": 0.04792,
+  "avg_exposure": 0.4767,
+  "n_switches": 1914,
+  "yearly": {
+    "2021": {
+      "ret": 0.1851,
+      "intra_yr_dd": -0.1885
+    },
+    "2022": {
+      "ret": 0.0026,
+      "intra_yr_dd": -0.1857
+    },
+    "2023": {
+      "ret": 0.5001,
+      "intra_yr_dd": -0.3435
+    },
+    "2024": {
+      "ret": 0.1473,
+      "intra_yr_dd": -0.2001
+    },
+    "2025": {
+      "ret": 0.0039,
+      "intra_yr_dd": -0.0946
+    },
+    "2026": {
+      "ret": 0.013,
+      "intra_yr_dd": -0.0465
+    }
+  },
+  "bench_cagr_corrected": 0.2336,
+  "bench_note": "corrected math (mean of total returns); v2/v3 bench numbers keep old formula",
+  "generated_at": "2026-10-06T18:28:05.560386+00:00"
+}

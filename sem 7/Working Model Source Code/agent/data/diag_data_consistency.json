@@ -1,0 +1,20 @@
+{
+  "delivery": {
+    "tickers": 8,
+    "dates": 16,
+    "comparable": 128,
+    "agree": 79,
+    "concordance": 0.6172,
+    "slim_none": 0,
+    "parquet_none": 0
+  },
+  "vix_regime": {
+    "dates": 16,
+    "comparable": 16,
+    "agree": 10,
+    "agreement": 0.625,
+    "yfinance_failures": 0,
+    "swap_allowed_99pct": false
+  },
+  "generated_at": "2026-10-06T18:35:19.350269+00:00"
+}

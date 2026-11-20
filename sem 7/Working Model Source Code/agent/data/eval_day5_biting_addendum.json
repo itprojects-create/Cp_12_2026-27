@@ -1,0 +1,83 @@
+{
+  "amendment": "prereg_day5_eval.md Amendment 1 (stepwise tables: PC + non-degeneracy; IDS gate kept for continuous maps)",
+  "suites": {
+    "veto_CALM_wide": {
+      "PC": 1.0,
+      "CI": 1.0,
+      "IDS": 0.0,
+      "pc_gate": true,
+      "ids_gate": false,
+      "n": 40,
+      "fire_rate": 0.475,
+      "nondegenerate": true
+    },
+    "veto_mixed_regime": {
+      "PC": 1.0,
+      "CI": 1.0,
+      "IDS": 0.0,
+      "pc_gate": true,
+      "ids_gate": false,
+      "n": 40,
+      "fire_rate": 0.775,
+      "nondegenerate": true
+    },
+    "veto_STRESSED_blanket": {
+      "PC": 1.0,
+      "CI": 1.0,
+      "IDS": 0.0,
+      "pc_gate": true,
+      "ids_gate": false,
+      "n": 40,
+      "fire_rate": 1.0,
+      "nondegenerate": false
+    },
+    "positioning_legs": {
+      "PC": 1.0,
+      "CI": 1.0,
+      "IDS": 0.0,
+      "pc_gate": true,
+      "ids_gate": false,
+      "n": 40,
+      "fire_rate": 0.25,
+      "nondegenerate": true
+    },
+    "apply_veto": {
+      "PC": 1.0,
+      "CI": 0.9999,
+      "IDS": 0.0001,
+      "pc_gate": true,
+      "ids_gate": true,
+      "n": 40,
+      "fire_rate": 1.0,
+      "nondegenerate": false
+    }
+  },
+  "verdict": {
+    "veto_CALM_wide": {
+      "pc_gate": true,
+      "stepwise_pass": true,
+      "continuous_ids_pass": false
+    },
+    "veto_mixed_regime": {
+      "pc_gate": true,
+      "stepwise_pass": true,
+      "continuous_ids_pass": false
+    },
+    "veto_STRESSED_blanket": {
+      "pc_gate": true,
+      "stepwise_pass": false,
+      "continuous_ids_pass": false
+    },
+    "positioning_legs": {
+      "pc_gate": true,
+      "stepwise_pass": true,
+      "continuous_ids_pass": false
+    },
+    "apply_veto": {
+      "pc_gate": true,
+      "stepwise_pass": false,
+      "continuous_ids_pass": true
+    }
+  },
+  "generated_at": "2026-10-06T17:46:19.422006+00:00"
+}

@@ -1,0 +1,28 @@
+{
+ "artifacts": {
+  "wave3_feature_label_contracts.json": "d637413444e9afe09a705191f05d5e3610fac0d82684c51831a5c42538c9de77",
+  "wave3_journal_status.json": "ffcb63087605860fa025021d4102df6b2dbb0056334c13872d20d31987f1b5e1",
+  "wave3_model_comparison.json": "ff9d5ad72ad5ab547764e273cc35cd49e3e75d0580a1bac4fd2880a021510d81",
+  "wave3_acceptance_report.md": "9cd623478e8280813d20b136c163b96fd8f868a342b8f4a45895f345bd5a900d",
+  "wave3_challenger_report.md": "b7f45ad04f0916568b0557956e529d59c983e0b431ac9a9f390cf37fa5a4157a",
+  "wave3_economics_and_actions_blockers.md": "b40b6c7a80d7ea363fc5913511f0d397c8eb0582bf2048557b36a80b50d22bc8",
+  "wave3_forward_protocol.md": "8c928aaa4e9741a1e68137f0d337dbdb877b395f327e168ff8d0b500d2d72cd2",
+  "wave3_input_data_and_split_audit.md": "ff0c148c1d21bfb4ddb842c4ee44584764b3891ffd5fcc0d3e9266d45a768037",
+  "wave3_model_comparison.md": "c86798e96cf884bb2699d25900fce921da3772567f099ec9b732d34c897fd369"
+ },
+ "code_modules": {
+  "__init__.py": "7f89919525d745da9fa7e36bd700524619afdc1d78ebea96f0843c4f2f5db8ed",
+  "adapter.py": "3919a0f41fd09c39056fd28b45e0202cfb5a79f4d0d1935ae3b1cb30a4abb67e",
+  "contracts.py": "20980963fa462500ac678ce8c4473a1fc87db7fd5cce80b2355dc83a0f9cc118",
+  "features.py": "d5ddfe7cf2b45fbc838f430ad9429ec608f9f7cf51145d8d2b9bf6910063f51e",
+  "folds.py": "2afd21a2cedee6aa3523b2becf5b3ae79e30822c39798af5936b7db49849f1da",
+  "labeling.py": "de9232b5b622f0d734eab2ab9b914434a5bb060284670e7d1fbf806cebbc560e",
+  "metrics.py": "af179caab6fb0f3ac66243ec9b545fd87048bf33e8c588a820c49adf7dfc9b6c",
+  "models.py": "497cc23e04aec4ad5cf2812f30276be03390381c38c5ff288e64c86e83027fd4",
+  "scripts/wave3_run_quantlab.py": "37a41369185537ddebc410449a8893cb73152ce67dedb9ad7f2d88fa9a342940"
+ },
+ "feature_hash": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+ "generated_at": "2026-11-13T14:31:22.666302+00:00",
+ "label_hash": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e",
+ "notes": "result/run identity = canonical-JSON sha256 of semantic inputs (family/config/horizon/fold/feature/label hashes); timestamps excluded from identity"
+}

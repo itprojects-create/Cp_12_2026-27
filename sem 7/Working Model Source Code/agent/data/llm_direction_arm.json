@@ -1,0 +1,3786 @@
+{
+  "generated_at": "2026-10-10T10:54:25.890583+00:00",
+  "capital_per_arm": 5000000.0,
+  "reports": [
+    {
+      "report": "data\\eval_report_20260918T165134Z.json",
+      "scenario_set": "(unlabeled)",
+      "prompt_note": "Official run on prompt v2. A v1 pilot (6 scenarios, all hold) exposed an always-flat Manager degeneracy + TATAMOTORS delisting; Manager/Devil prompts fixed at mechanism level, broken ticker replaced same-date (EICHERMOT.NS). Gates unchanged since 2026-09-18 freeze; v1 pilot sessions superseded via prompt-versioned session ids.",
+      "n_scenarios": 24,
+      "n_decisive": 12,
+      "accuracy": 0.333,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4976713.4,
+        "profit": -23286.6,
+        "return_pct": -0.47,
+        "max_drawdown_pct": 1.04,
+        "n_traded": 15
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 4986415.43,
+        "profit": -13584.57,
+        "return_pct": -0.27,
+        "max_drawdown_pct": 0.89,
+        "n_traded": 15
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2023-07-10",
+          "instrument": "RELIANCE.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0169,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2023-08-08",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0515,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2023-09-12",
+          "instrument": "HDFCBANK.NS",
+          "action": "buy",
+          "size": 0.0305,
+          "fwd_ret": -0.0658,
+          "pnl": -0.00207,
+          "capital_after": 4989650.0
+        },
+        {
+          "as_of": "2023-10-25",
+          "instrument": "TCS.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0361,
+          "pnl": 0.0,
+          "capital_after": 4989650.0
+        },
+        {
+          "as_of": "2023-11-15",
+          "instrument": "ICICIBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.1083,
+          "pnl": 0.00319,
+          "capital_after": 5005566.98
+        },
+        {
+          "as_of": "2023-12-05",
+          "instrument": "SBIN.NS",
+          "action": "buy",
+          "size": 0.032,
+          "fwd_ret": 0.0564,
+          "pnl": 0.00174,
+          "capital_after": 5014276.67
+        },
+        {
+          "as_of": "2024-01-16",
+          "instrument": "EICHERMOT.NS",
+          "action": "sell",
+          "size": 0.015,
+          "fwd_ret": 0.0473,
+          "pnl": -0.00074,
+          "capital_after": 5010566.11
+        },
+        {
+          "as_of": "2024-02-12",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0185,
+          "pnl": 0.0,
+          "capital_after": 5010566.11
+        },
+        {
+          "as_of": "2024-03-14",
+          "instrument": "SUNPHARMA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0205,
+          "pnl": -0.0,
+          "capital_after": 5010566.11
+        },
+        {
+          "as_of": "2024-04-10",
+          "instrument": "LT.NS",
+          "action": "buy",
+          "size": 0.031,
+          "fwd_ret": -0.0815,
+          "pnl": -0.00259,
+          "capital_after": 4997588.74
+        },
+        {
+          "as_of": "2024-05-08",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": 0.0638,
+          "pnl": 0.00093,
+          "capital_after": 5002236.5
+        },
+        {
+          "as_of": "2024-06-05",
+          "instrument": "KOTAKBANK.NS",
+          "action": "sell",
+          "size": 0.033,
+          "fwd_ret": 0.068,
+          "pnl": -0.00231,
+          "capital_after": 4990681.33
+        },
+        {
+          "as_of": "2024-06-20",
+          "instrument": "MARUTI.NS",
+          "action": "buy",
+          "size": 0.0295,
+          "fwd_ret": 0.036,
+          "pnl": 0.001,
+          "capital_after": 4995672.01
+        },
+        {
+          "as_of": "2024-07-11",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "buy",
+          "size": 0.031,
+          "fwd_ret": -0.0258,
+          "pnl": -0.00087,
+          "capital_after": 4991325.78
+        },
+        {
+          "as_of": "2024-08-06",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0313,
+          "pnl": -0.0,
+          "capital_after": 4991325.78
+        },
+        {
+          "as_of": "2024-08-22",
+          "instrument": "POWERGRID.NS",
+          "action": "buy",
+          "size": 0.0125,
+          "fwd_ret": 0.0137,
+          "pnl": 0.00014,
+          "capital_after": 4992024.56
+        },
+        {
+          "as_of": "2024-09-10",
+          "instrument": "ONGC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0121,
+          "pnl": 0.0,
+          "capital_after": 4992024.56
+        },
+        {
+          "as_of": "2024-09-26",
+          "instrument": "COALINDIA.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": -0.1443,
+          "pnl": -0.00293,
+          "capital_after": 4977397.93
+        },
+        {
+          "as_of": "2024-10-15",
+          "instrument": "BHARTIARTL.NS",
+          "action": "buy",
+          "size": 0.028,
+          "fwd_ret": -0.1058,
+          "pnl": -0.00302,
+          "capital_after": 4962366.19
+        },
+        {
+          "as_of": "2024-10-29",
+          "instrument": "HCLTECH.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.005,
+          "pnl": 0.0,
+          "capital_after": 4962366.19
+        },
+        {
+          "as_of": "2024-11-14",
+          "instrument": "BAJFINANCE.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.089,
+          "pnl": 0.0,
+          "capital_after": 4962366.19
+        },
+        {
+          "as_of": "2024-11-28",
+          "instrument": "ASIANPAINT.NS",
+          "action": "sell",
+          "size": 0.029,
+          "fwd_ret": -0.0772,
+          "pnl": 0.00218,
+          "capital_after": 4973184.15
+        },
+        {
+          "as_of": "2024-12-10",
+          "instrument": "ADANIENT.NS",
+          "action": "sell",
+          "size": 0.0315,
+          "fwd_ret": 0.0084,
+          "pnl": -0.00033,
+          "capital_after": 4971543.0
+        },
+        {
+          "as_of": "2024-12-26",
+          "instrument": "WIPRO.NS",
+          "action": "buy",
+          "size": 0.031,
+          "fwd_ret": 0.0356,
+          "pnl": 0.00104,
+          "capital_after": 4976713.4
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20260919T133151Z.json",
+      "scenario_set": "(unlabeled)",
+      "prompt_note": "Official v4 run (events analyst + NSE delivery diet + delivery-aware manager). Gates unchanged since 2026-09-18 freeze. v2 verdict was FAIL (acc 0.333); this run: FAIL (acc 0.333, no-edge hold 0.667, pnl +0.0047). Diet improved discipline, not direction.",
+      "n_scenarios": 24,
+      "n_decisive": 12,
+      "accuracy": 0.333,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 5023337.56,
+        "profit": 23337.56,
+        "return_pct": 0.47,
+        "max_drawdown_pct": 0.36,
+        "n_traded": 11
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 5020032.97,
+        "profit": 20032.97,
+        "return_pct": 0.4,
+        "max_drawdown_pct": 0.33,
+        "n_traded": 11
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2023-07-10",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": -0.0169,
+          "pnl": -0.00029,
+          "capital_after": 4998550.0
+        },
+        {
+          "as_of": "2023-08-08",
+          "instrument": "INFY.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": 0.0515,
+          "pnl": 0.00074,
+          "capital_after": 5002248.93
+        },
+        {
+          "as_of": "2023-09-12",
+          "instrument": "HDFCBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0658,
+          "pnl": -0.0,
+          "capital_after": 5002248.93
+        },
+        {
+          "as_of": "2023-10-25",
+          "instrument": "TCS.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0361,
+          "pnl": 0.0,
+          "capital_after": 5002248.93
+        },
+        {
+          "as_of": "2023-11-15",
+          "instrument": "ICICIBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.1083,
+          "pnl": 0.00319,
+          "capital_after": 5018206.1
+        },
+        {
+          "as_of": "2023-12-05",
+          "instrument": "SBIN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0564,
+          "pnl": 0.0,
+          "capital_after": 5018206.1
+        },
+        {
+          "as_of": "2024-01-16",
+          "instrument": "EICHERMOT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0473,
+          "pnl": 0.0,
+          "capital_after": 5018206.1
+        },
+        {
+          "as_of": "2024-02-12",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0185,
+          "pnl": 0.0,
+          "capital_after": 5018206.1
+        },
+        {
+          "as_of": "2024-03-14",
+          "instrument": "SUNPHARMA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0205,
+          "pnl": -0.0,
+          "capital_after": 5018206.1
+        },
+        {
+          "as_of": "2024-04-10",
+          "instrument": "LT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0815,
+          "pnl": -0.0,
+          "capital_after": 5018206.1
+        },
+        {
+          "as_of": "2024-05-08",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0638,
+          "pnl": 0.00185,
+          "capital_after": 5027489.78
+        },
+        {
+          "as_of": "2024-06-05",
+          "instrument": "KOTAKBANK.NS",
+          "action": "sell",
+          "size": 0.015,
+          "fwd_ret": 0.068,
+          "pnl": -0.00105,
+          "capital_after": 5022210.92
+        },
+        {
+          "as_of": "2024-06-20",
+          "instrument": "MARUTI.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.036,
+          "pnl": 0.0,
+          "capital_after": 5022210.92
+        },
+        {
+          "as_of": "2024-07-11",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0258,
+          "pnl": -0.0,
+          "capital_after": 5022210.92
+        },
+        {
+          "as_of": "2024-08-06",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0313,
+          "pnl": -0.0,
+          "capital_after": 5022210.92
+        },
+        {
+          "as_of": "2024-08-22",
+          "instrument": "POWERGRID.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": 0.0137,
+          "pnl": 0.00017,
+          "capital_after": 5023064.69
+        },
+        {
+          "as_of": "2024-09-10",
+          "instrument": "ONGC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0121,
+          "pnl": 0.0,
+          "capital_after": 5023064.69
+        },
+        {
+          "as_of": "2024-09-26",
+          "instrument": "COALINDIA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1443,
+          "pnl": -0.0,
+          "capital_after": 5023064.69
+        },
+        {
+          "as_of": "2024-10-15",
+          "instrument": "BHARTIARTL.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": -0.1058,
+          "pnl": -0.00162,
+          "capital_after": 5014927.33
+        },
+        {
+          "as_of": "2024-10-29",
+          "instrument": "HCLTECH.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.005,
+          "pnl": 0.0,
+          "capital_after": 5014927.33
+        },
+        {
+          "as_of": "2024-11-14",
+          "instrument": "BAJFINANCE.NS",
+          "action": "sell",
+          "size": 0.0125,
+          "fwd_ret": 0.089,
+          "pnl": -0.00114,
+          "capital_after": 5009210.31
+        },
+        {
+          "as_of": "2024-11-28",
+          "instrument": "ASIANPAINT.NS",
+          "action": "sell",
+          "size": 0.0355,
+          "fwd_ret": -0.0772,
+          "pnl": 0.00266,
+          "capital_after": 5022534.81
+        },
+        {
+          "as_of": "2024-12-10",
+          "instrument": "ADANIENT.NS",
+          "action": "sell",
+          "size": 0.032,
+          "fwd_ret": 0.0084,
+          "pnl": -0.00034,
+          "capital_after": 5020827.15
+        },
+        {
+          "as_of": "2024-12-26",
+          "instrument": "WIPRO.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": 0.0356,
+          "pnl": 0.0005,
+          "capital_after": 5023337.56
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20260919T160958Z.json",
+      "scenario_set": "v5-2025-disjoint",
+      "prompt_note": "Official one-shot run on prompt v5, scenario set v5-2025-disjoint. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 13,
+      "accuracy": 0.385,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4976224.42,
+        "profit": -23775.58,
+        "return_pct": -0.48,
+        "max_drawdown_pct": 1.04,
+        "n_traded": 21
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 5006270.13,
+        "profit": 6270.13,
+        "return_pct": 0.13,
+        "max_drawdown_pct": 1.03,
+        "n_traded": 21
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2025-01-14",
+          "instrument": "TCS.NS",
+          "action": "sell",
+          "size": 0.0295,
+          "fwd_ret": -0.0673,
+          "pnl": 0.00192,
+          "capital_after": 5009600.0
+        },
+        {
+          "as_of": "2025-01-28",
+          "instrument": "NTPC.NS",
+          "action": "sell",
+          "size": 0.027,
+          "fwd_ret": -0.0079,
+          "pnl": 0.00016,
+          "capital_after": 5010401.54
+        },
+        {
+          "as_of": "2025-02-11",
+          "instrument": "SUNPHARMA.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0061,
+          "pnl": -0.00025,
+          "capital_after": 5009148.94
+        },
+        {
+          "as_of": "2025-02-25",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.0305,
+          "fwd_ret": 0.1331,
+          "pnl": -0.00412,
+          "capital_after": 4988511.24
+        },
+        {
+          "as_of": "2025-03-11",
+          "instrument": "INFY.NS",
+          "action": "sell",
+          "size": 0.0285,
+          "fwd_ret": -0.1036,
+          "pnl": 0.00289,
+          "capital_after": 5002928.04
+        },
+        {
+          "as_of": "2025-03-25",
+          "instrument": "MARUTI.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0091,
+          "pnl": 0.00021,
+          "capital_after": 5003978.65
+        },
+        {
+          "as_of": "2025-04-08",
+          "instrument": "ICICIBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0998,
+          "pnl": 0.0,
+          "capital_after": 5003978.65
+        },
+        {
+          "as_of": "2025-04-22",
+          "instrument": "TITAN.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": 0.0547,
+          "pnl": 0.00105,
+          "capital_after": 5009232.83
+        },
+        {
+          "as_of": "2025-05-13",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": -0.0178,
+          "pnl": -0.0004,
+          "capital_after": 5007229.14
+        },
+        {
+          "as_of": "2025-05-27",
+          "instrument": "ONGC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0031,
+          "pnl": -0.0,
+          "capital_after": 5007229.14
+        },
+        {
+          "as_of": "2025-06-10",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0542,
+          "pnl": -0.00169,
+          "capital_after": 4998766.92
+        },
+        {
+          "as_of": "2025-06-24",
+          "instrument": "HCLTECH.NS",
+          "action": "buy",
+          "size": 0.0295,
+          "fwd_ret": -0.1091,
+          "pnl": -0.00328,
+          "capital_after": 4982370.97
+        },
+        {
+          "as_of": "2025-07-08",
+          "instrument": "WIPRO.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.104,
+          "pnl": -0.00318,
+          "capital_after": 4966527.03
+        },
+        {
+          "as_of": "2025-07-22",
+          "instrument": "ASIANPAINT.NS",
+          "action": "sell",
+          "size": 0.015,
+          "fwd_ret": 0.0805,
+          "pnl": -0.00124,
+          "capital_after": 4960368.53
+        },
+        {
+          "as_of": "2025-08-12",
+          "instrument": "TCS.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.032,
+          "pnl": 0.0,
+          "capital_after": 4960368.53
+        },
+        {
+          "as_of": "2025-08-26",
+          "instrument": "NTPC.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0293,
+          "pnl": 0.00082,
+          "capital_after": 4964436.04
+        },
+        {
+          "as_of": "2025-09-09",
+          "instrument": "SUNPHARMA.NS",
+          "action": "sell",
+          "size": 0.028,
+          "fwd_ret": 0.0409,
+          "pnl": -0.0012,
+          "capital_after": 4958478.71
+        },
+        {
+          "as_of": "2025-09-23",
+          "instrument": "INFY.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0206,
+          "pnl": 0.00056,
+          "capital_after": 4961255.46
+        },
+        {
+          "as_of": "2025-10-07",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0809,
+          "pnl": 0.00236,
+          "capital_after": 4972964.02
+        },
+        {
+          "as_of": "2025-10-21",
+          "instrument": "TITAN.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": 0.035,
+          "pnl": 0.00066,
+          "capital_after": 4976246.18
+        },
+        {
+          "as_of": "2025-11-11",
+          "instrument": "MARUTI.NS",
+          "action": "sell",
+          "size": 0.0285,
+          "fwd_ret": 0.0206,
+          "pnl": -0.00065,
+          "capital_after": 4973011.62
+        },
+        {
+          "as_of": "2025-11-25",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.031,
+          "fwd_ret": -0.0254,
+          "pnl": 0.00072,
+          "capital_after": 4976592.19
+        },
+        {
+          "as_of": "2025-12-09",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "sell",
+          "size": 0.0295,
+          "fwd_ret": 0.066,
+          "pnl": -0.00201,
+          "capital_after": 4966589.24
+        },
+        {
+          "as_of": "2025-12-16",
+          "instrument": "ONGC.NS",
+          "action": "buy",
+          "size": 0.0305,
+          "fwd_ret": 0.0658,
+          "pnl": 0.00194,
+          "capital_after": 4976224.42
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20260920T074259Z.json",
+      "scenario_set": "v1-2023-2024",
+      "prompt_note": "Official one-shot run on prompt v5.1, scenario set v1-2023-2024. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 12,
+      "accuracy": 0.5,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4968476.1,
+        "profit": -31523.9,
+        "return_pct": -0.63,
+        "max_drawdown_pct": 1.28,
+        "n_traded": 23
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 5012718.82,
+        "profit": 12718.82,
+        "return_pct": 0.25,
+        "max_drawdown_pct": 0.69,
+        "n_traded": 23
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2023-07-10",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": -0.0169,
+          "pnl": -0.00038,
+          "capital_after": 4998100.0
+        },
+        {
+          "as_of": "2023-08-08",
+          "instrument": "INFY.NS",
+          "action": "buy",
+          "size": 0.0285,
+          "fwd_ret": 0.0515,
+          "pnl": 0.00141,
+          "capital_after": 5005147.32
+        },
+        {
+          "as_of": "2023-09-12",
+          "instrument": "HDFCBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0658,
+          "pnl": -0.00204,
+          "capital_after": 4994936.82
+        },
+        {
+          "as_of": "2023-10-25",
+          "instrument": "TCS.NS",
+          "action": "sell",
+          "size": 0.03,
+          "fwd_ret": 0.0361,
+          "pnl": -0.00115,
+          "capital_after": 4989192.64
+        },
+        {
+          "as_of": "2023-11-15",
+          "instrument": "ICICIBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.1083,
+          "pnl": 0.00319,
+          "capital_after": 5005108.17
+        },
+        {
+          "as_of": "2023-12-05",
+          "instrument": "SBIN.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": 0.0564,
+          "pnl": 0.00109,
+          "capital_after": 5010563.74
+        },
+        {
+          "as_of": "2024-01-16",
+          "instrument": "EICHERMOT.NS",
+          "action": "buy",
+          "size": 0.029,
+          "fwd_ret": 0.0473,
+          "pnl": 0.00131,
+          "capital_after": 5017127.57
+        },
+        {
+          "as_of": "2024-02-12",
+          "instrument": "TITAN.NS",
+          "action": "sell",
+          "size": 0.029,
+          "fwd_ret": 0.0185,
+          "pnl": -0.0006,
+          "capital_after": 5014117.3
+        },
+        {
+          "as_of": "2024-03-14",
+          "instrument": "SUNPHARMA.NS",
+          "action": "buy",
+          "size": 0.029,
+          "fwd_ret": -0.0205,
+          "pnl": -0.00066,
+          "capital_after": 5010807.98
+        },
+        {
+          "as_of": "2024-04-10",
+          "instrument": "LT.NS",
+          "action": "buy",
+          "size": 0.025,
+          "fwd_ret": -0.0815,
+          "pnl": -0.00209,
+          "capital_after": 5000335.39
+        },
+        {
+          "as_of": "2024-05-08",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.025,
+          "fwd_ret": 0.0638,
+          "pnl": 0.00154,
+          "capital_after": 5008035.91
+        },
+        {
+          "as_of": "2024-06-05",
+          "instrument": "KOTAKBANK.NS",
+          "action": "sell",
+          "size": 0.03,
+          "fwd_ret": 0.068,
+          "pnl": -0.0021,
+          "capital_after": 4997519.03
+        },
+        {
+          "as_of": "2024-06-20",
+          "instrument": "MARUTI.NS",
+          "action": "buy",
+          "size": 0.029,
+          "fwd_ret": 0.036,
+          "pnl": 0.00098,
+          "capital_after": 5002416.6
+        },
+        {
+          "as_of": "2024-07-11",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": -0.0258,
+          "pnl": -0.00056,
+          "capital_after": 4999615.25
+        },
+        {
+          "as_of": "2024-08-06",
+          "instrument": "NTPC.NS",
+          "action": "buy",
+          "size": 0.025,
+          "fwd_ret": -0.0313,
+          "pnl": -0.00084,
+          "capital_after": 4995415.57
+        },
+        {
+          "as_of": "2024-08-22",
+          "instrument": "POWERGRID.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0137,
+          "pnl": 0.0,
+          "capital_after": 4995415.57
+        },
+        {
+          "as_of": "2024-09-10",
+          "instrument": "ONGC.NS",
+          "action": "buy",
+          "size": 0.031,
+          "fwd_ret": 0.0121,
+          "pnl": 0.00031,
+          "capital_after": 4996964.15
+        },
+        {
+          "as_of": "2024-09-26",
+          "instrument": "COALINDIA.NS",
+          "action": "buy",
+          "size": 0.025,
+          "fwd_ret": -0.1443,
+          "pnl": -0.00366,
+          "capital_after": 4978675.26
+        },
+        {
+          "as_of": "2024-10-15",
+          "instrument": "BHARTIARTL.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": -0.1058,
+          "pnl": -0.00216,
+          "capital_after": 4967921.32
+        },
+        {
+          "as_of": "2024-10-29",
+          "instrument": "HCLTECH.NS",
+          "action": "buy",
+          "size": 0.029,
+          "fwd_ret": 0.005,
+          "pnl": 8e-05,
+          "capital_after": 4968318.76
+        },
+        {
+          "as_of": "2024-11-14",
+          "instrument": "BAJFINANCE.NS",
+          "action": "sell",
+          "size": 0.034,
+          "fwd_ret": 0.089,
+          "pnl": -0.0031,
+          "capital_after": 4952916.97
+        },
+        {
+          "as_of": "2024-11-28",
+          "instrument": "ASIANPAINT.NS",
+          "action": "sell",
+          "size": 0.0325,
+          "fwd_ret": -0.0772,
+          "pnl": 0.00244,
+          "capital_after": 4965002.09
+        },
+        {
+          "as_of": "2024-12-10",
+          "instrument": "ADANIENT.NS",
+          "action": "sell",
+          "size": 0.029,
+          "fwd_ret": 0.0084,
+          "pnl": -0.0003,
+          "capital_after": 4963512.58
+        },
+        {
+          "as_of": "2024-12-26",
+          "instrument": "WIPRO.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0356,
+          "pnl": 0.001,
+          "capital_after": 4968476.1
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20260920T092702Z.json",
+      "scenario_set": "v5-2025-disjoint",
+      "prompt_note": "Official one-shot run on prompt v5.1, scenario set v5-2025-disjoint. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 13,
+      "accuracy": 0.385,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4968978.14,
+        "profit": -31021.86,
+        "return_pct": -0.62,
+        "max_drawdown_pct": 1.16,
+        "n_traded": 22
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 5032264.32,
+        "profit": 32264.32,
+        "return_pct": 0.65,
+        "max_drawdown_pct": 0.85,
+        "n_traded": 22
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2025-01-14",
+          "instrument": "TCS.NS",
+          "action": "sell",
+          "size": 0.0285,
+          "fwd_ret": -0.0673,
+          "pnl": 0.00186,
+          "capital_after": 5009300.0
+        },
+        {
+          "as_of": "2025-01-28",
+          "instrument": "NTPC.NS",
+          "action": "sell",
+          "size": 0.03,
+          "fwd_ret": -0.0079,
+          "pnl": 0.00018,
+          "capital_after": 5010201.67
+        },
+        {
+          "as_of": "2025-02-11",
+          "instrument": "SUNPHARMA.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0061,
+          "pnl": -0.00025,
+          "capital_after": 5008949.12
+        },
+        {
+          "as_of": "2025-02-25",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.0285,
+          "fwd_ret": 0.1331,
+          "pnl": -0.00385,
+          "capital_after": 4989664.67
+        },
+        {
+          "as_of": "2025-03-11",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1036,
+          "pnl": -0.0,
+          "capital_after": 4989664.67
+        },
+        {
+          "as_of": "2025-03-25",
+          "instrument": "MARUTI.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0091,
+          "pnl": 0.00021,
+          "capital_after": 4990712.5
+        },
+        {
+          "as_of": "2025-04-08",
+          "instrument": "ICICIBANK.NS",
+          "action": "buy",
+          "size": 0.0275,
+          "fwd_ret": 0.0998,
+          "pnl": 0.00269,
+          "capital_after": 5004137.52
+        },
+        {
+          "as_of": "2025-04-22",
+          "instrument": "TITAN.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": 0.0547,
+          "pnl": 0.00105,
+          "capital_after": 5009391.86
+        },
+        {
+          "as_of": "2025-05-13",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "sell",
+          "size": 0.01,
+          "fwd_ret": -0.0178,
+          "pnl": 0.00016,
+          "capital_after": 5010193.36
+        },
+        {
+          "as_of": "2025-05-27",
+          "instrument": "ONGC.NS",
+          "action": "buy",
+          "size": 0.027,
+          "fwd_ret": -0.0031,
+          "pnl": -0.00014,
+          "capital_after": 5009491.94
+        },
+        {
+          "as_of": "2025-06-10",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0542,
+          "pnl": -0.00169,
+          "capital_after": 5001025.89
+        },
+        {
+          "as_of": "2025-06-24",
+          "instrument": "HCLTECH.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.1091,
+          "pnl": -0.00334,
+          "capital_after": 4984322.47
+        },
+        {
+          "as_of": "2025-07-08",
+          "instrument": "WIPRO.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.104,
+          "pnl": -0.00318,
+          "capital_after": 4968472.32
+        },
+        {
+          "as_of": "2025-07-22",
+          "instrument": "ASIANPAINT.NS",
+          "action": "sell",
+          "size": 0.025,
+          "fwd_ret": 0.0805,
+          "pnl": -0.00206,
+          "capital_after": 4958237.27
+        },
+        {
+          "as_of": "2025-08-12",
+          "instrument": "TCS.NS",
+          "action": "sell",
+          "size": 0.03,
+          "fwd_ret": 0.032,
+          "pnl": -0.00102,
+          "capital_after": 4953179.87
+        },
+        {
+          "as_of": "2025-08-26",
+          "instrument": "NTPC.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0293,
+          "pnl": 0.00082,
+          "capital_after": 4957241.47
+        },
+        {
+          "as_of": "2025-09-09",
+          "instrument": "SUNPHARMA.NS",
+          "action": "sell",
+          "size": 0.025,
+          "fwd_ret": 0.0409,
+          "pnl": -0.00107,
+          "capital_after": 4951937.23
+        },
+        {
+          "as_of": "2025-09-23",
+          "instrument": "INFY.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0206,
+          "pnl": 0.00056,
+          "capital_after": 4954710.31
+        },
+        {
+          "as_of": "2025-10-07",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": 0.0809,
+          "pnl": 0.00118,
+          "capital_after": 4960556.87
+        },
+        {
+          "as_of": "2025-10-21",
+          "instrument": "TITAN.NS",
+          "action": "buy",
+          "size": 0.025,
+          "fwd_ret": 0.035,
+          "pnl": 0.00082,
+          "capital_after": 4964624.53
+        },
+        {
+          "as_of": "2025-11-11",
+          "instrument": "MARUTI.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0206,
+          "pnl": 0.0,
+          "capital_after": 4964624.53
+        },
+        {
+          "as_of": "2025-11-25",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.03,
+          "fwd_ret": -0.0254,
+          "pnl": 0.0007,
+          "capital_after": 4968099.76
+        },
+        {
+          "as_of": "2025-12-09",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "sell",
+          "size": 0.025,
+          "fwd_ret": 0.066,
+          "pnl": -0.0017,
+          "capital_after": 4959653.99
+        },
+        {
+          "as_of": "2025-12-16",
+          "instrument": "ONGC.NS",
+          "action": "buy",
+          "size": 0.0295,
+          "fwd_ret": 0.0658,
+          "pnl": 0.00188,
+          "capital_after": 4968978.14
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20260920T113129Z.json",
+      "scenario_set": "v5-2025-disjoint",
+      "prompt_note": "Official one-shot run on prompt m3, scenario set v5-2025-disjoint. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 13,
+      "accuracy": 0.231,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4947982.04,
+        "profit": -52017.96,
+        "return_pct": -1.04,
+        "max_drawdown_pct": 1.51,
+        "n_traded": 18
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 5026893.72,
+        "profit": 26893.72,
+        "return_pct": 0.54,
+        "max_drawdown_pct": 0.82,
+        "n_traded": 18
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2025-01-14",
+          "instrument": "TCS.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0673,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2025-01-28",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0079,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2025-02-11",
+          "instrument": "SUNPHARMA.NS",
+          "action": "buy",
+          "size": 0.031,
+          "fwd_ret": -0.0061,
+          "pnl": -0.00026,
+          "capital_after": 4998700.0
+        },
+        {
+          "as_of": "2025-02-25",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.0305,
+          "fwd_ret": 0.1331,
+          "pnl": -0.00412,
+          "capital_after": 4978105.36
+        },
+        {
+          "as_of": "2025-03-11",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1036,
+          "pnl": -0.0,
+          "capital_after": 4978105.36
+        },
+        {
+          "as_of": "2025-03-25",
+          "instrument": "MARUTI.NS",
+          "action": "buy",
+          "size": 0.025,
+          "fwd_ret": 0.0091,
+          "pnl": 0.00017,
+          "capital_after": 4978951.63
+        },
+        {
+          "as_of": "2025-04-08",
+          "instrument": "ICICIBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0998,
+          "pnl": 0.0,
+          "capital_after": 4978951.63
+        },
+        {
+          "as_of": "2025-04-22",
+          "instrument": "TITAN.NS",
+          "action": "buy",
+          "size": 0.01,
+          "fwd_ret": 0.0547,
+          "pnl": 0.00053,
+          "capital_after": 4981590.48
+        },
+        {
+          "as_of": "2025-05-13",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0178,
+          "pnl": -0.0,
+          "capital_after": 4981590.48
+        },
+        {
+          "as_of": "2025-05-27",
+          "instrument": "ONGC.NS",
+          "action": "sell",
+          "size": 0.029,
+          "fwd_ret": -0.0031,
+          "pnl": 3e-05,
+          "capital_after": 4981739.93
+        },
+        {
+          "as_of": "2025-06-10",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0542,
+          "pnl": -0.00169,
+          "capital_after": 4973320.79
+        },
+        {
+          "as_of": "2025-06-24",
+          "instrument": "HCLTECH.NS",
+          "action": "buy",
+          "size": 0.029,
+          "fwd_ret": -0.1091,
+          "pnl": -0.00322,
+          "capital_after": 4957306.69
+        },
+        {
+          "as_of": "2025-07-08",
+          "instrument": "WIPRO.NS",
+          "action": "buy",
+          "size": 0.0295,
+          "fwd_ret": -0.104,
+          "pnl": -0.00313,
+          "capital_after": 4941790.32
+        },
+        {
+          "as_of": "2025-07-22",
+          "instrument": "ASIANPAINT.NS",
+          "action": "sell",
+          "size": 0.025,
+          "fwd_ret": 0.0805,
+          "pnl": -0.00206,
+          "capital_after": 4931610.23
+        },
+        {
+          "as_of": "2025-08-12",
+          "instrument": "TCS.NS",
+          "action": "sell",
+          "size": 0.03,
+          "fwd_ret": 0.032,
+          "pnl": -0.00102,
+          "capital_after": 4926579.99
+        },
+        {
+          "as_of": "2025-08-26",
+          "instrument": "NTPC.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0293,
+          "pnl": 0.00082,
+          "capital_after": 4930619.79
+        },
+        {
+          "as_of": "2025-09-09",
+          "instrument": "SUNPHARMA.NS",
+          "action": "sell",
+          "size": 0.028,
+          "fwd_ret": 0.0409,
+          "pnl": -0.0012,
+          "capital_after": 4924703.04
+        },
+        {
+          "as_of": "2025-09-23",
+          "instrument": "INFY.NS",
+          "action": "buy",
+          "size": 0.027,
+          "fwd_ret": 0.0206,
+          "pnl": 0.0005,
+          "capital_after": 4927165.4
+        },
+        {
+          "as_of": "2025-10-07",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.0285,
+          "fwd_ret": 0.0809,
+          "pnl": 0.00225,
+          "capital_after": 4938251.52
+        },
+        {
+          "as_of": "2025-10-21",
+          "instrument": "TITAN.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": 0.035,
+          "pnl": 0.00066,
+          "capital_after": 4941510.76
+        },
+        {
+          "as_of": "2025-11-11",
+          "instrument": "MARUTI.NS",
+          "action": "sell",
+          "size": 0.0295,
+          "fwd_ret": 0.0206,
+          "pnl": -0.00067,
+          "capital_after": 4938199.95
+        },
+        {
+          "as_of": "2025-11-25",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.0305,
+          "fwd_ret": -0.0254,
+          "pnl": 0.00071,
+          "capital_after": 4941706.07
+        },
+        {
+          "as_of": "2025-12-09",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.066,
+          "pnl": 0.0,
+          "capital_after": 4941706.07
+        },
+        {
+          "as_of": "2025-12-16",
+          "instrument": "ONGC.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": 0.0658,
+          "pnl": 0.00127,
+          "capital_after": 4947982.04
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20260920T164633Z.json",
+      "scenario_set": "v1-2023-2024",
+      "prompt_note": "Official one-shot run on prompt m3, scenario set v1-2023-2024. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 12,
+      "accuracy": 0.333,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4983707.67,
+        "profit": -16292.33,
+        "return_pct": -0.33,
+        "max_drawdown_pct": 0.97,
+        "n_traded": 18
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 4986909.59,
+        "profit": -13090.41,
+        "return_pct": -0.26,
+        "max_drawdown_pct": 0.68,
+        "n_traded": 18
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2023-07-10",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.025,
+          "fwd_ret": -0.0169,
+          "pnl": -0.00048,
+          "capital_after": 4997600.0
+        },
+        {
+          "as_of": "2023-08-08",
+          "instrument": "INFY.NS",
+          "action": "buy",
+          "size": 0.0285,
+          "fwd_ret": 0.0515,
+          "pnl": 0.00141,
+          "capital_after": 5004646.62
+        },
+        {
+          "as_of": "2023-09-12",
+          "instrument": "HDFCBANK.NS",
+          "action": "buy",
+          "size": 0.0285,
+          "fwd_ret": -0.0658,
+          "pnl": -0.00193,
+          "capital_after": 4994987.65
+        },
+        {
+          "as_of": "2023-10-25",
+          "instrument": "TCS.NS",
+          "action": "buy",
+          "size": 0.0285,
+          "fwd_ret": 0.0361,
+          "pnl": 0.00097,
+          "capital_after": 4999832.79
+        },
+        {
+          "as_of": "2023-11-15",
+          "instrument": "ICICIBANK.NS",
+          "action": "buy",
+          "size": 0.029,
+          "fwd_ret": 0.1083,
+          "pnl": 0.00308,
+          "capital_after": 5015232.27
+        },
+        {
+          "as_of": "2023-12-05",
+          "instrument": "SBIN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0564,
+          "pnl": 0.0,
+          "capital_after": 5015232.27
+        },
+        {
+          "as_of": "2024-01-16",
+          "instrument": "EICHERMOT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0473,
+          "pnl": 0.0,
+          "capital_after": 5015232.27
+        },
+        {
+          "as_of": "2024-02-12",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0185,
+          "pnl": 0.0,
+          "capital_after": 5015232.27
+        },
+        {
+          "as_of": "2024-03-14",
+          "instrument": "SUNPHARMA.NS",
+          "action": "buy",
+          "size": 0.0295,
+          "fwd_ret": -0.0205,
+          "pnl": -0.00067,
+          "capital_after": 5011872.07
+        },
+        {
+          "as_of": "2024-04-10",
+          "instrument": "LT.NS",
+          "action": "buy",
+          "size": 0.029,
+          "fwd_ret": -0.0815,
+          "pnl": -0.00242,
+          "capital_after": 4999743.34
+        },
+        {
+          "as_of": "2024-05-08",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0638,
+          "pnl": 0.00185,
+          "capital_after": 5008992.86
+        },
+        {
+          "as_of": "2024-06-05",
+          "instrument": "KOTAKBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.068,
+          "pnl": 0.0,
+          "capital_after": 5008992.86
+        },
+        {
+          "as_of": "2024-06-20",
+          "instrument": "MARUTI.NS",
+          "action": "buy",
+          "size": 0.0295,
+          "fwd_ret": 0.036,
+          "pnl": 0.001,
+          "capital_after": 5014001.85
+        },
+        {
+          "as_of": "2024-07-11",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "buy",
+          "size": 0.0125,
+          "fwd_ret": -0.0258,
+          "pnl": -0.00035,
+          "capital_after": 5012246.95
+        },
+        {
+          "as_of": "2024-08-06",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0313,
+          "pnl": -0.0,
+          "capital_after": 5012246.95
+        },
+        {
+          "as_of": "2024-08-22",
+          "instrument": "POWERGRID.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0137,
+          "pnl": 0.0,
+          "capital_after": 5012246.95
+        },
+        {
+          "as_of": "2024-09-10",
+          "instrument": "ONGC.NS",
+          "action": "buy",
+          "size": 0.0315,
+          "fwd_ret": 0.0121,
+          "pnl": 0.00031,
+          "capital_after": 5013800.75
+        },
+        {
+          "as_of": "2024-09-26",
+          "instrument": "COALINDIA.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.1443,
+          "pnl": -0.00439,
+          "capital_after": 4991790.16
+        },
+        {
+          "as_of": "2024-10-15",
+          "instrument": "BHARTIARTL.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": -0.1058,
+          "pnl": -0.00216,
+          "capital_after": 4981007.9
+        },
+        {
+          "as_of": "2024-10-29",
+          "instrument": "HCLTECH.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": 0.005,
+          "pnl": 4e-05,
+          "capital_after": 4981207.14
+        },
+        {
+          "as_of": "2024-11-14",
+          "instrument": "BAJFINANCE.NS",
+          "action": "sell",
+          "size": 0.032,
+          "fwd_ret": 0.089,
+          "pnl": -0.00292,
+          "capital_after": 4966662.01
+        },
+        {
+          "as_of": "2024-11-28",
+          "instrument": "ASIANPAINT.NS",
+          "action": "sell",
+          "size": 0.0345,
+          "fwd_ret": -0.0772,
+          "pnl": 0.00259,
+          "capital_after": 4979525.67
+        },
+        {
+          "as_of": "2024-12-10",
+          "instrument": "ADANIENT.NS",
+          "action": "sell",
+          "size": 0.01525,
+          "fwd_ret": 0.0084,
+          "pnl": -0.00016,
+          "capital_after": 4978728.94
+        },
+        {
+          "as_of": "2024-12-26",
+          "instrument": "WIPRO.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0356,
+          "pnl": 0.001,
+          "capital_after": 4983707.67
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20261005T091856Z.json",
+      "scenario_set": "v3rd-2026-clean",
+      "prompt_note": "Official one-shot run on prompt m3, scenario set v3rd-2026-clean. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 17,
+      "accuracy": 0.176,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4940900.93,
+        "profit": -59099.07,
+        "return_pct": -1.18,
+        "max_drawdown_pct": 1.62,
+        "n_traded": 15
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 4954891.77,
+        "profit": -45108.23,
+        "return_pct": -0.9,
+        "max_drawdown_pct": 1.35,
+        "n_traded": 15
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2026-01-06",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.028,
+          "fwd_ret": -0.0404,
+          "pnl": -0.00119,
+          "capital_after": 4994050.0
+        },
+        {
+          "as_of": "2026-01-13",
+          "instrument": "INFY.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": -0.1336,
+          "pnl": -0.00271,
+          "capital_after": 4980516.12
+        },
+        {
+          "as_of": "2026-01-20",
+          "instrument": "TCS.NS",
+          "action": "buy",
+          "size": 0.0125,
+          "fwd_ret": -0.1424,
+          "pnl": -0.00181,
+          "capital_after": 4971501.39
+        },
+        {
+          "as_of": "2026-01-27",
+          "instrument": "HDFCBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0269,
+          "pnl": -0.0,
+          "capital_after": 4971501.39
+        },
+        {
+          "as_of": "2026-02-03",
+          "instrument": "ICICIBANK.NS",
+          "action": "sell",
+          "size": 0.0315,
+          "fwd_ret": -0.0361,
+          "pnl": 0.00107,
+          "capital_after": 4976820.9
+        },
+        {
+          "as_of": "2026-02-10",
+          "instrument": "SBIN.NS",
+          "action": "buy",
+          "size": 0.0175,
+          "fwd_ret": -0.0826,
+          "pnl": -0.00148,
+          "capital_after": 4969455.2
+        },
+        {
+          "as_of": "2026-02-17",
+          "instrument": "AXISBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1235,
+          "pnl": -0.0,
+          "capital_after": 4969455.2
+        },
+        {
+          "as_of": "2026-02-24",
+          "instrument": "KOTAKBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1384,
+          "pnl": -0.0,
+          "capital_after": 4969455.2
+        },
+        {
+          "as_of": "2026-03-03",
+          "instrument": "MARUTI.NS",
+          "action": "sell",
+          "size": 0.03,
+          "fwd_ret": -0.1038,
+          "pnl": 0.00305,
+          "capital_after": 4984612.04
+        },
+        {
+          "as_of": "2026-03-10",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0722,
+          "pnl": 0.0,
+          "capital_after": 4984612.04
+        },
+        {
+          "as_of": "2026-03-17",
+          "instrument": "SUNPHARMA.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0636,
+          "pnl": -0.00197,
+          "capital_after": 4974792.35
+        },
+        {
+          "as_of": "2026-03-24",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0547,
+          "pnl": 0.0,
+          "capital_after": 4974792.35
+        },
+        {
+          "as_of": "2026-03-31",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0946,
+          "pnl": 0.0,
+          "capital_after": 4974792.35
+        },
+        {
+          "as_of": "2026-04-07",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.0285,
+          "fwd_ret": 0.0643,
+          "pnl": -0.00189,
+          "capital_after": 4965390.0
+        },
+        {
+          "as_of": "2026-04-14",
+          "instrument": "ONGC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0332,
+          "pnl": 0.0,
+          "capital_after": 4965390.0
+        },
+        {
+          "as_of": "2026-04-21",
+          "instrument": "CIPLA.NS",
+          "action": "sell",
+          "size": 0.0295,
+          "fwd_ret": 0.132,
+          "pnl": -0.00396,
+          "capital_after": 4945727.05
+        },
+        {
+          "as_of": "2026-05-05",
+          "instrument": "DRREDDY.NS",
+          "action": "buy",
+          "size": 0.025,
+          "fwd_ret": -0.0364,
+          "pnl": -0.00096,
+          "capital_after": 4940979.15
+        },
+        {
+          "as_of": "2026-05-12",
+          "instrument": "JSWSTEEL.NS",
+          "action": "sell",
+          "size": 0.015,
+          "fwd_ret": -0.004,
+          "pnl": 3e-05,
+          "capital_after": 4941127.38
+        },
+        {
+          "as_of": "2026-05-26",
+          "instrument": "HINDALCO.NS",
+          "action": "buy",
+          "size": 0.029,
+          "fwd_ret": -0.1506,
+          "pnl": -0.00443,
+          "capital_after": 4919238.19
+        },
+        {
+          "as_of": "2026-06-02",
+          "instrument": "GRASIM.NS",
+          "action": "buy",
+          "size": 0.0145,
+          "fwd_ret": 0.0125,
+          "pnl": 0.00015,
+          "capital_after": 4919976.08
+        },
+        {
+          "as_of": "2026-06-16",
+          "instrument": "BAJAJ-AUTO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.028,
+          "pnl": 0.0,
+          "capital_after": 4919976.08
+        },
+        {
+          "as_of": "2026-06-30",
+          "instrument": "COALINDIA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0568,
+          "pnl": -0.0,
+          "capital_after": 4919976.08
+        },
+        {
+          "as_of": "2026-07-07",
+          "instrument": "BHARTIARTL.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": 0.0476,
+          "pnl": 0.00091,
+          "capital_after": 4924453.25
+        },
+        {
+          "as_of": "2026-07-14",
+          "instrument": "HCLTECH.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": 0.169,
+          "pnl": 0.00334,
+          "capital_after": 4940900.93
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20261005T174643Z.json",
+      "scenario_set": "v5-2025-disjoint",
+      "prompt_note": "Official one-shot run on prompt m4, scenario set v5-2025-disjoint. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 13,
+      "accuracy": 0.077,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4981344.25,
+        "profit": -18655.75,
+        "return_pct": -0.37,
+        "max_drawdown_pct": 0.51,
+        "n_traded": 7
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 5018359.89,
+        "profit": 18359.89,
+        "return_pct": 0.37,
+        "max_drawdown_pct": 0.18,
+        "n_traded": 7
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2025-01-14",
+          "instrument": "TCS.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0673,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2025-01-28",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0079,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2025-02-11",
+          "instrument": "SUNPHARMA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0061,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2025-02-25",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.02355555555555554,
+          "fwd_ret": 0.1331,
+          "pnl": -0.00318,
+          "capital_after": 4984100.0
+        },
+        {
+          "as_of": "2025-03-11",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1036,
+          "pnl": -0.0,
+          "capital_after": 4984100.0
+        },
+        {
+          "as_of": "2025-03-25",
+          "instrument": "MARUTI.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0091,
+          "pnl": 0.0,
+          "capital_after": 4984100.0
+        },
+        {
+          "as_of": "2025-04-08",
+          "instrument": "ICICIBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0998,
+          "pnl": 0.0,
+          "capital_after": 4984100.0
+        },
+        {
+          "as_of": "2025-04-22",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0547,
+          "pnl": 0.0,
+          "capital_after": 4984100.0
+        },
+        {
+          "as_of": "2025-05-13",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0178,
+          "pnl": -0.0,
+          "capital_after": 4984100.0
+        },
+        {
+          "as_of": "2025-05-27",
+          "instrument": "ONGC.NS",
+          "action": "sell",
+          "size": 0.0125,
+          "fwd_ret": -0.0031,
+          "pnl": 1e-05,
+          "capital_after": 4984149.84
+        },
+        {
+          "as_of": "2025-06-10",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0542,
+          "pnl": -0.00169,
+          "capital_after": 4975726.63
+        },
+        {
+          "as_of": "2025-06-24",
+          "instrument": "HCLTECH.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1091,
+          "pnl": -0.0,
+          "capital_after": 4975726.63
+        },
+        {
+          "as_of": "2025-07-08",
+          "instrument": "WIPRO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.104,
+          "pnl": -0.0,
+          "capital_after": 4975726.63
+        },
+        {
+          "as_of": "2025-07-22",
+          "instrument": "ASIANPAINT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0805,
+          "pnl": 0.0,
+          "capital_after": 4975726.63
+        },
+        {
+          "as_of": "2025-08-12",
+          "instrument": "TCS.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.032,
+          "pnl": 0.0,
+          "capital_after": 4975726.63
+        },
+        {
+          "as_of": "2025-08-26",
+          "instrument": "NTPC.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": 0.0293,
+          "pnl": 0.00041,
+          "capital_after": 4977766.68
+        },
+        {
+          "as_of": "2025-09-09",
+          "instrument": "SUNPHARMA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0409,
+          "pnl": 0.0,
+          "capital_after": 4977766.68
+        },
+        {
+          "as_of": "2025-09-23",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0206,
+          "pnl": 0.0,
+          "capital_after": 4977766.68
+        },
+        {
+          "as_of": "2025-10-07",
+          "instrument": "RELIANCE.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0809,
+          "pnl": 0.0,
+          "capital_after": 4977766.68
+        },
+        {
+          "as_of": "2025-10-21",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.035,
+          "pnl": 0.0,
+          "capital_after": 4977766.68
+        },
+        {
+          "as_of": "2025-11-11",
+          "instrument": "MARUTI.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0206,
+          "pnl": 0.0,
+          "capital_after": 4977766.68
+        },
+        {
+          "as_of": "2025-11-25",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.015,
+          "fwd_ret": -0.0254,
+          "pnl": 0.00035,
+          "capital_after": 4979508.89
+        },
+        {
+          "as_of": "2025-12-09",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "sell",
+          "size": 0.015,
+          "fwd_ret": 0.066,
+          "pnl": -0.00102,
+          "capital_after": 4974429.79
+        },
+        {
+          "as_of": "2025-12-16",
+          "instrument": "ONGC.NS",
+          "action": "buy",
+          "size": 0.02177777777777778,
+          "fwd_ret": 0.0658,
+          "pnl": 0.00139,
+          "capital_after": 4981344.25
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20261006T062859Z.json",
+      "scenario_set": "v3rd-2026-clean",
+      "prompt_note": "Official one-shot run on prompt m7, scenario set v3rd-2026-clean. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 17,
+      "accuracy": 0.059,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4953127.61,
+        "profit": -46872.39,
+        "return_pct": -0.94,
+        "max_drawdown_pct": 1.09,
+        "n_traded": 6
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 4982508.96,
+        "profit": -17491.04,
+        "return_pct": -0.35,
+        "max_drawdown_pct": 0.79,
+        "n_traded": 6
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2026-01-06",
+          "instrument": "RELIANCE.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0404,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2026-01-13",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1336,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2026-01-20",
+          "instrument": "TCS.NS",
+          "action": "sell",
+          "size": 0.0075,
+          "fwd_ret": -0.1424,
+          "pnl": 0.00105,
+          "capital_after": 5005250.0
+        },
+        {
+          "as_of": "2026-01-27",
+          "instrument": "HDFCBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0269,
+          "pnl": -0.0,
+          "capital_after": 5005250.0
+        },
+        {
+          "as_of": "2026-02-03",
+          "instrument": "ICICIBANK.NS",
+          "action": "sell",
+          "size": 0.015,
+          "fwd_ret": -0.0361,
+          "pnl": 0.00051,
+          "capital_after": 5007802.68
+        },
+        {
+          "as_of": "2026-02-10",
+          "instrument": "SBIN.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0826,
+          "pnl": -0.00254,
+          "capital_after": 4995082.86
+        },
+        {
+          "as_of": "2026-02-17",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.1235,
+          "pnl": -0.00377,
+          "capital_after": 4976251.4
+        },
+        {
+          "as_of": "2026-02-24",
+          "instrument": "KOTAKBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1384,
+          "pnl": -0.0,
+          "capital_after": 4976251.4
+        },
+        {
+          "as_of": "2026-03-03",
+          "instrument": "MARUTI.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1038,
+          "pnl": -0.0,
+          "capital_after": 4976251.4
+        },
+        {
+          "as_of": "2026-03-10",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0722,
+          "pnl": 0.0,
+          "capital_after": 4976251.4
+        },
+        {
+          "as_of": "2026-03-17",
+          "instrument": "SUNPHARMA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0636,
+          "pnl": -0.0,
+          "capital_after": 4976251.4
+        },
+        {
+          "as_of": "2026-03-24",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0547,
+          "pnl": 0.0,
+          "capital_after": 4976251.4
+        },
+        {
+          "as_of": "2026-03-31",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0946,
+          "pnl": 0.0,
+          "capital_after": 4976251.4
+        },
+        {
+          "as_of": "2026-04-07",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.0125,
+          "fwd_ret": 0.0643,
+          "pnl": -0.00083,
+          "capital_after": 4972121.11
+        },
+        {
+          "as_of": "2026-04-14",
+          "instrument": "ONGC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0332,
+          "pnl": 0.0,
+          "capital_after": 4972121.11
+        },
+        {
+          "as_of": "2026-04-21",
+          "instrument": "CIPLA.NS",
+          "action": "sell",
+          "size": 0.0285,
+          "fwd_ret": 0.132,
+          "pnl": -0.00382,
+          "capital_after": 4953127.61
+        },
+        {
+          "as_of": "2026-05-05",
+          "instrument": "DRREDDY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0364,
+          "pnl": -0.0,
+          "capital_after": 4953127.61
+        },
+        {
+          "as_of": "2026-05-12",
+          "instrument": "JSWSTEEL.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.004,
+          "pnl": -0.0,
+          "capital_after": 4953127.61
+        },
+        {
+          "as_of": "2026-05-26",
+          "instrument": "HINDALCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1506,
+          "pnl": -0.0,
+          "capital_after": 4953127.61
+        },
+        {
+          "as_of": "2026-06-02",
+          "instrument": "GRASIM.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0125,
+          "pnl": 0.0,
+          "capital_after": 4953127.61
+        },
+        {
+          "as_of": "2026-06-16",
+          "instrument": "BAJAJ-AUTO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.028,
+          "pnl": 0.0,
+          "capital_after": 4953127.61
+        },
+        {
+          "as_of": "2026-06-30",
+          "instrument": "COALINDIA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0568,
+          "pnl": -0.0,
+          "capital_after": 4953127.61
+        },
+        {
+          "as_of": "2026-07-07",
+          "instrument": "BHARTIARTL.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0476,
+          "pnl": 0.0,
+          "capital_after": 4953127.61
+        },
+        {
+          "as_of": "2026-07-14",
+          "instrument": "HCLTECH.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.169,
+          "pnl": 0.0,
+          "capital_after": 4953127.61
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20261006T082257Z.json",
+      "scenario_set": "v3rd-2026-clean",
+      "prompt_note": "Official one-shot run on prompt m8, scenario set v3rd-2026-clean. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 17,
+      "accuracy": 0.176,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4953950.08,
+        "profit": -46049.92,
+        "return_pct": -0.92,
+        "max_drawdown_pct": 1.59,
+        "n_traded": 14
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 4959774.65,
+        "profit": -40225.35,
+        "return_pct": -0.8,
+        "max_drawdown_pct": 1.61,
+        "n_traded": 14
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2026-01-06",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.0285,
+          "fwd_ret": -0.0404,
+          "pnl": -0.00121,
+          "capital_after": 4993950.0
+        },
+        {
+          "as_of": "2026-01-13",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1336,
+          "pnl": -0.0,
+          "capital_after": 4993950.0
+        },
+        {
+          "as_of": "2026-01-20",
+          "instrument": "TCS.NS",
+          "action": "buy",
+          "size": 0.0285,
+          "fwd_ret": -0.1424,
+          "pnl": -0.00412,
+          "capital_after": 4973374.93
+        },
+        {
+          "as_of": "2026-01-27",
+          "instrument": "HDFCBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0269,
+          "pnl": -0.0,
+          "capital_after": 4973374.93
+        },
+        {
+          "as_of": "2026-02-03",
+          "instrument": "ICICIBANK.NS",
+          "action": "sell",
+          "size": 0.031,
+          "fwd_ret": -0.0361,
+          "pnl": 0.00105,
+          "capital_after": 4978596.97
+        },
+        {
+          "as_of": "2026-02-10",
+          "instrument": "SBIN.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0826,
+          "pnl": -0.00254,
+          "capital_after": 4965951.33
+        },
+        {
+          "as_of": "2026-02-17",
+          "instrument": "AXISBANK.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.1235,
+          "pnl": -0.00377,
+          "capital_after": 4947229.7
+        },
+        {
+          "as_of": "2026-02-24",
+          "instrument": "KOTAKBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1384,
+          "pnl": -0.0,
+          "capital_after": 4947229.7
+        },
+        {
+          "as_of": "2026-03-03",
+          "instrument": "MARUTI.NS",
+          "action": "sell",
+          "size": 0.02,
+          "fwd_ret": -0.1038,
+          "pnl": 0.00203,
+          "capital_after": 4957272.57
+        },
+        {
+          "as_of": "2026-03-10",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0722,
+          "pnl": 0.0,
+          "capital_after": 4957272.57
+        },
+        {
+          "as_of": "2026-03-17",
+          "instrument": "SUNPHARMA.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": -0.0636,
+          "pnl": -0.00131,
+          "capital_after": 4950778.55
+        },
+        {
+          "as_of": "2026-03-24",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0547,
+          "pnl": 0.0,
+          "capital_after": 4950778.55
+        },
+        {
+          "as_of": "2026-03-31",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0946,
+          "pnl": 0.0,
+          "capital_after": 4950778.55
+        },
+        {
+          "as_of": "2026-04-07",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.0285,
+          "fwd_ret": 0.0643,
+          "pnl": -0.00189,
+          "capital_after": 4941421.57
+        },
+        {
+          "as_of": "2026-04-14",
+          "instrument": "ONGC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0332,
+          "pnl": 0.0,
+          "capital_after": 4941421.57
+        },
+        {
+          "as_of": "2026-04-21",
+          "instrument": "CIPLA.NS",
+          "action": "sell",
+          "size": 0.01475,
+          "fwd_ret": 0.132,
+          "pnl": -0.00198,
+          "capital_after": 4931637.56
+        },
+        {
+          "as_of": "2026-05-05",
+          "instrument": "DRREDDY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0364,
+          "pnl": -0.0,
+          "capital_after": 4931637.56
+        },
+        {
+          "as_of": "2026-05-12",
+          "instrument": "JSWSTEEL.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.004,
+          "pnl": -0.0,
+          "capital_after": 4931637.56
+        },
+        {
+          "as_of": "2026-05-26",
+          "instrument": "HINDALCO.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": -0.1506,
+          "pnl": -0.00229,
+          "capital_after": 4920344.11
+        },
+        {
+          "as_of": "2026-06-02",
+          "instrument": "GRASIM.NS",
+          "action": "buy",
+          "size": 0.01475,
+          "fwd_ret": 0.0125,
+          "pnl": 0.00015,
+          "capital_after": 4921082.16
+        },
+        {
+          "as_of": "2026-06-16",
+          "instrument": "BAJAJ-AUTO.NS",
+          "action": "buy",
+          "size": 0.029,
+          "fwd_ret": 0.028,
+          "pnl": 0.00075,
+          "capital_after": 4924772.97
+        },
+        {
+          "as_of": "2026-06-30",
+          "instrument": "COALINDIA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0568,
+          "pnl": -0.0,
+          "capital_after": 4924772.97
+        },
+        {
+          "as_of": "2026-07-07",
+          "instrument": "BHARTIARTL.NS",
+          "action": "buy",
+          "size": 0.02,
+          "fwd_ret": 0.0476,
+          "pnl": 0.00091,
+          "capital_after": 4929254.52
+        },
+        {
+          "as_of": "2026-07-14",
+          "instrument": "HCLTECH.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.169,
+          "pnl": 0.00501,
+          "capital_after": 4953950.08
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20261006T123258Z.json",
+      "scenario_set": "v4-2022-blind",
+      "prompt_note": "Official one-shot run on prompt m9, scenario set v4-2022-blind. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 9,
+      "accuracy": 0.111,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4961893.96,
+        "profit": -38106.04,
+        "return_pct": -0.76,
+        "max_drawdown_pct": 0.98,
+        "n_traded": 15
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 4953645.41,
+        "profit": -46354.59,
+        "return_pct": -0.93,
+        "max_drawdown_pct": 1.2,
+        "n_traded": 15
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2022-08-02",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.059,
+          "fwd_ret": -0.014,
+          "pnl": -0.00095,
+          "capital_after": 4995250.0
+        },
+        {
+          "as_of": "2022-08-09",
+          "instrument": "TCS.NS",
+          "action": "buy",
+          "size": 0.058,
+          "fwd_ret": -0.0407,
+          "pnl": -0.00248,
+          "capital_after": 4982861.78
+        },
+        {
+          "as_of": "2022-08-16",
+          "instrument": "HDFCBANK.NS",
+          "action": "buy",
+          "size": 0.06,
+          "fwd_ret": 0.0072,
+          "pnl": 0.0003,
+          "capital_after": 4984356.64
+        },
+        {
+          "as_of": "2022-08-23",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1103,
+          "pnl": -0.0,
+          "capital_after": 4984356.64
+        },
+        {
+          "as_of": "2022-08-30",
+          "instrument": "ICICIBANK.NS",
+          "action": "buy",
+          "size": 0.06,
+          "fwd_ret": -0.0348,
+          "pnl": -0.00222,
+          "capital_after": 4973291.37
+        },
+        {
+          "as_of": "2022-09-06",
+          "instrument": "SBIN.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0084,
+          "pnl": 0.00019,
+          "capital_after": 4974236.29
+        },
+        {
+          "as_of": "2022-09-13",
+          "instrument": "BHARTIARTL.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0184,
+          "pnl": -0.00062,
+          "capital_after": 4971152.27
+        },
+        {
+          "as_of": "2022-09-20",
+          "instrument": "ITC.NS",
+          "action": "buy",
+          "size": 0.061,
+          "fwd_ret": 0.0257,
+          "pnl": 0.00144,
+          "capital_after": 4978310.72
+        },
+        {
+          "as_of": "2022-09-27",
+          "instrument": "LT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0761,
+          "pnl": 0.0,
+          "capital_after": 4978310.72
+        },
+        {
+          "as_of": "2022-10-04",
+          "instrument": "KOTAKBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0446,
+          "pnl": 0.0,
+          "capital_after": 4978310.72
+        },
+        {
+          "as_of": "2022-10-11",
+          "instrument": "AXISBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0519,
+          "pnl": 0.0,
+          "capital_after": 4978310.72
+        },
+        {
+          "as_of": "2022-10-18",
+          "instrument": "HINDUNILVR.NS",
+          "action": "sell",
+          "size": 0.03,
+          "fwd_ret": -0.0384,
+          "pnl": 0.00109,
+          "capital_after": 4983737.08
+        },
+        {
+          "as_of": "2022-10-25",
+          "instrument": "BAJFINANCE.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0321,
+          "pnl": -0.0,
+          "capital_after": 4983737.08
+        },
+        {
+          "as_of": "2022-11-01",
+          "instrument": "MARUTI.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0294,
+          "pnl": -0.0,
+          "capital_after": 4983737.08
+        },
+        {
+          "as_of": "2022-11-08",
+          "instrument": "TITAN.NS",
+          "action": "buy",
+          "size": 0.06,
+          "fwd_ret": -0.0446,
+          "pnl": -0.0028,
+          "capital_after": 4969782.62
+        },
+        {
+          "as_of": "2022-11-15",
+          "instrument": "ASIANPAINT.NS",
+          "action": "buy",
+          "size": 0.062,
+          "fwd_ret": 0.0204,
+          "pnl": 0.00113,
+          "capital_after": 4975398.47
+        },
+        {
+          "as_of": "2022-11-22",
+          "instrument": "SUNPHARMA.NS",
+          "action": "buy",
+          "size": 0.061,
+          "fwd_ret": -0.0118,
+          "pnl": -0.00085,
+          "capital_after": 4971169.39
+        },
+        {
+          "as_of": "2022-11-29",
+          "instrument": "WIPRO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0469,
+          "pnl": -0.0,
+          "capital_after": 4971169.39
+        },
+        {
+          "as_of": "2022-12-06",
+          "instrument": "NTPC.NS",
+          "action": "buy",
+          "size": 0.059,
+          "fwd_ret": -0.0305,
+          "pnl": -0.00193,
+          "capital_after": 4961575.03
+        },
+        {
+          "as_of": "2022-12-13",
+          "instrument": "POWERGRID.NS",
+          "action": "buy",
+          "size": 0.06,
+          "fwd_ret": -0.0331,
+          "pnl": -0.00211,
+          "capital_after": 4951106.11
+        },
+        {
+          "as_of": "2022-12-20",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "buy",
+          "size": 0.057,
+          "fwd_ret": 0.0479,
+          "pnl": 0.00261,
+          "capital_after": 4964028.49
+        },
+        {
+          "as_of": "2022-12-27",
+          "instrument": "HCLTECH.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0843,
+          "pnl": 0.0,
+          "capital_after": 4964028.49
+        },
+        {
+          "as_of": "2023-01-03",
+          "instrument": "ONGC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0191,
+          "pnl": -0.0,
+          "capital_after": 4964028.49
+        },
+        {
+          "as_of": "2023-01-10",
+          "instrument": "COALINDIA.NS",
+          "action": "sell",
+          "size": 0.057,
+          "fwd_ret": 0.0054,
+          "pnl": -0.00043,
+          "capital_after": 4961893.96
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_20261006T123319Z.json",
+      "scenario_set": "v4-2022-blind",
+      "prompt_note": "Official one-shot run on prompt m9, scenario set v4-2022-blind. Gates unchanged since 2026-09-18 freeze; prompt-versioned session ids supersede all prior pilots. Whatever the verdict, it is recorded as-is.",
+      "n_scenarios": 24,
+      "n_decisive": 9,
+      "accuracy": 0.111,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 4961893.96,
+        "profit": -38106.04,
+        "return_pct": -0.76,
+        "max_drawdown_pct": 0.98,
+        "n_traded": 15
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 4953645.41,
+        "profit": -46354.59,
+        "return_pct": -0.93,
+        "max_drawdown_pct": 1.2,
+        "n_traded": 15
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2022-08-02",
+          "instrument": "RELIANCE.NS",
+          "action": "buy",
+          "size": 0.059,
+          "fwd_ret": -0.014,
+          "pnl": -0.00095,
+          "capital_after": 4995250.0
+        },
+        {
+          "as_of": "2022-08-09",
+          "instrument": "TCS.NS",
+          "action": "buy",
+          "size": 0.058,
+          "fwd_ret": -0.0407,
+          "pnl": -0.00248,
+          "capital_after": 4982861.78
+        },
+        {
+          "as_of": "2022-08-16",
+          "instrument": "HDFCBANK.NS",
+          "action": "buy",
+          "size": 0.06,
+          "fwd_ret": 0.0072,
+          "pnl": 0.0003,
+          "capital_after": 4984356.64
+        },
+        {
+          "as_of": "2022-08-23",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1103,
+          "pnl": -0.0,
+          "capital_after": 4984356.64
+        },
+        {
+          "as_of": "2022-08-30",
+          "instrument": "ICICIBANK.NS",
+          "action": "buy",
+          "size": 0.06,
+          "fwd_ret": -0.0348,
+          "pnl": -0.00222,
+          "capital_after": 4973291.37
+        },
+        {
+          "as_of": "2022-09-06",
+          "instrument": "SBIN.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": 0.0084,
+          "pnl": 0.00019,
+          "capital_after": 4974236.29
+        },
+        {
+          "as_of": "2022-09-13",
+          "instrument": "BHARTIARTL.NS",
+          "action": "buy",
+          "size": 0.03,
+          "fwd_ret": -0.0184,
+          "pnl": -0.00062,
+          "capital_after": 4971152.27
+        },
+        {
+          "as_of": "2022-09-20",
+          "instrument": "ITC.NS",
+          "action": "buy",
+          "size": 0.061,
+          "fwd_ret": 0.0257,
+          "pnl": 0.00144,
+          "capital_after": 4978310.72
+        },
+        {
+          "as_of": "2022-09-27",
+          "instrument": "LT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0761,
+          "pnl": 0.0,
+          "capital_after": 4978310.72
+        },
+        {
+          "as_of": "2022-10-04",
+          "instrument": "KOTAKBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0446,
+          "pnl": 0.0,
+          "capital_after": 4978310.72
+        },
+        {
+          "as_of": "2022-10-11",
+          "instrument": "AXISBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0519,
+          "pnl": 0.0,
+          "capital_after": 4978310.72
+        },
+        {
+          "as_of": "2022-10-18",
+          "instrument": "HINDUNILVR.NS",
+          "action": "sell",
+          "size": 0.03,
+          "fwd_ret": -0.0384,
+          "pnl": 0.00109,
+          "capital_after": 4983737.08
+        },
+        {
+          "as_of": "2022-10-25",
+          "instrument": "BAJFINANCE.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0321,
+          "pnl": -0.0,
+          "capital_after": 4983737.08
+        },
+        {
+          "as_of": "2022-11-01",
+          "instrument": "MARUTI.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0294,
+          "pnl": -0.0,
+          "capital_after": 4983737.08
+        },
+        {
+          "as_of": "2022-11-08",
+          "instrument": "TITAN.NS",
+          "action": "buy",
+          "size": 0.06,
+          "fwd_ret": -0.0446,
+          "pnl": -0.0028,
+          "capital_after": 4969782.62
+        },
+        {
+          "as_of": "2022-11-15",
+          "instrument": "ASIANPAINT.NS",
+          "action": "buy",
+          "size": 0.062,
+          "fwd_ret": 0.0204,
+          "pnl": 0.00113,
+          "capital_after": 4975398.47
+        },
+        {
+          "as_of": "2022-11-22",
+          "instrument": "SUNPHARMA.NS",
+          "action": "buy",
+          "size": 0.061,
+          "fwd_ret": -0.0118,
+          "pnl": -0.00085,
+          "capital_after": 4971169.39
+        },
+        {
+          "as_of": "2022-11-29",
+          "instrument": "WIPRO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0469,
+          "pnl": -0.0,
+          "capital_after": 4971169.39
+        },
+        {
+          "as_of": "2022-12-06",
+          "instrument": "NTPC.NS",
+          "action": "buy",
+          "size": 0.059,
+          "fwd_ret": -0.0305,
+          "pnl": -0.00193,
+          "capital_after": 4961575.03
+        },
+        {
+          "as_of": "2022-12-13",
+          "instrument": "POWERGRID.NS",
+          "action": "buy",
+          "size": 0.06,
+          "fwd_ret": -0.0331,
+          "pnl": -0.00211,
+          "capital_after": 4951106.11
+        },
+        {
+          "as_of": "2022-12-20",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "buy",
+          "size": 0.057,
+          "fwd_ret": 0.0479,
+          "pnl": 0.00261,
+          "capital_after": 4964028.49
+        },
+        {
+          "as_of": "2022-12-27",
+          "instrument": "HCLTECH.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0843,
+          "pnl": 0.0,
+          "capital_after": 4964028.49
+        },
+        {
+          "as_of": "2023-01-03",
+          "instrument": "ONGC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0191,
+          "pnl": -0.0,
+          "capital_after": 4964028.49
+        },
+        {
+          "as_of": "2023-01-10",
+          "instrument": "COALINDIA.NS",
+          "action": "sell",
+          "size": 0.057,
+          "fwd_ret": 0.0054,
+          "pnl": -0.00043,
+          "capital_after": 4961893.96
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_deviloff_20261009T131202Z.json",
+      "scenario_set": "v1-2023-2024+deviloff",
+      "prompt_note": "",
+      "n_scenarios": 24,
+      "n_decisive": 12,
+      "accuracy": 0.0,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2023-07-10",
+          "instrument": "RELIANCE.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0169,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2023-08-08",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0515,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2023-09-12",
+          "instrument": "HDFCBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0658,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2023-10-25",
+          "instrument": "TCS.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0361,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2023-11-15",
+          "instrument": "ICICIBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.1083,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2023-12-05",
+          "instrument": "SBIN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0564,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-01-16",
+          "instrument": "EICHERMOT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0473,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-02-12",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0185,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-03-14",
+          "instrument": "SUNPHARMA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0205,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-04-10",
+          "instrument": "LT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0815,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-05-08",
+          "instrument": "AXISBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0638,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-06-05",
+          "instrument": "KOTAKBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.068,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-06-20",
+          "instrument": "MARUTI.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.036,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-07-11",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.02,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-08-06",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0313,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-08-22",
+          "instrument": "POWERGRID.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0137,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-09-10",
+          "instrument": "ONGC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0121,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-09-26",
+          "instrument": "COALINDIA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1443,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-10-15",
+          "instrument": "BHARTIARTL.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1058,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-10-29",
+          "instrument": "HCLTECH.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.005,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-11-14",
+          "instrument": "BAJFINANCE.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.089,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-11-28",
+          "instrument": "ASIANPAINT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0772,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-12-10",
+          "instrument": "ADANIENT.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0084,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2024-12-26",
+          "instrument": "WIPRO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0356,
+          "pnl": 0.0,
+          "capital_after": 5000000.0
+        }
+      ]
+    },
+    {
+      "report": "data\\eval_report_retry_20261006T160307Z.json",
+      "scenario_set": "v3rd-2026-clean+retry-m10",
+      "prompt_note": "One-shot retry-m10 eval (prereg data/prereg_overlay_retry.md). Labels use split-adjusted forward returns (Day 1 fix); not strictly comparable to pre-20261007 reports. As-is.",
+      "n_scenarios": 24,
+      "n_decisive": 17,
+      "accuracy": 0.118,
+      "verdict": "FAIL",
+      "capital": 5000000.0,
+      "llm_arm": {
+        "mode": "llm",
+        "final": 5008248.91,
+        "profit": 8248.91,
+        "return_pct": 0.16,
+        "max_drawdown_pct": 0.64,
+        "n_traded": 7
+      },
+      "always_long_arm": {
+        "mode": "long",
+        "final": 5003153.59,
+        "profit": 3153.59,
+        "return_pct": 0.06,
+        "max_drawdown_pct": 0.4,
+        "n_traded": 7
+      },
+      "hold_arm": {
+        "mode": "hold",
+        "final": 5000000.0,
+        "profit": 0.0,
+        "return_pct": 0.0,
+        "max_drawdown_pct": 0.0,
+        "n_traded": 0
+      },
+      "llm_curve": [
+        {
+          "as_of": "2026-01-06",
+          "instrument": "RELIANCE.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0404,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2026-01-13",
+          "instrument": "INFY.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1336,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2026-01-20",
+          "instrument": "TCS.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1424,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2026-01-27",
+          "instrument": "HDFCBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0269,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2026-02-03",
+          "instrument": "ICICIBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0361,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2026-02-10",
+          "instrument": "SBIN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0826,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2026-02-17",
+          "instrument": "AXISBANK.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1235,
+          "pnl": -0.0,
+          "capital_after": 5000000.0
+        },
+        {
+          "as_of": "2026-02-24",
+          "instrument": "KOTAKBANK.NS",
+          "action": "sell",
+          "size": 0.025,
+          "fwd_ret": -0.1384,
+          "pnl": 0.00341,
+          "capital_after": 5017050.0
+        },
+        {
+          "as_of": "2026-03-03",
+          "instrument": "MARUTI.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.1038,
+          "pnl": -0.0,
+          "capital_after": 5017050.0
+        },
+        {
+          "as_of": "2026-03-10",
+          "instrument": "TITAN.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0722,
+          "pnl": 0.0,
+          "capital_after": 5017050.0
+        },
+        {
+          "as_of": "2026-03-17",
+          "instrument": "SUNPHARMA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0636,
+          "pnl": -0.0,
+          "capital_after": 5017050.0
+        },
+        {
+          "as_of": "2026-03-24",
+          "instrument": "ULTRACEMCO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0547,
+          "pnl": 0.0,
+          "capital_after": 5017050.0
+        },
+        {
+          "as_of": "2026-03-31",
+          "instrument": "NTPC.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0946,
+          "pnl": 0.0,
+          "capital_after": 5017050.0
+        },
+        {
+          "as_of": "2026-04-07",
+          "instrument": "POWERGRID.NS",
+          "action": "sell",
+          "size": 0.0315,
+          "fwd_ret": 0.0643,
+          "pnl": -0.00209,
+          "capital_after": 5006564.37
+        },
+        {
+          "as_of": "2026-04-14",
+          "instrument": "ONGC.NS",
+          "action": "sell",
+          "size": 0.028,
+          "fwd_ret": 0.0332,
+          "pnl": -0.00099,
+          "capital_after": 5001607.87
+        },
+        {
+          "as_of": "2026-04-21",
+          "instrument": "CIPLA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.132,
+          "pnl": 0.0,
+          "capital_after": 5001607.87
+        },
+        {
+          "as_of": "2026-05-05",
+          "instrument": "DRREDDY.NS",
+          "action": "buy",
+          "size": 0.026,
+          "fwd_ret": -0.0364,
+          "pnl": -0.001,
+          "capital_after": 4996606.26
+        },
+        {
+          "as_of": "2026-05-12",
+          "instrument": "JSWSTEEL.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.004,
+          "pnl": -0.0,
+          "capital_after": 4996606.26
+        },
+        {
+          "as_of": "2026-05-26",
+          "instrument": "HINDALCO.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": -0.1506,
+          "pnl": -0.00229,
+          "capital_after": 4985164.03
+        },
+        {
+          "as_of": "2026-06-02",
+          "instrument": "GRASIM.NS",
+          "action": "buy",
+          "size": 0.015,
+          "fwd_ret": 0.0125,
+          "pnl": 0.00016,
+          "capital_after": 4985961.66
+        },
+        {
+          "as_of": "2026-06-16",
+          "instrument": "BAJAJ-AUTO.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.028,
+          "pnl": 0.0,
+          "capital_after": 4985961.66
+        },
+        {
+          "as_of": "2026-06-30",
+          "instrument": "COALINDIA.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": -0.0568,
+          "pnl": -0.0,
+          "capital_after": 4985961.66
+        },
+        {
+          "as_of": "2026-07-07",
+          "instrument": "BHARTIARTL.NS",
+          "action": "hold",
+          "size": 0.0,
+          "fwd_ret": 0.0608,
+          "pnl": 0.0,
+          "capital_after": 4985961.66
+        },
+        {
+          "as_of": "2026-07-14",
+          "instrument": "HCLTECH.NS",
+          "action": "buy",
+          "size": 0.025,
+          "fwd_ret": 0.1809,
+          "pnl": 0.00447,
+          "capital_after": 5008248.91
+        }
+      ]
+    }
+  ]
+}

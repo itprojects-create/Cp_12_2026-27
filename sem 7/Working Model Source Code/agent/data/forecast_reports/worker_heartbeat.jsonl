@@ -1,0 +1,18 @@
+{"job": "settle", "ok": true, "detail": "settled=0 waiting=9", "at_utc": "2026-11-12T10:45:18.300896+00:00", "session_date": "2026-11-12"}
+{"job": "daily", "ok": true, "detail": "locked=200 reused=0 failed=0", "at_utc": "2026-11-12T11:28:00.086025+00:00", "session_date": "2026-11-12"}
+{"job": "daily", "ok": true, "detail": "locked=0 reused=200 failed=0", "at_utc": "2026-11-12T15:41:24.771692+00:00", "session_date": "2026-11-12"}
+{"job": "settle", "ok": true, "detail": "settled=0 waiting=9", "at_utc": "2026-11-12T15:41:25.383220+00:00", "session_date": "2026-11-12"}
+{"job": "paper", "ok": true, "detail": "picked=3 scored=0", "at_utc": "2026-11-12T15:41:25.532988+00:00", "session_date": "2026-11-12"}
+{"job": "catchup", "ok": true, "detail": "daily+settle+paper chain re-run", "at_utc": "2026-11-12T15:41:25.546025+00:00", "session_date": "2026-11-12"}
+{"job": "settle", "ok": true, "detail": "settled=9 waiting=0", "at_utc": "2026-11-13T10:45:14.887003+00:00", "session_date": "2026-11-13"}
+{"job": "settle", "ok": true, "detail": "settled=0 waiting=44", "at_utc": "2026-11-16T13:15:45.112650+00:00", "session_date": "2026-11-16"}
+{"job": "daily", "ok": true, "detail": "locked=200 reused=0 failed=0", "at_utc": "2026-11-18T15:57:05.885641+00:00", "session_date": "2026-11-18"}
+{"job": "settle", "ok": true, "detail": "settled=144 waiting=101", "at_utc": "2026-11-18T15:57:13.362935+00:00", "session_date": "2026-11-18"}
+{"job": "paper", "ok": true, "detail": "picked=3 scored=0", "at_utc": "2026-11-18T15:57:13.542151+00:00", "session_date": "2026-11-18"}
+{"job": "catchup", "ok": true, "detail": "daily+settle+paper chain re-run", "at_utc": "2026-11-18T15:57:13.542151+00:00", "session_date": "2026-11-18"}
+{"job": "settle", "ok": true, "detail": "settled=101 waiting=0", "at_utc": "2026-11-19T12:58:05.629824+00:00", "session_date": "2026-11-19"}
+{"job": "daily", "ok": true, "detail": "locked=128 reused=72 failed=0", "at_utc": "2026-11-19T15:47:18.534986+00:00", "session_date": "2026-11-19"}
+{"job": "settle", "ok": true, "detail": "settled=0 waiting=0", "at_utc": "2026-11-19T15:47:18.618783+00:00", "session_date": "2026-11-19"}
+{"job": "paper", "ok": true, "detail": "picked=3 scored=0", "at_utc": "2026-11-19T15:47:18.738636+00:00", "session_date": "2026-11-19"}
+{"job": "catchup", "ok": true, "detail": "daily+settle+paper chain re-run", "at_utc": "2026-11-19T15:47:18.738636+00:00", "session_date": "2026-11-19"}
+{"job": "settle", "ok": true, "detail": "settled=0 waiting=3", "at_utc": "2026-11-20T10:45:12.138612+00:00", "session_date": "2026-11-20"}

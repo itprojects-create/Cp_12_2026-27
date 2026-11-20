@@ -1,0 +1,3621 @@
+{
+  "generated_at": "2026-11-12T08:57:50.935757+00:00",
+  "spec": {
+    "strategy": "equal-weight NIFTY50, monthly rebalance, as-of membership",
+    "universe": "nifty50",
+    "decision_rule": "00:15 IST on the month's first observed session",
+    "entry": "next_session_open_after_decision",
+    "exit": "horizon_sessions_close_conservative_extension",
+    "notional_paise_per_name": 10000000,
+    "membership_mode": "default (snapshot_floor disclosed; PARTIAL)",
+    "benchmark": "official NIFTY50 TRI via benchmark_total_return (T+1 joins)",
+    "fee_policy": "full-notional round-trip per name per month (conservative upper bound); gross-only before 2026-03-01",
+    "attribution": "Membership: Jha, A. (2026). NSE Historical Membership (Point-in-Time). github.com/aditya-jha/nse-historical-membership. Derived from public NSE Indices Limited press releases and NSE Exchange circulars. CC BY 4.0."
+  },
+  "labels": {
+    "retrospective": "backtest over archived official records \u2014 not a forward prediction",
+    "survivorship": "none \u2014 membership is as-of at every decision; SURVIVOR_BIASED must not be claimed",
+    "benchmark_relative": "strategy-minus-TRI is excess vs benchmark; NEVER display as cash profit",
+    "bars_source_class": "OFFICIAL_EXCHANGE_RECORD"
+  },
+  "panel": {
+    "observed_sessions": 2777,
+    "first_session": "2015-01-01",
+    "last_session": "2026-09-17",
+    "membership_attribution": "Membership: Jha, A. (2026). NSE Historical Membership (Point-in-Time). github.com/aditya-jha/nse-historical-membership. Derived from public NSE Indices Limited press releases and NSE Exchange circulars. CC BY 4.0."
+  },
+  "default_run": {
+    "cumulative_gross": 1.7107436329702324,
+    "strategy_cagr_gross": 0.04746543624459165,
+    "nifty50_tri_total_return": 2.1546286999859285,
+    "nifty50_tri_cagr": 0.10431540458095334,
+    "excess_benchmark_relative": -1.4438850670156962,
+    "excess_claim": "v3_benchmark_relative semantics \u2014 excess vs benchmark, never cash profit",
+    "net_chain_over_covered_months": -0.0007756697165501869,
+    "net_months_covered": 6,
+    "net_note": "net chained ONLY over months whose entry falls on/after 2026-03-01 (fee truth); earlier months are gross-only with charges_status=SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+    "action_discontinuities": {
+      "suspected_windows": 31,
+      "months_affected": [
+        "2015-03",
+        "2015-06",
+        "2015-07",
+        "2016-07",
+        "2016-10",
+        "2017-06",
+        "2017-09",
+        "2017-12",
+        "2018-03",
+        "2018-05",
+        "2018-09",
+        "2019-07",
+        "2019-09",
+        "2019-12",
+        "2020-03",
+        "2020-08",
+        "2022-07",
+        "2022-09",
+        "2024-06",
+        "2024-10",
+        "2024-12",
+        "2025-01",
+        "2025-06",
+        "2025-08",
+        "2025-10",
+        "2026-01"
+      ],
+      "examples": [
+        {
+          "symbol": "HCLTECH",
+          "events": [
+            {
+              "session": "2015-03-19",
+              "kind": "close/prev_close",
+              "ratio": 0.4882
+            },
+            {
+              "session": "2015-03-19",
+              "kind": "open/prev_close",
+              "ratio": 0.4934
+            }
+          ]
+        },
+        {
+          "symbol": "TECHM",
+          "events": [
+            {
+              "session": "2015-03-19",
+              "kind": "close/prev_close",
+              "ratio": 0.2454
+            },
+            {
+              "session": "2015-03-19",
+              "kind": "open/prev_close",
+              "ratio": 0.2482
+            }
+          ]
+        },
+        {
+          "symbol": "INFY",
+          "events": [
+            {
+              "session": "2015-06-15",
+              "kind": "close/prev_close",
+              "ratio": 0.5015
+            },
+            {
+              "session": "2015-06-15",
+              "kind": "open/prev_close",
+              "ratio": 0.4946
+            }
+          ]
+        },
+        {
+          "symbol": "AUROPHARMA",
+          "events": [
+            {
+              "session": "2015-07-20",
+              "kind": "close/prev_close",
+              "ratio": 0.5087
+            },
+            {
+              "session": "2015-07-20",
+              "kind": "open/prev_close",
+              "ratio": 0.5038
+            }
+          ]
+        },
+        {
+          "symbol": "KOTAKBANK",
+          "events": [
+            {
+              "session": "2015-07-08",
+              "kind": "close/prev_close",
+              "ratio": 0.496
+            },
+            {
+              "session": "2015-07-08",
+              "kind": "open/prev_close",
+              "ratio": 0.4937
+            }
+          ]
+        },
+        {
+          "symbol": "BPCL",
+          "events": [
+            {
+              "session": "2016-07-13",
+              "kind": "close/prev_close",
+              "ratio": 0.4869
+            },
+            {
+              "session": "2016-07-13",
+              "kind": "open/prev_close",
+              "ratio": 0.4997
+            }
+          ]
+        },
+        {
+          "symbol": "GRASIM",
+          "events": [
+            {
+              "session": "2016-10-06",
+              "kind": "close/prev_close",
+              "ratio": 0.2046
+            },
+            {
+              "session": "2016-10-06",
+              "kind": "open/prev_close",
+              "ratio": 0.2015
+            }
+          ]
+        },
+        {
+          "symbol": "WIPRO",
+          "events": [
+            {
+              "session": "2017-06-13",
+              "kind": "close/prev_close",
+              "ratio": 0.4921
+            },
+            {
+              "session": "2017-06-13",
+              "kind": "open/prev_close",
+              "ratio": 0.494
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE",
+          "events": [
+            {
+              "session": "2017-09-07",
+              "kind": "close/prev_close",
+              "ratio": 0.4972
+            },
+            {
+              "session": "2017-09-07",
+              "kind": "open/prev_close",
+              "ratio": 0.5002
+            }
+          ]
+        },
+        {
+          "symbol": "YESBANK",
+          "events": [
+            {
+              "session": "2017-09-21",
+              "kind": "close/prev_close",
+              "ratio": 0.2005
+            },
+            {
+              "session": "2017-09-21",
+              "kind": "open/prev_close",
+              "ratio": 0.1996
+            }
+          ]
+        },
+        {
+          "symbol": "M&M",
+          "events": [
+            {
+              "session": "2017-12-21",
+              "kind": "close/prev_close",
+              "ratio": 0.4814
+            },
+            {
+              "session": "2017-12-21",
+              "kind": "open/prev_close",
+              "ratio": 0.4975
+            }
+          ]
+        },
+        {
+          "symbol": "IOC",
+          "events": [
+            {
+              "session": "2018-03-15",
+              "kind": "close/prev_close",
+              "ratio": 0.4861
+            },
+            {
+              "session": "2018-03-15",
+              "kind": "open/prev_close",
+              "ratio": 0.4835
+            }
+          ]
+        },
+        {
+          "symbol": "TCS",
+          "events": [
+            {
+              "session": "2018-05-31",
+              "kind": "close/prev_close",
+              "ratio": 0.4954
+            },
+            {
+              "session": "2018-05-31",
+              "kind": "open/prev_close",
+              "ratio": 0.4934
+            }
+          ]
+        },
+        {
+          "symbol": "INFY",
+          "events": [
+            {
+              "session": "2018-09-04",
+              "kind": "close/prev_close",
+              "ratio": 0.514
+            },
+            {
+              "session": "2018-09-04",
+              "kind": "open/prev_close",
+              "ratio": 0.5034
+            }
+          ]
+        },
+        {
+          "symbol": "GAIL",
+          "events": [
+            {
+              "session": "2019-07-09",
+              "kind": "close/prev_close",
+              "ratio": 0.4869
+            },
+            {
+              "session": "2019-07-09",
+              "kind": "open/prev_close",
+              "ratio": 0.4998
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK",
+          "events": [
+            {
+              "session": "2019-09-19",
+              "kind": "close/prev_close",
+              "ratio": 0.5033
+            },
+            {
+              "session": "2019-09-19",
+              "kind": "open/prev_close",
+              "ratio": 0.5028
+            }
+          ]
+        },
+        {
+          "symbol": "HCLTECH",
+          "events": [
+            {
+              "session": "2019-12-05",
+              "kind": "close/prev_close",
+              "ratio": 0.4984
+            },
+            {
+              "session": "2019-12-05",
+              "kind": "open/prev_close",
+              "ratio": 0.5009
+            }
+          ]
+        },
+        {
+          "symbol": "YESBANK",
+          "events": [
+            {
+              "session": "2020-03-06",
+              "kind": "close/prev_close",
+              "ratio": 0.4389
+            },
+            {
+              "session": "2020-03-17",
+              "kind": "close/prev_close",
+              "ratio": 1.5809
+            }
+          ]
+        },
+        {
+          "symbol": "EICHERMOT",
+          "events": [
+            {
+              "session": "2020-08-24",
+              "kind": "close/prev_close",
+              "ratio": 0.1003
+            },
+            {
+              "session": "2020-08-24",
+              "kind": "open/prev_close",
+              "ratio": 0.1013
+            }
+          ]
+        },
+        {
+          "symbol": "TATASTEEL",
+          "events": [
+            {
+              "session": "2022-07-28",
+              "kind": "close/prev_close",
+              "ratio": 0.1046
+            },
+            {
+              "session": "2022-07-28",
+              "kind": "open/prev_close",
+              "ratio": 0.1023
+            }
+          ]
+        },
+        {
+          "symbol": "BAJAJFINSV",
+          "events": [
+            {
+              "session": "2022-09-13",
+              "kind": "close/prev_close",
+              "ratio": 0.1041
+            },
+            {
+              "session": "2022-09-13",
+              "kind": "open/prev_close",
+              "ratio": 0.1024
+            }
+          ]
+        },
+        {
+          "symbol": "BPCL",
+          "events": [
+            {
+              "session": "2024-06-21",
+              "kind": "close/prev_close",
+              "ratio": 0.4912
+            },
+            {
+              "session": "2024-06-21",
+              "kind": "open/prev_close",
+              "ratio": 0.5078
+            }
+          ]
+        },
+        {
+          "symbol": "DRREDDY",
+          "events": [
+            {
+              "session": "2024-10-28",
+              "kind": "close/prev_close",
+              "ratio": 0.2013
+            },
+            {
+              "session": "2024-10-28",
+              "kind": "open/prev_close",
+              "ratio": 0.2026
+            }
+          ]
+        },
+        {
+          "symbol": "RELIANCE",
+          "events": [
+            {
+              "session": "2024-10-28",
+              "kind": "close/prev_close",
+              "ratio": 0.5024
+            },
+            {
+              "session": "2024-10-28",
+              "kind": "open/prev_close",
+              "ratio": 0.5034
+            }
+          ]
+        },
+        {
+          "symbol": "WIPRO",
+          "events": [
+            {
+              "session": "2024-12-03",
+              "kind": "close/prev_close",
+              "ratio": 0.4989
+            },
+            {
+              "session": "2024-12-03",
+              "kind": "open/prev_close",
+              "ratio": 0.5053
+            }
+          ]
+        },
+        {
+          "symbol": "SHRIRAMFIN",
+          "events": [
+            {
+              "session": "2025-01-10",
+              "kind": "close/prev_close",
+              "ratio": 0.1893
+            },
+            {
+              "session": "2025-01-10",
+              "kind": "open/prev_close",
+              "ratio": 0.2014
+            }
+          ]
+        },
+        {
+          "symbol": "BAJFINANCE",
+          "events": [
+            {
+              "session": "2025-06-16",
+              "kind": "close/prev_close",
+              "ratio": 0.1005
+            },
+            {
+              "session": "2025-06-16",
+              "kind": "open/prev_close",
+              "ratio": 0.1025
+            }
+          ]
+        },
+        {
+          "symbol": "HDFCBANK",
+          "events": [
+            {
+              "session": "2025-08-26",
+              "kind": "close/prev_close",
+              "ratio": 0.4956
+            },
+            {
+              "session": "2025-08-26",
+              "kind": "open/prev_close",
+              "ratio": 0.4987
+            }
+          ]
+        },
+        {
+          "symbol": "NESTLEIND",
+          "events": [
+            {
+              "session": "2025-08-08",
+              "kind": "close/prev_close",
+              "ratio": 0.4907
+            },
+            {
+              "session": "2025-08-08",
+              "kind": "open/prev_close",
+              "ratio": 0.5021
+            }
+          ]
+        },
+        {
+          "symbol": "TMPV",
+          "events": [
+            {
+              "session": "2025-10-14",
+              "kind": "close/prev_close",
+              "ratio": 0.5985
+            },
+            {
+              "session": "2025-10-14",
+              "kind": "open/prev_close",
+              "ratio": 0.6054
+            }
+          ]
+        },
+        {
+          "symbol": "KOTAKBANK",
+          "events": [
+            {
+              "session": "2026-01-14",
+              "kind": "close/prev_close",
+              "ratio": 0.1974
+            },
+            {
+              "session": "2026-01-14",
+              "kind": "open/prev_close",
+              "ratio": 0.1998
+            }
+          ]
+        }
+      ],
+      "policy": "windows are REPORTED, never dropped (dropping would bias upward); no factor is imputed; adjustment status stays UNKNOWN until a verified corporate-actions source is ingested",
+      "consequence": "the strategy-vs-TRI comparison is NOT economically interpretable: TRI assumes action-adjusted holding, the strategy holds raw unadjusted prices"
+    },
+    "n_labeled_months": 133,
+    "n_abstain_months": 8,
+    "abstain": [
+      {
+        "month": "2015-01",
+        "cause": "NO_FILLS",
+        "note": "50 eligible members produced no executable label"
+      },
+      {
+        "month": "2023-12",
+        "cause": "NO_NEXT_REBALANCE",
+        "note": "data ends before the next rebalance; position would be open at data end \u2014 not labelled, never closed synthetically"
+      },
+      {
+        "month": "2024-01",
+        "cause": "MISSING_SPAN",
+        "note": "no observed session in this month (2024 H1 archive hole); nothing decided, nothing fabricated"
+      },
+      {
+        "month": "2024-02",
+        "cause": "MISSING_SPAN",
+        "note": "no observed session in this month (2024 H1 archive hole); nothing decided, nothing fabricated"
+      },
+      {
+        "month": "2024-03",
+        "cause": "MISSING_SPAN",
+        "note": "no observed session in this month (2024 H1 archive hole); nothing decided, nothing fabricated"
+      },
+      {
+        "month": "2024-04",
+        "cause": "MISSING_SPAN",
+        "note": "no observed session in this month (2024 H1 archive hole); nothing decided, nothing fabricated"
+      },
+      {
+        "month": "2024-05",
+        "cause": "MISSING_SPAN",
+        "note": "no observed session in this month (2024 H1 archive hole); nothing decided, nothing fabricated"
+      },
+      {
+        "month": "2026-09",
+        "cause": "NO_NEXT_REBALANCE",
+        "note": "data ends before the next rebalance; position would be open at data end \u2014 not labelled, never closed synthetically"
+      }
+    ],
+    "months": [
+      {
+        "month": "2015-01",
+        "decision_ts": "2015-01-01T00:15:00+05:30",
+        "entry_session": "2015-01-01",
+        "exit_session_target": null,
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 0,
+        "n_no_fill": 50,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 48,
+        "charges_status": null,
+        "gross_month": null,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2015-02",
+        "decision_ts": "2015-02-02T00:15:00+05:30",
+        "entry_session": "2015-02-02",
+        "exit_session_target": "2015-03-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 48,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.014550108446025374,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2015-03",
+        "decision_ts": "2015-03-02T00:15:00+05:30",
+        "entry_session": "2015-03-02",
+        "exit_session_target": "2015-04-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 48,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.0684573163478363,
+        "net_month": null,
+        "n_action_discontinuity_windows": 2,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "HCLTECH",
+            "events": [
+              {
+                "session": "2015-03-19",
+                "kind": "close/prev_close",
+                "ratio": 0.4882
+              },
+              {
+                "session": "2015-03-19",
+                "kind": "open/prev_close",
+                "ratio": 0.4934
+              }
+            ]
+          },
+          {
+            "symbol": "TECHM",
+            "events": [
+              {
+                "session": "2015-03-19",
+                "kind": "close/prev_close",
+                "ratio": 0.2454
+              },
+              {
+                "session": "2015-03-19",
+                "kind": "open/prev_close",
+                "ratio": 0.2482
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2015-04",
+        "decision_ts": "2015-04-01T00:15:00+05:30",
+        "entry_session": "2015-04-01",
+        "exit_session_target": "2015-05-04",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 46,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.02776112043798688,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2015-05",
+        "decision_ts": "2015-05-04T00:15:00+05:30",
+        "entry_session": "2015-05-04",
+        "exit_session_target": "2015-06-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 46,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.035135348211495714,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2015-06",
+        "decision_ts": "2015-06-01T00:15:00+05:30",
+        "entry_session": "2015-06-01",
+        "exit_session_target": "2015-07-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 46,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.018957720093624328,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "INFY",
+            "events": [
+              {
+                "session": "2015-06-15",
+                "kind": "close/prev_close",
+                "ratio": 0.5015
+              },
+              {
+                "session": "2015-06-15",
+                "kind": "open/prev_close",
+                "ratio": 0.4946
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2015-07",
+        "decision_ts": "2015-07-01T00:15:00+05:30",
+        "entry_session": "2015-07-01",
+        "exit_session_target": "2015-08-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 46,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.0012631402747653106,
+        "net_month": null,
+        "n_action_discontinuity_windows": 2,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "AUROPHARMA",
+            "events": [
+              {
+                "session": "2015-07-20",
+                "kind": "close/prev_close",
+                "ratio": 0.5087
+              },
+              {
+                "session": "2015-07-20",
+                "kind": "open/prev_close",
+                "ratio": 0.5038
+              }
+            ]
+          },
+          {
+            "symbol": "KOTAKBANK",
+            "events": [
+              {
+                "session": "2015-07-08",
+                "kind": "close/prev_close",
+                "ratio": 0.496
+              },
+              {
+                "session": "2015-07-08",
+                "kind": "open/prev_close",
+                "ratio": 0.4937
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2015-08",
+        "decision_ts": "2015-08-03T00:15:00+05:30",
+        "entry_session": "2015-08-03",
+        "exit_session_target": "2015-09-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 46,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.07455516662734307,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2015-09",
+        "decision_ts": "2015-09-01T00:15:00+05:30",
+        "entry_session": "2015-09-01",
+        "exit_session_target": "2015-10-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 46,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.003946175829718175,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2015-10",
+        "decision_ts": "2015-10-01T00:15:00+05:30",
+        "entry_session": "2015-10-01",
+        "exit_session_target": "2015-11-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.011224285338021382,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2015-11",
+        "decision_ts": "2015-11-02T00:15:00+05:30",
+        "entry_session": "2015-11-02",
+        "exit_session_target": "2015-12-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.01282639047416811,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2015-12",
+        "decision_ts": "2015-12-01T00:15:00+05:30",
+        "entry_session": "2015-12-01",
+        "exit_session_target": "2016-01-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.0067251047078178625,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-01",
+        "decision_ts": "2016-01-01T00:15:00+05:30",
+        "entry_session": "2016-01-01",
+        "exit_session_target": "2016-02-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.056251348992788115,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-02",
+        "decision_ts": "2016-02-01T00:15:00+05:30",
+        "entry_session": "2016-02-01",
+        "exit_session_target": "2016-03-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.06899904905434423,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-03",
+        "decision_ts": "2016-03-01T00:15:00+05:30",
+        "entry_session": "2016-03-01",
+        "exit_session_target": "2016-04-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.10761826168819104,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-04",
+        "decision_ts": "2016-04-01T00:15:00+05:30",
+        "entry_session": "2016-04-01",
+        "exit_session_target": "2016-05-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.027881052524962324,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-05",
+        "decision_ts": "2016-05-02T00:15:00+05:30",
+        "entry_session": "2016-05-02",
+        "exit_session_target": "2016-06-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.029973987837671873,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-06",
+        "decision_ts": "2016-06-01T00:15:00+05:30",
+        "entry_session": "2016-06-01",
+        "exit_session_target": "2016-07-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.025603885567369932,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-07",
+        "decision_ts": "2016-07-01T00:15:00+05:30",
+        "entry_session": "2016-07-01",
+        "exit_session_target": "2016-08-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.03565989737502099,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "BPCL",
+            "events": [
+              {
+                "session": "2016-07-13",
+                "kind": "close/prev_close",
+                "ratio": 0.4869
+              },
+              {
+                "session": "2016-07-13",
+                "kind": "open/prev_close",
+                "ratio": 0.4997
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2016-08",
+        "decision_ts": "2016-08-01T00:15:00+05:30",
+        "entry_session": "2016-08-01",
+        "exit_session_target": "2016-09-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.019654916128475718,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-09",
+        "decision_ts": "2016-09-01T00:15:00+05:30",
+        "entry_session": "2016-09-01",
+        "exit_session_target": "2016-10-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.0140825765587927,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-10",
+        "decision_ts": "2016-10-03T00:15:00+05:30",
+        "entry_session": "2016-10-03",
+        "exit_session_target": "2016-11-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.01290768297475895,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "GRASIM",
+            "events": [
+              {
+                "session": "2016-10-06",
+                "kind": "close/prev_close",
+                "ratio": 0.2046
+              },
+              {
+                "session": "2016-10-06",
+                "kind": "open/prev_close",
+                "ratio": 0.2015
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2016-11",
+        "decision_ts": "2016-11-01T00:15:00+05:30",
+        "entry_session": "2016-11-01",
+        "exit_session_target": "2016-12-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.036002038438360175,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2016-12",
+        "decision_ts": "2016-12-01T00:15:00+05:30",
+        "entry_session": "2016-12-01",
+        "exit_session_target": "2017-01-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.024283079765655854,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-01",
+        "decision_ts": "2017-01-02T00:15:00+05:30",
+        "entry_session": "2017-01-02",
+        "exit_session_target": "2017-02-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.06634904326593725,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-02",
+        "decision_ts": "2017-02-01T00:15:00+05:30",
+        "entry_session": "2017-02-01",
+        "exit_session_target": "2017-03-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.03414995662889359,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-03",
+        "decision_ts": "2017-03-01T00:15:00+05:30",
+        "entry_session": "2017-03-01",
+        "exit_session_target": "2017-04-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 45,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.015477009563259177,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-04",
+        "decision_ts": "2017-04-03T00:15:00+05:30",
+        "entry_session": "2017-04-03",
+        "exit_session_target": "2017-05-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 44,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.012586583770393728,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-05",
+        "decision_ts": "2017-05-02T00:15:00+05:30",
+        "entry_session": "2017-05-02",
+        "exit_session_target": "2017-06-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 44,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.007310595464253625,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-06",
+        "decision_ts": "2017-06-01T00:15:00+05:30",
+        "entry_session": "2017-06-01",
+        "exit_session_target": "2017-07-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 43,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.020153195141810746,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "WIPRO",
+            "events": [
+              {
+                "session": "2017-06-13",
+                "kind": "close/prev_close",
+                "ratio": 0.4921
+              },
+              {
+                "session": "2017-06-13",
+                "kind": "open/prev_close",
+                "ratio": 0.494
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2017-07",
+        "decision_ts": "2017-07-03T00:15:00+05:30",
+        "entry_session": "2017-07-03",
+        "exit_session_target": "2017-08-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 43,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.04080311661870457,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-08",
+        "decision_ts": "2017-08-01T00:15:00+05:30",
+        "entry_session": "2017-08-01",
+        "exit_session_target": "2017-09-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 43,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.0024324729193851246,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-09",
+        "decision_ts": "2017-09-01T00:15:00+05:30",
+        "entry_session": "2017-09-01",
+        "exit_session_target": "2017-10-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 43,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.027960733923070157,
+        "net_month": null,
+        "n_action_discontinuity_windows": 2,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "RELIANCE",
+            "events": [
+              {
+                "session": "2017-09-07",
+                "kind": "close/prev_close",
+                "ratio": 0.4972
+              },
+              {
+                "session": "2017-09-07",
+                "kind": "open/prev_close",
+                "ratio": 0.5002
+              }
+            ]
+          },
+          {
+            "symbol": "YESBANK",
+            "events": [
+              {
+                "session": "2017-09-21",
+                "kind": "close/prev_close",
+                "ratio": 0.2005
+              },
+              {
+                "session": "2017-09-21",
+                "kind": "open/prev_close",
+                "ratio": 0.1996
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2017-10",
+        "decision_ts": "2017-10-03T00:15:00+05:30",
+        "entry_session": "2017-10-03",
+        "exit_session_target": "2017-11-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 40,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.055248011003449206,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-11",
+        "decision_ts": "2017-11-01T00:15:00+05:30",
+        "entry_session": "2017-11-01",
+        "exit_session_target": "2017-12-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 40,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.0268000199723459,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2017-12",
+        "decision_ts": "2017-12-01T00:15:00+05:30",
+        "entry_session": "2017-12-01",
+        "exit_session_target": "2018-01-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 40,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.018460560283840195,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "M&M",
+            "events": [
+              {
+                "session": "2017-12-21",
+                "kind": "close/prev_close",
+                "ratio": 0.4814
+              },
+              {
+                "session": "2017-12-21",
+                "kind": "open/prev_close",
+                "ratio": 0.4975
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2018-01",
+        "decision_ts": "2018-01-01T00:15:00+05:30",
+        "entry_session": "2018-01-01",
+        "exit_session_target": "2018-02-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 40,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.01981975462394777,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2018-02",
+        "decision_ts": "2018-02-01T00:15:00+05:30",
+        "entry_session": "2018-02-01",
+        "exit_session_target": "2018-03-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 40,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.046349817463179406,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2018-03",
+        "decision_ts": "2018-03-01T00:15:00+05:30",
+        "entry_session": "2018-03-01",
+        "exit_session_target": "2018-04-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 40,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.05003862991928743,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "IOC",
+            "events": [
+              {
+                "session": "2018-03-15",
+                "kind": "close/prev_close",
+                "ratio": 0.4861
+              },
+              {
+                "session": "2018-03-15",
+                "kind": "open/prev_close",
+                "ratio": 0.4835
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2018-04",
+        "decision_ts": "2018-04-02T00:15:00+05:30",
+        "entry_session": "2018-04-02",
+        "exit_session_target": "2018-05-02",
+        "membership_status": "PARTIAL",
+        "n_members": 53,
+        "n_eligible": 53,
+        "n_ok": 50,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 40,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.05631699847647335,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2018-05",
+        "decision_ts": "2018-05-02T00:15:00+05:30",
+        "entry_session": "2018-05-02",
+        "exit_session_target": "2018-06-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 37,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.022221215804350238,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "TCS",
+            "events": [
+              {
+                "session": "2018-05-31",
+                "kind": "close/prev_close",
+                "ratio": 0.4954
+              },
+              {
+                "session": "2018-05-31",
+                "kind": "open/prev_close",
+                "ratio": 0.4934
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2018-06",
+        "decision_ts": "2018-06-01T00:15:00+05:30",
+        "entry_session": "2018-06-01",
+        "exit_session_target": "2018-07-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 37,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.010398539165507755,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2018-07",
+        "decision_ts": "2018-07-02T00:15:00+05:30",
+        "entry_session": "2018-07-02",
+        "exit_session_target": "2018-08-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 37,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.04338022298239543,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2018-08",
+        "decision_ts": "2018-08-01T00:15:00+05:30",
+        "entry_session": "2018-08-01",
+        "exit_session_target": "2018-09-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 37,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.04106505770649939,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2018-09",
+        "decision_ts": "2018-09-03T00:15:00+05:30",
+        "entry_session": "2018-09-03",
+        "exit_session_target": "2018-10-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 37,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.08496398869489208,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "INFY",
+            "events": [
+              {
+                "session": "2018-09-04",
+                "kind": "close/prev_close",
+                "ratio": 0.514
+              },
+              {
+                "session": "2018-09-04",
+                "kind": "open/prev_close",
+                "ratio": 0.5034
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2018-10",
+        "decision_ts": "2018-10-01T00:15:00+05:30",
+        "entry_session": "2018-10-01",
+        "exit_session_target": "2018-11-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.04279922897119427,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2018-11",
+        "decision_ts": "2018-11-01T00:15:00+05:30",
+        "entry_session": "2018-11-01",
+        "exit_session_target": "2018-12-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.030899808866760924,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2018-12",
+        "decision_ts": "2018-12-03T00:15:00+05:30",
+        "entry_session": "2018-12-03",
+        "exit_session_target": "2019-01-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.0058840553260459975,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-01",
+        "decision_ts": "2019-01-01T00:15:00+05:30",
+        "entry_session": "2019-01-01",
+        "exit_session_target": "2019-02-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.03106137826173232,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-02",
+        "decision_ts": "2019-02-01T00:15:00+05:30",
+        "entry_session": "2019-02-01",
+        "exit_session_target": "2019-03-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.022554178378218968,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-03",
+        "decision_ts": "2019-03-01T00:15:00+05:30",
+        "entry_session": "2019-03-01",
+        "exit_session_target": "2019-04-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.06213616013768407,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-04",
+        "decision_ts": "2019-04-01T00:15:00+05:30",
+        "entry_session": "2019-04-01",
+        "exit_session_target": "2019-05-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -8.703557931907507e-06,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-05",
+        "decision_ts": "2019-05-02T00:15:00+05:30",
+        "entry_session": "2019-05-02",
+        "exit_session_target": "2019-06-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.00853982271678071,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-06",
+        "decision_ts": "2019-06-03T00:15:00+05:30",
+        "entry_session": "2019-06-03",
+        "exit_session_target": "2019-07-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.015120077974894914,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-07",
+        "decision_ts": "2019-07-01T00:15:00+05:30",
+        "entry_session": "2019-07-01",
+        "exit_session_target": "2019-08-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.10011201321877213,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "GAIL",
+            "events": [
+              {
+                "session": "2019-07-09",
+                "kind": "close/prev_close",
+                "ratio": 0.4869
+              },
+              {
+                "session": "2019-07-09",
+                "kind": "open/prev_close",
+                "ratio": 0.4998
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2019-08",
+        "decision_ts": "2019-08-01T00:15:00+05:30",
+        "entry_session": "2019-08-01",
+        "exit_session_target": "2019-09-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.022299175461792685,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-09",
+        "decision_ts": "2019-09-03T00:15:00+05:30",
+        "entry_session": "2019-09-03",
+        "exit_session_target": "2019-10-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 47,
+        "n_no_fill": 3,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.043084012601119284,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "HDFCBANK",
+            "events": [
+              {
+                "session": "2019-09-19",
+                "kind": "close/prev_close",
+                "ratio": 0.5033
+              },
+              {
+                "session": "2019-09-19",
+                "kind": "open/prev_close",
+                "ratio": 0.5028
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2019-10",
+        "decision_ts": "2019-10-01T00:15:00+05:30",
+        "entry_session": "2019-10-01",
+        "exit_session_target": "2019-11-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.048825448216652495,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-11",
+        "decision_ts": "2019-11-01T00:15:00+05:30",
+        "entry_session": "2019-11-01",
+        "exit_session_target": "2019-12-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.0067563449034261855,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2019-12",
+        "decision_ts": "2019-12-02T00:15:00+05:30",
+        "entry_session": "2019-12-02",
+        "exit_session_target": "2020-01-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.012084942655530333,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "HCLTECH",
+            "events": [
+              {
+                "session": "2019-12-05",
+                "kind": "close/prev_close",
+                "ratio": 0.4984
+              },
+              {
+                "session": "2019-12-05",
+                "kind": "open/prev_close",
+                "ratio": 0.5009
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2020-01",
+        "decision_ts": "2020-01-01T00:15:00+05:30",
+        "entry_session": "2020-01-01",
+        "exit_session_target": "2020-02-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.04995627641963903,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2020-02",
+        "decision_ts": "2020-02-03T00:15:00+05:30",
+        "entry_session": "2020-02-03",
+        "exit_session_target": "2020-03-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.03629485406034446,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2020-03",
+        "decision_ts": "2020-03-02T00:15:00+05:30",
+        "entry_session": "2020-03-02",
+        "exit_session_target": "2020-04-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.25938440265733137,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "YESBANK",
+            "events": [
+              {
+                "session": "2020-03-06",
+                "kind": "close/prev_close",
+                "ratio": 0.4389
+              },
+              {
+                "session": "2020-03-17",
+                "kind": "close/prev_close",
+                "ratio": 1.5809
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2020-04",
+        "decision_ts": "2020-04-01T00:15:00+05:30",
+        "entry_session": "2020-04-01",
+        "exit_session_target": "2020-05-04",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.1220856127752447,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2020-05",
+        "decision_ts": "2020-05-04T00:15:00+05:30",
+        "entry_session": "2020-05-04",
+        "exit_session_target": "2020-06-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.053483993452192236,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2020-06",
+        "decision_ts": "2020-06-01T00:15:00+05:30",
+        "entry_session": "2020-06-01",
+        "exit_session_target": "2020-07-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.05381418610543986,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2020-07",
+        "decision_ts": "2020-07-01T00:15:00+05:30",
+        "entry_session": "2020-07-01",
+        "exit_session_target": "2020-08-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.06489892134960439,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2020-08",
+        "decision_ts": "2020-08-03T00:15:00+05:30",
+        "entry_session": "2020-08-03",
+        "exit_session_target": "2020-09-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.02852242231768878,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "EICHERMOT",
+            "events": [
+              {
+                "session": "2020-08-24",
+                "kind": "close/prev_close",
+                "ratio": 0.1003
+              },
+              {
+                "session": "2020-08-24",
+                "kind": "open/prev_close",
+                "ratio": 0.1013
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2020-09",
+        "decision_ts": "2020-09-01T00:15:00+05:30",
+        "entry_session": "2020-09-01",
+        "exit_session_target": "2020-10-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 36,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.016386789459586378,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2020-10",
+        "decision_ts": "2020-10-01T00:15:00+05:30",
+        "entry_session": "2020-10-01",
+        "exit_session_target": "2020-11-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 35,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.022760911137595496,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2020-11",
+        "decision_ts": "2020-11-02T00:15:00+05:30",
+        "entry_session": "2020-11-02",
+        "exit_session_target": "2020-12-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 35,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.14450850541177612,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2020-12",
+        "decision_ts": "2020-12-01T00:15:00+05:30",
+        "entry_session": "2020-12-01",
+        "exit_session_target": "2021-01-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 35,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.07327826425604278,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-01",
+        "decision_ts": "2021-01-01T00:15:00+05:30",
+        "entry_session": "2021-01-01",
+        "exit_session_target": "2021-02-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 35,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.006831226569013571,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-02",
+        "decision_ts": "2021-02-01T00:15:00+05:30",
+        "entry_session": "2021-02-01",
+        "exit_session_target": "2021-03-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 35,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.08142658556672011,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-03",
+        "decision_ts": "2021-03-01T00:15:00+05:30",
+        "entry_session": "2021-03-01",
+        "exit_session_target": "2021-04-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 35,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.01651215181816404,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-04",
+        "decision_ts": "2021-04-01T00:15:00+05:30",
+        "entry_session": "2021-04-01",
+        "exit_session_target": "2021-05-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.006912067558130368,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-05",
+        "decision_ts": "2021-05-03T00:15:00+05:30",
+        "entry_session": "2021-05-03",
+        "exit_session_target": "2021-06-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.07991838757850712,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-06",
+        "decision_ts": "2021-06-01T00:15:00+05:30",
+        "entry_session": "2021-06-01",
+        "exit_session_target": "2021-07-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.011552099396712277,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-07",
+        "decision_ts": "2021-07-01T00:15:00+05:30",
+        "entry_session": "2021-07-01",
+        "exit_session_target": "2021-08-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.013779902149393865,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-08",
+        "decision_ts": "2021-08-02T00:15:00+05:30",
+        "entry_session": "2021-08-02",
+        "exit_session_target": "2021-09-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.0639784957160325,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-09",
+        "decision_ts": "2021-09-01T00:15:00+05:30",
+        "entry_session": "2021-09-01",
+        "exit_session_target": "2021-10-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.026656938782194346,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-10",
+        "decision_ts": "2021-10-01T00:15:00+05:30",
+        "entry_session": "2021-10-01",
+        "exit_session_target": "2021-11-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.0011782365746516022,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-11",
+        "decision_ts": "2021-11-01T00:15:00+05:30",
+        "entry_session": "2021-11-01",
+        "exit_session_target": "2021-12-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.04005352665517842,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2021-12",
+        "decision_ts": "2021-12-01T00:15:00+05:30",
+        "entry_session": "2021-12-01",
+        "exit_session_target": "2022-01-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.019268986879170336,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-01",
+        "decision_ts": "2022-01-03T00:15:00+05:30",
+        "entry_session": "2022-01-03",
+        "exit_session_target": "2022-02-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.012170731853627647,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-02",
+        "decision_ts": "2022-02-01T00:15:00+05:30",
+        "entry_session": "2022-02-01",
+        "exit_session_target": "2022-03-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.04512220405648032,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-03",
+        "decision_ts": "2022-03-02T00:15:00+05:30",
+        "entry_session": "2022-03-02",
+        "exit_session_target": "2022-04-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.04090176752854076,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-04",
+        "decision_ts": "2022-04-01T00:15:00+05:30",
+        "entry_session": "2022-04-01",
+        "exit_session_target": "2022-05-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.0070796552958603326,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-05",
+        "decision_ts": "2022-05-02T00:15:00+05:30",
+        "entry_session": "2022-05-02",
+        "exit_session_target": "2022-06-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.02896794194233049,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-06",
+        "decision_ts": "2022-06-01T00:15:00+05:30",
+        "entry_session": "2022-06-01",
+        "exit_session_target": "2022-07-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.06753461991689232,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-07",
+        "decision_ts": "2022-07-01T00:15:00+05:30",
+        "entry_session": "2022-07-01",
+        "exit_session_target": "2022-08-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.09805692460848926,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "TATASTEEL",
+            "events": [
+              {
+                "session": "2022-07-28",
+                "kind": "close/prev_close",
+                "ratio": 0.1046
+              },
+              {
+                "session": "2022-07-28",
+                "kind": "open/prev_close",
+                "ratio": 0.1023
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2022-08",
+        "decision_ts": "2022-08-01T00:15:00+05:30",
+        "entry_session": "2022-08-01",
+        "exit_session_target": "2022-09-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.018372072243013994,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-09",
+        "decision_ts": "2022-09-01T00:15:00+05:30",
+        "entry_session": "2022-09-01",
+        "exit_session_target": "2022-10-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.032563661149822114,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "BAJAJFINSV",
+            "events": [
+              {
+                "session": "2022-09-13",
+                "kind": "close/prev_close",
+                "ratio": 0.1041
+              },
+              {
+                "session": "2022-09-13",
+                "kind": "open/prev_close",
+                "ratio": 0.1024
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2022-10",
+        "decision_ts": "2022-10-03T00:15:00+05:30",
+        "entry_session": "2022-10-03",
+        "exit_session_target": "2022-11-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.045274079099115384,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-11",
+        "decision_ts": "2022-11-01T00:15:00+05:30",
+        "entry_session": "2022-11-01",
+        "exit_session_target": "2022-12-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.03324506279015507,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2022-12",
+        "decision_ts": "2022-12-01T00:15:00+05:30",
+        "entry_session": "2022-12-01",
+        "exit_session_target": "2023-01-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.03189448200575825,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-01",
+        "decision_ts": "2023-01-02T00:15:00+05:30",
+        "entry_session": "2023-01-02",
+        "exit_session_target": "2023-02-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.016981151395229488,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-02",
+        "decision_ts": "2023-02-01T00:15:00+05:30",
+        "entry_session": "2023-02-01",
+        "exit_session_target": "2023-03-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.04587321141323822,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-03",
+        "decision_ts": "2023-03-01T00:15:00+05:30",
+        "entry_session": "2023-03-01",
+        "exit_session_target": "2023-04-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.01310804354327378,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-04",
+        "decision_ts": "2023-04-03T00:15:00+05:30",
+        "entry_session": "2023-04-03",
+        "exit_session_target": "2023-05-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.04997671633918272,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-05",
+        "decision_ts": "2023-05-02T00:15:00+05:30",
+        "entry_session": "2023-05-02",
+        "exit_session_target": "2023-06-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.036060627336915084,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-06",
+        "decision_ts": "2023-06-01T00:15:00+05:30",
+        "entry_session": "2023-06-01",
+        "exit_session_target": "2023-07-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.04345843144534763,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-07",
+        "decision_ts": "2023-07-03T00:15:00+05:30",
+        "entry_session": "2023-07-03",
+        "exit_session_target": "2023-08-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 34,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.02624542823398759,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-08",
+        "decision_ts": "2023-08-01T00:15:00+05:30",
+        "entry_session": "2023-08-01",
+        "exit_session_target": "2023-09-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.01956821503442002,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-09",
+        "decision_ts": "2023-09-01T00:15:00+05:30",
+        "entry_session": "2023-09-01",
+        "exit_session_target": "2023-10-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.030540985431177402,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-10",
+        "decision_ts": "2023-10-03T00:15:00+05:30",
+        "entry_session": "2023-10-03",
+        "exit_session_target": "2023-11-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.022402284845833034,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2023-11",
+        "decision_ts": "2023-11-01T00:15:00+05:30",
+        "entry_session": "2023-11-01",
+        "exit_session_target": "2023-12-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.07681228951505,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2024-06",
+        "decision_ts": "2024-06-21T00:15:00+05:30",
+        "entry_session": "2024-06-21",
+        "exit_session_target": "2024-07-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.008519292583737756,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "BPCL",
+            "events": [
+              {
+                "session": "2024-06-21",
+                "kind": "close/prev_close",
+                "ratio": 0.4912
+              },
+              {
+                "session": "2024-06-21",
+                "kind": "open/prev_close",
+                "ratio": 0.5078
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2024-07",
+        "decision_ts": "2024-07-01T00:15:00+05:30",
+        "entry_session": "2024-07-01",
+        "exit_session_target": "2024-08-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.05743709325261476,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2024-08",
+        "decision_ts": "2024-08-01T00:15:00+05:30",
+        "entry_session": "2024-08-01",
+        "exit_session_target": "2024-09-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.014923294286802747,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2024-09",
+        "decision_ts": "2024-09-02T00:15:00+05:30",
+        "entry_session": "2024-09-02",
+        "exit_session_target": "2024-10-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 48,
+        "n_no_fill": 2,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.029451796812982708,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2024-10",
+        "decision_ts": "2024-10-01T00:15:00+05:30",
+        "entry_session": "2024-10-01",
+        "exit_session_target": "2024-11-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.09795206075209327,
+        "net_month": null,
+        "n_action_discontinuity_windows": 2,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "DRREDDY",
+            "events": [
+              {
+                "session": "2024-10-28",
+                "kind": "close/prev_close",
+                "ratio": 0.2013
+              },
+              {
+                "session": "2024-10-28",
+                "kind": "open/prev_close",
+                "ratio": 0.2026
+              }
+            ]
+          },
+          {
+            "symbol": "RELIANCE",
+            "events": [
+              {
+                "session": "2024-10-28",
+                "kind": "close/prev_close",
+                "ratio": 0.5024
+              },
+              {
+                "session": "2024-10-28",
+                "kind": "open/prev_close",
+                "ratio": 0.5034
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2024-11",
+        "decision_ts": "2024-11-01T00:15:00+05:30",
+        "entry_session": "2024-11-01",
+        "exit_session_target": "2024-12-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.030912034338989234,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2024-12",
+        "decision_ts": "2024-12-02T00:15:00+05:30",
+        "entry_session": "2024-12-02",
+        "exit_session_target": "2025-01-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.03077886357162815,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "WIPRO",
+            "events": [
+              {
+                "session": "2024-12-03",
+                "kind": "close/prev_close",
+                "ratio": 0.4989
+              },
+              {
+                "session": "2024-12-03",
+                "kind": "open/prev_close",
+                "ratio": 0.5053
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2025-01",
+        "decision_ts": "2025-01-01T00:15:00+05:30",
+        "entry_session": "2025-01-01",
+        "exit_session_target": "2025-02-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.01805982479517916,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "SHRIRAMFIN",
+            "events": [
+              {
+                "session": "2025-01-10",
+                "kind": "close/prev_close",
+                "ratio": 0.1893
+              },
+              {
+                "session": "2025-01-10",
+                "kind": "open/prev_close",
+                "ratio": 0.2014
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2025-02",
+        "decision_ts": "2025-02-03T00:15:00+05:30",
+        "entry_session": "2025-02-03",
+        "exit_session_target": "2025-03-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.05424733610852559,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2025-03",
+        "decision_ts": "2025-03-03T00:15:00+05:30",
+        "entry_session": "2025-03-03",
+        "exit_session_target": "2025-04-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 33,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.05462106009545714,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2025-04",
+        "decision_ts": "2025-04-01T00:15:00+05:30",
+        "entry_session": "2025-04-01",
+        "exit_session_target": "2025-05-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 32,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.03846963411890212,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2025-05",
+        "decision_ts": "2025-05-02T00:15:00+05:30",
+        "entry_session": "2025-05-02",
+        "exit_session_target": "2025-06-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 32,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.022270093517780407,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2025-06",
+        "decision_ts": "2025-06-02T00:15:00+05:30",
+        "entry_session": "2025-06-02",
+        "exit_session_target": "2025-07-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 32,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.02292183148291887,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "BAJFINANCE",
+            "events": [
+              {
+                "session": "2025-06-16",
+                "kind": "close/prev_close",
+                "ratio": 0.1005
+              },
+              {
+                "session": "2025-06-16",
+                "kind": "open/prev_close",
+                "ratio": 0.1025
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2025-07",
+        "decision_ts": "2025-07-01T00:15:00+05:30",
+        "entry_session": "2025-07-01",
+        "exit_session_target": "2025-08-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 32,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.03653357349259008,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2025-08",
+        "decision_ts": "2025-08-01T00:15:00+05:30",
+        "entry_session": "2025-08-01",
+        "exit_session_target": "2025-09-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 32,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.014923231117950811,
+        "net_month": null,
+        "n_action_discontinuity_windows": 2,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "HDFCBANK",
+            "events": [
+              {
+                "session": "2025-08-26",
+                "kind": "close/prev_close",
+                "ratio": 0.4956
+              },
+              {
+                "session": "2025-08-26",
+                "kind": "open/prev_close",
+                "ratio": 0.4987
+              }
+            ]
+          },
+          {
+            "symbol": "NESTLEIND",
+            "events": [
+              {
+                "session": "2025-08-08",
+                "kind": "close/prev_close",
+                "ratio": 0.4907
+              },
+              {
+                "session": "2025-08-08",
+                "kind": "open/prev_close",
+                "ratio": 0.5021
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2025-09",
+        "decision_ts": "2025-09-01T00:15:00+05:30",
+        "entry_session": "2025-09-01",
+        "exit_session_target": "2025-10-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 49,
+        "n_no_fill": 1,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 32,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.01575696003373449,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2025-10",
+        "decision_ts": "2025-10-01T00:15:00+05:30",
+        "entry_session": "2025-10-01",
+        "exit_session_target": "2025-11-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.03302187797284449,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "TMPV",
+            "events": [
+              {
+                "session": "2025-10-14",
+                "kind": "close/prev_close",
+                "ratio": 0.5985
+              },
+              {
+                "session": "2025-10-14",
+                "kind": "open/prev_close",
+                "ratio": 0.6054
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2025-11",
+        "decision_ts": "2025-11-03T00:15:00+05:30",
+        "entry_session": "2025-11-03",
+        "exit_session_target": "2025-12-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.00982905206875285,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2025-12",
+        "decision_ts": "2025-12-01T00:15:00+05:30",
+        "entry_session": "2025-12-01",
+        "exit_session_target": "2026-01-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.0003901798962321101,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2026-01",
+        "decision_ts": "2026-01-01T00:15:00+05:30",
+        "entry_session": "2026-01-01",
+        "exit_session_target": "2026-02-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": -0.056980346210299654,
+        "net_month": null,
+        "n_action_discontinuity_windows": 1,
+        "action_discontinuity_examples": [
+          {
+            "symbol": "KOTAKBANK",
+            "events": [
+              {
+                "session": "2026-01-14",
+                "kind": "close/prev_close",
+                "ratio": 0.1974
+              },
+              {
+                "session": "2026-01-14",
+                "kind": "open/prev_close",
+                "ratio": 0.1998
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "month": "2026-02",
+        "decision_ts": "2026-02-02T00:15:00+05:30",
+        "entry_session": "2026-02-02",
+        "exit_session_target": "2026-03-02",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "SCHEDULE_UNAVAILABLE_BEFORE_EFFECTIVE_DATE",
+        "gross_month": 0.008114316321416196,
+        "net_month": null,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2026-03",
+        "decision_ts": "2026-03-02T00:15:00+05:30",
+        "entry_session": "2026-03-02",
+        "exit_session_target": "2026-04-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "OK",
+        "gross_month": -0.05912849691721125,
+        "net_month": -0.06129220031991272,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2026-04",
+        "decision_ts": "2026-04-01T00:15:00+05:30",
+        "entry_session": "2026-04-01",
+        "exit_session_target": "2026-05-04",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "OK",
+        "gross_month": 0.06779988235124305,
+        "net_month": 0.065503106533563,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2026-05",
+        "decision_ts": "2026-05-04T00:15:00+05:30",
+        "entry_session": "2026-05-04",
+        "exit_session_target": "2026-06-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "OK",
+        "gross_month": 0.0024097739106027373,
+        "net_month": 0.0001816576939453272,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2026-06",
+        "decision_ts": "2026-06-01T00:15:00+05:30",
+        "entry_session": "2026-06-01",
+        "exit_session_target": "2026-07-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "OK",
+        "gross_month": -0.010141937235561189,
+        "net_month": -0.012357128483448212,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2026-07",
+        "decision_ts": "2026-07-01T00:15:00+05:30",
+        "entry_session": "2026-07-01",
+        "exit_session_target": "2026-08-03",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "OK",
+        "gross_month": 0.03665049013772233,
+        "net_month": 0.034386425273632976,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      },
+      {
+        "month": "2026-08",
+        "decision_ts": "2026-08-03T00:15:00+05:30",
+        "entry_session": "2026-08-03",
+        "exit_session_target": "2026-09-01",
+        "membership_status": "PARTIAL",
+        "n_members": 50,
+        "n_eligible": 50,
+        "n_ok": 50,
+        "n_no_fill": 0,
+        "entry_session_mismatch": 0,
+        "weak_rows_included": 30,
+        "charges_status": "OK",
+        "gross_month": -0.0200716749895214,
+        "net_month": -0.022276121677972154,
+        "n_action_discontinuity_windows": 0,
+        "action_discontinuity_examples": []
+      }
+    ]
+  },
+  "strict_run": {
+    "cumulative_gross": 0.884074379692012,
+    "n_labeled_months": 133,
+    "n_abstain_months": 8,
+    "note": "VERIFIED membership only (press_release/merger/amendment); months with thin coverage abstain rather than assume",
+    "abstain_causes": [
+      "MISSING_SPAN",
+      "NO_FILLS",
+      "NO_NEXT_REBALANCE"
+    ]
+  },
+  "yearly": [
+    {
+      "year": "2015",
+      "strategy_gross": -0.12764103383306769,
+      "nifty50_tri": -0.08507712269790879,
+      "excess_benchmark_relative": -0.042563911135158894,
+      "n_labeled_months": 11,
+      "n_abstain_months": 1,
+      "mean_breadth_ok_over_eligible": 0.9600000000000002,
+      "mean_n_ok": 48.0
+    },
+    {
+      "year": "2016",
+      "strategy_gross": 0.021442662896056452,
+      "nifty50_tri": 0.0409426306850349,
+      "excess_benchmark_relative": -0.019499967788978445,
+      "n_labeled_months": 12,
+      "n_abstain_months": 0,
+      "mean_breadth_ok_over_eligible": 0.9600000000000003,
+      "mean_n_ok": 48.0
+    },
+    {
+      "year": "2017",
+      "strategy_gross": 0.18141449392899234,
+      "nifty50_tri": 0.29189052485018463,
+      "excess_benchmark_relative": -0.11047603092119229,
+      "n_labeled_months": 12,
+      "n_abstain_months": 0,
+      "mean_breadth_ok_over_eligible": 0.9449999999999997,
+      "mean_n_ok": 47.25
+    },
+    {
+      "year": "2018",
+      "strategy_gross": -0.06837797507248111,
+      "nifty50_tri": 0.06054440002189154,
+      "excess_benchmark_relative": -0.12892237509437265,
+      "n_labeled_months": 12,
+      "n_abstain_months": 0,
+      "mean_breadth_ok_over_eligible": 0.9402830188679242,
+      "mean_n_ok": 47.25
+    },
+    {
+      "year": "2019",
+      "strategy_gross": 0.0006824096730468909,
+      "nifty50_tri": 0.13112425487432944,
+      "excess_benchmark_relative": -0.13044184520128255,
+      "n_labeled_months": 12,
+      "n_abstain_months": 0,
+      "mean_breadth_ok_over_eligible": 0.945,
+      "mean_n_ok": 47.25
+    },
+    {
+      "year": "2020",
+      "strategy_gross": 0.14327467989413067,
+      "nifty50_tri": 0.1631021657231193,
+      "excess_benchmark_relative": -0.019827485828988634,
+      "n_labeled_months": 12,
+      "n_abstain_months": 0,
+      "mean_breadth_ok_over_eligible": 0.9650000000000002,
+      "mean_n_ok": 48.25
+    },
+    {
+      "year": "2021",
+      "strategy_gross": 0.30272429612962926,
+      "nifty50_tri": 0.27222388732213054,
+      "excess_benchmark_relative": 0.030500408807498713,
+      "n_labeled_months": 12,
+      "n_abstain_months": 0,
+      "mean_breadth_ok_over_eligible": 0.9800000000000003,
+      "mean_n_ok": 49.0
+    },
+    {
+      "year": "2022",
+      "strategy_gross": 0.023062007549056185,
+      "nifty50_tri": 0.04592264482305963,
+      "excess_benchmark_relative": -0.022860637274003448,
+      "n_labeled_months": 12,
+      "n_abstain_months": 0,
+      "mean_breadth_ok_over_eligible": 0.9800000000000003,
+      "mean_n_ok": 49.0
+    },
+    {
+      "year": "2023",
+      "strategy_gross": 0.17732877006031256,
+      "nifty50_tri": 0.12558119847727234,
+      "excess_benchmark_relative": 0.05174757158304022,
+      "n_labeled_months": 11,
+      "n_abstain_months": 1,
+      "mean_breadth_ok_over_eligible": 0.9709090909090912,
+      "mean_n_ok": 48.54545454545455
+    },
+    {
+      "year": "2024",
+      "strategy_gross": -0.05595285476181977,
+      "nifty50_tri": 0.01500090569553092,
+      "excess_benchmark_relative": -0.07095376045735069,
+      "n_labeled_months": 7,
+      "n_abstain_months": 5,
+      "mean_breadth_ok_over_eligible": 0.9685714285714287,
+      "mean_n_ok": 48.42857142857143
+    },
+    {
+      "year": "2025",
+      "strategy_gross": 0.06916642211289292,
+      "nifty50_tri": 0.11493491943573142,
+      "excess_benchmark_relative": -0.0457684973228385,
+      "n_labeled_months": 12,
+      "n_abstain_months": 0,
+      "mean_breadth_ok_over_eligible": 0.9850000000000002,
+      "mean_n_ok": 49.25
+    },
+    {
+      "year": "2026",
+      "strategy_gross": -0.03728974954217512,
+      "nifty50_tri": -0.07158232090128247,
+      "excess_benchmark_relative": 0.03429257135910735,
+      "n_labeled_months": 8,
+      "n_abstain_months": 1,
+      "mean_breadth_ok_over_eligible": 1.0,
+      "mean_n_ok": 50.0
+    }
+  ],
+  "claim": "fully reproduced from immutable official archives; every month carries its breadth and charges status; abstentions are recorded, never filled"
+}

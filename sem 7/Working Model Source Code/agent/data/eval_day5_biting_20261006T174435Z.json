@@ -1,0 +1,231 @@
+{
+  "prereg": "data/prereg_day5_eval.md",
+  "trials": [
+    {
+      "name": "v1-exposure-bug",
+      "sharpe": 0.8,
+      "artifact": "prereg_core_v2_exposure.md"
+    },
+    {
+      "name": "v2",
+      "sharpe": 0.698,
+      "artifact": "core_backtest_20261006.json"
+    },
+    {
+      "name": "v3-narrow",
+      "sharpe": 0.705,
+      "artifact": "core_backtest_v3.json"
+    },
+    {
+      "name": "v3-broad",
+      "sharpe": 0.853,
+      "artifact": "core_backtest_v3_broad.json"
+    },
+    {
+      "name": "v3+veto-overlay",
+      "sharpe": 0.776,
+      "artifact": "overlay_vs_core_20261007.json"
+    },
+    {
+      "name": "v4-narrow",
+      "sharpe": 0.687,
+      "artifact": "core_backtest_v4_nifty50.json"
+    },
+    {
+      "name": "v4-broad",
+      "sharpe": 1.509,
+      "artifact": "core_backtest_v4_broad.json"
+    },
+    {
+      "name": "paper-narrow-flat",
+      "sharpe": 0.69,
+      "artifact": "paper_10L_nifty50.json"
+    },
+    {
+      "name": "paper-broad-flat",
+      "sharpe": 1.51,
+      "artifact": "paper_10L_broad.json"
+    },
+    {
+      "name": "paper-narrow-env",
+      "sharpe": 0.69,
+      "artifact": "paper_10L_nifty50_env.json"
+    }
+  ],
+  "narrow_recompute": {
+    "n_names": 36,
+    "n_excluded": 1,
+    "sharpe": 0.776,
+    "skew": -0.451,
+    "kurtosis": 10.346,
+    "t_obs": 1419
+  },
+  "dsr_narrow_v4": {
+    "dsr": 1.0,
+    "sr0_null": 0.5202,
+    "trials": 10
+  },
+  "dsr_overlay_proxy_APPROXIMATE": {
+    "dsr": 1.0,
+    "sr0_null": 0.5202,
+    "trials": 10,
+    "note": "uses v4-narrow moments as proxy; overlay curve moments not persisted"
+  },
+  "dsr_broad": {
+    "status": "PENDING",
+    "reason": "needs 391-name daily recompute; K=10 trial bar applies a fortiori"
+  },
+  "perturbation": {
+    "veto_CALM_wide": {
+      "PC": 1.0,
+      "CI": 1.0,
+      "IDS": 0.0,
+      "pc_gate": true,
+      "ids_gate": false,
+      "n": 40
+    },
+    "veto_STRESSED_narrow": {
+      "PC": 1.0,
+      "CI": 1.0,
+      "IDS": 0.0,
+      "pc_gate": true,
+      "ids_gate": false,
+      "n": 40
+    },
+    "positioning": {
+      "PC": 1.0,
+      "CI": 1.0,
+      "IDS": 0.0,
+      "pc_gate": true,
+      "ids_gate": false,
+      "n": 40
+    },
+    "apply_veto": {
+      "PC": 1.0,
+      "CI": 0.9999,
+      "IDS": 0.0001,
+      "pc_gate": true,
+      "ids_gate": true,
+      "n": 40
+    }
+  },
+  "perturbation_gates": {
+    "veto_CALM_wide": {
+      "pc_gate": true,
+      "ids_gate": false
+    },
+    "veto_STRESSED_narrow": {
+      "pc_gate": true,
+      "ids_gate": false
+    },
+    "positioning": {
+      "pc_gate": true,
+      "ids_gate": false
+    },
+    "apply_veto": {
+      "pc_gate": true,
+      "ids_gate": true
+    }
+  },
+  "friction": [
+    {
+      "cell": "brokerage",
+      "status": "modeled",
+      "estimate": "~44,008 (in tier costs)",
+      "basis": "MEASURED: paper_10L_nifty50.json costs_rupees (0.105%/side large-cap)"
+    },
+    {
+      "cell": "STT",
+      "status": "partial",
+      "estimate": "bundled inside tier rates (delivery 0.10%/side \u2248 covered)",
+      "basis": "Not itemized separately; tier rates calibrated to include it"
+    },
+    {
+      "cell": "stamp duty",
+      "status": "unmodeled",
+      "estimate": "\u22640.015% \u00d7 gross traded \u2248 \u2264\u20b92,500 on narrow book",
+      "basis": "BOUND: 0.015% delivery rate \u00d7 gross traded implied by 44k costs"
+    },
+    {
+      "cell": "GST + SEBI + exchange charges",
+      "status": "unmodeled",
+      "estimate": "~0.02% all-in, \u2248 \u20b92-3k lifetime",
+      "basis": "BOUND: statutory schedule on turnover"
+    },
+    {
+      "cell": "spread large-cap",
+      "status": "modeled",
+      "estimate": "in 0.105%/side tier",
+      "basis": "MEASURED via tier costs"
+    },
+    {
+      "cell": "spread SME",
+      "status": "modeled",
+      "estimate": "1.50%/side tier (1\u20133% observed spreads)",
+      "basis": "ASSUMED rate, labeled in prereg_day1_environment.md"
+    },
+    {
+      "cell": "circuit non-fills",
+      "status": "modeled",
+      "estimate": "locks_hit=0 on narrow (measured, Day-1 run)",
+      "basis": "MEASURED: Day-1 honest-env replay defers fills, books no cost"
+    },
+    {
+      "cell": "token inference",
+      "status": "modeled",
+      "estimate": "\u20b9156,465 lifetime ledger (43% of paper profit)",
+      "basis": "MEASURED: usage_daily \u00d7 ASSUMED Rs.9/1K (Day-1 env report)"
+    },
+    {
+      "cell": "slippage beyond spread",
+      "status": "unmodeled",
+      "estimate": "order size \u226a ADT (top-50 liquid names)",
+      "basis": "Reason: weekly rebalance, small-vs-volume; bound deferred to AngelOne paper"
+    },
+    {
+      "cell": "latency",
+      "status": "n/a",
+      "estimate": "weekly rebalance \u2014 execution timing immaterial",
+      "basis": "Reason: 5-day hold horizon dominates seconds of delay"
+    },
+    {
+      "cell": "corporate-action timing",
+      "status": "partial",
+      "estimate": "adjusted closes (split timing approx)",
+      "basis": "Disclosed approx in every paper report"
+    },
+    {
+      "cell": "survivorship",
+      "status": "unmodeled-bias",
+      "estimate": "direction UP, magnitude unquantified",
+      "basis": "CONFIRMED: verification report Part B (5 disaster names absent)"
+    },
+    {
+      "cell": "model-level LLM leakage",
+      "status": "n/a-deterministic",
+      "estimate": "core immune by construction (zero LLM in money path); agent evals ran pre-cutoff scenarios through post-cutoff models (contamination IN the LLM's favor) and still failed \u2014 stronger null",
+      "basis": "Reason + evidence: grep-clean core; H1/retry FAILs on record"
+    }
+  ],
+  "friction_counts": {
+    "modeled": 5,
+    "partial": 2,
+    "unmodeled": 4,
+    "na_with_reason": 2,
+    "total": 13
+  },
+  "ablations": {
+    "veto_off_vs_on": {
+      "status": "CITED",
+      "source": "data/overlay_vs_core_20261007.json",
+      "off_sharpe": 0.705,
+      "on_sharpe": 0.776
+    },
+    "devil_off": {
+      "status": "QUEUED",
+      "command": "python scripts/ablate_devil.py --set v1 --bill",
+      "blocked_on": "funded gateway (day cap exhausted during Day-5 window)"
+    }
+  },
+  "generated_at": "2026-10-06T17:44:35.347080+00:00"
+}

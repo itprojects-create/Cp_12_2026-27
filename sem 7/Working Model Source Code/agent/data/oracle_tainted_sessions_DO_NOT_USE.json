@@ -1,0 +1,98 @@
+[
+  {
+    "id": "da79dd2e1c5a24a7",
+    "decision": "{\"action\":\"sell\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "ed0b5583915fed5b",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "cc83c61ebeafe847",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "245f623f1fad170f",
+    "decision": "{\"action\":\"buy\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "6ea829af3259106f",
+    "decision": "{\"action\":\"sell\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "0b41a00dede7b5be",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "f81f14320704e246",
+    "decision": "{\"action\":\"buy\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "f24f525db4952166",
+    "decision": "{\"action\":\"buy\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "5bf04f26fefebb85",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "925515bc93acd9d5",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "3a21f0fffed389e0",
+    "decision": "{\"action\":\"sell\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "31b1575e909933bc",
+    "decision": "{\"action\":\"sell\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "0cb2d9914e563bf2",
+    "decision": "{\"action\":\"sell\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "8d97f4a015280dcf",
+    "decision": "{\"action\":\"buy\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "45443bb40cf02962",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "8d4c71dac56c1d6e",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "d90c654d9622f0b3",
+    "decision": "{\"action\":\"buy\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "fd5e7db4c403530d",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "d172a4dc282b9517",
+    "decision": "{\"action\":\"buy\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "93a89deeb926538f",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "61e46928369dde46",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "877fe4cffcb3fc35",
+    "decision": "{\"action\":\"hold\",\"size\":0.0,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "d31e4d3ba1b09105",
+    "decision": "{\"action\":\"buy\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  },
+  {
+    "id": "0ab08170eb67fe27",
+    "decision": "{\"action\":\"buy\",\"size\":0.1,\"rationale\":\"Oracle guarantee\",\"thesis_version\":1}"
+  }
+]

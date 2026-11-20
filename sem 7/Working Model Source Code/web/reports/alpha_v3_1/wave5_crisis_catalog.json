@@ -1,0 +1,38 @@
+{
+  "catalog_version": "wave5_crisis_catalog/1",
+  "classification": "HISTORICAL_RETROSPECTIVE",
+  "events": [
+    {
+      "date_basis": "RBI FSR anchors the COVID/panic-selloff context; the exact peak-to-trough operational window is independently cross-checked against the cited market chronology and both dates exist in local official exchange observations",
+      "description": "Retrospective window from the pre-selloff NIFTY peak period to the 23 March 2020 trough session; descriptive historical stress only.",
+      "event_end": "2020-03-23",
+      "event_id": "india-covid-liquidity-selloff-2020",
+      "event_start": "2020-01-14",
+      "geography": "India / NSE",
+      "name": "India COVID-19 liquidity selloff",
+      "source_accessed_date": "2026-11-14",
+      "source_title": "Reserve Bank of India, Financial Stability Report, July 2020",
+      "source_url_or_local_ref": "https://www.rbi.org.in/Scripts/PublicationReportDetails.aspx?ID=1153",
+      "source_verification_status": "OFFICIAL_RBI_REPORT_PAGE_RESOLVED_2026-11-14; DATES_INDEPENDENTLY_ALIGNED_TO_LOCAL_OFFICIAL_BARS",
+      "supporting_sources": [
+        [
+          "RBI FSR Chapter I: Macro-Financial Risks",
+          "https://www.rbi.org.in/Scripts/PublicationReportDetails.aspx?UrlPage=&ID=1147",
+          "official page resolved 2026-11-14; documents January panic sell-offs and March stress"
+        ],
+        [
+          "Major Nifty falls and recoveries (exact 14 Jan / 23 Mar chronology)",
+          "https://www.moneycontrol.com/news/business/markets/major-nifty-falls-and-recoveries-in-2008-took-over-1000-days-for-recovery-5155021.html",
+          "independent chronology located 2026-11-14; bibliographic use only"
+        ],
+        [
+          "NSE Historical Index Data entry point",
+          "https://www.nseindia.com/reports-indices-historical-index-data",
+          "official source entry; local W1 archive supplies observed boundary sessions"
+        ]
+      ]
+    }
+  ],
+  "evidence_time": "2026-11-14T09:05:10.030883+00:00",
+  "not_a_forecast": true
+}

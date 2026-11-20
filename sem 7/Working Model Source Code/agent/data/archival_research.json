@@ -1,0 +1,10 @@
+{"freeze_note": "v6/v7 direction evals and the Devil-off full bill are ARCHIVAL_RESEARCH: partial, no capital consequence, no new tokens to be spent finishing them.",
+  "items": [
+    {"id": "v6-2026h2-unburned", "state": "ARCHIVAL_RESEARCH", "coverage": "PARTIAL 14/24",
+     "capital_consequence": "NO_CAPITAL_CONSEQUENCE", "spend_policy": "no new LLM tokens"},
+    {"id": "v7-2026h2-unburned", "state": "ARCHIVAL_RESEARCH", "coverage": "PARTIAL 10/24",
+     "capital_consequence": "NO_CAPITAL_CONSEQUENCE", "spend_policy": "no new LLM tokens"},
+    {"id": "devil-off-full-bill", "state": "ARCHIVAL_RESEARCH", "coverage": "QUEUED",
+     "capital_consequence": "NO_CAPITAL_CONSEQUENCE",
+     "spend_policy": "only if required for documentation or publication"}
+  ]}

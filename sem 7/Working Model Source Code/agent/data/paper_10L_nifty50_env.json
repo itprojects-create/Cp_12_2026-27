@@ -1,0 +1,19 @@
+{
+  "rule": "frozen v4 decisions under honest environment (NEWW_PLAN Day 1)",
+  "universe": "nifty50",
+  "capital": 1000000.0,
+  "env_final": 1362604.7,
+  "env_profit": 362604.7,
+  "env_cagr_pct": 5.64,
+  "env_max_drawdown_pct": 12.48,
+  "env_costs_rupees": 40085.76,
+  "flat_costs_rupees": 44008.23,
+  "locks_hit": 0,
+  "event_halved_rebalances": 5,
+  "inference_tokens_ledger": 17384977,
+  "token_rate_rs_per_1k_ASSUMED": 9.0,
+  "inference_spend_rupees": 156464.79,
+  "env_profit_net_of_inference": 206139.9,
+  "prereg": "data/prereg_day1_environment.md",
+  "generated_at": "2026-10-06T17:14:42.268726+00:00"
+}

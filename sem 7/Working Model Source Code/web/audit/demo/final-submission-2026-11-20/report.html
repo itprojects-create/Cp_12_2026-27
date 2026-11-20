@@ -1,0 +1,86 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Quant Plus Paper Demo</title>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--line:#2a2f3a;--text:#e7e9ee;--muted:#9aa3b2;--ok:#3ecf8e;--bad:#ff6b6b;--warn:#f5a524}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,Segoe UI,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:24px 16px}
+h1{font-size:22px;margin:0 0 4px} h2{font-size:16px;margin:0 0 12px}
+.sub{color:var(--muted);margin-bottom:16px}
+.banner{background:#3a2a05;border:2px solid var(--warn);color:#ffd27a;padding:12px 14px;border-radius:8px;font-weight:600;margin:12px 0 20px}
+section{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:13px} th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:500} code{font-size:12px;color:#c9d1ff;overflow-wrap:anywhere;word-break:break-word}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+.kpi{border:1px solid var(--line);border-radius:8px;padding:10px} .kpi b{display:block;font-size:18px} .kpi span{color:var(--muted);font-size:12px}
+.PASS{color:var(--ok);font-weight:600} .FAIL{color:var(--bad);font-weight:600} .tag{display:inline-block;padding:1px 6px;border-radius:4px;background:#2a2f3a;font-size:11px}
+.assume{color:var(--warn);font-weight:600}
+</style></head><body><main>
+<h1>Quant Plus: Paper-Trading Demonstration</h1>
+<div class="sub">Generated 20/11/2026, 14:05:12 IST · deterministic TypeScript paper-book engine · fee schedule <code>nse-cm-delivery-2026-03-01</code></div>
+<div class="banner">DEMO TRADE — isolated ₹1,00,000 virtual account <code>demo:final-submission-2026-11-20</code>.
+Not a V2 or V3.1 forward-study trade. Paper only, so no broker order was sent. Brokerage is assumed ₹0 (BROKER_ASSUMPTION) and has not been checked against the FYERS account.</div>
+
+<section id="validation"><h2>1. Order validation (fails closed on any FAIL)</h2>
+<table><thead><tr><th>Check</th><th>Result</th><th>Detail</th></tr></thead><tbody><tr><td><code>fee_schedule_id</code></td><td><span class="PASS">PASS</span></td><td>nse-cm-delivery-2026-03-01</td></tr><tr><td><code>brokerage_is_disclosed_assumption</code></td><td><span class="PASS">PASS</span></td><td>BROKER_ASSUMPTION 0 paise — assumed zero, NOT verified against the FYERS account</td></tr><tr><td><code>exchange_session_verified_open</code></td><td><span class="PASS">PASS</span></td><td>{&quot;date&quot;:&quot;2026-11-20&quot;,&quot;calendar_version&quot;:&quot;nse-cm-2026.2&quot;,&quot;status&quot;:&quot;TRADING&quot;,&quot;reason&quot;:null,&quot;open_at&quot;:1795146300000,&quot;close_at&quot;:1795168800000}</td></tr><tr><td><code>quote_execution_policy_LIVE</code></td><td><span class="PASS">PASS</span></td><td>source=fyers, not delayed, not stale, open session, &lt;=60s old</td></tr><tr><td><code>quote_source_fyers</code></td><td><span class="PASS">PASS</span></td><td>fyers</td></tr><tr><td><code>quote_has_bid_ask</code></td><td><span class="PASS">PASS</span></td><td>bid 237660 / ask 237670 paise</td></tr><tr><td><code>book_isolated_no_research_forward</code></td><td><span class="PASS">PASS</span></td><td>no V3.1 config attached</td></tr><tr><td><code>risk_guard_rejects_oversized_order</code></td><td><span class="PASS">PASS</span></td><td>20 × TCS → POSITION_VALUE_LIMIT (max 25% of equity); scratch copy discarded</td></tr><tr><td><code>order_filled</code></td><td><span class="PASS">PASS</span></td><td>FILLED 10/10</td></tr><tr><td><code>reconciliation_after_fill</code></td><td><span class="PASS">PASS</span></td><td>cash=ledger, positions=fills, charges, seq OK</td></tr><tr><td><code>reconciliation_after_mark</code></td><td><span class="PASS">PASS</span></td><td>OK</td></tr></tbody></table>
+</section>
+
+<section id="quote"><h2>2. Server-observed FYERS quote used for the fill</h2>
+<table><tbody>
+<tr><th>Symbol</th><td>TCS</td><th>Source</th><td>fyers (delayed: false, stale: false)</td></tr>
+<tr><th>Last</th><td>₹2,376.80</td><th>Bid / Ask</th><td>₹2,376.60 × 45 / ₹2,376.70 × 39</td></tr>
+<tr><th>Provider time</th><td>20/11/2026, 14:05:06 IST</td><th>Received</th><td>20/11/2026, 14:05:06 IST</td></tr>
+<tr><th>Session</th><td>open</td><th>Decision</th><td>20/11/2026, 14:05:06 IST</td></tr>
+</tbody></table></section>
+
+<section id="execution"><h2>3. Execution / fill</h2>
+<table><tbody>
+<tr><th>Order</th><td><code>266f3402-3ec7-4f75-b77b-9b951fe1e1f8</code></td><th>Intent</th><td><code>demo-final-submission-tcs-buy-0001</code></td></tr>
+<tr><th>Instruction</th><td>BUY 10 TCS · MARKET · DELIVERY · DAY</td><th>Status</th><td class="PASS">FILLED (10/10)</td></tr>
+<tr><th>Fill price</th><td>₹2,376.70 (reference last ₹2,376.80)</td><th>Fill method</th><td>QUOTE_BID_ASK · slippage 0 bps · liquidity-limited: false</td></tr>
+<tr><th>Executed value</th><td>₹23,767.00</td><th>T+1 settlement due</th><td>24/11/2026, 00:00:00 IST</td></tr>
+</tbody></table></section>
+
+<section id="charges"><h2>4. Brokerage and charges (schedule <code>nse-cm-delivery-2026-03-01</code>)</h2>
+<table><thead><tr><th>Item</th><th>Category</th><th>Basis</th><th>Amount</th></tr></thead><tbody><tr><td>Securities transaction tax</td><td><span class="tag">STATUTORY</span></td><td>0.1% of delivery turnover, rounded to the rupee per fill</td><td>₹24.00</td></tr><tr><td>Exchange transaction charge</td><td><span class="tag">EXCHANGE</span></td><td>Rs 307 per crore each side</td><td>₹0.73</td></tr><tr><td>SEBI turnover fee</td><td><span class="tag">REGULATOR</span></td><td>Rs 10 per crore</td><td>₹0.02</td></tr><tr><td>Stamp duty</td><td><span class="tag">STATUTORY</span></td><td>0.015% of delivery purchase value</td><td>₹3.57</td></tr><tr><td>Brokerage</td><td><span class="assume">BROKER_ASSUMPTION</span></td><td>Assumed zero-brokerage delivery</td><td>₹0.00</td></tr><tr><td>GST</td><td><span class="tag">STATUTORY</span></td><td>18% of brokerage, exchange charge and SEBI fee</td><td>₹0.14</td></tr></tbody></table>
+<p><b>Total charges: ₹28.46</b> (pre-trade estimate ₹28.46). <span class="assume">Brokerage ₹0 is an assumption. It has not been checked against the FYERS account.</span></p>
+</section>
+
+<section id="ledger"><h2>5. Cash ledger</h2>
+<table><thead><tr><th>Seq</th><th>Kind</th><th>Amount</th><th>Balance after</th><th>Note</th></tr></thead><tbody><tr><td>2</td><td>DEPOSIT</td><td>₹1,00,000.00</td><td>₹1,00,000.00</td><td>Local paper deposit</td></tr><tr><td>5</td><td>BUY</td><td>₹-23,767.00</td><td>₹76,233.00</td><td>BUY 10 TCS</td></tr><tr><td>6</td><td>CHARGES</td><td>₹-28.46</td><td>₹76,204.54</td><td>Charges BUY 10 TCS</td></tr></tbody></table>
+<div class="kpis" style="margin-top:12px">
+<div class="kpi"><span>Wallet balance</span><b>₹76,204.54</b></div>
+<div class="kpi"><span>Available cash</span><b>₹76,204.54</b></div>
+<div class="kpi"><span>Reserved cash</span><b>₹0.00</b></div>
+<div class="kpi"><span>Charges paid</span><b>₹28.46</b></div>
+</div></section>
+
+<section id="positions"><h2>6. Positions</h2>
+<table><thead><tr><th>Symbol</th><th>Qty</th><th>Settled / unsettled</th><th>Avg price</th><th>Cost basis</th><th>Mark</th></tr></thead><tbody><tr><td>TCS</td><td>10</td><td>0 / 10</td><td>₹2,376.70</td><td>₹23,767.00</td><td>₹2,376.80 (fyers, fresh: true)</td></tr></tbody></table>
+</section>
+
+<section id="risk"><h2>7. Risk management</h2>
+<table><tbody>
+<tr><th>Pre-trade guard</th><td colspan="3">20 × TCS → POSITION_VALUE_LIMIT (max 25% of equity); scratch copy discarded</td></tr>
+<tr><th>Protective stop / target</th><td>₹2,305.40 / ₹2,495.55 (3% below / 5% above entry ask)</td><th>Protection</th><td>ACTIVE · 10 shares</td></tr>
+<tr><th>Max position</th><td>25% of equity</td><th>Max order value</th><td>₹10,00,000.00</td></tr>
+<tr><th>Daily loss limit</th><td>₹50,000.00</td><th>Day loss / blocked</th><td>₹27.46 / false</td></tr>
+</tbody></table>
+<p class="sub">The stop and target are demo parameters chosen for this demonstration. No AI signal was used.</p></section>
+
+<section id="nav"><h2>8. Portfolio NAV</h2>
+<div class="kpis">
+<div class="kpi"><span>Starting virtual capital</span><b>₹1,00,000.00</b></div>
+<div class="kpi"><span>Cash</span><b>₹76,204.54</b></div>
+<div class="kpi"><span>Position at mark</span><b>₹23,768.00</b></div>
+<div class="kpi"><span>NAV</span><b>₹99,972.54</b></div>
+<div class="kpi"><span>Change vs capital</span><b>₹-27.46</b></div>
+</div>
+<p class="sub">Mark-to-market of an open demo position minutes after entry. Not realised profit, not a performance claim. Change = −₹28.46 charges + ₹1.00 mark-to-market (mark ₹2,376.80 vs fill ₹2,376.70). Mark source: mark = second fresh FYERS observation — the second fetch returned the same provider tick as the fill quote (provider time 20/11/2026, 14:05:06 IST).</p></section>
+
+<section id="audit"><h2>9. Order audit trail</h2>
+<table><thead><tr><th>Seq</th><th>Event</th><th>Entity</th><th>At</th><th>Data</th></tr></thead><tbody><tr><td>1</td><td><code>RISK_DAY_ANCHORED</code></td><td>risk_day</td><td>20/11/2026, 14:05:06 IST</td><td><code>{&quot;anchor_equity_paise&quot;:0,&quot;source&quot;:&quot;FIRST_MUTATION&quot;}</code></td></tr><tr><td>3</td><td><code>WALLET_DEPOSIT</code></td><td>account</td><td>20/11/2026, 14:05:06 IST</td><td><code>{&quot;amount_paise&quot;:10000000}</code></td></tr><tr><td>4</td><td><code>ORDER_ACCEPTED</code></td><td>order</td><td>20/11/2026, 14:05:06 IST</td><td><code>{&quot;intent_id&quot;:&quot;demo-final-submission-tcs-buy-0001&quot;,&quot;symbol&quot;:&quot;TCS&quot;,&quot;side&quot;:&quot;BUY&quot;,&quot;order_type&quot;:&quot;MARKET&quot;,&quot;quantity&quot;:10,&quot;limit_price_paise&quot;:null,&quot;execution_mode&quot;:&quot;LIVE&quot;,&quot;quote_provider_time&quot;:&quot;2026-11-20T08:35:06+00:00&quot;}</code></td></tr><tr><td>8</td><td><code>PROTECTION_CREATED</code></td><td>protection</td><td>20/11/2026, 14:05:06 IST</td><td><code>{&quot;parent_order_id&quot;:&quot;266f3402-3ec7-4f75-b77b-9b951fe1e1f8&quot;}</code></td></tr><tr><td>9</td><td><code>ORDER_FILLED</code></td><td>order</td><td>20/11/2026, 14:05:06 IST</td><td><code>{&quot;fill_id&quot;:&quot;5367ac8e-fdf0-4485-a8a4-2940987c68a0&quot;,&quot;quantity&quot;:10,&quot;price_paise&quot;:237670,&quot;method&quot;:&quot;QUOTE_BID_ASK&quot;,&quot;charges_paise&quot;:2846,&quot;symbol&quot;:&quot;TCS&quot;,&quot;side&quot;:&quot;BUY&quot;}</code></td></tr></tbody></table>
+<p>Reconciliation: <span class="PASS">PASS (cash = ledger, positions = fills, charges, unique monotonic sequence)</span></p></section>
+
+<section id="isolation"><h2>10. Isolation and preservation</h2>
+<table><thead><tr><th>Protected file</th><th>SHA-256 before = after</th></tr></thead><tbody><tr><td><code>.local-data/workspace.json</code></td><td><span class="PASS">unchanged</span> <code>e1a9220eca2ff996…</code></td></tr><tr><td><code>reports/alpha_v3_1/wave6_engineering_fixture_ledger.jsonl</code></td><td><span class="PASS">unchanged</span> <code>d47f77a70b9b499d…</code></td></tr><tr><td><code>reports/alpha_v3_1/wave6_signal_and_paper_ledger.jsonl</code></td><td><span class="PASS">unchanged</span> <code>918013a014ac66ff…</code></td></tr><tr><td><code>reports/alpha_v3_1/wave6_paper_nav_and_benchmark.json</code></td><td><span class="PASS">unchanged</span> <code>5c8ba042ef9cdf9b…</code></td></tr><tr><td><code>backend-extension/data/forecast_reports/ledger_heads.jsonl</code></td><td><span class="PASS">unchanged</span> <code>ABSENT…</code></td></tr><tr><td><code>backend-extension/data/forecast_reports/paper_pnl.jsonl</code></td><td><span class="PASS">unchanged</span> <code>ABSENT…</code></td></tr><tr><td><code>backend-extension/data/research_v3/warehouse.sqlite3</code></td><td><span class="PASS">unchanged</span> <code>21787a7d07fca1f5…</code></td></tr><tr><td><code>src/lib/paper-book/engine.ts</code></td><td><span class="PASS">unchanged</span> <code>f0bbc1de7940bfa3…</code></td></tr><tr><td><code>src/lib/paper-fees.ts</code></td><td><span class="PASS">unchanged</span> <code>d185b63467777194…</code></td></tr></tbody></table>
+<p>Broker order API called: <b>false</b>. Only files in audit/demo/final-submission-2026-11-20/. Unchanged: DATA_BLOCKED / OPERATOR_ACCOUNT_PLAN_NOT_CONFIRMED (not used here).</p></section>
+</main></body></html>

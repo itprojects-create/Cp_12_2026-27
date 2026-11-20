@@ -1,0 +1,1010 @@
+{
+  "authority": "RESEARCH_ONLY",
+  "evidence_time": "2026-11-14T09:05:10.030883+00:00",
+  "manifest_version": "wave5_strategy_library/1",
+  "profitable_status_exists": false,
+  "revisions": [
+    {
+      "dsl_hash": "6656750480530781d3b3eabede916d749610971f725264914f224711a3fa3403",
+      "eligibility": {
+        "diagnostic": {
+          "authority": "RESEARCH_ONLY",
+          "blockers": [],
+          "economics_eligible": false,
+          "executable_diagnostic": true,
+          "forward_eligible": false,
+          "holdout_reuse_refused": true,
+          "report_id": "bf04272ac3317894de78a6c2f6fec7fa2717801f58a041a715dda6c0b398e1f9",
+          "requested_lane": "diagnostic",
+          "requirement_states": [
+            [
+              "official_price_bars",
+              "VERIFIED_RETROSPECTIVE"
+            ],
+            [
+              "pit_membership",
+              "PARTIAL"
+            ],
+            [
+              "corporate_actions",
+              "MISSING"
+            ],
+            [
+              "historical_fee_schedule",
+              "PARTIAL"
+            ],
+            [
+              "untouched_holdout",
+              "REVEALED_NOT_FRESH"
+            ],
+            [
+              "operator_approval",
+              "MISSING"
+            ]
+          ],
+          "revision_id": "near-52w-high-price-momentum@1.0.0:4bb4712c64049d18",
+          "status": "RUNNABLE_DIAGNOSTIC"
+        },
+        "economics": {
+          "authority": "RESEARCH_ONLY",
+          "blockers": [
+            "DATA_BLOCKED_MEMBERSHIP_QUALITY",
+            "DATA_BLOCKED_CORPORATE_ACTIONS",
+            "DATA_BLOCKED_FEE_HISTORY"
+          ],
+          "economics_eligible": false,
+          "executable_diagnostic": true,
+          "forward_eligible": false,
+          "holdout_reuse_refused": true,
+          "report_id": "9d0e83f409c70cf7a389dba52da8e2f7e2e2db20bcc56e445e19655bbfec8b89",
+          "requested_lane": "economics",
+          "requirement_states": [
+            [
+              "official_price_bars",
+              "VERIFIED_RETROSPECTIVE"
+            ],
+            [
+              "pit_membership",
+              "PARTIAL"
+            ],
+            [
+              "corporate_actions",
+              "MISSING"
+            ],
+            [
+              "historical_fee_schedule",
+              "PARTIAL"
+            ],
+            [
+              "untouched_holdout",
+              "REVEALED_NOT_FRESH"
+            ],
+            [
+              "operator_approval",
+              "MISSING"
+            ]
+          ],
+          "revision_id": "near-52w-high-price-momentum@1.0.0:4bb4712c64049d18",
+          "status": "DATA_BLOCKED"
+        },
+        "forward": {
+          "authority": "RESEARCH_ONLY",
+          "blockers": [
+            "DATA_BLOCKED_MEMBERSHIP_QUALITY",
+            "DATA_BLOCKED_CORPORATE_ACTIONS",
+            "DATA_BLOCKED_FEE_HISTORY",
+            "W2_HOLDOUT_REUSE_REFUSED",
+            "FORWARD_APPROVAL_REQUIRED"
+          ],
+          "economics_eligible": false,
+          "executable_diagnostic": true,
+          "forward_eligible": false,
+          "holdout_reuse_refused": true,
+          "report_id": "5a516d87f9a62d8965984228d9491cbb58ec8a2ffd71d8c8188b0e15df3f8b85",
+          "requested_lane": "forward",
+          "requirement_states": [
+            [
+              "official_price_bars",
+              "VERIFIED_RETROSPECTIVE"
+            ],
+            [
+              "pit_membership",
+              "PARTIAL"
+            ],
+            [
+              "corporate_actions",
+              "MISSING"
+            ],
+            [
+              "historical_fee_schedule",
+              "PARTIAL"
+            ],
+            [
+              "untouched_holdout",
+              "REVEALED_NOT_FRESH"
+            ],
+            [
+              "operator_approval",
+              "MISSING"
+            ]
+          ],
+          "revision_id": "near-52w-high-price-momentum@1.0.0:4bb4712c64049d18",
+          "status": "DATA_BLOCKED"
+        }
+      },
+      "lifecycle_state": "RESEARCH_DIAGNOSTIC",
+      "normalized_strategy_spec": {
+        "compiler_supported": true,
+        "dsl_version": "research_v3.lab.StrategySpec/1",
+        "execution": {
+          "broker": "book_zero_brokerage",
+          "capital_paise": 10000000,
+          "entry_ref": "OPEN",
+          "exit_ref": "OPEN",
+          "rebalance": "monthly",
+          "slippage_bps": 10
+        },
+        "parameter_grid": {
+          "high_window_sessions": [
+            189,
+            252,
+            315
+          ],
+          "slippage_bps": [
+            10,
+            25,
+            50
+          ],
+          "top_k": [
+            5,
+            10,
+            15
+          ]
+        },
+        "signal": {
+          "family": "near_52w_high",
+          "high_window_sessions": 252,
+          "lookback_sessions": 126,
+          "min_history_sessions": 0,
+          "skip_sessions": 0,
+          "top_k": 10
+        },
+        "universe": {
+          "max_names": 50,
+          "membership_mode": "disclosed",
+          "require_entry_session_bar": true,
+          "universe_id": "nifty50"
+        },
+        "windows": {
+          "embargo_sessions": 21,
+          "holdout_end": "2026-09-17",
+          "holdout_start": "2024-06-21",
+          "train_end": "2021-12-31",
+          "train_start": "2015-06-01",
+          "validation_end": "2023-12-31",
+          "validation_start": "2022-01-01"
+        }
+      },
+      "requirements": [
+        {
+          "category": "market_data",
+          "description": "Source-labelled official daily observations available at the decision clock",
+          "mandatory_for": [
+            "diagnostic"
+          ],
+          "observed_state": "VERIFIED_RETROSPECTIVE",
+          "provenance": "W1 official bhavcopy archive; retrospective local capture",
+          "refusal_code": null,
+          "requirement_id": "official_price_bars"
+        },
+        {
+          "category": "universe",
+          "description": "As-of membership with row-level historical knowability",
+          "mandatory_for": [
+            "economics",
+            "forward"
+          ],
+          "observed_state": "PARTIAL",
+          "provenance": "W1 has mixed strict and snapshot_floor spells",
+          "refusal_code": "DATA_BLOCKED_MEMBERSHIP_QUALITY",
+          "requirement_id": "pit_membership"
+        },
+        {
+          "category": "return_basis",
+          "description": "Verified split/bonus/dividend coverage for every holding window",
+          "mandatory_for": [
+            "economics",
+            "forward"
+          ],
+          "observed_state": "MISSING",
+          "provenance": "W1 action coverage is unresolved; raw price observations are not total returns",
+          "refusal_code": "DATA_BLOCKED_CORPORATE_ACTIONS",
+          "requirement_id": "corporate_actions"
+        },
+        {
+          "category": "costs",
+          "description": "Date-valid fee schedule across the complete evaluation window",
+          "mandatory_for": [
+            "economics",
+            "forward"
+          ],
+          "observed_state": "PARTIAL",
+          "provenance": "Exact tested schedule begins 2026-03-01 only",
+          "refusal_code": "DATA_BLOCKED_FEE_HISTORY",
+          "requirement_id": "historical_fee_schedule"
+        },
+        {
+          "category": "evaluation",
+          "description": "Never-revealed temporal holdout independent of W2/W3 development",
+          "mandatory_for": [
+            "forward"
+          ],
+          "observed_state": "REVEALED_NOT_FRESH",
+          "provenance": "W2 holdout 2024-06-21..2026-09-17 was revealed and remains burned",
+          "refusal_code": "W2_HOLDOUT_REUSE_REFUSED",
+          "requirement_id": "untouched_holdout"
+        },
+        {
+          "category": "governance",
+          "description": "Explicit paper-only forward-study approval after preregistration",
+          "mandatory_for": [
+            "forward"
+          ],
+          "observed_state": "MISSING",
+          "provenance": "No W5 strategy has operator promotion approval",
+          "refusal_code": "FORWARD_APPROVAL_REQUIRED",
+          "requirement_id": "operator_approval"
+        }
+      ],
+      "revision_id": "near-52w-high-price-momentum@1.0.0:4bb4712c64049d18",
+      "revision_note": "Preserves the W2 rule; library metadata and broad future protocol added.",
+      "semantic_hash": "4bb4712c64049d18c72d116582d14ee062ec349d47970ab6bb1431d11aeed5b1",
+      "semantic_version": "1.0.0",
+      "strategy_id": "near-52w-high-price-momentum",
+      "study_attachments": [
+        {
+          "conclusion": "W2 historical diagnostic did not establish net economic edge; DATA_BLOCKED",
+          "evaluation_cutoff": "2023-12-31",
+          "immutable_result_ref": "3cd201d69fd93333e1e9ce3e516dca6ab93fed61d6217abe087444dd916768e8",
+          "limitations": [
+            "W2 holdout was subsequently revealed and cannot be reused as untouched",
+            "raw price fills versus TRI are basis-incompatible without action coverage"
+          ],
+          "maturity_label": "HISTORICAL_RETROSPECTIVE_ECONOMICS_DATA_BLOCKED",
+          "result_sha256": "3cd201d69fd93333e1e9ce3e516dca6ab93fed61d6217abe087444dd916768e8",
+          "source_hashes": [
+            [
+              "wave2_strategy_spec_fingerprint",
+              "d1318f6e3f605e4b995e1b448b2d36b35b137f46ffd97a1e23d95b9cde560906"
+            ]
+          ],
+          "study_id": "wave2:wave2.h2.near-52w-high"
+        }
+      ],
+      "template": {
+        "anti_hypotheses": [
+          "effect vanishes under broad parameters",
+          "costs dominate",
+          "matched random portfolios perform as well"
+        ],
+        "author_source": "George and Hwang (2004) hypothesis; independently test on NSE",
+        "citations": [
+          {
+            "accessed_date": "2026-11-14",
+            "authors_or_issuer": "Thomas J. George and Chuan-Yang Hwang",
+            "citation_id": "george-hwang-2004",
+            "licensing_note": "Bibliographic link only; article text is not redistributed.",
+            "source_type": "peer_reviewed_article_reference",
+            "title": "The 52-Week High and Momentum Investing",
+            "url_or_local_ref": "https://doi.org/10.1111/j.1540-6261.2004.00695.x",
+            "verification_status": "DOI_CITATION_RESOLVED_2026-11-14"
+          }
+        ],
+        "corporate_action_requirements": "Verified actions required for economic/total-return claims",
+        "decision_clock": "Monthly decision after prior daily bars become available; next session OPEN",
+        "description": "Ranks as-of members by proximity to the highest available close over 252 observed sessions; broad windows/top-k and adverse cost scenarios must be logged.",
+        "evaluation_protocol": "Bounded sweep: high_window 189/252/315, top_k 5/10/15, slippage/cost stress, placebo and date-block uncertainty; no W2 holdout reuse for promotion.",
+        "falsifiable_thesis": "Among as-of NIFTY 50 members, names nearer their prior 252-session high have stronger subsequent price-only returns than matched placebos after turnover controls.",
+        "fee_validity_span": "Exact fee economics only from 2026-03-01; earlier periods blocked",
+        "instrument_universe": "As-of NIFTY 50 membership; weak membership rows disclosed",
+        "known_flaws": [
+          "52-week anchor may proxy ordinary momentum",
+          "high turnover and crowding",
+          "raw prices are action-sensitive"
+        ],
+        "pit_requirements": [
+          "252 available sessions",
+          "as-of membership",
+          "next-open fills"
+        ],
+        "quote_return_basis": "Raw official close signal; next-open price-only fills",
+        "required_fundamental_availability": "Not applicable",
+        "source_accessed_date": "2026-11-14",
+        "source_licensing_provenance": "Citation metadata only; W1 market-data rights apply separately",
+        "strategy_id": "near-52w-high-price-momentum",
+        "title": "Near-52-week-high price momentum",
+        "valid_horizons": [
+          "1_month",
+          "3_months",
+          "6_months"
+        ]
+      }
+    },
+    {
+      "dsl_hash": "6633d14015effb9c9175d3f2d8a1a7719b6bdcaf33ccbbac0cf2c88076e9d2a9",
+      "eligibility": {
+        "diagnostic": {
+          "authority": "RESEARCH_ONLY",
+          "blockers": [],
+          "economics_eligible": false,
+          "executable_diagnostic": true,
+          "forward_eligible": false,
+          "holdout_reuse_refused": true,
+          "report_id": "8fd704983ba749f7f43a0e4ba6911f9e692e3d77cf07e9e935107415c8df4ec4",
+          "requested_lane": "diagnostic",
+          "requirement_states": [
+            [
+              "official_price_bars",
+              "VERIFIED_RETROSPECTIVE"
+            ],
+            [
+              "pit_membership",
+              "PARTIAL"
+            ],
+            [
+              "corporate_actions",
+              "MISSING"
+            ],
+            [
+              "historical_fee_schedule",
+              "PARTIAL"
+            ],
+            [
+              "untouched_holdout",
+              "REVEALED_NOT_FRESH"
+            ],
+            [
+              "operator_approval",
+              "MISSING"
+            ]
+          ],
+          "revision_id": "nse-inspired-6-12m-price-momentum@1.0.0:9184d2fa805830dd",
+          "status": "RUNNABLE_DIAGNOSTIC"
+        },
+        "economics": {
+          "authority": "RESEARCH_ONLY",
+          "blockers": [
+            "DATA_BLOCKED_MEMBERSHIP_QUALITY",
+            "DATA_BLOCKED_CORPORATE_ACTIONS",
+            "DATA_BLOCKED_FEE_HISTORY"
+          ],
+          "economics_eligible": false,
+          "executable_diagnostic": true,
+          "forward_eligible": false,
+          "holdout_reuse_refused": true,
+          "report_id": "500659c05e877870b040cd2e6f8bfea6c570d41d5eedf950d3d449641bc09d9b",
+          "requested_lane": "economics",
+          "requirement_states": [
+            [
+              "official_price_bars",
+              "VERIFIED_RETROSPECTIVE"
+            ],
+            [
+              "pit_membership",
+              "PARTIAL"
+            ],
+            [
+              "corporate_actions",
+              "MISSING"
+            ],
+            [
+              "historical_fee_schedule",
+              "PARTIAL"
+            ],
+            [
+              "untouched_holdout",
+              "REVEALED_NOT_FRESH"
+            ],
+            [
+              "operator_approval",
+              "MISSING"
+            ]
+          ],
+          "revision_id": "nse-inspired-6-12m-price-momentum@1.0.0:9184d2fa805830dd",
+          "status": "DATA_BLOCKED"
+        },
+        "forward": {
+          "authority": "RESEARCH_ONLY",
+          "blockers": [
+            "DATA_BLOCKED_MEMBERSHIP_QUALITY",
+            "DATA_BLOCKED_CORPORATE_ACTIONS",
+            "DATA_BLOCKED_FEE_HISTORY",
+            "W2_HOLDOUT_REUSE_REFUSED",
+            "FORWARD_APPROVAL_REQUIRED"
+          ],
+          "economics_eligible": false,
+          "executable_diagnostic": true,
+          "forward_eligible": false,
+          "holdout_reuse_refused": true,
+          "report_id": "990471aa7a9fd9980a625f316f4ee78022f6758034dc1afbd30a323db7114f3d",
+          "requested_lane": "forward",
+          "requirement_states": [
+            [
+              "official_price_bars",
+              "VERIFIED_RETROSPECTIVE"
+            ],
+            [
+              "pit_membership",
+              "PARTIAL"
+            ],
+            [
+              "corporate_actions",
+              "MISSING"
+            ],
+            [
+              "historical_fee_schedule",
+              "PARTIAL"
+            ],
+            [
+              "untouched_holdout",
+              "REVEALED_NOT_FRESH"
+            ],
+            [
+              "operator_approval",
+              "MISSING"
+            ]
+          ],
+          "revision_id": "nse-inspired-6-12m-price-momentum@1.0.0:9184d2fa805830dd",
+          "status": "DATA_BLOCKED"
+        }
+      },
+      "lifecycle_state": "RESEARCH_DIAGNOSTIC",
+      "normalized_strategy_spec": {
+        "compiler_supported": true,
+        "dsl_version": "research_v3.lab.StrategySpec/1",
+        "execution": {
+          "broker": "book_zero_brokerage",
+          "capital_paise": 10000000,
+          "entry_ref": "OPEN",
+          "exit_ref": "OPEN",
+          "rebalance": "monthly",
+          "slippage_bps": 10
+        },
+        "official_replication": false,
+        "parameter_grid": {
+          "lookback_sessions": [
+            126,
+            252
+          ],
+          "skip_sessions": [
+            0,
+            21
+          ],
+          "top_k": [
+            5,
+            10,
+            15
+          ]
+        },
+        "signal": {
+          "family": "cross_sectional_momentum",
+          "high_window_sessions": 252,
+          "lookback_sessions": 126,
+          "min_history_sessions": 0,
+          "skip_sessions": 21,
+          "top_k": 10
+        },
+        "universe": {
+          "max_names": 50,
+          "membership_mode": "disclosed",
+          "require_entry_session_bar": true,
+          "universe_id": "nifty50"
+        },
+        "windows": {
+          "embargo_sessions": 21,
+          "holdout_end": "2026-09-17",
+          "holdout_start": "2024-06-21",
+          "train_end": "2021-12-31",
+          "train_start": "2015-06-01",
+          "validation_end": "2023-12-31",
+          "validation_start": "2022-01-01"
+        }
+      },
+      "requirements": [
+        {
+          "category": "market_data",
+          "description": "Source-labelled official daily observations available at the decision clock",
+          "mandatory_for": [
+            "diagnostic"
+          ],
+          "observed_state": "VERIFIED_RETROSPECTIVE",
+          "provenance": "W1 official bhavcopy archive; retrospective local capture",
+          "refusal_code": null,
+          "requirement_id": "official_price_bars"
+        },
+        {
+          "category": "universe",
+          "description": "As-of membership with row-level historical knowability",
+          "mandatory_for": [
+            "economics",
+            "forward"
+          ],
+          "observed_state": "PARTIAL",
+          "provenance": "W1 has mixed strict and snapshot_floor spells",
+          "refusal_code": "DATA_BLOCKED_MEMBERSHIP_QUALITY",
+          "requirement_id": "pit_membership"
+        },
+        {
+          "category": "return_basis",
+          "description": "Verified split/bonus/dividend coverage for every holding window",
+          "mandatory_for": [
+            "economics",
+            "forward"
+          ],
+          "observed_state": "MISSING",
+          "provenance": "W1 action coverage is unresolved; raw price observations are not total returns",
+          "refusal_code": "DATA_BLOCKED_CORPORATE_ACTIONS",
+          "requirement_id": "corporate_actions"
+        },
+        {
+          "category": "costs",
+          "description": "Date-valid fee schedule across the complete evaluation window",
+          "mandatory_for": [
+            "economics",
+            "forward"
+          ],
+          "observed_state": "PARTIAL",
+          "provenance": "Exact tested schedule begins 2026-03-01 only",
+          "refusal_code": "DATA_BLOCKED_FEE_HISTORY",
+          "requirement_id": "historical_fee_schedule"
+        },
+        {
+          "category": "evaluation",
+          "description": "Never-revealed temporal holdout independent of W2/W3 development",
+          "mandatory_for": [
+            "forward"
+          ],
+          "observed_state": "REVEALED_NOT_FRESH",
+          "provenance": "W2 holdout 2024-06-21..2026-09-17 was revealed and remains burned",
+          "refusal_code": "W2_HOLDOUT_REUSE_REFUSED",
+          "requirement_id": "untouched_holdout"
+        },
+        {
+          "category": "governance",
+          "description": "Explicit paper-only forward-study approval after preregistration",
+          "mandatory_for": [
+            "forward"
+          ],
+          "observed_state": "MISSING",
+          "provenance": "No W5 strategy has operator promotion approval",
+          "refusal_code": "FORWARD_APPROVAL_REQUIRED",
+          "requirement_id": "operator_approval"
+        }
+      ],
+      "revision_id": "nse-inspired-6-12m-price-momentum@1.0.0:9184d2fa805830dd",
+      "revision_note": "Separate variants only; no unsupported 6/12 composite compiler claim.",
+      "semantic_hash": "9184d2fa805830dd310cdec3d32adf6beb648c44ea5d6093e4b805845a89e740",
+      "semantic_version": "1.0.0",
+      "strategy_id": "nse-inspired-6-12m-price-momentum",
+      "study_attachments": [
+        {
+          "conclusion": "W2 6-month historical diagnostic found no confirmed gross or net edge",
+          "evaluation_cutoff": "2023-12-31",
+          "immutable_result_ref": "c8dd29d9cc33a8943bca597fb8da7d97f8832aa25da55ee91bc70919fc82b02e",
+          "limitations": [
+            "W2 holdout was subsequently revealed and cannot be reused as untouched",
+            "raw price fills versus TRI are basis-incompatible without action coverage"
+          ],
+          "maturity_label": "HISTORICAL_RETROSPECTIVE_ECONOMICS_DATA_BLOCKED",
+          "result_sha256": "c8dd29d9cc33a8943bca597fb8da7d97f8832aa25da55ee91bc70919fc82b02e",
+          "source_hashes": [
+            [
+              "wave2_strategy_spec_fingerprint",
+              "d11f28f26e25fe79d7e0e269337e79d288aeb6ea012091a6292ec07fc29eccde"
+            ]
+          ],
+          "study_id": "wave2:wave2.h1.momentum-6m"
+        }
+      ],
+      "template": {
+        "anti_hypotheses": [
+          "6m and 12m signs are unstable",
+          "effect is crash/rebound selection",
+          "placebos dominate after multiplicity"
+        ],
+        "author_source": "NSE Indices methodology inspiration; not official index replication",
+        "citations": [
+          {
+            "accessed_date": "2026-11-14",
+            "authors_or_issuer": "NSE Indices Limited",
+            "citation_id": "nse-nifty200-momentum30-methodology",
+            "licensing_note": "Entry point is a methodology reference, not permission to redistribute index data.",
+            "source_type": "official_index_methodology_entry_point",
+            "title": "Nifty200 Momentum 30 Index methodology/background",
+            "url_or_local_ref": "https://niftyindices.com/indices/equity/strategy-indices/nifty200-momentum-30-index-static",
+            "verification_status": "BLUEPRINT_CITED_ENTRY_POINT_NETWORK_UNAVAILABLE"
+          }
+        ],
+        "corporate_action_requirements": "Complete verified actions required for economic use",
+        "decision_clock": "Monthly after daily-bar availability; next observed session OPEN",
+        "description": "Tests separate 126- and 252-session price-momentum variants with volatility reported as a diagnostic; it does not claim to reproduce Nifty200 Momentum 30 constituents or weights.",
+        "evaluation_protocol": "Evaluate 126 and 252-session variants separately over a bounded grid; report every trial, turnover/cost stress and dependence-aware uncertainty. Never label as official index replication.",
+        "falsifiable_thesis": "Broad 6- and 12-month as-of price-momentum ranks provide stable forward cross-sectional diagnostics beyond matched equal-weight and random controls in the local NSE panel.",
+        "fee_validity_span": "Exact local fee schedule valid from 2026-03-01 only",
+        "instrument_universe": "As-of NIFTY 50 research universe, not Nifty 200 replication",
+        "known_flaws": [
+          "universe differs from official index",
+          "single-leg variants are not the official composite score",
+          "turnover/crowding",
+          "action-sensitive raw prices"
+        ],
+        "pit_requirements": [
+          "126/252 available sessions",
+          "as-of membership",
+          "volatility history"
+        ],
+        "quote_return_basis": "Raw official price momentum and next-open price-only fills",
+        "required_fundamental_availability": "Not applicable",
+        "source_accessed_date": "2026-11-14",
+        "source_licensing_provenance": "Official methodology entry point only; no index data redistributed",
+        "strategy_id": "nse-inspired-6-12m-price-momentum",
+        "title": "NSE-methodology-inspired 6/12-month price momentum",
+        "valid_horizons": [
+          "1_month",
+          "3_months",
+          "6_months"
+        ]
+      }
+    },
+    {
+      "dsl_hash": "5a637ae517e23168b919c923b92da780bae8d4de30cffeb48975caa06e14ac2b",
+      "eligibility": {
+        "diagnostic": {
+          "authority": "RESEARCH_ONLY",
+          "blockers": [
+            "DATA_BLOCKED_EVENT_CORPUS",
+            "NOT_IMPLEMENTED_SPEC_CONTRACT"
+          ],
+          "economics_eligible": false,
+          "executable_diagnostic": false,
+          "forward_eligible": false,
+          "holdout_reuse_refused": true,
+          "report_id": "30564b11b1a0de1365d365bd9e56ae19b3126bcb394f4dc705e0b72cd6dff4e3",
+          "requested_lane": "diagnostic",
+          "requirement_states": [
+            [
+              "official_price_bars",
+              "VERIFIED_RETROSPECTIVE"
+            ],
+            [
+              "pit_membership",
+              "PARTIAL"
+            ],
+            [
+              "corporate_actions",
+              "MISSING"
+            ],
+            [
+              "historical_fee_schedule",
+              "PARTIAL"
+            ],
+            [
+              "untouched_holdout",
+              "REVEALED_NOT_FRESH"
+            ],
+            [
+              "operator_approval",
+              "MISSING"
+            ],
+            [
+              "contemporaneous_event_corpus",
+              "MISSING"
+            ],
+            [
+              "event_signal_compiler",
+              "MISSING"
+            ]
+          ],
+          "revision_id": "post-earnings-announcement-drift@1.0.0:ac18ed3540b4d7c9",
+          "status": "DATA_BLOCKED"
+        },
+        "economics": {
+          "authority": "RESEARCH_ONLY",
+          "blockers": [
+            "DATA_BLOCKED_EVENT_CORPUS",
+            "NOT_IMPLEMENTED_SPEC_CONTRACT",
+            "DATA_BLOCKED_MEMBERSHIP_QUALITY",
+            "DATA_BLOCKED_CORPORATE_ACTIONS",
+            "DATA_BLOCKED_FEE_HISTORY"
+          ],
+          "economics_eligible": false,
+          "executable_diagnostic": false,
+          "forward_eligible": false,
+          "holdout_reuse_refused": true,
+          "report_id": "1b6665ccafdb236fbd549a8bf1fe98d258553aef6e24879aa8ec66d4e162cfb5",
+          "requested_lane": "economics",
+          "requirement_states": [
+            [
+              "official_price_bars",
+              "VERIFIED_RETROSPECTIVE"
+            ],
+            [
+              "pit_membership",
+              "PARTIAL"
+            ],
+            [
+              "corporate_actions",
+              "MISSING"
+            ],
+            [
+              "historical_fee_schedule",
+              "PARTIAL"
+            ],
+            [
+              "untouched_holdout",
+              "REVEALED_NOT_FRESH"
+            ],
+            [
+              "operator_approval",
+              "MISSING"
+            ],
+            [
+              "contemporaneous_event_corpus",
+              "MISSING"
+            ],
+            [
+              "event_signal_compiler",
+              "MISSING"
+            ]
+          ],
+          "revision_id": "post-earnings-announcement-drift@1.0.0:ac18ed3540b4d7c9",
+          "status": "DATA_BLOCKED"
+        },
+        "forward": {
+          "authority": "RESEARCH_ONLY",
+          "blockers": [
+            "DATA_BLOCKED_EVENT_CORPUS",
+            "NOT_IMPLEMENTED_SPEC_CONTRACT",
+            "DATA_BLOCKED_MEMBERSHIP_QUALITY",
+            "DATA_BLOCKED_CORPORATE_ACTIONS",
+            "DATA_BLOCKED_FEE_HISTORY",
+            "W2_HOLDOUT_REUSE_REFUSED",
+            "FORWARD_APPROVAL_REQUIRED"
+          ],
+          "economics_eligible": false,
+          "executable_diagnostic": false,
+          "forward_eligible": false,
+          "holdout_reuse_refused": true,
+          "report_id": "71ac8431d84bc370cb79dba7b87e18741f7ad678450a51cec6ff4a1ca92f94a6",
+          "requested_lane": "forward",
+          "requirement_states": [
+            [
+              "official_price_bars",
+              "VERIFIED_RETROSPECTIVE"
+            ],
+            [
+              "pit_membership",
+              "PARTIAL"
+            ],
+            [
+              "corporate_actions",
+              "MISSING"
+            ],
+            [
+              "historical_fee_schedule",
+              "PARTIAL"
+            ],
+            [
+              "untouched_holdout",
+              "REVEALED_NOT_FRESH"
+            ],
+            [
+              "operator_approval",
+              "MISSING"
+            ],
+            [
+              "contemporaneous_event_corpus",
+              "MISSING"
+            ],
+            [
+              "event_signal_compiler",
+              "MISSING"
+            ]
+          ],
+          "revision_id": "post-earnings-announcement-drift@1.0.0:ac18ed3540b4d7c9",
+          "status": "DATA_BLOCKED"
+        }
+      },
+      "lifecycle_state": "DATA_BLOCKED",
+      "normalized_strategy_spec": {
+        "compiler_supported": false,
+        "dsl_version": "research_v3.library.EventStrategySpec/1-proposed",
+        "entry": "next_eligible_observed_quote",
+        "outcome_horizons_sessions": [
+          1,
+          5,
+          20,
+          60
+        ],
+        "signal": {
+          "family": "post_earnings_drift",
+          "materiality_threshold": "PREREGISTER_BEFORE_CAPTURE",
+          "surprise_field": "UNAVAILABLE"
+        }
+      },
+      "requirements": [
+        {
+          "category": "market_data",
+          "description": "Source-labelled official daily observations available at the decision clock",
+          "mandatory_for": [
+            "diagnostic"
+          ],
+          "observed_state": "VERIFIED_RETROSPECTIVE",
+          "provenance": "W1 official bhavcopy archive; retrospective local capture",
+          "refusal_code": null,
+          "requirement_id": "official_price_bars"
+        },
+        {
+          "category": "universe",
+          "description": "As-of membership with row-level historical knowability",
+          "mandatory_for": [
+            "economics",
+            "forward"
+          ],
+          "observed_state": "PARTIAL",
+          "provenance": "W1 has mixed strict and snapshot_floor spells",
+          "refusal_code": "DATA_BLOCKED_MEMBERSHIP_QUALITY",
+          "requirement_id": "pit_membership"
+        },
+        {
+          "category": "return_basis",
+          "description": "Verified split/bonus/dividend coverage for every holding window",
+          "mandatory_for": [
+            "economics",
+            "forward"
+          ],
+          "observed_state": "MISSING",
+          "provenance": "W1 action coverage is unresolved; raw price observations are not total returns",
+          "refusal_code": "DATA_BLOCKED_CORPORATE_ACTIONS",
+          "requirement_id": "corporate_actions"
+        },
+        {
+          "category": "costs",
+          "description": "Date-valid fee schedule across the complete evaluation window",
+          "mandatory_for": [
+            "economics",
+            "forward"
+          ],
+          "observed_state": "PARTIAL",
+          "provenance": "Exact tested schedule begins 2026-03-01 only",
+          "refusal_code": "DATA_BLOCKED_FEE_HISTORY",
+          "requirement_id": "historical_fee_schedule"
+        },
+        {
+          "category": "evaluation",
+          "description": "Never-revealed temporal holdout independent of W2/W3 development",
+          "mandatory_for": [
+            "forward"
+          ],
+          "observed_state": "REVEALED_NOT_FRESH",
+          "provenance": "W2 holdout 2024-06-21..2026-09-17 was revealed and remains burned",
+          "refusal_code": "W2_HOLDOUT_REUSE_REFUSED",
+          "requirement_id": "untouched_holdout"
+        },
+        {
+          "category": "governance",
+          "description": "Explicit paper-only forward-study approval after preregistration",
+          "mandatory_for": [
+            "forward"
+          ],
+          "observed_state": "MISSING",
+          "provenance": "No W5 strategy has operator promotion approval",
+          "refusal_code": "FORWARD_APPROVAL_REQUIRED",
+          "requirement_id": "operator_approval"
+        },
+        {
+          "category": "events",
+          "description": "Official results captured contemporaneously with immutable first-seen timestamps",
+          "mandatory_for": [
+            "diagnostic",
+            "economics",
+            "forward"
+          ],
+          "observed_state": "MISSING",
+          "provenance": "W4 has synthetic authored rows only; no real contemporaneous corpus",
+          "refusal_code": "DATA_BLOCKED_EVENT_CORPUS",
+          "requirement_id": "contemporaneous_event_corpus"
+        },
+        {
+          "category": "dsl",
+          "description": "Typed event surprise/materiality clause supported by the research compiler",
+          "mandatory_for": [
+            "diagnostic",
+            "economics",
+            "forward"
+          ],
+          "observed_state": "MISSING",
+          "provenance": "Frozen W2 StrategySpec has no event condition; no clause is silently dropped",
+          "refusal_code": "NOT_IMPLEMENTED_SPEC_CONTRACT",
+          "requirement_id": "event_signal_compiler"
+        }
+      ],
+      "revision_id": "post-earnings-announcement-drift@1.0.0:ac18ed3540b4d7c9",
+      "revision_note": "Typed blocked fixture: DATA_BLOCKED_EVENT_CORPUS + NOT_IMPLEMENTED_SPEC_CONTRACT.",
+      "semantic_hash": "ac18ed3540b4d7c991da84cf1b3e7c6959250dea2a4182d1f57d5a4be6524eaf",
+      "semantic_version": "1.0.0",
+      "strategy_id": "post-earnings-announcement-drift",
+      "study_attachments": [],
+      "template": {
+        "anti_hypotheses": [
+          "surprise is not knowable at cutoff",
+          "drift disappears after costs",
+          "effect is sector/market beta"
+        ],
+        "author_source": "Bernard and Thomas (1989) hypothesis; India applicability untested",
+        "citations": [
+          {
+            "accessed_date": "2026-11-14",
+            "authors_or_issuer": "Victor L. Bernard and Jacob K. Thomas",
+            "citation_id": "bernard-thomas-1989",
+            "licensing_note": "Bibliographic link only; article text is not redistributed.",
+            "source_type": "peer_reviewed_article_reference",
+            "title": "Post-Earnings-Announcement Drift: Delayed Price Response or Risk Premium?",
+            "url_or_local_ref": "https://doi.org/10.2307/2491062",
+            "verification_status": "DOI_CITATION_RESOLVED_2026-11-14"
+          }
+        ],
+        "corporate_action_requirements": "Complete action coverage across every event window",
+        "decision_clock": "First eligible session after official result and surprise inputs are available",
+        "description": "Tests delayed price response after a contemporaneously available, material earnings surprise. W5 has neither an eligible historical event corpus nor a compatible W2 event-signal compiler.",
+        "evaluation_protocol": "Forward-only capture and blind double-review gold labels; preregister event rule and paired controls before outcome reveal.",
+        "falsifiable_thesis": "Large signed earnings surprises known before the decision cutoff are followed by same-direction abnormal returns over preregistered horizons after costs and event-time controls.",
+        "fee_validity_span": "Date-valid charges for each event window",
+        "instrument_universe": "As-of eligible NSE issuers with resolved ISIN and contemporaneous results",
+        "known_flaws": [
+          "estimate revisions",
+          "announcement-time ambiguity",
+          "event clustering",
+          "selection and survivorship bias"
+        ],
+        "pit_requirements": [
+          "official result timestamp",
+          "as-filed estimates",
+          "surprise materiality",
+          "blind forward labels"
+        ],
+        "quote_return_basis": "Next eligible observed quote; benchmark-consistent total-return basis",
+        "required_fundamental_availability": "As-filed results and pre-announcement consensus, both PIT",
+        "source_accessed_date": "2026-11-14",
+        "source_licensing_provenance": "Citation metadata only; issuer-event and estimate rights independent",
+        "strategy_id": "post-earnings-announcement-drift",
+        "title": "Post-earnings-announcement drift (PEAD)",
+        "valid_horizons": [
+          "1_session",
+          "5_sessions",
+          "20_sessions",
+          "60_sessions"
+        ]
+      }
+    }
+  ],
+  "search_probe": {
+    "data_blocked_event_matches": [
+      "post-earnings-announcement-drift@1.0.0:ac18ed3540b4d7c9"
+    ],
+    "momentum_matches": [
+      "near-52w-high-price-momentum@1.0.0:4bb4712c64049d18",
+      "nse-inspired-6-12m-price-momentum@1.0.0:9184d2fa805830dd"
+    ]
+  },
+  "status_vocabulary": [
+    "NOT_TESTED",
+    "RUNNABLE_DIAGNOSTIC",
+    "DATA_BLOCKED",
+    "REJECTED",
+    "RESEARCH_DIAGNOSTIC",
+    "FORWARD_ELIGIBLE_PENDING_APPROVAL",
+    "RETIRED"
+  ],
+  "template_count": 3
+}

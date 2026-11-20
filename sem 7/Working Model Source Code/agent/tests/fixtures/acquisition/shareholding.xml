@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrl xmlns="http://www.xbrl.org/2003/instance" xmlns:ind="http://www.example.com/ind-as" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <xbrli:context id="H1">
+    <xbrli:entity><xbrli:identifier scheme="http://www.example.com">INFY</xbrli:identifier></xbrli:entity>
+    <xbrli:period><xbrli:instant>2026-09-30</xbrli:instant></xbrli:period>
+  </xbrli:context>
+  <ind:PromoterShareholding contextRef="H1" unitRef="pure">14.2</ind:PromoterShareholding>
+  <ind:PublicShareholding contextRef="H1" unitRef="pure">85.8</ind:PublicShareholding>
+  <ind:NumberOfSharesOutstanding contextRef="H1" unitRef="shares">4140000000</ind:NumberOfSharesOutstanding>
+</xbrl>

@@ -1,0 +1,18 @@
+{
+ "check": "wave4_arm_a_frozen_w3_control",
+ "feature_hash_recomputed": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+ "feature_hash_frozen": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+ "feature_hash_match": true,
+ "label_hash_recomputed": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e",
+ "label_hash_frozen": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e",
+ "label_hash_match": true,
+ "label_counts": {
+  "total": 49989,
+  "admissible": 47852,
+  "data_blocked_action_window": 163,
+  "no_label": 1974
+ },
+ "label_counts_match_frozen": true,
+ "jev_state": "OFF (events_ai never imported on this path)",
+ "verdict": "UNCHANGED"
+}

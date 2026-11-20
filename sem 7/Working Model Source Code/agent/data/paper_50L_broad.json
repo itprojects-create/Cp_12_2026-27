@@ -1,0 +1,113 @@
+{
+  "rule": "frozen v4 + baked veto (integer-share ledger)",
+  "universe": "broad",
+  "capital": 5000000.0,
+  "n_names": 391,
+  "n_excluded": 104,
+  "initial": 5000000.0,
+  "final": 13349766.22,
+  "profit": 8349766.22,
+  "profit_pct": 167.0,
+  "cagr_pct": 19.04,
+  "max_drawdown_pct": 10.89,
+  "costs_rupees": 460859.4,
+  "cash_leftover": 10282121.79,
+  "n_holdings_end": 28,
+  "yearly": {
+    "2021": {
+      "start": 5000000.0,
+      "end": 6421234.61,
+      "pnl": 1421234.61
+    },
+    "2022": {
+      "start": 6421234.61,
+      "end": 7149960.03,
+      "pnl": 728725.42
+    },
+    "2023": {
+      "start": 7149960.03,
+      "end": 11143945.21,
+      "pnl": 3993985.19
+    },
+    "2024": {
+      "start": 11143945.21,
+      "end": 12099129.94,
+      "pnl": 955184.72
+    },
+    "2025": {
+      "start": 12099129.94,
+      "end": 12783936.0,
+      "pnl": 684806.06
+    },
+    "2026": {
+      "start": 12783936.0,
+      "end": 13349766.22,
+      "pnl": 565830.22
+    }
+  },
+  "top_holdings_end": [
+    [
+      "ATGL.NS",
+      296,
+      174166.41
+    ],
+    [
+      "BSOFT.NS",
+      595,
+      160084.74
+    ],
+    [
+      "SHYAMMETL.NS",
+      130,
+      138450.0
+    ],
+    [
+      "KIRLOSENG.NS",
+      58,
+      133643.6
+    ],
+    [
+      "CUPID.NS",
+      464,
+      133632.0
+    ],
+    [
+      "NATIONALUM.NS",
+      383,
+      132766.95
+    ],
+    [
+      "ASHOKLEY.NS",
+      855,
+      131191.2
+    ],
+    [
+      "HINDCOPPER.NS",
+      271,
+      128548.85
+    ],
+    [
+      "PFOCUS.NS",
+      399,
+      126084.0
+    ],
+    [
+      "PERSISTENT.NS",
+      24,
+      123888.0
+    ]
+  ],
+  "approx_note": "adjusted closes; integer shares; split-timing effects approx",
+  "generated_at": "2026-10-10T10:49:04.060904+00:00",
+  "decision_audit": {
+    "n_rebalances": 284,
+    "n_rebalances_with_trades": 265,
+    "n_trades": 9595,
+    "n_buys": 5023,
+    "n_sells": 4572,
+    "total_veto_blocks": 603,
+    "total_stressed_blocks": 3391,
+    "rebalance_cost_check": 460859.27
+  },
+  "decisions_file": "data\\paper_50L_broad_decisions.json"
+}

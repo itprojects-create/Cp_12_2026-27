@@ -1,0 +1,84 @@
+{
+  "deterministic_artifact_reruns": {
+    "artifact_hashes_stable": true,
+    "comparison_evidence_path": "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\wave5_generation_rerun_precheck.json",
+    "comparison_evidence_sha256": "9b8a1167cf9b2951f0233de21e7c063bb0151444dec7c8e5a1f6cd74b2b40f0e",
+    "note": "Two clean same-input generations were byte-identical across 17 W5/matrix artifacts; final flagged input is generated twice again.",
+    "runs": 2,
+    "semantic_ids_stable": true
+  },
+  "development_full_baseline": {
+    "command": "python -m pytest tests/ -q",
+    "failed": 0,
+    "passed": 651,
+    "skipped": 0,
+    "summary": "651 passed in 41.15s"
+  },
+  "development_full_final": {
+    "command": "python -m pytest tests/ -q",
+    "failed": 0,
+    "log": "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w5_dev_full_final.log",
+    "log_sha256": "04e2a474b0d62eb6306617033df6b6114f48646c07f19cbc8881fcf6a4856aae",
+    "passed": 713,
+    "skipped": 0,
+    "summary": "713 passed in 33.39s"
+  },
+  "development_w5": {
+    "command": "python -m pytest tests/test_research_v3_wave5.py -q",
+    "failed": 0,
+    "log": "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w5_dev_specific_final.log",
+    "log_sha256": "21b8b13be50be1a789621b7b4bd054e81aa8ecc98f0d9ff2226b1266593469f0",
+    "passed": 62,
+    "skipped": 0,
+    "summary": "62 passed in 1.68s"
+  },
+  "evidence_time": "2026-11-14T09:05:10.030883+00:00",
+  "evidence_version": "wave5_test_runs/1",
+  "network_policy": "W5/default offline; one known live-provider test explicitly skipped",
+  "prior_w4_production_full": {
+    "note": "five recurring failures plus test_technical_pit_live FLAKY_LIVE_LLM; retained, not called in W5",
+    "summary": "6 failed, 670 passed, 1 skipped, 22 warnings in 328.37s (0:05:28)"
+  },
+  "production_offline_safe_baseline": {
+    "command": "python -m pytest tests/ -q -p w5_offline_pytest_plugin",
+    "failed": 5,
+    "passed": 670,
+    "skipped": 2,
+    "summary": "5 failed, 670 passed, 2 skipped in 304.66s (0:05:04)"
+  },
+  "production_offline_safe_final": {
+    "command": "PYTHONPATH=D:\\Quant-Plus\\backend-extension\\scripts python -m pytest tests/ -q -p wave5_offline_pytest_plugin",
+    "explicit_skips": [
+      "tests/test_technical.py::test_technical_pit_live",
+      "tests/test_research_v3_events_ai.py::TestFrozenW3Control::test_w3_feature_and_label_hashes_frozen"
+    ],
+    "failed": 5,
+    "failures": [
+      "tests/test_gateway_experiential.py::test_experiential_key_takes_priority_over_openrouter",
+      "tests/test_gateway_experiential.py::test_gateway_targets_experiential",
+      "tests/test_gateway_limits.py::test_402_quarantines_and_rotates",
+      "tests/test_gateway_limits.py::test_401_quarantines_key_and_rotates",
+      "tests/test_stock_integration.py::test_auth_symbol_validation_and_unconfigured_agents"
+    ],
+    "log": "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w5_prod_full_offline_final.log",
+    "log_sha256": "ca67c6f3c0915a99bef118c99b19b4e244b946f3986fed39dc8daa7eac753e1f",
+    "passed": 732,
+    "skipped": 2,
+    "summary": "5 failed, 732 passed, 2 skipped, 22 warnings in 294.97s (0:04:54)",
+    "warnings": 22
+  },
+  "production_w5": {
+    "command": "python -m pytest tests/test_research_v3_wave5.py -q",
+    "failed": 0,
+    "log": "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w5_prod_specific_final.log",
+    "log_sha256": "f66da24acde695ef837b15c33718345257b1fbec954c1039e496cc7d1becad5f",
+    "passed": 62,
+    "skipped": 0,
+    "summary": "62 passed in 5.35s"
+  },
+  "provider_calls": {
+    "jev": 0,
+    "mercury": 0,
+    "other_model": 0
+  }
+}

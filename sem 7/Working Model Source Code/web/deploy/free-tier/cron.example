@@ -1,0 +1,9 @@
+# Install only AFTER disabling the development PC's forecast tasks and verifying quotas.
+# Server timezone must be UTC. Times below correspond to IST (UTC+05:30).
+# Replace /opt/quantplus with the actual private deployment directory.
+45 10 * * 1-5 root cd /opt/quantplus && bash run-job.sh settle >> state/forecast-jobs.log 2>&1
+# Enable generation after testing its free-model request usage (shared with chat).
+# 0 11 * * 1-5 root cd /opt/quantplus && bash run-job.sh daily --limit 1 >> state/forecast-jobs.log 2>&1
+# 0 12 * * 1-5 root cd /opt/quantplus && bash run-job.sh tournament --limit 2 >> state/forecast-jobs.log 2>&1
+# Consistent daily DB snapshot. Copy completed snapshots off the VM separately.
+0 20 * * * root cd /opt/quantplus && docker compose exec -T agent python /opt/quantplus-backup.py /app/data /backups/$(date -u +\%Y\%m\%dT\%H\%M\%SZ) >> state/backup.log 2>&1

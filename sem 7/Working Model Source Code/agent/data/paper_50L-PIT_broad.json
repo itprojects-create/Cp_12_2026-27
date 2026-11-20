@@ -1,0 +1,127 @@
+{
+  "rule": "frozen v4 + baked veto + per-rebalance PIT membership (CORRECTNESS_REISSUE \u2014 same rule, bias-corrected universe)",
+  "universe": "broad",
+  "capital": 5000000.0,
+  "n_names": 391,
+  "n_excluded": 104,
+  "initial": 5000000.0,
+  "final": 10740759.12,
+  "profit": 5740759.12,
+  "profit_pct": 114.82,
+  "cagr_pct": 14.53,
+  "max_drawdown_pct": 18.04,
+  "costs_rupees": 450721.11,
+  "cash_leftover": 9153593.96,
+  "n_holdings_end": 17,
+  "yearly": {
+    "2021": {
+      "start": 5000000.0,
+      "end": 6487375.15,
+      "pnl": 1487375.15
+    },
+    "2022": {
+      "start": 6487375.15,
+      "end": 7161204.75,
+      "pnl": 673829.6
+    },
+    "2023": {
+      "start": 7161204.75,
+      "end": 10527668.76,
+      "pnl": 3366464.02
+    },
+    "2024": {
+      "start": 10527668.76,
+      "end": 11455483.19,
+      "pnl": 927814.43
+    },
+    "2025": {
+      "start": 11455483.19,
+      "end": 10628998.71,
+      "pnl": -826484.48
+    },
+    "2026": {
+      "start": 10628998.71,
+      "end": 10740759.12,
+      "pnl": 111760.41
+    }
+  },
+  "top_holdings_end": [
+    [
+      "KIRLOSENG.NS",
+      53,
+      122122.6
+    ],
+    [
+      "SHYAMMETL.NS",
+      114,
+      121410.0
+    ],
+    [
+      "ASHOKLEY.NS",
+      746,
+      114466.24
+    ],
+    [
+      "AIAENG.NS",
+      29,
+      112201.0
+    ],
+    [
+      "INDUSTOWER.NS",
+      302,
+      111000.1
+    ],
+    [
+      "GMRAIRPORT.NS",
+      1173,
+      109968.75
+    ],
+    [
+      "NAVINFLUOR.NS",
+      13,
+      107185.0
+    ],
+    [
+      "FORCEMOT.NS",
+      6,
+      102324.0
+    ],
+    [
+      "OFSS.NS",
+      9,
+      93654.0
+    ],
+    [
+      "CROMPTON.NS",
+      419,
+      88564.03
+    ]
+  ],
+  "approx_note": "adjusted closes; integer shares; split-timing effects approx",
+  "generated_at": "2026-10-10T17:19:46.056617+00:00",
+  "decision_audit": {
+    "n_rebalances": 284,
+    "n_rebalances_with_trades": 265,
+    "n_trades": 7139,
+    "n_buys": 3727,
+    "n_sells": 3412,
+    "total_veto_blocks": 506,
+    "total_stressed_blocks": 3089,
+    "rebalance_cost_check": 450720.99
+  },
+  "decisions_file": "data\\paper_50L-PIT_broad_decisions.json",
+  "pit_reissue": {
+    "mode": "CORRECTNESS_REISSUE (not a new strategy)",
+    "universe_id": "nifty500",
+    "strict": false,
+    "note": "non-strict with disclosure (Amendment-1: strict degenerates)",
+    "membership_source_version": "75ebfac3b5d1fb22",
+    "n_frozen_unknown": 0,
+    "pit_status_counts": {
+      "PARTIAL": 284
+    },
+    "first_hash": "28bdc22336bcf0f0",
+    "last_hash": "84155c0a066bd1e0"
+  },
+  "pit_log_file": "data\\paper_50L-PIT_broad_pitlog.json"
+}

@@ -1,0 +1,120 @@
+name: quantplus
+
+x-logging: &logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+services:
+  agent:
+    platform: linux/arm64
+    image: quantplus-agent:${RELEASE_ID:?Set RELEASE_ID}
+    build:
+      context: ./agent
+    init: true
+    restart: unless-stopped
+    env_file:
+      - path: ./secrets/agent.env
+        format: raw
+    environment:
+      QP_DB_PATH: /app/data/quantplus.db
+      FORECAST_LEDGER_PATH: /app/data/forecast_ledger.sqlite3
+      INTELLIGENCE_NEWS_ARCHIVE_PATH: /app/data/news_archive.sqlite3
+      INTELLIGENCE_HISTORY_PATH: /app/data/sentiment_history.sqlite3
+      FYERS_REDIRECT_URI: https://${APP_DOMAIN:?Set APP_DOMAIN}/api/v1/fyers/callback
+      FRONTEND_ORIGINS: https://${APP_DOMAIN}
+      INCEPTION_API_KEY: ""
+      EXPLABS_API_KEY: ""
+      CODECRAFT_KEY_1: ""
+      CODECRAFT_KEY_2: ""
+      CODECRAFT_KEY_3: ""
+      CODECRAFT_KEY_4: ""
+      CODECRAFT_KEY_5: ""
+      ALLOW_PAID_SOURCE: "false"
+      OPENROUTER_BASE_URL: https://openrouter.ai/api/v1
+      OPENROUTER_MODEL: openrouter/free
+      OPENROUTER_ANALYST_MODEL: openrouter/free
+      OPENROUTER_DECIDER_MODEL: openrouter/free
+      DAILY_REQUEST_CAP: "35"
+      STOCK_PREDICTION_WARM_ENABLED: "false"
+      INTELLIGENCE_AI_ENABLED: "false"
+    volumes:
+      - ./state/agent-data:/app/data
+      # The existing Fyers module stores tokens relative to app/, not QP_DB_PATH.
+      - ./state/fyers:/app/app/data/fyers_private
+      - ./backups:/backups
+      - ./backup.py:/opt/quantplus-backup.py:ro
+    mem_limit: 6g
+    healthcheck:
+      test:
+        [
+          CMD,
+          python,
+          -c,
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=8).read()",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    logging: *logging
+
+  web:
+    platform: linux/arm64
+    image: quantplus-web:${RELEASE_ID}
+    build:
+      context: ./web
+      args:
+        VITE_QUANT_PLUS_AUTH: insforge
+        VITE_INSFORGE_URL: ${VITE_INSFORGE_URL:?Set public InsForge URL}
+        VITE_INSFORGE_ANON_KEY: ${VITE_INSFORGE_ANON_KEY:?Set public anon key}
+    init: true
+    restart: unless-stopped
+    env_file:
+      - path: ./secrets/web.env
+        format: raw
+    environment:
+      QUANT_PLUS_BOOK_PROVIDER: insforge
+      QUANT_PLUS_WORKER: "on"
+      AGENT_SERVICE_URL: http://agent:8000
+      EXPLABS_API_KEY: ""
+      OPENROUTER_BASE_URL: https://openrouter.ai/api/v1
+      OPENROUTER_CHAT_MODEL: openrouter/free
+      QUANT_AI_DAILY_REQUEST_LIMIT: "10"
+    depends_on:
+      agent:
+        condition: service_healthy
+    mem_limit: 2g
+    healthcheck:
+      test:
+        [
+          CMD,
+          node,
+          -e,
+          "fetch('http://127.0.0.1:3000/').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    logging: *logging
+
+  proxy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      APP_DOMAIN: ${APP_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./state/caddy-data:/data
+      - ./state/caddy-config:/config
+    depends_on:
+      web:
+        condition: service_healthy
+    mem_limit: 256m
+    logging: *logging

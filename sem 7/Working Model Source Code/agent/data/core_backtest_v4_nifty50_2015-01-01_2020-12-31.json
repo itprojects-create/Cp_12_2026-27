@@ -1,0 +1,47 @@
+{
+  "frozen_rule": "app/core/trend_core_v4.py (prereg data/prereg_core_v4.md, one run)",
+  "universe": "nifty50",
+  "n_days": 1471,
+  "n_names": 36,
+  "n_excluded": 1,
+  "excluded_sample": [
+    "TATAMOTORS.NS"
+  ],
+  "total_return": 0.9668,
+  "cagr": 0.1229,
+  "ann_vol": 0.0789,
+  "sharpe": 1.508,
+  "max_drawdown": 0.112,
+  "total_cost": 0.04079,
+  "avg_exposure": 0.4741,
+  "n_switches": 1186,
+  "yearly": {
+    "2015": {
+      "ret": -0.077,
+      "intra_yr_dd": -0.112
+    },
+    "2016": {
+      "ret": 0.2025,
+      "intra_yr_dd": -0.1975
+    },
+    "2017": {
+      "ret": 0.2591,
+      "intra_yr_dd": -0.231
+    },
+    "2018": {
+      "ret": 0.0172,
+      "intra_yr_dd": -0.092
+    },
+    "2019": {
+      "ret": 0.056,
+      "intra_yr_dd": -0.1014
+    },
+    "2020": {
+      "ret": 0.31,
+      "intra_yr_dd": -0.2484
+    }
+  },
+  "bench_cagr_corrected": 0.1688,
+  "bench_note": "corrected math (mean of total returns); v2/v3 bench numbers keep old formula",
+  "generated_at": "2026-10-06T17:58:45.273339+00:00"
+}

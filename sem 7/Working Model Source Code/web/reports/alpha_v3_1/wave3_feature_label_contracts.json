@@ -1,0 +1,41 @@
+{
+ "feature_hash": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+ "feature_names": [
+  "ret_5",
+  "ret_20",
+  "ret_60",
+  "ret_120",
+  "prox_252",
+  "vol_20",
+  "trend_consistency_20",
+  "volume_ratio_20",
+  "liquidity_20",
+  "drawdown_60",
+  "overnight_gap",
+  "rel_mom_60"
+ ],
+ "generated_at": "2026-11-13T14:31:22.666302+00:00",
+ "label_admissibility": {
+  "ADMISSIBLE": "status OK and no action-shaped discontinuity in [entry, exit]",
+  "DATA_BLOCKED_ACTION_WINDOW": "unverified corporate-action-shaped discontinuity inside the window",
+  "NO_LABEL": "no fill / no baseline"
+ },
+ "label_hash": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e",
+ "pit_rules": {
+  "cutoff": "features read only bars with available_at <= decision T00:15 IST next local day (W1/W2 rule)",
+  "entry": "next-session-open after decision (W1 engine)",
+  "exit": "h-session close with conservative extension (W1 engine)",
+  "holdout_quarantine": "2024-06-21..2026-09-17 (REVEALED_W2_HOLDOUT) is refused by the fold builder",
+  "horizons": {
+   "20": "primary",
+   "5": "research-only",
+   "60": "secondary"
+  },
+  "imputation": "none; abstaining features are named exclusions (complete-row models) or explicit NaN (HGB)",
+  "purge": "train rows whose label exit_session reaches into the validation span minus a 10-session embargo are dropped",
+  "window_gate": "lookbacks containing archive session-gaps or close/prev_close outside [0.65, 1.54] abstain"
+ },
+ "unavailable_features": {
+  "sector_relative": "no source-verified, as-of historical sector map (DATA_BLOCKED)"
+ }
+}

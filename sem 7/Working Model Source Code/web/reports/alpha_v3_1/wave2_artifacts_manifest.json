@@ -1,0 +1,32 @@
+{
+ "artifacts": {
+  "wave2_backtest_results.json": "283fba6e8bcd588e3784b0673854e189393f8a51f78b4eaab111825f3508fb1f",
+  "wave2_challenge_report.json": "048bf097680ba93654d5647f54ed6ae5eaa53ae70f26d617521a30cb939cd383",
+  "wave2_data_coverage.json": "7c168bff0120984fc4c9592331eaa1cd8bbd88c4484b34f07cf0385522e36106",
+  "wave2_holdout_registry.json": "ce334ff7b46b12f7b45469131490f4af1582ae5d195a246b45d82af886345eb8",
+  "wave2_parameter_sweep.csv": "8a03938dbe2cec90d406a81a8349e49bfb75f702569fafdf0f1b0d398eba9560",
+  "wave2_preregistered_specs.json": "e6f61491696b388001431f774545749d64074a966c5d9afe887cf5c4cf469e88",
+  "wave2_research_journal.jsonl": "c24c9b0491fa9bbd819b12393ce84a1aa5321f40c35e48d0b3c233986f50c2e7"
+ },
+ "generated_at": "2026-11-12T10:42:57.613576+00:00",
+ "result_ids": {
+  "wave2.baseline.equal-weight@holdout": "a984897ac71642a1d777b0f85f3d9bc2a23d5594b9cdf05b9266d0ce194814aa",
+  "wave2.baseline.equal-weight@train_validation": "e8621bade78ceb25c52effe06f079351fb8712440b5598d33bf9fa01cd441dd5",
+  "wave2.control.leak.same-day-close@train_validation": "a0d8de248ca3341cb3f63065fef952719c1235991e7eb2799ee14603de4377c8",
+  "wave2.control.noise.seeded@train_validation": "b43824b442bead5128d7a9968ffd08fd04fe368e55f9cfd8fa25f36e83eeda91",
+  "wave2.h1.momentum-6m@holdout": "71a89661988647276ae156d022cbd402348b3bc5e62feb8351b03def8e3559cc",
+  "wave2.h1.momentum-6m@train_validation": "c8dd29d9cc33a8943bca597fb8da7d97f8832aa25da55ee91bc70919fc82b02e",
+  "wave2.h2.near-52w-high@holdout": "ce0ca755657af6b95ad31dace13e37f5ba01ed82d21649e2fb499f1a93c4000c",
+  "wave2.h2.near-52w-high@train_validation": "3cd201d69fd93333e1e9ce3e516dca6ab93fed61d6217abe087444dd916768e8"
+ },
+ "verdicts": {
+  "wave2.baseline.equal-weight": "DATA_BLOCKED",
+  "wave2.baseline.equal-weight@holdout": "DATA_BLOCKED",
+  "wave2.control.leak.same-day-close": "REJECTED",
+  "wave2.control.noise.seeded": "REJECTED",
+  "wave2.h1.momentum-6m": "DATA_BLOCKED",
+  "wave2.h1.momentum-6m@holdout": "DATA_BLOCKED",
+  "wave2.h2.near-52w-high": "DATA_BLOCKED",
+  "wave2.h2.near-52w-high@holdout": "DATA_BLOCKED"
+ }
+}

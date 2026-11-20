@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-11-12T08:25:15.622493+00:00",
+  "warehouse_db": "D:\\Quant-Plus\\backend-extension\\data\\research_v3\\warehouse.sqlite3",
+  "sources": {
+    "nse_eod_bhavcopy_2015_2026_full": {
+      "path": "D:\\Model\\NEW DATA\\nse_eod_bhavcopy_2015_2026_full.csv.gz",
+      "sha256": "4df01085a17f2bd2e49e8c7fb444609bd3e4db56cbe3ffff43f09a70c74bb5c7",
+      "rows": 5232265,
+      "source_class": "OFFICIAL_EXCHANGE_RECORD",
+      "archive_built_on": "2026-09-18",
+      "provenance_note": "Any simulated decision on pre-archive history is a RETROSPECTIVE reconstruction, not a contemporaneous prediction; reports must label it so."
+    },
+    "nse_index_membership_history": {
+      "path": "D:\\Model\\data\\reference\\nse_index_membership_history.csv",
+      "sha256": "75ebfac3b5d1fb2285d7efadd264df239cf228f6de7dd7e2f84d853546e01152",
+      "rows": 6525,
+      "attribution": "Membership: Jha, A. (2026). NSE Historical Membership (Point-in-Time). github.com/aditya-jha/nse-historical-membership. Derived from public NSE Indices Limited press releases and NSE Exchange circulars. CC BY 4.0.",
+      "source_class": "PRESS_RELEASE_RECONSTRUCTION",
+      "renames": {
+        "path": "D:\\Model\\data\\reference\\nse_symbol_renames.json",
+        "rows_ingested": 40,
+        "undated_rows": 14,
+        "invalid_date_strings": 1,
+        "policy": "undated / placeholder effective dates join instrument identity (alias set) but never change display naming and never mirror a verified corporate action (fail closed on dates)"
+      }
+    },
+    "nifty50_tri_history": {
+      "path": "D:\\Model\\NEW DATA\\nifty50_tri_history.csv",
+      "sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7",
+      "rows": 5385,
+      "source_class": "OFFICIAL_EXCHANGE_RECORD"
+    }
+  },
+  "coverage": {
+    "generated_at": "2026-11-12T08:25:15.622493+00:00",
+    "sessions_total": 2777,
+    "sessions_per_year": {
+      "2015": 247,
+      "2016": 246,
+      "2017": 248,
+      "2018": 246,
+      "2019": 244,
+      "2020": 250,
+      "2021": 248,
+      "2022": 248,
+      "2023": 245,
+      "2024": 132,
+      "2025": 248,
+      "2026": 175
+    },
+    "distinct_symbols": 4675,
+    "rows_by_series": {
+      "EQ": 4689609,
+      "BE": 416032,
+      "BZ": 64266,
+      "ST": 62358
+    },
+    "ingestion_runs": [
+      {
+        "run_id": "nse_eod_bhavcopy_2015_2026_full:4df01085a17f2bd2",
+        "source_id": "nse_eod_bhavcopy_2015_2026_full",
+        "source_sha256": "4df01085a17f2bd2e49e8c7fb444609bd3e4db56cbe3ffff43f09a70c74bb5c7",
+        "rows_ingested": 5232265,
+        "ingested_at": "2026-11-12T08:08:49.022718+00:00"
+      },
+      {
+        "run_id": "nse_index_membership_history:75ebfac3b5d1fb22",
+        "source_id": "nse_index_membership_history",
+        "source_sha256": "75ebfac3b5d1fb2285d7efadd264df239cf228f6de7dd7e2f84d853546e01152",
+        "rows_ingested": 6525,
+        "ingested_at": "2026-11-12T08:08:51.318580+00:00"
+      },
+      {
+        "run_id": "nifty50_tri_history:d92d1a975c473209",
+        "source_id": "nifty50_tri_history",
+        "source_sha256": "d92d1a975c47320998486050bde1a74497b5b34f477d592af1d2099ec2ae2ab7",
+        "rows_ingested": 5385,
+        "ingested_at": "2026-11-12T08:08:51.412692+00:00"
+      }
+    ],
+    "benchmark_nifty50_tri": {
+      "rows": 5385,
+      "first": "2005-01-03",
+      "last": "2026-09-17"
+    },
+    "membership_spells": {
+      "rows": 6525,
+      "first_valid_from": "2014-01-01",
+      "attribution": "Membership: Jha, A. (2026). NSE Historical Membership (Point-in-Time). github.com/aditya-jha/nse-historical-membership. Derived from public NSE Indices Limited press releases and NSE Exchange circulars. CC BY 4.0."
+    },
+    "known_gaps": {
+      "2024-01-01_to_2024-06-20": {
+        "sessions_ingested": 0,
+        "state": "MISSING_SPAN",
+        "cause": "2026-09-18 archive run was partial for H1 2024 (archive/nse_eod_bhavcopy_103day_partial_2024-06-21_2024-11-18.csv.gz)"
+      },
+      "2026-09-18_onward": {
+        "status": "MISSING_SPAN",
+        "cause": "bhavcopy archive ends 2026-09-17; newer sessions live in yf_cache vendor snapshots (VENDOR_RECONSTRUCTION) until a newer official archive is ingested"
+      }
+    },
+    "rights": {
+      "bhavcopy": "official NSE EOD records, personal-research use per MANIFEST.md",
+      "membership": "CC BY 4.0 (attribution carried on every row)",
+      "tri": "official NSE Indices history via niftyindices.com",
+      "yf_cache": "Yahoo Finance vendor snapshots; labelled VENDOR_RECONSTRUCTION, fallback only"
+    }
+  },
+  "pit_probes": {
+    "nifty50_members_at_2020_01_01": {
+      "status": "PARTIAL",
+      "n_members": 50,
+      "weak_rows_included": 36
+    },
+    "panel_asof_2020_01_01": {
+      "status": "PARTIAL",
+      "n_with_bars": 50,
+      "n_excluded_no_bars": 0,
+      "excluded_sample": []
+    }
+  },
+  "claim": "source hashes recorded pre-ingestion; warehouse derived from immutable archives; no source file was edited"
+}

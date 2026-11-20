@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbrl xmlns="http://www.xbrl.org/2003/instance" xmlns:ind="http://www.example.com/ind-as" xmlns:xbrli="http://www.xbrl.org/2003/instance">
+  <xbrli:context id="Q2">
+    <xbrli:entity><xbrli:identifier scheme="http://www.example.com">INFY</xbrli:identifier></xbrli:entity>
+    <xbrli:period><xbrli:startDate>2026-04-01</xbrli:startDate><xbrli:endDate>2026-06-30</xbrli:endDate></xbrli:period>
+  </xbrli:context>
+  <ind:RevenueFromOperations contextRef="Q2" unitRef="INR" decimals="0">50000</ind:RevenueFromOperations>
+  <ind:ProfitAfterTax contextRef="Q2" unitRef="INR" decimals="0">8000</ind:ProfitAfterTax>
+  <ind:EarningsPerShareBasic contextRef="Q2" unitRef="INR">42.5</ind:EarningsPerShareBasic>
+  <ind:TotalAssets contextRef="Q2" unitRef="INR">120000</ind:TotalAssets>
+  <ind:NotAField contextRef="Q2" unitRef="INR">999</ind:NotAField>
+  <ind:BadNumber contextRef="Q2" unitRef="INR">abc</ind:BadNumber>
+</xbrl>

@@ -1,0 +1,178 @@
+{
+  "ritual": "forward-week",
+  "window_no": 1,
+  "week_start": "2026-10-10",
+  "as_of": "2026-10-10T13:55:15.643604+00:00",
+  "clock_start": "2026-10-10T13:51:55.372639+00:00",
+  "scope": "forward-only; no 2021-2026 bar used for any judgment/promotion",
+  "min_decisions": 60,
+  "n_forward_bars": 0,
+  "forward_bars_provenance": "yfinance ^NSEI 1d as_of=2026-10-10",
+  "n_decisions_this_window": 0,
+  "ir_note": "insufficient forward points (<2 closes since clock start); IR undefined -> recorded 0.0",
+  "token_budget_per_variant": 0,
+  "research_token_memo": {
+    "since": "2026-10-10",
+    "total_tokens": 1187111,
+    "days": [
+      {
+        "day": "2026-10-10",
+        "tokens": 1187111
+      }
+    ],
+    "note": "memo only; never charged to deterministic variants"
+  },
+  "death_fingerprint": "ELEVATED|DOWN|low",
+  "fingerprint_meta": {
+    "regime": "ELEVATED",
+    "trend": "DOWN",
+    "breadth": "low",
+    "breadth_provenance": "breadth=0.20 on 10/50 names"
+  },
+  "judged": [
+    {
+      "variant": "FP-01-F1-v4-as-shipped",
+      "name": "F1-v4-as-shipped",
+      "n_decisions": 0,
+      "ir": 0.0,
+      "tokens": 0,
+      "transition": "clean",
+      "status": "ALIVE",
+      "strikes": 0,
+      "reasons": [
+        "infancy: not judgeable"
+      ]
+    },
+    {
+      "variant": "FP-02-F2-narrow-focus",
+      "name": "F2-narrow-focus",
+      "n_decisions": 0,
+      "ir": 0.0,
+      "tokens": 0,
+      "transition": "clean",
+      "status": "ALIVE",
+      "strikes": 0,
+      "reasons": [
+        "infancy: not judgeable"
+      ]
+    },
+    {
+      "variant": "FP-03-F3-wide-net",
+      "name": "F3-wide-net",
+      "n_decisions": 0,
+      "ir": 0.0,
+      "tokens": 0,
+      "transition": "clean",
+      "status": "ALIVE",
+      "strikes": 0,
+      "reasons": [
+        "infancy: not judgeable"
+      ]
+    },
+    {
+      "variant": "FP-04-F4-v3-narrow-control",
+      "name": "F4-v3-narrow-control",
+      "n_decisions": 0,
+      "ir": 0.0,
+      "tokens": 0,
+      "transition": "clean",
+      "status": "ALIVE",
+      "strikes": 0,
+      "reasons": [
+        "infancy: not judgeable"
+      ]
+    },
+    {
+      "variant": "FP-05-F5-no-vix",
+      "name": "F5-no-vix",
+      "n_decisions": 0,
+      "ir": 0.0,
+      "tokens": 0,
+      "transition": "clean",
+      "status": "ALIVE",
+      "strikes": 0,
+      "reasons": [
+        "infancy: not judgeable"
+      ]
+    },
+    {
+      "variant": "FP-06-F6-strict-veto",
+      "name": "F6-strict-veto",
+      "n_decisions": 0,
+      "ir": 0.0,
+      "tokens": 0,
+      "transition": "clean",
+      "status": "ALIVE",
+      "strikes": 0,
+      "reasons": [
+        "infancy: not judgeable"
+      ]
+    },
+    {
+      "variant": "FP-07-F7-loose-veto",
+      "name": "F7-loose-veto",
+      "n_decisions": 0,
+      "ir": 0.0,
+      "tokens": 0,
+      "transition": "clean",
+      "status": "ALIVE",
+      "strikes": 0,
+      "reasons": [
+        "infancy: not judgeable"
+      ]
+    },
+    {
+      "variant": "FP-08-F8-low-gross",
+      "name": "F8-low-gross",
+      "n_decisions": 0,
+      "ir": 0.0,
+      "tokens": 0,
+      "transition": "clean",
+      "status": "ALIVE",
+      "strikes": 0,
+      "reasons": [
+        "infancy: not judgeable"
+      ]
+    }
+  ],
+  "allocation": {
+    "FP-01-F1-v4-as-shipped": 0.125,
+    "FP-02-F2-narrow-focus": 0.125,
+    "FP-03-F3-wide-net": 0.125,
+    "FP-04-F4-v3-narrow-control": 0.125,
+    "FP-05-F5-no-vix": 0.125,
+    "FP-06-F6-strict-veto": 0.125,
+    "FP-07-F7-loose-veto": 0.125,
+    "FP-08-F8-low-gross": 0.125
+  },
+  "foundry": {
+    "rows_n": 0,
+    "rows_provenance": "no forward rebalances settled yet (clock_start=2026-10-10 Sat)",
+    "baseline": "frozen veto table w/ neutral ret_5d=0/dist_high=-5 stand-ins; outcome baseline-independent while rows empty",
+    "forbidden_probe": {
+      "kind": "direction_flip",
+      "params": {
+        "to": "short"
+      },
+      "rejected": true,
+      "error": "kind 'direction_flip' not allowlisted \u2014 rejected, never evaluated"
+    },
+    "candidate": {
+      "kind": "veto_band_edge",
+      "params": {
+        "band_lo": 0.5,
+        "band_hi": 0.75,
+        "veto": 1.0,
+        "regime": "STRESSED",
+        "breadth": "low"
+      },
+      "promoted": false,
+      "reason": "test slice too small",
+      "n_train": 0,
+      "n_test": 0,
+      "n_gap": 0
+    }
+  },
+  "dry_run": false,
+  "generated_at": "2026-10-10T13:55:19.971772+00:00"
+}

@@ -1,0 +1,9547 @@
+{
+ "candidates_sample": [
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": false,
+   "pred": 0.41528041825095063,
+   "rank": 1,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "TMPV"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.36424919306464054,
+   "rank": 2,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "ADANIENT"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.3044871794871795,
+   "rank": 3,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "HDFCLIFE"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.2871857296689919,
+   "rank": 4,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "INDUSINDBK"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.27486535808074075,
+   "rank": 5,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "BAJFINANCE"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.26927231834522813,
+   "rank": 6,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "DIVISLAB"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.25450936394234924,
+   "rank": 7,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "M&M"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.2397384284405819,
+   "rank": 8,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "HEROMOTOCO"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.2174062607499141,
+   "rank": 9,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "ASIANPAINT"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.2145023629822953,
+   "rank": 10,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "TATACONSUM"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": false,
+   "pred": 0.3477218225419665,
+   "rank": 1,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "TMPV"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.3196905415522835,
+   "rank": 2,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "ADANIENT"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.305699970022697,
+   "rank": 3,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "BAJFINANCE"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.30161437962885906,
+   "rank": 4,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "M&M"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.2814721059293155,
+   "rank": 5,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "HDFCLIFE"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.2746523068202522,
+   "rank": 6,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "HEROMOTOCO"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.26335877862595414,
+   "rank": 7,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "INDUSINDBK"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.25323244572736425,
+   "rank": 8,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "DIVISLAB"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.22045042321644504,
+   "rank": 9,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "BAJAJFINSV"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "momentum_rank",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.21858103525125472,
+   "rank": 10,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "TITAN"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.030932545206100052,
+   "rank": 1,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "ADANIENT"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.017886116336373957,
+   "rank": 2,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "HDFCLIFE"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": false,
+   "pred": 0.01695082330030262,
+   "rank": 3,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "TMPV"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.01007252067650384,
+   "rank": 4,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "M&M"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.009922401316536692,
+   "rank": 5,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "COALINDIA"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.009636398210921653,
+   "rank": 6,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "BAJFINANCE"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.009596246172786996,
+   "rank": 7,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "APOLLOHOSP"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.009503119326802697,
+   "rank": 8,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "POWERGRID"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.009433351061474762,
+   "rank": 9,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "KOTAKBANK"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.008166365532481207,
+   "rank": 10,
+   "scope": "final fold (wf4)",
+   "session": "2023-06-30",
+   "symbol": "INDUSINDBK"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.02421422877068067,
+   "rank": 1,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "ADANIENT"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.01655667206118601,
+   "rank": 2,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "HDFCLIFE"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.0140679573075912,
+   "rank": 3,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "BAJFINANCE"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": false,
+   "pred": 0.013096041579804686,
+   "rank": 4,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "TMPV"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.012646407779238835,
+   "rank": 5,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "M&M"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.012063776183441378,
+   "rank": 6,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "EICHERMOT"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.010076147544875937,
+   "rank": 7,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "INDUSINDBK"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.009877731439450472,
+   "rank": 8,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "APOLLOHOSP"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.009326837075260807,
+   "rank": 9,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "TATACONSUM"
+  },
+  {
+   "authority": "RESEARCH_ONLY",
+   "family": "ridge",
+   "horizon": 20,
+   "in_admissible_labels": true,
+   "pred": 0.008776658644173813,
+   "rank": 10,
+   "scope": "final fold (wf4)",
+   "session": "2023-07-07",
+   "symbol": "UPL"
+  }
+ ],
+ "challenges": {
+  "climatology_binary@h20": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "observed_ic": null
+     },
+     "reason": "no comparable IC pairs",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 0,
+   "n_inconclusive": 2,
+   "n_pass": 1,
+   "run_id": "41f4348e918b95334e26947d5712f0e0149e699158a93f5738393f396cd848e7",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "RESEARCH_DIAGNOSTIC",
+   "verdict_reason": "diagnostics-only evidence on validation folds; no fresh sealed holdout exists \u2014 RESEARCH_DIAGNOSTIC, never TRADE/PROFITABLE"
+  },
+  "climatology_binary@h5": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "observed_ic": null
+     },
+     "reason": "no comparable IC pairs",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 0,
+   "n_inconclusive": 2,
+   "n_pass": 1,
+   "run_id": "c3172f467e5c1a68549ce7d2ec41e4c720710abf90f86c22eafcd819d2489ab3",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "RESEARCH_DIAGNOSTIC",
+   "verdict_reason": "diagnostics-only evidence on validation folds; no fresh sealed holdout exists \u2014 RESEARCH_DIAGNOSTIC, never TRADE/PROFITABLE"
+  },
+  "climatology_binary@h60": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "observed_ic": null
+     },
+     "reason": "no comparable IC pairs",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 0,
+   "n_inconclusive": 2,
+   "n_pass": 1,
+   "run_id": "b24dc55eb7e5be9b6194802d7c275b7d02f502f7098139c517cabeb7a8200466",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "RESEARCH_DIAGNOSTIC",
+   "verdict_reason": "diagnostics-only evidence on validation folds; no fresh sealed holdout exists \u2014 RESEARCH_DIAGNOSTIC, never TRADE/PROFITABLE"
+  },
+  "hgb@h20": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -0.002901,
+      "observed_ic": 0.036751,
+      "percentile": 0.985
+     },
+     "reason": "observed day-clustered IC 0.0368 at the 98th percentile of 200 within-day permutations (threshold 90)",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 0,
+   "n_inconclusive": 1,
+   "n_pass": 2,
+   "run_id": "1c15393ed2f4d40f23f26234cc04ed6a17f6ae26eaed956d78b1f06e18e087b7",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "RESEARCH_DIAGNOSTIC",
+   "verdict_reason": "diagnostics-only evidence on validation folds; no fresh sealed holdout exists \u2014 RESEARCH_DIAGNOSTIC, never TRADE/PROFITABLE"
+  },
+  "hgb@h5": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -0.001595,
+      "observed_ic": 0.021505,
+      "percentile": 0.935
+     },
+     "reason": "observed day-clustered IC 0.0215 at the 94th percentile of 200 within-day permutations (threshold 90)",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 0,
+   "n_inconclusive": 1,
+   "n_pass": 2,
+   "run_id": "9ffcaeacbec83e97e6fcad6342792519218d1d50e07b9000f0453769766203bb",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "RESEARCH_DIAGNOSTIC",
+   "verdict_reason": "diagnostics-only evidence on validation folds; no fresh sealed holdout exists \u2014 RESEARCH_DIAGNOSTIC, never TRADE/PROFITABLE"
+  },
+  "hgb@h60": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -0.002873,
+      "observed_ic": -0.019341,
+      "percentile": 0.295
+     },
+     "reason": "observed day-clustered IC -0.0193 beats only 30% of within-day permutations (threshold 90)",
+     "status": "FAIL"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 1,
+   "run_id": "d26242715d2537a29abc0d8d0a9d569129bfa20b4a2d63321ada6ee30c646dca",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "REJECTED",
+   "verdict_reason": "integrity check(s) failed: permuted_ic_noise"
+  },
+  "logistic@h20": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -5e-05,
+      "observed_ic": 0.050879,
+      "percentile": 1.0
+     },
+     "reason": "observed day-clustered IC 0.0509 at the 100th percentile of 200 within-day permutations (threshold 90)",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 0,
+   "n_inconclusive": 1,
+   "n_pass": 2,
+   "run_id": "14be0ffa3a8668bbf6196a088d5006068fe1eacac0cac35f6c8f9d6afff5a0b7",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "RESEARCH_DIAGNOSTIC",
+   "verdict_reason": "diagnostics-only evidence on validation folds; no fresh sealed holdout exists \u2014 RESEARCH_DIAGNOSTIC, never TRADE/PROFITABLE"
+  },
+  "logistic@h5": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -0.001508,
+      "observed_ic": 0.009002,
+      "percentile": 0.765
+     },
+     "reason": "observed day-clustered IC 0.0090 beats only 76% of within-day permutations (threshold 90)",
+     "status": "FAIL"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 1,
+   "run_id": "efeb0a73e40b743a126958dfd3cae9c9752984c1f2143a9cf9832cc1326c29a7",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "REJECTED",
+   "verdict_reason": "integrity check(s) failed: permuted_ic_noise"
+  },
+  "logistic@h60": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": 0.001981,
+      "observed_ic": -0.047412,
+      "percentile": 0.075
+     },
+     "reason": "observed day-clustered IC -0.0474 beats only 8% of within-day permutations (threshold 90)",
+     "status": "FAIL"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 1,
+   "run_id": "e588a05e87f938862f9733457cc9030458a943c30f2b32fbb61f5386d9412d2b",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "REJECTED",
+   "verdict_reason": "integrity check(s) failed: permuted_ic_noise"
+  },
+  "momentum_rank@h20": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -0.000299,
+      "observed_ic": -0.0513,
+      "percentile": 0.0
+     },
+     "reason": "observed day-clustered IC -0.0513 beats only 0% of within-day permutations (threshold 90)",
+     "status": "FAIL"
+    },
+    {
+     "check": "sensitivity_lookback",
+     "evidence": {
+      "variants": {
+       "ret_120": -0.085334,
+       "ret_20": -0.035382,
+       "ret_60": -0.0513
+      }
+     },
+     "reason": "variant IC spread 0.0500: unstable across settings \u2014 treated as fragile, never as edge",
+     "status": "DISCLOSED"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 1,
+   "run_id": "e34b2828ca5782993e49d1127c7985020c486896987cb2e4d8d2d8a08051f1bc",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "REJECTED",
+   "verdict_reason": "integrity check(s) failed: permuted_ic_noise"
+  },
+  "momentum_rank@h5": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -0.000711,
+      "observed_ic": -0.046944,
+      "percentile": 0.0
+     },
+     "reason": "observed day-clustered IC -0.0469 beats only 0% of within-day permutations (threshold 90)",
+     "status": "FAIL"
+    },
+    {
+     "check": "sensitivity_lookback",
+     "evidence": {
+      "variants": {
+       "ret_120": -0.066913,
+       "ret_20": -0.052241,
+       "ret_60": -0.046944
+      }
+     },
+     "reason": "variant IC spread 0.0200 across preregistered perturbations",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 2,
+   "run_id": "4c83983b2a560c7a421086214e2d9943492e75ebe5544579610b1697a0b6fec3",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "REJECTED",
+   "verdict_reason": "integrity check(s) failed: permuted_ic_noise"
+  },
+  "momentum_rank@h60": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": 0.001913,
+      "observed_ic": -0.065194,
+      "percentile": 0.01
+     },
+     "reason": "observed day-clustered IC -0.0652 beats only 1% of within-day permutations (threshold 90)",
+     "status": "FAIL"
+    },
+    {
+     "check": "sensitivity_lookback",
+     "evidence": {
+      "variants": {
+       "ret_120": -0.093175,
+       "ret_20": -0.057037,
+       "ret_60": -0.065194
+      }
+     },
+     "reason": "variant IC spread 0.0361: unstable across settings \u2014 treated as fragile, never as edge",
+     "status": "DISCLOSED"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 1,
+   "run_id": "895b68d1d0869bf46ffe07f4224b9c25f980f1e8eecdc890c083158803e40eaa",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "REJECTED",
+   "verdict_reason": "integrity check(s) failed: permuted_ic_noise"
+  },
+  "reversal_rank@h20": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": 0.000922,
+      "observed_ic": 0.034582,
+      "percentile": 0.98
+     },
+     "reason": "observed day-clustered IC 0.0346 at the 98th percentile of 200 within-day permutations (threshold 90)",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 0,
+   "n_inconclusive": 1,
+   "n_pass": 2,
+   "run_id": "277cf9e978c5eacb0ad496d6aec26e3e42a425645a8381cc9eb040e22c148b53",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "RESEARCH_DIAGNOSTIC",
+   "verdict_reason": "diagnostics-only evidence on validation folds; no fresh sealed holdout exists \u2014 RESEARCH_DIAGNOSTIC, never TRADE/PROFITABLE"
+  },
+  "reversal_rank@h5": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -0.000312,
+      "observed_ic": 0.084335,
+      "percentile": 1.0
+     },
+     "reason": "observed day-clustered IC 0.0843 at the 100th percentile of 200 within-day permutations (threshold 90)",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 0,
+   "n_inconclusive": 1,
+   "n_pass": 2,
+   "run_id": "bd7411b63dfc850853f9f6d5103a77dedbeb4a282794433eefc570ba6a1c26d8",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "RESEARCH_DIAGNOSTIC",
+   "verdict_reason": "diagnostics-only evidence on validation folds; no fresh sealed holdout exists \u2014 RESEARCH_DIAGNOSTIC, never TRADE/PROFITABLE"
+  },
+  "reversal_rank@h60": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -0.0011,
+      "observed_ic": -0.002791,
+      "percentile": 0.495
+     },
+     "reason": "observed day-clustered IC -0.0028 beats only 50% of within-day permutations (threshold 90)",
+     "status": "FAIL"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 1,
+   "run_id": "2adb118333219b991ccbc12eeecad8074a67cd87118bf90fc21861c5851d46d5",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "REJECTED",
+   "verdict_reason": "integrity check(s) failed: permuted_ic_noise"
+  },
+  "ridge@h20": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -3.9e-05,
+      "observed_ic": 0.045941,
+      "percentile": 1.0
+     },
+     "reason": "observed day-clustered IC 0.0459 at the 100th percentile of 200 within-day permutations (threshold 90)",
+     "status": "PASS"
+    },
+    {
+     "check": "sensitivity_lookback",
+     "evidence": {
+      "variants": {
+       "alpha=0.1": 0.046004,
+       "alpha=1.0": 0.045941,
+       "alpha=10.0": 0.045891
+      }
+     },
+     "reason": "variant IC spread 0.0001 across preregistered perturbations",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 0,
+   "n_inconclusive": 1,
+   "n_pass": 3,
+   "run_id": "7a0520ead778f4f0083eeb92b935a85439f39a33fd2901dce72d15f5d820883d",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "RESEARCH_DIAGNOSTIC",
+   "verdict_reason": "diagnostics-only evidence on validation folds; no fresh sealed holdout exists \u2014 RESEARCH_DIAGNOSTIC, never TRADE/PROFITABLE"
+  },
+  "ridge@h5": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": 0.000651,
+      "observed_ic": -0.018485,
+      "percentile": 0.1
+     },
+     "reason": "observed day-clustered IC -0.0185 beats only 10% of within-day permutations (threshold 90)",
+     "status": "FAIL"
+    },
+    {
+     "check": "sensitivity_lookback",
+     "evidence": {
+      "variants": {
+       "alpha=0.1": -0.018466,
+       "alpha=1.0": -0.018485,
+       "alpha=10.0": -0.018595
+      }
+     },
+     "reason": "variant IC spread 0.0001 across preregistered perturbations",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 2,
+   "run_id": "addb188afd1bba0562cf9796cff09511e41c9617b09ac73879d2985c06ed065f",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "REJECTED",
+   "verdict_reason": "integrity check(s) failed: permuted_ic_noise"
+  },
+  "ridge@h60": {
+   "checks": [
+    {
+     "check": "permuted_ic_noise",
+     "evidence": {
+      "null_median": -0.004367,
+      "observed_ic": -0.013801,
+      "percentile": 0.345
+     },
+     "reason": "observed day-clustered IC -0.0138 beats only 34% of within-day permutations (threshold 90)",
+     "status": "FAIL"
+    },
+    {
+     "check": "sensitivity_lookback",
+     "evidence": {
+      "variants": {
+       "alpha=0.1": -0.013548,
+       "alpha=1.0": -0.013801,
+       "alpha=10.0": -0.015121
+      }
+     },
+     "reason": "variant IC spread 0.0016 across preregistered perturbations",
+     "status": "PASS"
+    },
+    {
+     "check": "cost_sensitivity",
+     "evidence": {
+      "fee_schedule": "nse-cm-delivery-2026-03-01"
+     },
+     "reason": "no verified fee schedule before 2026-03-01; net economics on train/validation history stay typed SCHEDULE_UNAVAILABLE",
+     "status": "INCONCLUSIVE"
+    },
+    {
+     "check": "holdout_integrity",
+     "evidence": {
+      "quarantined": [
+       "2024-06-21",
+       "2026-09-17"
+      ]
+     },
+     "reason": "validation span ends before the quarantined revealed W2 holdout; no W3 computation touched 2024-06-21..2026-09-17",
+     "status": "PASS"
+    }
+   ],
+   "n_fail": 1,
+   "n_inconclusive": 1,
+   "n_pass": 2,
+   "run_id": "d8a2223d1159d8fd50778dac746c4d2434606f3c5c1c34c9652017c51ce5c775",
+   "scope": "pooled walk-forward validation predictions from 4 folds; train/validation only",
+   "verdict": "REJECTED",
+   "verdict_reason": "integrity check(s) failed: permuted_ic_noise"
+  }
+ },
+ "failures": [],
+ "folds": [
+  {
+   "embargo": 10,
+   "fold_id": "wf1",
+   "train": [
+    "2015-06-01",
+    "2022-01-03"
+   ],
+   "val": [
+    "2022-01-03",
+    "2022-06-30"
+   ]
+  },
+  {
+   "embargo": 10,
+   "fold_id": "wf2",
+   "train": [
+    "2015-06-01",
+    "2022-07-01"
+   ],
+   "val": [
+    "2022-07-01",
+    "2022-12-28"
+   ]
+  },
+  {
+   "embargo": 10,
+   "fold_id": "wf3",
+   "train": [
+    "2015-06-01",
+    "2022-12-29"
+   ],
+   "val": [
+    "2022-12-29",
+    "2023-06-28"
+   ]
+  },
+  {
+   "embargo": 10,
+   "fold_id": "wf4",
+   "train": [
+    "2015-06-01",
+    "2023-06-30"
+   ],
+   "val": [
+    "2023-06-30",
+    "2023-12-29"
+   ]
+  }
+ ],
+ "generated_at": "2026-11-13T14:31:22.666302+00:00",
+ "labels": {
+  "ADMISSIBLE": 47852,
+  "DATA_BLOCKED_ACTION_WINDOW": 163,
+  "NO_LABEL": 1974,
+  "total": 49989
+ },
+ "metrics": {
+  "climatology_binary@h20": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.009733,
+   "brier": {
+    "base_rate": 0.5809,
+    "bins": [
+     {
+      "bin": "0.5-0.6",
+      "empirical": 0.5809,
+      "mean_pred": 0.5,
+      "n": 5054
+     }
+    ],
+    "brier": 0.25,
+    "n": 5054
+   },
+   "equal_weight_day_mean_gross": 0.010476,
+   "mae": {
+    "hit_rate": 0.5809,
+    "mae": 0.482445,
+    "n": 5054
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5201,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": null,
+    "mean_ic": null,
+    "n_days": 0,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-01-14": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-01-21": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-01-28": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-02-04": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-02-11": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-02-18": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-02-25": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-03-04": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-03-11": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-03-17": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-03-25": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-01": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-08": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-13": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-22": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-29": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-05-06": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-05-13": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-05-20": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-05-27": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-06-03": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-06-10": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-06-17": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-06-24": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-07-01": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-07-08": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-07-15": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-07-22": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-07-29": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-08-05": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-08-12": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-08-19": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-08-26": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-09-02": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-09-09": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-09-16": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-09-23": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-09-30": {
+      "ic": null,
+      "n": 50,
+      "note": "degenerate"
+     },
+     "2022-10-07": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-10-14": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-10-21": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-10-28": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-11-04": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-11-11": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-11-18": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-11-25": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-02": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-09": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-16": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-23": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-30": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-01-06": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-01-13": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-01-20": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-01-27": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-02-03": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-02-10": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-02-17": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-02-24": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-03": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-10": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-17": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-24": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-31": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-04-06": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-04-13": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-04-21": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-04-28": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-05-05": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-05-12": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-05-19": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-05-26": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-06-02": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-06-09": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-06-16": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-06-23": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-06-30": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-07-07": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-07-14": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-07-21": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-07-28": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-08-04": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-08-11": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-08-18": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-08-25": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-01": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-08": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-15": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-22": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-29": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-10-06": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-10-13": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-10-20": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-10-27": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-11-03": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-11-10": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-11-17": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-11-24": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-12-01": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     },
+     "2023-12-08": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     },
+     "2023-12-15": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     },
+     "2023-12-22": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     },
+     "2023-12-29": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": null,
+   "spread_top_minus_bottom": 0.00958,
+   "top_quintile_mean_gross": 0.019314
+  },
+  "climatology_binary@h5": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.00226,
+   "brier": {
+    "base_rate": 0.5467,
+    "bins": [
+     {
+      "bin": "0.5-0.6",
+      "empirical": 0.5467,
+      "mean_pred": 0.5,
+      "n": 5067
+     }
+    ],
+    "brier": 0.25,
+    "n": 5067
+   },
+   "equal_weight_day_mean_gross": 0.001632,
+   "mae": {
+    "hit_rate": 0.5467,
+    "mae": 0.495275,
+    "n": 5067
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5201,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": null,
+    "mean_ic": null,
+    "n_days": 0,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-01-14": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-01-21": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-01-28": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-02-04": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-02-11": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-02-18": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-02-25": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-03-04": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-03-11": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-03-17": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-03-25": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-01": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-08": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-13": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-22": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-04-29": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-05-06": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-05-13": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-05-20": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-05-27": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-06-03": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-06-10": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-06-17": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-06-24": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-07-01": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-07-08": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-07-15": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-07-22": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-07-29": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-08-05": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-08-12": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-08-19": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-08-26": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-09-02": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-09-09": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-09-16": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-09-23": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-09-30": {
+      "ic": null,
+      "n": 50,
+      "note": "degenerate"
+     },
+     "2022-10-07": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-10-14": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-10-21": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-10-28": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-11-04": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-11-11": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-11-18": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-11-25": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-02": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-09": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-16": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-23": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-30": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-01-06": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-01-13": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-01-20": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-01-27": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-02-03": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-02-10": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-02-17": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-02-24": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-03": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-10": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-17": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-24": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-31": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-04-06": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-04-13": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-04-21": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-04-28": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-05-05": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-05-12": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-05-19": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-05-26": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-06-02": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-06-09": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-06-16": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-06-23": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-06-30": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-07-07": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-07-14": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-07-21": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-07-28": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-08-04": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-08-11": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-08-18": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-08-25": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-01": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-08": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-15": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-22": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-29": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-10-06": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-10-13": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-10-20": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-10-27": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-11-03": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-11-10": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-11-17": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-11-24": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-12-01": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-12-08": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-12-15": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-12-22": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     },
+     "2023-12-29": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": null,
+   "spread_top_minus_bottom": 0.002935,
+   "top_quintile_mean_gross": 0.005195
+  },
+  "climatology_binary@h60": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.03554,
+   "brier": {
+    "base_rate": 0.6405,
+    "bins": [
+     {
+      "bin": "0.5-0.6",
+      "empirical": 0.6405,
+      "mean_pred": 0.5,
+      "n": 1160
+     }
+    ],
+    "brier": 0.25,
+    "n": 1160
+   },
+   "equal_weight_day_mean_gross": 0.032823,
+   "mae": {
+    "hit_rate": 0.6405,
+    "mae": 0.450934,
+    "n": 1160
+   },
+   "n_val_days": 24,
+   "n_val_predictions": 1202,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": null,
+    "mean_ic": null,
+    "n_days": 0,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-02-28": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-03-31": {
+      "ic": null,
+      "n": 50,
+      "note": "degenerate"
+     },
+     "2022-04-29": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-05-31": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-06-30": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     },
+     "2022-07-29": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-08-30": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2022-09-30": {
+      "ic": null,
+      "n": 50,
+      "note": "degenerate"
+     },
+     "2022-10-31": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-11-30": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2022-12-30": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-01-31": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-02-28": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-03-31": {
+      "ic": null,
+      "n": 49,
+      "note": "degenerate"
+     },
+     "2023-04-28": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-05-31": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-06-30": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-07-31": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-08-31": {
+      "ic": null,
+      "n": 48,
+      "note": "degenerate"
+     },
+     "2023-09-29": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     },
+     "2023-10-31": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     },
+     "2023-11-30": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     },
+     "2023-12-29": {
+      "ic": null,
+      "n": 47,
+      "note": "degenerate"
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": null,
+   "spread_top_minus_bottom": 0.026797,
+   "top_quintile_mean_gross": 0.062337
+  },
+  "hgb@h20": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.016088,
+   "brier": {
+    "base_rate": 0.5809,
+    "bins": [
+     {
+      "bin": "0.3-0.4",
+      "empirical": 0.5714,
+      "mean_pred": 0.392,
+      "n": 7
+     },
+     {
+      "bin": "0.4-0.5",
+      "empirical": 0.5556,
+      "mean_pred": 0.4812,
+      "n": 513
+     },
+     {
+      "bin": "0.5-0.6",
+      "empirical": 0.5798,
+      "mean_pred": 0.5421,
+      "n": 4174
+     },
+     {
+      "bin": "0.6-0.7",
+      "empirical": 0.6243,
+      "mean_pred": 0.6225,
+      "n": 346
+     },
+     {
+      "bin": "0.7-0.8",
+      "empirical": 0.7857,
+      "mean_pred": 0.7308,
+      "n": 14
+     }
+    ],
+    "brier": 0.245568,
+    "n": 5054
+   },
+   "equal_weight_day_mean_gross": 0.010476,
+   "mae": {
+    "hit_rate": 0.5809,
+    "mae": 0.524125,
+    "n": 5054
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5201,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": 2.1815,
+    "mean_ic": 0.036751,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": 0.162959,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": 0.186429,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": -0.090206,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": 0.328223,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.109286,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": 0.063673,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": 0.310714,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": 0.001327,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.132551,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": 0.109694,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": -0.057347,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": -0.217551,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.191122,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": 0.056224,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": -0.018878,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": 0.258878,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": 0.117959,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": 0.033419,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": -0.105408,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": -0.253265,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": -0.213571,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": -0.245306,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": -0.043215,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": -0.037959,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.034286,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": 0.129943,
+      "n": 48
+     },
+     "2022-07-08": {
+      "ic": 0.404809,
+      "n": 48
+     },
+     "2022-07-15": {
+      "ic": 0.522919,
+      "n": 48
+     },
+     "2022-07-22": {
+      "ic": 0.070892,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": 0.102408,
+      "n": 49
+     },
+     "2022-08-05": {
+      "ic": 0.321531,
+      "n": 49
+     },
+     "2022-08-12": {
+      "ic": 0.055314,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.026813,
+      "n": 48
+     },
+     "2022-08-26": {
+      "ic": 0.228633,
+      "n": 48
+     },
+     "2022-09-02": {
+      "ic": 0.252083,
+      "n": 48
+     },
+     "2022-09-09": {
+      "ic": 0.445723,
+      "n": 48
+     },
+     "2022-09-16": {
+      "ic": 0.020562,
+      "n": 49
+     },
+     "2022-09-23": {
+      "ic": -0.040206,
+      "n": 49
+     },
+     "2022-09-30": {
+      "ic": -0.009844,
+      "n": 50
+     },
+     "2022-10-07": {
+      "ic": 0.27497,
+      "n": 49
+     },
+     "2022-10-14": {
+      "ic": 0.123578,
+      "n": 49
+     },
+     "2022-10-21": {
+      "ic": 0.172764,
+      "n": 49
+     },
+     "2022-10-28": {
+      "ic": -0.114544,
+      "n": 49
+     },
+     "2022-11-04": {
+      "ic": -0.146542,
+      "n": 49
+     },
+     "2022-11-11": {
+      "ic": -0.129694,
+      "n": 49
+     },
+     "2022-11-18": {
+      "ic": -0.343997,
+      "n": 49
+     },
+     "2022-11-25": {
+      "ic": 0.091125,
+      "n": 49
+     },
+     "2022-12-02": {
+      "ic": -0.10949,
+      "n": 49
+     },
+     "2022-12-09": {
+      "ic": -0.214348,
+      "n": 49
+     },
+     "2022-12-16": {
+      "ic": -0.333844,
+      "n": 49
+     },
+     "2022-12-23": {
+      "ic": -0.175158,
+      "n": 49
+     },
+     "2022-12-30": {
+      "ic": 0.091531,
+      "n": 49
+     },
+     "2023-01-06": {
+      "ic": 0.238878,
+      "n": 49
+     },
+     "2023-01-13": {
+      "ic": 0.175714,
+      "n": 49
+     },
+     "2023-01-20": {
+      "ic": 0.204388,
+      "n": 49
+     },
+     "2023-01-27": {
+      "ic": 0.243578,
+      "n": 49
+     },
+     "2023-02-03": {
+      "ic": 0.127245,
+      "n": 49
+     },
+     "2023-02-10": {
+      "ic": 0.150102,
+      "n": 49
+     },
+     "2023-02-17": {
+      "ic": 0.01,
+      "n": 49
+     },
+     "2023-02-24": {
+      "ic": 0.107656,
+      "n": 49
+     },
+     "2023-03-03": {
+      "ic": 0.313367,
+      "n": 49
+     },
+     "2023-03-10": {
+      "ic": 0.219342,
+      "n": 49
+     },
+     "2023-03-17": {
+      "ic": 0.113061,
+      "n": 49
+     },
+     "2023-03-24": {
+      "ic": 0.261939,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": 0.201224,
+      "n": 49
+     },
+     "2023-04-06": {
+      "ic": -0.116531,
+      "n": 49
+     },
+     "2023-04-13": {
+      "ic": -0.176735,
+      "n": 49
+     },
+     "2023-04-21": {
+      "ic": -0.009184,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": 0.009592,
+      "n": 49
+     },
+     "2023-05-05": {
+      "ic": 0.144184,
+      "n": 49
+     },
+     "2023-05-12": {
+      "ic": -0.056633,
+      "n": 49
+     },
+     "2023-05-19": {
+      "ic": -0.049082,
+      "n": 49
+     },
+     "2023-05-26": {
+      "ic": -0.042245,
+      "n": 49
+     },
+     "2023-06-02": {
+      "ic": 0.155918,
+      "n": 49
+     },
+     "2023-06-09": {
+      "ic": 0.06551,
+      "n": 49
+     },
+     "2023-06-16": {
+      "ic": 0.041793,
+      "n": 48
+     },
+     "2023-06-23": {
+      "ic": -0.062961,
+      "n": 48
+     },
+     "2023-06-30": {
+      "ic": -0.245658,
+      "n": 48
+     },
+     "2023-07-07": {
+      "ic": 0.041902,
+      "n": 48
+     },
+     "2023-07-14": {
+      "ic": -0.176943,
+      "n": 48
+     },
+     "2023-07-21": {
+      "ic": -0.140578,
+      "n": 48
+     },
+     "2023-07-28": {
+      "ic": 0.241159,
+      "n": 48
+     },
+     "2023-08-04": {
+      "ic": -0.106166,
+      "n": 48
+     },
+     "2023-08-11": {
+      "ic": 0.11409,
+      "n": 48
+     },
+     "2023-08-18": {
+      "ic": 0.01726,
+      "n": 48
+     },
+     "2023-08-25": {
+      "ic": -0.07789,
+      "n": 48
+     },
+     "2023-09-01": {
+      "ic": 0.08348,
+      "n": 48
+     },
+     "2023-09-08": {
+      "ic": -0.115613,
+      "n": 48
+     },
+     "2023-09-15": {
+      "ic": -0.119084,
+      "n": 48
+     },
+     "2023-09-22": {
+      "ic": -0.129396,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": 0.306014,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": 0.069149,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": 0.267477,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": 0.011181,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": -0.026162,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": -0.167933,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": -0.065024,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": 0.003582,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": 0.074902,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": -0.088462,
+      "n": 47
+     },
+     "2023-12-08": {
+      "ic": -0.07308,
+      "n": 47
+     },
+     "2023-12-15": {
+      "ic": -0.035731,
+      "n": 47
+     },
+     "2023-12-22": {
+      "ic": 0.075162,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.070305,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": 0.5976,
+    "mean_ic": 0.017581,
+    "n_days": 26,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": 0.162959,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.109286,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.132551,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.191122,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": 0.117959,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": -0.213571,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.034286,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": 0.070892,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.026813,
+      "n": 48
+     },
+     "2022-09-16": {
+      "ic": 0.020562,
+      "n": 49
+     },
+     "2022-10-14": {
+      "ic": 0.123578,
+      "n": 49
+     },
+     "2022-11-11": {
+      "ic": -0.129694,
+      "n": 49
+     },
+     "2022-12-09": {
+      "ic": -0.214348,
+      "n": 49
+     },
+     "2023-01-06": {
+      "ic": 0.238878,
+      "n": 49
+     },
+     "2023-02-03": {
+      "ic": 0.127245,
+      "n": 49
+     },
+     "2023-03-03": {
+      "ic": 0.313367,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": 0.201224,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": 0.009592,
+      "n": 49
+     },
+     "2023-05-26": {
+      "ic": -0.042245,
+      "n": 49
+     },
+     "2023-06-23": {
+      "ic": -0.062961,
+      "n": 48
+     },
+     "2023-07-21": {
+      "ic": -0.140578,
+      "n": 48
+     },
+     "2023-08-18": {
+      "ic": 0.01726,
+      "n": 48
+     },
+     "2023-09-15": {
+      "ic": -0.119084,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": 0.267477,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": -0.065024,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": -0.07308,
+      "n": 47
+     }
+    }
+   },
+   "spread_top_minus_bottom": 0.005562,
+   "top_quintile_mean_gross": 0.021649
+  },
+  "hgb@h5": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.003397,
+   "brier": {
+    "base_rate": 0.5467,
+    "bins": [
+     {
+      "bin": "0.2-0.3",
+      "empirical": 0.6,
+      "mean_pred": 0.2605,
+      "n": 5
+     },
+     {
+      "bin": "0.3-0.4",
+      "empirical": 0.5185,
+      "mean_pred": 0.3581,
+      "n": 27
+     },
+     {
+      "bin": "0.4-0.5",
+      "empirical": 0.5221,
+      "mean_pred": 0.4839,
+      "n": 1536
+     },
+     {
+      "bin": "0.5-0.6",
+      "empirical": 0.5572,
+      "mean_pred": 0.5196,
+      "n": 3489
+     },
+     {
+      "bin": "0.6-0.7",
+      "empirical": 0.7,
+      "mean_pred": 0.6175,
+      "n": 10
+     }
+    ],
+    "brier": 0.249235,
+    "n": 5067
+   },
+   "equal_weight_day_mean_gross": 0.001632,
+   "mae": {
+    "hit_rate": 0.5467,
+    "mae": 0.503147,
+    "n": 5067
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5201,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": 1.2501,
+    "mean_ic": 0.021505,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": -0.401327,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": 0.182959,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": -0.082041,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": -0.060612,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.00051,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": -0.28,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": 0.022551,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": 0.05898,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.014082,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": -0.001122,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": 0.268776,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": -0.349898,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.281429,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": -0.10949,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": 0.273878,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": -0.095918,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": -0.032143,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": 0.172245,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": 0.008061,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": 0.043469,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": 0.14,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": -0.278367,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": 0.265,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": -0.100408,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.001837,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": -0.05741,
+      "n": 49
+     },
+     "2022-07-08": {
+      "ic": 0.012657,
+      "n": 49
+     },
+     "2022-07-15": {
+      "ic": 0.488747,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": 0.116306,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": 0.115077,
+      "n": 49
+     },
+     "2022-08-05": {
+      "ic": 0.072072,
+      "n": 49
+     },
+     "2022-08-12": {
+      "ic": -0.100513,
+      "n": 49
+     },
+     "2022-08-19": {
+      "ic": -0.252558,
+      "n": 49
+     },
+     "2022-08-26": {
+      "ic": 0.220385,
+      "n": 49
+     },
+     "2022-09-02": {
+      "ic": -0.172502,
+      "n": 49
+     },
+     "2022-09-09": {
+      "ic": 0.114205,
+      "n": 48
+     },
+     "2022-09-16": {
+      "ic": -0.154082,
+      "n": 49
+     },
+     "2022-09-23": {
+      "ic": -0.172509,
+      "n": 49
+     },
+     "2022-09-30": {
+      "ic": -0.030644,
+      "n": 50
+     },
+     "2022-10-07": {
+      "ic": 0.188588,
+      "n": 49
+     },
+     "2022-10-14": {
+      "ic": -0.013881,
+      "n": 49
+     },
+     "2022-10-21": {
+      "ic": 0.12752,
+      "n": 49
+     },
+     "2022-10-28": {
+      "ic": 0.301715,
+      "n": 49
+     },
+     "2022-11-04": {
+      "ic": -0.125322,
+      "n": 49
+     },
+     "2022-11-11": {
+      "ic": 0.053318,
+      "n": 49
+     },
+     "2022-11-18": {
+      "ic": -0.207607,
+      "n": 49
+     },
+     "2022-11-25": {
+      "ic": -0.202684,
+      "n": 49
+     },
+     "2022-12-02": {
+      "ic": -0.076381,
+      "n": 49
+     },
+     "2022-12-09": {
+      "ic": 0.122608,
+      "n": 49
+     },
+     "2022-12-16": {
+      "ic": 0.223351,
+      "n": 49
+     },
+     "2022-12-23": {
+      "ic": 0.319102,
+      "n": 49
+     },
+     "2022-12-30": {
+      "ic": -0.127452,
+      "n": 49
+     },
+     "2023-01-06": {
+      "ic": 0.231945,
+      "n": 49
+     },
+     "2023-01-13": {
+      "ic": 0.106644,
+      "n": 49
+     },
+     "2023-01-20": {
+      "ic": 0.090461,
+      "n": 49
+     },
+     "2023-01-27": {
+      "ic": 0.267449,
+      "n": 49
+     },
+     "2023-02-03": {
+      "ic": -0.161127,
+      "n": 49
+     },
+     "2023-02-10": {
+      "ic": 0.17276,
+      "n": 49
+     },
+     "2023-02-17": {
+      "ic": 0.133684,
+      "n": 49
+     },
+     "2023-02-24": {
+      "ic": 0.473494,
+      "n": 49
+     },
+     "2023-03-03": {
+      "ic": -0.204444,
+      "n": 49
+     },
+     "2023-03-10": {
+      "ic": -0.061889,
+      "n": 49
+     },
+     "2023-03-17": {
+      "ic": 0.072143,
+      "n": 49
+     },
+     "2023-03-24": {
+      "ic": 0.102962,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": 0.051023,
+      "n": 49
+     },
+     "2023-04-06": {
+      "ic": 0.065514,
+      "n": 49
+     },
+     "2023-04-13": {
+      "ic": -0.282041,
+      "n": 49
+     },
+     "2023-04-21": {
+      "ic": -0.023471,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": 0.040562,
+      "n": 49
+     },
+     "2023-05-05": {
+      "ic": -0.045358,
+      "n": 49
+     },
+     "2023-05-12": {
+      "ic": 0.126738,
+      "n": 49
+     },
+     "2023-05-19": {
+      "ic": -0.230102,
+      "n": 49
+     },
+     "2023-05-26": {
+      "ic": -0.041939,
+      "n": 49
+     },
+     "2023-06-02": {
+      "ic": -0.018113,
+      "n": 49
+     },
+     "2023-06-09": {
+      "ic": 0.037449,
+      "n": 49
+     },
+     "2023-06-16": {
+      "ic": -0.12286,
+      "n": 49
+     },
+     "2023-06-23": {
+      "ic": 0.144184,
+      "n": 49
+     },
+     "2023-06-30": {
+      "ic": 0.15093,
+      "n": 49
+     },
+     "2023-07-07": {
+      "ic": 0.24608,
+      "n": 48
+     },
+     "2023-07-14": {
+      "ic": 0.095812,
+      "n": 48
+     },
+     "2023-07-21": {
+      "ic": 0.01205,
+      "n": 48
+     },
+     "2023-07-28": {
+      "ic": 0.112598,
+      "n": 48
+     },
+     "2023-08-04": {
+      "ic": -0.087608,
+      "n": 48
+     },
+     "2023-08-11": {
+      "ic": 0.362101,
+      "n": 48
+     },
+     "2023-08-18": {
+      "ic": 0.211655,
+      "n": 48
+     },
+     "2023-08-25": {
+      "ic": 0.096109,
+      "n": 48
+     },
+     "2023-09-01": {
+      "ic": -0.215552,
+      "n": 48
+     },
+     "2023-09-08": {
+      "ic": -0.008034,
+      "n": 48
+     },
+     "2023-09-15": {
+      "ic": 0.059165,
+      "n": 48
+     },
+     "2023-09-22": {
+      "ic": -0.146871,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": 0.017754,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": -0.066066,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": -0.15418,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": 0.168151,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": 0.181359,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": -0.131314,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": -0.085388,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": 0.034256,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": -0.111991,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": 0.340673,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": -0.040837,
+      "n": 48
+     },
+     "2023-12-15": {
+      "ic": 0.298005,
+      "n": 48
+     },
+     "2023-12-22": {
+      "ic": -0.108477,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.053033,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": null,
+   "spread_top_minus_bottom": 0.002252,
+   "top_quintile_mean_gross": 0.005649
+  },
+  "hgb@h60": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.050889,
+   "brier": {
+    "base_rate": 0.6405,
+    "bins": [
+     {
+      "bin": "0.2-0.3",
+      "empirical": 0.5,
+      "mean_pred": 0.272,
+      "n": 2
+     },
+     {
+      "bin": "0.3-0.4",
+      "empirical": 0.75,
+      "mean_pred": 0.3667,
+      "n": 12
+     },
+     {
+      "bin": "0.4-0.5",
+      "empirical": 0.6039,
+      "mean_pred": 0.4769,
+      "n": 154
+     },
+     {
+      "bin": "0.5-0.6",
+      "empirical": 0.6836,
+      "mean_pred": 0.5512,
+      "n": 610
+     },
+     {
+      "bin": "0.6-0.7",
+      "empirical": 0.6033,
+      "mean_pred": 0.6395,
+      "n": 300
+     },
+     {
+      "bin": "0.7-0.8",
+      "empirical": 0.4722,
+      "mean_pred": 0.738,
+      "n": 72
+     },
+     {
+      "bin": "0.8-0.9",
+      "empirical": 0.8,
+      "mean_pred": 0.8347,
+      "n": 10
+     }
+    ],
+    "brier": 0.244409,
+    "n": 1160
+   },
+   "equal_weight_day_mean_gross": 0.032823,
+   "mae": {
+    "hit_rate": 0.6405,
+    "mae": 0.523898,
+    "n": 1160
+   },
+   "n_val_days": 24,
+   "n_val_predictions": 1202,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": -0.5207,
+    "mean_ic": -0.019341,
+    "n_days": 24,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": -0.109184,
+      "n": 49
+     },
+     "2022-02-28": {
+      "ic": -0.365204,
+      "n": 49
+     },
+     "2022-03-31": {
+      "ic": -0.282305,
+      "n": 50
+     },
+     "2022-04-29": {
+      "ic": 0.101429,
+      "n": 49
+     },
+     "2022-05-31": {
+      "ic": 0.004017,
+      "n": 48
+     },
+     "2022-06-30": {
+      "ic": 0.078631,
+      "n": 47
+     },
+     "2022-07-29": {
+      "ic": 0.070343,
+      "n": 48
+     },
+     "2022-08-30": {
+      "ic": 0.130048,
+      "n": 48
+     },
+     "2022-09-30": {
+      "ic": 0.054022,
+      "n": 50
+     },
+     "2022-10-31": {
+      "ic": -0.126224,
+      "n": 49
+     },
+     "2022-11-30": {
+      "ic": -0.262245,
+      "n": 49
+     },
+     "2022-12-30": {
+      "ic": 0.282143,
+      "n": 49
+     },
+     "2023-01-31": {
+      "ic": 0.123061,
+      "n": 49
+     },
+     "2023-02-28": {
+      "ic": 0.243061,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": 0.102347,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": 0.076422,
+      "n": 48
+     },
+     "2023-05-31": {
+      "ic": -0.185302,
+      "n": 48
+     },
+     "2023-06-30": {
+      "ic": -0.030287,
+      "n": 48
+     },
+     "2023-07-31": {
+      "ic": 0.101715,
+      "n": 48
+     },
+     "2023-08-31": {
+      "ic": -0.368215,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": -0.081522,
+      "n": 47
+     },
+     "2023-10-31": {
+      "ic": 0.106152,
+      "n": 47
+     },
+     "2023-11-30": {
+      "ic": 0.081637,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.208719,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": 0.0598,
+    "mean_ic": 0.006939,
+    "n_days": 2,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": -0.109184,
+      "n": 49
+     },
+     "2023-01-31": {
+      "ic": 0.123061,
+      "n": 49
+     }
+    }
+   },
+   "spread_top_minus_bottom": 6e-05,
+   "top_quintile_mean_gross": 0.050949
+  },
+  "logistic@h20": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.015915,
+   "brier": {
+    "base_rate": 0.5812,
+    "bins": [
+     {
+      "bin": "0.4-0.5",
+      "empirical": 0.5926,
+      "mean_pred": 0.4913,
+      "n": 270
+     },
+     {
+      "bin": "0.5-0.6",
+      "empirical": 0.574,
+      "mean_pred": 0.5407,
+      "n": 4416
+     },
+     {
+      "bin": "0.6-0.7",
+      "empirical": 0.685,
+      "mean_pred": 0.6244,
+      "n": 254
+     },
+     {
+      "bin": "0.7-0.8",
+      "empirical": 0.875,
+      "mean_pred": 0.7351,
+      "n": 8
+     }
+    ],
+    "brier": 0.245422,
+    "n": 4948
+   },
+   "equal_weight_day_mean_gross": 0.010476,
+   "mae": {
+    "hit_rate": 0.5812,
+    "mae": 0.524568,
+    "n": 4948
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5095,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": 2.6002,
+    "mean_ic": 0.050879,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": 0.328367,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": 0.109898,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": -0.055102,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": 0.001225,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.07,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": 0.167959,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": 0.019898,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": 0.053367,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.084082,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": -0.229898,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": -0.452245,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": -0.478265,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.129694,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": 0.13949,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": 0.011429,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": 0.204694,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": 0.086939,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": -0.071939,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": -0.019694,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": -0.074286,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": -0.305204,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": 0.043163,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": -0.016224,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": -0.187755,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.022245,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": 0.326965,
+      "n": 48
+     },
+     "2022-07-08": {
+      "ic": 0.402518,
+      "n": 48
+     },
+     "2022-07-15": {
+      "ic": 0.437039,
+      "n": 48
+     },
+     "2022-07-22": {
+      "ic": 0.198871,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": 0.058619,
+      "n": 48
+     },
+     "2022-08-05": {
+      "ic": 0.051997,
+      "n": 48
+     },
+     "2022-08-12": {
+      "ic": 0.077359,
+      "n": 47
+     },
+     "2022-08-19": {
+      "ic": 0.274052,
+      "n": 47
+     },
+     "2022-08-26": {
+      "ic": 0.357539,
+      "n": 47
+     },
+     "2022-09-02": {
+      "ic": 0.414547,
+      "n": 47
+     },
+     "2022-09-09": {
+      "ic": 0.279487,
+      "n": 47
+     },
+     "2022-09-16": {
+      "ic": 0.165934,
+      "n": 47
+     },
+     "2022-09-23": {
+      "ic": 0.005435,
+      "n": 47
+     },
+     "2022-09-30": {
+      "ic": 0.085106,
+      "n": 48
+     },
+     "2022-10-07": {
+      "ic": 0.0895,
+      "n": 47
+     },
+     "2022-10-14": {
+      "ic": 0.04475,
+      "n": 47
+     },
+     "2022-10-21": {
+      "ic": 0.068108,
+      "n": 47
+     },
+     "2022-10-28": {
+      "ic": 0.179232,
+      "n": 47
+     },
+     "2022-11-04": {
+      "ic": -0.107539,
+      "n": 47
+     },
+     "2022-11-11": {
+      "ic": -0.077012,
+      "n": 47
+     },
+     "2022-11-18": {
+      "ic": 0.070999,
+      "n": 47
+     },
+     "2022-11-25": {
+      "ic": -0.070421,
+      "n": 47
+     },
+     "2022-12-02": {
+      "ic": 0.087072,
+      "n": 47
+     },
+     "2022-12-09": {
+      "ic": -0.154949,
+      "n": 47
+     },
+     "2022-12-16": {
+      "ic": -0.101989,
+      "n": 47
+     },
+     "2022-12-23": {
+      "ic": 0.108233,
+      "n": 47
+     },
+     "2022-12-30": {
+      "ic": 0.139107,
+      "n": 47
+     },
+     "2023-01-06": {
+      "ic": 0.369334,
+      "n": 47
+     },
+     "2023-01-13": {
+      "ic": 0.269889,
+      "n": 47
+     },
+     "2023-01-20": {
+      "ic": 0.129047,
+      "n": 47
+     },
+     "2023-01-27": {
+      "ic": 0.209991,
+      "n": 47
+     },
+     "2023-02-03": {
+      "ic": 0.417669,
+      "n": 47
+     },
+     "2023-02-10": {
+      "ic": 0.131822,
+      "n": 47
+     },
+     "2023-02-17": {
+      "ic": -0.107424,
+      "n": 47
+     },
+     "2023-02-24": {
+      "ic": 0.268848,
+      "n": 47
+     },
+     "2023-03-03": {
+      "ic": -0.023242,
+      "n": 47
+     },
+     "2023-03-10": {
+      "ic": 0.108002,
+      "n": 47
+     },
+     "2023-03-17": {
+      "ic": 0.146392,
+      "n": 47
+     },
+     "2023-03-24": {
+      "ic": 0.141536,
+      "n": 47
+     },
+     "2023-03-31": {
+      "ic": 0.047179,
+      "n": 47
+     },
+     "2023-04-06": {
+      "ic": -0.07389,
+      "n": 47
+     },
+     "2023-04-13": {
+      "ic": -0.109043,
+      "n": 47
+     },
+     "2023-04-21": {
+      "ic": 0.197849,
+      "n": 47
+     },
+     "2023-04-28": {
+      "ic": 0.22271,
+      "n": 47
+     },
+     "2023-05-05": {
+      "ic": 0.043363,
+      "n": 47
+     },
+     "2023-05-12": {
+      "ic": -0.281568,
+      "n": 47
+     },
+     "2023-05-19": {
+      "ic": -0.082331,
+      "n": 47
+     },
+     "2023-05-26": {
+      "ic": -0.19704,
+      "n": 47
+     },
+     "2023-06-02": {
+      "ic": -0.031105,
+      "n": 47
+     },
+     "2023-06-09": {
+      "ic": 0.078747,
+      "n": 47
+     },
+     "2023-06-16": {
+      "ic": 0.017083,
+      "n": 46
+     },
+     "2023-06-23": {
+      "ic": 0.030157,
+      "n": 46
+     },
+     "2023-06-30": {
+      "ic": -0.127968,
+      "n": 46
+     },
+     "2023-07-07": {
+      "ic": -0.123651,
+      "n": 46
+     },
+     "2023-07-14": {
+      "ic": -0.277212,
+      "n": 46
+     },
+     "2023-07-21": {
+      "ic": -0.002899,
+      "n": 46
+     },
+     "2023-07-28": {
+      "ic": 0.190996,
+      "n": 46
+     },
+     "2023-08-04": {
+      "ic": -0.155065,
+      "n": 47
+     },
+     "2023-08-11": {
+      "ic": -0.245606,
+      "n": 47
+     },
+     "2023-08-18": {
+      "ic": -0.283649,
+      "n": 47
+     },
+     "2023-08-25": {
+      "ic": -0.287812,
+      "n": 47
+     },
+     "2023-09-01": {
+      "ic": -0.193802,
+      "n": 47
+     },
+     "2023-09-08": {
+      "ic": -0.075162,
+      "n": 47
+     },
+     "2023-09-15": {
+      "ic": 0.091004,
+      "n": 47
+     },
+     "2023-09-22": {
+      "ic": -0.074034,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": -0.059596,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": -0.119192,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": 0.126683,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": 0.026921,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": 0.195072,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": 0.227312,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": 0.272579,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": 0.508033,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": 0.508033,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": 0.356499,
+      "n": 47
+     },
+     "2023-12-08": {
+      "ic": 0.236355,
+      "n": 47
+     },
+     "2023-12-15": {
+      "ic": 0.126156,
+      "n": 47
+     },
+     "2023-12-22": {
+      "ic": 0.243062,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.280412,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": 1.7741,
+    "mean_ic": 0.067195,
+    "n_days": 26,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": 0.328367,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.07,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.084082,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.129694,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": 0.086939,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": -0.305204,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.022245,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": 0.198871,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.274052,
+      "n": 47
+     },
+     "2022-09-16": {
+      "ic": 0.165934,
+      "n": 47
+     },
+     "2022-10-14": {
+      "ic": 0.04475,
+      "n": 47
+     },
+     "2022-11-11": {
+      "ic": -0.077012,
+      "n": 47
+     },
+     "2022-12-09": {
+      "ic": -0.154949,
+      "n": 47
+     },
+     "2023-01-06": {
+      "ic": 0.369334,
+      "n": 47
+     },
+     "2023-02-03": {
+      "ic": 0.417669,
+      "n": 47
+     },
+     "2023-03-03": {
+      "ic": -0.023242,
+      "n": 47
+     },
+     "2023-03-31": {
+      "ic": 0.047179,
+      "n": 47
+     },
+     "2023-04-28": {
+      "ic": 0.22271,
+      "n": 47
+     },
+     "2023-05-26": {
+      "ic": -0.19704,
+      "n": 47
+     },
+     "2023-06-23": {
+      "ic": 0.030157,
+      "n": 46
+     },
+     "2023-07-21": {
+      "ic": -0.002899,
+      "n": 46
+     },
+     "2023-08-18": {
+      "ic": -0.283649,
+      "n": 47
+     },
+     "2023-09-15": {
+      "ic": 0.091004,
+      "n": 47
+     },
+     "2023-10-13": {
+      "ic": 0.126683,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": 0.272579,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": 0.236355,
+      "n": 47
+     }
+    }
+   },
+   "spread_top_minus_bottom": 0.013728,
+   "top_quintile_mean_gross": 0.029643
+  },
+  "logistic@h5": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.005184,
+   "brier": {
+    "base_rate": 0.5475,
+    "bins": [
+     {
+      "bin": "0.3-0.4",
+      "empirical": 0.4,
+      "mean_pred": 0.3847,
+      "n": 5
+     },
+     {
+      "bin": "0.4-0.5",
+      "empirical": 0.5268,
+      "mean_pred": 0.4916,
+      "n": 1211
+     },
+     {
+      "bin": "0.5-0.6",
+      "empirical": 0.5543,
+      "mean_pred": 0.5144,
+      "n": 3745
+     }
+    ],
+    "brier": 0.248901,
+    "n": 4961
+   },
+   "equal_weight_day_mean_gross": 0.001632,
+   "mae": {
+    "hit_rate": 0.5475,
+    "mae": 0.503882,
+    "n": 4961
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5095,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": 0.4865,
+    "mean_ic": 0.009002,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": -0.154898,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": 0.2,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": -0.037959,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": -0.228061,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": -0.168776,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": 0.013469,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": 0.017143,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": 0.030918,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.043061,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": 0.091327,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": -0.008776,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": -0.237041,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.036633,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": 0.045204,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": -0.033673,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": 0.13102,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": -0.052551,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": -0.312347,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": -0.235714,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": -0.087449,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": 0.346735,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": -0.177041,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": 0.066224,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": -0.039388,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": -0.043061,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": 0.120918,
+      "n": 49
+     },
+     "2022-07-08": {
+      "ic": 0.126531,
+      "n": 49
+     },
+     "2022-07-15": {
+      "ic": 0.112857,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": -0.07805,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": -0.079027,
+      "n": 48
+     },
+     "2022-08-05": {
+      "ic": 0.183891,
+      "n": 48
+     },
+     "2022-08-12": {
+      "ic": 0.376791,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.217868,
+      "n": 48
+     },
+     "2022-08-26": {
+      "ic": 0.268346,
+      "n": 48
+     },
+     "2022-09-02": {
+      "ic": -0.249132,
+      "n": 48
+     },
+     "2022-09-09": {
+      "ic": 0.42877,
+      "n": 47
+     },
+     "2022-09-16": {
+      "ic": -0.018501,
+      "n": 47
+     },
+     "2022-09-23": {
+      "ic": -0.476295,
+      "n": 47
+     },
+     "2022-09-30": {
+      "ic": 0.032566,
+      "n": 48
+     },
+     "2022-10-07": {
+      "ic": 0.008788,
+      "n": 47
+     },
+     "2022-10-14": {
+      "ic": 0.184204,
+      "n": 47
+     },
+     "2022-10-21": {
+      "ic": 0.219357,
+      "n": 47
+     },
+     "2022-10-28": {
+      "ic": -0.05932,
+      "n": 47
+     },
+     "2022-11-04": {
+      "ic": -0.395698,
+      "n": 47
+     },
+     "2022-11-11": {
+      "ic": 0.109389,
+      "n": 47
+     },
+     "2022-11-18": {
+      "ic": -0.155759,
+      "n": 47
+     },
+     "2022-11-25": {
+      "ic": -0.375694,
+      "n": 47
+     },
+     "2022-12-02": {
+      "ic": 0.283765,
+      "n": 47
+     },
+     "2022-12-09": {
+      "ic": 0.149399,
+      "n": 47
+     },
+     "2022-12-16": {
+      "ic": 0.355574,
+      "n": 47
+     },
+     "2022-12-23": {
+      "ic": 0.23624,
+      "n": 47
+     },
+     "2022-12-30": {
+      "ic": -0.003585,
+      "n": 47
+     },
+     "2023-01-06": {
+      "ic": -0.07204,
+      "n": 47
+     },
+     "2023-01-13": {
+      "ic": 0.262373,
+      "n": 47
+     },
+     "2023-01-20": {
+      "ic": -0.058395,
+      "n": 47
+     },
+     "2023-01-27": {
+      "ic": 0.214963,
+      "n": 47
+     },
+     "2023-02-03": {
+      "ic": -0.162812,
+      "n": 47
+     },
+     "2023-02-10": {
+      "ic": 0.166628,
+      "n": 47
+     },
+     "2023-02-17": {
+      "ic": 0.132979,
+      "n": 47
+     },
+     "2023-02-24": {
+      "ic": 0.270698,
+      "n": 47
+     },
+     "2023-03-03": {
+      "ic": -0.480574,
+      "n": 47
+     },
+     "2023-03-10": {
+      "ic": 0.28099,
+      "n": 47
+     },
+     "2023-03-17": {
+      "ic": 0.07944,
+      "n": 47
+     },
+     "2023-03-24": {
+      "ic": -0.036887,
+      "n": 47
+     },
+     "2023-03-31": {
+      "ic": 0.028562,
+      "n": 47
+     },
+     "2023-04-06": {
+      "ic": 0.215194,
+      "n": 47
+     },
+     "2023-04-13": {
+      "ic": -0.157262,
+      "n": 47
+     },
+     "2023-04-21": {
+      "ic": -0.059551,
+      "n": 47
+     },
+     "2023-04-28": {
+      "ic": -0.256938,
+      "n": 47
+     },
+     "2023-05-05": {
+      "ic": -0.240634,
+      "n": 47
+     },
+     "2023-05-12": {
+      "ic": -0.036772,
+      "n": 47
+     },
+     "2023-05-19": {
+      "ic": -0.257863,
+      "n": 47
+     },
+     "2023-05-26": {
+      "ic": -0.16235,
+      "n": 47
+     },
+     "2023-06-02": {
+      "ic": 0.070074,
+      "n": 47
+     },
+     "2023-06-09": {
+      "ic": -0.141536,
+      "n": 47
+     },
+     "2023-06-16": {
+      "ic": -0.065796,
+      "n": 47
+     },
+     "2023-06-23": {
+      "ic": 0.042322,
+      "n": 47
+     },
+     "2023-06-30": {
+      "ic": -0.011448,
+      "n": 47
+     },
+     "2023-07-07": {
+      "ic": 0.076534,
+      "n": 46
+     },
+     "2023-07-14": {
+      "ic": 0.133025,
+      "n": 46
+     },
+     "2023-07-21": {
+      "ic": -0.106136,
+      "n": 46
+     },
+     "2023-07-28": {
+      "ic": -0.008942,
+      "n": 46
+     },
+     "2023-08-04": {
+      "ic": -0.064177,
+      "n": 47
+     },
+     "2023-08-11": {
+      "ic": 0.182586,
+      "n": 47
+     },
+     "2023-08-18": {
+      "ic": 0.032262,
+      "n": 47
+     },
+     "2023-08-25": {
+      "ic": -0.209759,
+      "n": 47
+     },
+     "2023-09-01": {
+      "ic": -0.182586,
+      "n": 47
+     },
+     "2023-09-08": {
+      "ic": 0.068686,
+      "n": 47
+     },
+     "2023-09-15": {
+      "ic": -0.173219,
+      "n": 47
+     },
+     "2023-09-22": {
+      "ic": -0.049501,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": 0.015198,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": -0.097699,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": 0.109422,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": 0.042553,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": 0.188884,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": -0.120278,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": -0.217108,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": 0.051346,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": 0.421733,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": 0.265849,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": -0.005536,
+      "n": 48
+     },
+     "2023-12-15": {
+      "ic": 0.224598,
+      "n": 48
+     },
+     "2023-12-22": {
+      "ic": 0.25555,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.030296,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": null,
+   "spread_top_minus_bottom": 0.000574,
+   "top_quintile_mean_gross": 0.005759
+  },
+  "logistic@h60": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.050329,
+   "brier": {
+    "base_rate": 0.6414,
+    "bins": [
+     {
+      "bin": "0.3-0.4",
+      "empirical": 0.0,
+      "mean_pred": 0.3639,
+      "n": 1
+     },
+     {
+      "bin": "0.4-0.5",
+      "empirical": 0.7444,
+      "mean_pred": 0.4809,
+      "n": 90
+     },
+     {
+      "bin": "0.5-0.6",
+      "empirical": 0.6556,
+      "mean_pred": 0.5525,
+      "n": 694
+     },
+     {
+      "bin": "0.6-0.7",
+      "empirical": 0.6007,
+      "mean_pred": 0.6403,
+      "n": 293
+     },
+     {
+      "bin": "0.7-0.8",
+      "empirical": 0.5091,
+      "mean_pred": 0.737,
+      "n": 55
+     },
+     {
+      "bin": "0.8-0.9",
+      "empirical": 1.0,
+      "mean_pred": 0.8543,
+      "n": 2
+     }
+    ],
+    "brier": 0.243939,
+    "n": 1135
+   },
+   "equal_weight_day_mean_gross": 0.032823,
+   "mae": {
+    "hit_rate": 0.6414,
+    "mae": 0.525515,
+    "n": 1135
+   },
+   "n_val_days": 24,
+   "n_val_predictions": 1177,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": -1.0639,
+    "mean_ic": -0.047412,
+    "n_days": 24,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": -0.075816,
+      "n": 49
+     },
+     "2022-02-28": {
+      "ic": -0.479592,
+      "n": 49
+     },
+     "2022-03-31": {
+      "ic": -0.161104,
+      "n": 50
+     },
+     "2022-04-29": {
+      "ic": -0.114694,
+      "n": 49
+     },
+     "2022-05-31": {
+      "ic": 0.022688,
+      "n": 48
+     },
+     "2022-06-30": {
+      "ic": 0.073774,
+      "n": 47
+     },
+     "2022-07-29": {
+      "ic": -0.088113,
+      "n": 47
+     },
+     "2022-08-30": {
+      "ic": 0.153099,
+      "n": 47
+     },
+     "2022-09-30": {
+      "ic": 0.064807,
+      "n": 48
+     },
+     "2022-10-31": {
+      "ic": -0.083372,
+      "n": 47
+     },
+     "2022-11-30": {
+      "ic": -0.337766,
+      "n": 47
+     },
+     "2022-12-30": {
+      "ic": -0.265611,
+      "n": 47
+     },
+     "2023-01-31": {
+      "ic": -0.016073,
+      "n": 47
+     },
+     "2023-02-28": {
+      "ic": 0.34586,
+      "n": 47
+     },
+     "2023-03-31": {
+      "ic": 0.015957,
+      "n": 47
+     },
+     "2023-04-28": {
+      "ic": 0.091705,
+      "n": 46
+     },
+     "2023-05-31": {
+      "ic": -0.032254,
+      "n": 46
+     },
+     "2023-06-30": {
+      "ic": -0.249707,
+      "n": 46
+     },
+     "2023-07-31": {
+      "ic": -0.084921,
+      "n": 46
+     },
+     "2023-08-31": {
+      "ic": -0.333256,
+      "n": 47
+     },
+     "2023-09-29": {
+      "ic": 0.283649,
+      "n": 47
+     },
+     "2023-10-31": {
+      "ic": 0.113321,
+      "n": 47
+     },
+     "2023-11-30": {
+      "ic": 0.355227,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.335685,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": -1.5381,
+    "mean_ic": -0.045945,
+    "n_days": 2,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": -0.075816,
+      "n": 49
+     },
+     "2023-01-31": {
+      "ic": -0.016073,
+      "n": 47
+     }
+    }
+   },
+   "spread_top_minus_bottom": 0.013158,
+   "top_quintile_mean_gross": 0.063487
+  },
+  "momentum_rank@h20": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.024247,
+   "brier": null,
+   "equal_weight_day_mean_gross": 0.010476,
+   "mae": {
+    "hit_rate": 0.5159,
+    "mae": 0.113423,
+    "n": 5028
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5175,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": -2.4746,
+    "mean_ic": -0.0513,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": -0.257959,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": -0.264388,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": -0.207041,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": -0.260517,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.094694,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": 0.134694,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": -0.031429,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": -0.146633,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.371837,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": -0.326429,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": 0.086735,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": -0.105714,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": 0.037755,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": -0.096633,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": -0.076429,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": -0.199286,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": -0.26551,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": -0.065306,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": 0.232245,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": 0.036429,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": 0.203776,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": 0.346224,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": 0.195408,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": 0.278673,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": -0.059796,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": -0.227855,
+      "n": 48
+     },
+     "2022-07-08": {
+      "ic": -0.408489,
+      "n": 48
+     },
+     "2022-07-15": {
+      "ic": -0.547764,
+      "n": 48
+     },
+     "2022-07-22": {
+      "ic": -0.185627,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": 0.191489,
+      "n": 48
+     },
+     "2022-08-05": {
+      "ic": 0.304494,
+      "n": 48
+     },
+     "2022-08-12": {
+      "ic": 0.254741,
+      "n": 47
+     },
+     "2022-08-19": {
+      "ic": 0.431892,
+      "n": 47
+     },
+     "2022-08-26": {
+      "ic": 0.463113,
+      "n": 47
+     },
+     "2022-09-02": {
+      "ic": 0.116443,
+      "n": 47
+     },
+     "2022-09-09": {
+      "ic": 0.058279,
+      "n": 47
+     },
+     "2022-09-16": {
+      "ic": -0.136101,
+      "n": 47
+     },
+     "2022-09-23": {
+      "ic": -0.213807,
+      "n": 47
+     },
+     "2022-09-30": {
+      "ic": -0.212115,
+      "n": 48
+     },
+     "2022-10-07": {
+      "ic": 0.019542,
+      "n": 47
+     },
+     "2022-10-14": {
+      "ic": -0.092044,
+      "n": 47
+     },
+     "2022-10-21": {
+      "ic": -0.205134,
+      "n": 47
+     },
+     "2022-10-28": {
+      "ic": -0.34607,
+      "n": 48
+     },
+     "2022-11-04": {
+      "ic": -0.343574,
+      "n": 48
+     },
+     "2022-11-11": {
+      "ic": -0.197568,
+      "n": 48
+     },
+     "2022-11-18": {
+      "ic": 0.013569,
+      "n": 48
+     },
+     "2022-11-25": {
+      "ic": -0.000543,
+      "n": 48
+     },
+     "2022-12-02": {
+      "ic": -0.053843,
+      "n": 48
+     },
+     "2022-12-09": {
+      "ic": 0.220473,
+      "n": 48
+     },
+     "2022-12-16": {
+      "ic": 0.292143,
+      "n": 49
+     },
+     "2022-12-23": {
+      "ic": 0.321939,
+      "n": 49
+     },
+     "2022-12-30": {
+      "ic": 0.086939,
+      "n": 49
+     },
+     "2023-01-06": {
+      "ic": -0.178776,
+      "n": 49
+     },
+     "2023-01-13": {
+      "ic": -0.233061,
+      "n": 49
+     },
+     "2023-01-20": {
+      "ic": -0.259796,
+      "n": 49
+     },
+     "2023-01-27": {
+      "ic": -0.281939,
+      "n": 49
+     },
+     "2023-02-03": {
+      "ic": -0.448673,
+      "n": 49
+     },
+     "2023-02-10": {
+      "ic": 0.002755,
+      "n": 49
+     },
+     "2023-02-17": {
+      "ic": -0.060306,
+      "n": 49
+     },
+     "2023-02-24": {
+      "ic": -0.10102,
+      "n": 49
+     },
+     "2023-03-03": {
+      "ic": 0.189898,
+      "n": 49
+     },
+     "2023-03-10": {
+      "ic": -0.139082,
+      "n": 49
+     },
+     "2023-03-17": {
+      "ic": -0.217551,
+      "n": 49
+     },
+     "2023-03-24": {
+      "ic": -0.352755,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": -0.234286,
+      "n": 49
+     },
+     "2023-04-06": {
+      "ic": -0.265,
+      "n": 49
+     },
+     "2023-04-13": {
+      "ic": -0.115306,
+      "n": 49
+     },
+     "2023-04-21": {
+      "ic": -0.293265,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": -0.273673,
+      "n": 49
+     },
+     "2023-05-05": {
+      "ic": -0.175306,
+      "n": 49
+     },
+     "2023-05-12": {
+      "ic": -0.164082,
+      "n": 49
+     },
+     "2023-05-19": {
+      "ic": -0.138265,
+      "n": 49
+     },
+     "2023-05-26": {
+      "ic": -0.105714,
+      "n": 49
+     },
+     "2023-06-02": {
+      "ic": -0.122143,
+      "n": 49
+     },
+     "2023-06-09": {
+      "ic": 0.146429,
+      "n": 49
+     },
+     "2023-06-16": {
+      "ic": -0.147308,
+      "n": 48
+     },
+     "2023-06-23": {
+      "ic": 0.019431,
+      "n": 48
+     },
+     "2023-06-30": {
+      "ic": -0.071971,
+      "n": 48
+     },
+     "2023-07-07": {
+      "ic": -0.363656,
+      "n": 48
+     },
+     "2023-07-14": {
+      "ic": -0.318281,
+      "n": 48
+     },
+     "2023-07-21": {
+      "ic": -0.127877,
+      "n": 48
+     },
+     "2023-07-28": {
+      "ic": 0.123426,
+      "n": 48
+     },
+     "2023-08-04": {
+      "ic": 0.207447,
+      "n": 48
+     },
+     "2023-08-11": {
+      "ic": 0.155341,
+      "n": 48
+     },
+     "2023-08-18": {
+      "ic": 0.048632,
+      "n": 48
+     },
+     "2023-08-25": {
+      "ic": 0.11485,
+      "n": 48
+     },
+     "2023-09-01": {
+      "ic": -0.18617,
+      "n": 48
+     },
+     "2023-09-08": {
+      "ic": -0.16066,
+      "n": 48
+     },
+     "2023-09-15": {
+      "ic": -0.101389,
+      "n": 48
+     },
+     "2023-09-22": {
+      "ic": -0.081633,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": -0.178354,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": -0.061116,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": 0.103561,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": 0.307751,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": 0.034412,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": -0.020951,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": -0.074251,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": -0.070777,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": 0.113113,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": 0.13136,
+      "n": 47
+     },
+     "2023-12-08": {
+      "ic": 0.220513,
+      "n": 47
+     },
+     "2023-12-15": {
+      "ic": 0.271855,
+      "n": 47
+     },
+     "2023-12-22": {
+      "ic": 0.30377,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.221554,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": -1.4537,
+    "mean_ic": -0.059248,
+    "n_days": 26,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": -0.257959,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.094694,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.371837,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": 0.037755,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": -0.26551,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": 0.203776,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": -0.059796,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": -0.185627,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.431892,
+      "n": 47
+     },
+     "2022-09-16": {
+      "ic": -0.136101,
+      "n": 47
+     },
+     "2022-10-14": {
+      "ic": -0.092044,
+      "n": 47
+     },
+     "2022-11-11": {
+      "ic": -0.197568,
+      "n": 48
+     },
+     "2022-12-09": {
+      "ic": 0.220473,
+      "n": 48
+     },
+     "2023-01-06": {
+      "ic": -0.178776,
+      "n": 49
+     },
+     "2023-02-03": {
+      "ic": -0.448673,
+      "n": 49
+     },
+     "2023-03-03": {
+      "ic": 0.189898,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": -0.234286,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": -0.273673,
+      "n": 49
+     },
+     "2023-05-26": {
+      "ic": -0.105714,
+      "n": 49
+     },
+     "2023-06-23": {
+      "ic": 0.019431,
+      "n": 48
+     },
+     "2023-07-21": {
+      "ic": -0.127877,
+      "n": 48
+     },
+     "2023-08-18": {
+      "ic": 0.048632,
+      "n": 48
+     },
+     "2023-09-15": {
+      "ic": -0.101389,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": 0.103561,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": -0.074251,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": 0.220513,
+      "n": 47
+     }
+    }
+   },
+   "spread_top_minus_bottom": -0.009197,
+   "top_quintile_mean_gross": 0.01505
+  },
+  "momentum_rank@h5": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.006838,
+   "brier": null,
+   "equal_weight_day_mean_gross": 0.001632,
+   "mae": {
+    "hit_rate": 0.5114,
+    "mae": 0.098988,
+    "n": 5041
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5175,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": -2.2784,
+    "mean_ic": -0.046944,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": -0.042755,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": -0.058673,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": -0.142041,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": -0.089388,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.143878,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": -0.446633,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": -0.070918,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": -0.051939,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.131531,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": -0.191939,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": 0.362449,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": -0.311122,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": 0.153265,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": 0.222959,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": 0.035204,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": -0.028776,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": -0.382959,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": -0.104694,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": 0.121327,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": -0.423265,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": 0.193878,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": 0.246837,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": -0.087653,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": 0.101429,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.165816,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": 0.145714,
+      "n": 49
+     },
+     "2022-07-08": {
+      "ic": 0.006531,
+      "n": 49
+     },
+     "2022-07-15": {
+      "ic": -0.538367,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": -0.398936,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": -0.215371,
+      "n": 48
+     },
+     "2022-08-05": {
+      "ic": 0.052866,
+      "n": 48
+     },
+     "2022-08-12": {
+      "ic": 0.148285,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.011398,
+      "n": 48
+     },
+     "2022-08-26": {
+      "ic": 0.6599,
+      "n": 48
+     },
+     "2022-09-02": {
+      "ic": -0.19518,
+      "n": 48
+     },
+     "2022-09-09": {
+      "ic": 0.425763,
+      "n": 47
+     },
+     "2022-09-16": {
+      "ic": -0.269195,
+      "n": 47
+     },
+     "2022-09-23": {
+      "ic": -0.515611,
+      "n": 47
+     },
+     "2022-09-30": {
+      "ic": -0.205384,
+      "n": 48
+     },
+     "2022-10-07": {
+      "ic": -0.115171,
+      "n": 47
+     },
+     "2022-10-14": {
+      "ic": -0.056776,
+      "n": 47
+     },
+     "2022-10-21": {
+      "ic": 0.001966,
+      "n": 47
+     },
+     "2022-10-28": {
+      "ic": -0.112571,
+      "n": 48
+     },
+     "2022-11-04": {
+      "ic": -0.228181,
+      "n": 48
+     },
+     "2022-11-11": {
+      "ic": -0.009444,
+      "n": 48
+     },
+     "2022-11-18": {
+      "ic": -0.282241,
+      "n": 48
+     },
+     "2022-11-25": {
+      "ic": -0.145462,
+      "n": 48
+     },
+     "2022-12-02": {
+      "ic": -0.029852,
+      "n": 48
+     },
+     "2022-12-09": {
+      "ic": 0.163048,
+      "n": 48
+     },
+     "2022-12-16": {
+      "ic": 0.120612,
+      "n": 49
+     },
+     "2022-12-23": {
+      "ic": -0.018265,
+      "n": 49
+     },
+     "2022-12-30": {
+      "ic": 0.080816,
+      "n": 49
+     },
+     "2023-01-06": {
+      "ic": 0.096939,
+      "n": 49
+     },
+     "2023-01-13": {
+      "ic": 0.076224,
+      "n": 49
+     },
+     "2023-01-20": {
+      "ic": -0.275918,
+      "n": 49
+     },
+     "2023-01-27": {
+      "ic": -0.11551,
+      "n": 49
+     },
+     "2023-02-03": {
+      "ic": -0.356224,
+      "n": 49
+     },
+     "2023-02-10": {
+      "ic": 0.022755,
+      "n": 49
+     },
+     "2023-02-17": {
+      "ic": -0.164082,
+      "n": 49
+     },
+     "2023-02-24": {
+      "ic": -0.228776,
+      "n": 49
+     },
+     "2023-03-03": {
+      "ic": 0.463571,
+      "n": 49
+     },
+     "2023-03-10": {
+      "ic": 0.207449,
+      "n": 49
+     },
+     "2023-03-17": {
+      "ic": -0.064898,
+      "n": 49
+     },
+     "2023-03-24": {
+      "ic": 0.093673,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": -0.217857,
+      "n": 49
+     },
+     "2023-04-06": {
+      "ic": -0.366327,
+      "n": 49
+     },
+     "2023-04-13": {
+      "ic": -0.178367,
+      "n": 49
+     },
+     "2023-04-21": {
+      "ic": -0.007755,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": -0.00398,
+      "n": 49
+     },
+     "2023-05-05": {
+      "ic": -0.080306,
+      "n": 49
+     },
+     "2023-05-12": {
+      "ic": -0.111327,
+      "n": 49
+     },
+     "2023-05-19": {
+      "ic": -0.201429,
+      "n": 49
+     },
+     "2023-05-26": {
+      "ic": -0.116224,
+      "n": 49
+     },
+     "2023-06-02": {
+      "ic": 0.093673,
+      "n": 49
+     },
+     "2023-06-09": {
+      "ic": 0.100102,
+      "n": 49
+     },
+     "2023-06-16": {
+      "ic": -0.119388,
+      "n": 49
+     },
+     "2023-06-23": {
+      "ic": -0.024286,
+      "n": 49
+     },
+     "2023-06-30": {
+      "ic": 0.152551,
+      "n": 49
+     },
+     "2023-07-07": {
+      "ic": -0.397851,
+      "n": 48
+     },
+     "2023-07-14": {
+      "ic": -0.176292,
+      "n": 48
+     },
+     "2023-07-21": {
+      "ic": -0.20723,
+      "n": 48
+     },
+     "2023-07-28": {
+      "ic": 0.011507,
+      "n": 48
+     },
+     "2023-08-04": {
+      "ic": 0.238819,
+      "n": 48
+     },
+     "2023-08-11": {
+      "ic": 0.228181,
+      "n": 48
+     },
+     "2023-08-18": {
+      "ic": -0.286366,
+      "n": 48
+     },
+     "2023-08-25": {
+      "ic": 0.240339,
+      "n": 48
+     },
+     "2023-09-01": {
+      "ic": -0.082501,
+      "n": 48
+     },
+     "2023-09-08": {
+      "ic": -0.073274,
+      "n": 48
+     },
+     "2023-09-15": {
+      "ic": -0.266283,
+      "n": 48
+     },
+     "2023-09-22": {
+      "ic": 0.14937,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": -0.195506,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": -0.05558,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": -0.113765,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": 0.182479,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": -0.212006,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": 0.105515,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": -0.151541,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": -0.129396,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": 0.028767,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": -0.196917,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": -0.112571,
+      "n": 48
+     },
+     "2023-12-15": {
+      "ic": -0.019648,
+      "n": 48
+     },
+     "2023-12-22": {
+      "ic": 0.321577,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.049954,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": null,
+   "spread_top_minus_bottom": -0.003746,
+   "top_quintile_mean_gross": 0.003092
+  },
+  "momentum_rank@h60": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.060645,
+   "brier": null,
+   "equal_weight_day_mean_gross": 0.032823,
+   "mae": {
+    "hit_rate": 0.5095,
+    "mae": 0.154854,
+    "n": 1154
+   },
+   "n_val_days": 24,
+   "n_val_predictions": 1196,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": -1.5592,
+    "mean_ic": -0.065194,
+    "n_days": 24,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": -0.136224,
+      "n": 49
+     },
+     "2022-02-28": {
+      "ic": -0.008367,
+      "n": 49
+     },
+     "2022-03-31": {
+      "ic": 0.00437,
+      "n": 50
+     },
+     "2022-04-29": {
+      "ic": -0.157245,
+      "n": 49
+     },
+     "2022-05-31": {
+      "ic": -0.011181,
+      "n": 48
+     },
+     "2022-06-30": {
+      "ic": -0.028215,
+      "n": 47
+     },
+     "2022-07-29": {
+      "ic": 0.205019,
+      "n": 47
+     },
+     "2022-08-30": {
+      "ic": -0.115634,
+      "n": 47
+     },
+     "2022-09-30": {
+      "ic": -0.237625,
+      "n": 48
+     },
+     "2022-10-31": {
+      "ic": -0.366913,
+      "n": 48
+     },
+     "2022-11-30": {
+      "ic": 0.030178,
+      "n": 48
+     },
+     "2022-12-30": {
+      "ic": 0.100918,
+      "n": 49
+     },
+     "2023-01-31": {
+      "ic": -0.240816,
+      "n": 49
+     },
+     "2023-02-28": {
+      "ic": -0.315,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": -0.418061,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": -0.225033,
+      "n": 48
+     },
+     "2023-05-31": {
+      "ic": -0.272254,
+      "n": 48
+     },
+     "2023-06-30": {
+      "ic": -0.106817,
+      "n": 48
+     },
+     "2023-07-31": {
+      "ic": 0.135041,
+      "n": 48
+     },
+     "2023-08-31": {
+      "ic": 0.016175,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": 0.449121,
+      "n": 47
+     },
+     "2023-10-31": {
+      "ic": 0.108117,
+      "n": 47
+     },
+     "2023-11-30": {
+      "ic": 0.192877,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.167091,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": -3.6049,
+    "mean_ic": -0.18852,
+    "n_days": 2,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": -0.136224,
+      "n": 49
+     },
+     "2023-01-31": {
+      "ic": -0.240816,
+      "n": 49
+     }
+    }
+   },
+   "spread_top_minus_bottom": -0.005602,
+   "top_quintile_mean_gross": 0.055042
+  },
+  "reversal_rank@h20": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.014236,
+   "brier": null,
+   "equal_weight_day_mean_gross": 0.010476,
+   "mae": {
+    "hit_rate": 0.4986,
+    "mae": 0.071222,
+    "n": 5052
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5199,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": 1.8406,
+    "mean_ic": 0.034582,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": -0.235306,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": 0.163061,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": -0.141327,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": 0.327202,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": -0.148469,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": -0.111531,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": 0.274694,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": -0.002551,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": 0.355306,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": 0.258469,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": 0.066633,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": 0.382551,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.188776,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": -0.297449,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": 0.01898,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": -0.113367,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": -0.241837,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": -0.08102,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": -0.069592,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": -0.102551,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": 0.020918,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": 0.472551,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": -0.025918,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": -0.37,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.121531,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": 0.053626,
+      "n": 48
+     },
+     "2022-07-08": {
+      "ic": -0.212006,
+      "n": 48
+     },
+     "2022-07-15": {
+      "ic": 0.400456,
+      "n": 48
+     },
+     "2022-07-22": {
+      "ic": -0.169019,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": 0.19594,
+      "n": 48
+     },
+     "2022-08-05": {
+      "ic": 0.169286,
+      "n": 49
+     },
+     "2022-08-12": {
+      "ic": -0.066218,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.009119,
+      "n": 48
+     },
+     "2022-08-26": {
+      "ic": 0.04429,
+      "n": 48
+     },
+     "2022-09-02": {
+      "ic": 0.044724,
+      "n": 48
+     },
+     "2022-09-09": {
+      "ic": 0.083912,
+      "n": 48
+     },
+     "2022-09-16": {
+      "ic": 0.105406,
+      "n": 48
+     },
+     "2022-09-23": {
+      "ic": 0.238571,
+      "n": 49
+     },
+     "2022-09-30": {
+      "ic": 0.102713,
+      "n": 50
+     },
+     "2022-10-07": {
+      "ic": -0.035,
+      "n": 49
+     },
+     "2022-10-14": {
+      "ic": -0.014898,
+      "n": 49
+     },
+     "2022-10-21": {
+      "ic": 0.131939,
+      "n": 49
+     },
+     "2022-10-28": {
+      "ic": 0.162959,
+      "n": 49
+     },
+     "2022-11-04": {
+      "ic": 0.010204,
+      "n": 49
+     },
+     "2022-11-11": {
+      "ic": -0.136122,
+      "n": 49
+     },
+     "2022-11-18": {
+      "ic": 0.013163,
+      "n": 49
+     },
+     "2022-11-25": {
+      "ic": -0.085714,
+      "n": 49
+     },
+     "2022-12-02": {
+      "ic": 0.122143,
+      "n": 49
+     },
+     "2022-12-09": {
+      "ic": 0.133367,
+      "n": 49
+     },
+     "2022-12-16": {
+      "ic": -0.217041,
+      "n": 49
+     },
+     "2022-12-23": {
+      "ic": 0.298776,
+      "n": 49
+     },
+     "2022-12-30": {
+      "ic": 0.159286,
+      "n": 49
+     },
+     "2023-01-06": {
+      "ic": 0.043265,
+      "n": 49
+     },
+     "2023-01-13": {
+      "ic": -0.098776,
+      "n": 49
+     },
+     "2023-01-20": {
+      "ic": -0.151735,
+      "n": 49
+     },
+     "2023-01-27": {
+      "ic": 0.085816,
+      "n": 49
+     },
+     "2023-02-03": {
+      "ic": 0.251531,
+      "n": 49
+     },
+     "2023-02-10": {
+      "ic": 0.164898,
+      "n": 49
+     },
+     "2023-02-17": {
+      "ic": -0.096224,
+      "n": 49
+     },
+     "2023-02-24": {
+      "ic": 0.04449,
+      "n": 49
+     },
+     "2023-03-03": {
+      "ic": 0.054184,
+      "n": 49
+     },
+     "2023-03-10": {
+      "ic": 0.232755,
+      "n": 49
+     },
+     "2023-03-17": {
+      "ic": 0.122857,
+      "n": 49
+     },
+     "2023-03-24": {
+      "ic": 0.008265,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": 0.351531,
+      "n": 49
+     },
+     "2023-04-06": {
+      "ic": -0.101224,
+      "n": 49
+     },
+     "2023-04-13": {
+      "ic": 0.101224,
+      "n": 49
+     },
+     "2023-04-21": {
+      "ic": -0.048367,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": -0.048163,
+      "n": 49
+     },
+     "2023-05-05": {
+      "ic": -0.110204,
+      "n": 49
+     },
+     "2023-05-12": {
+      "ic": -0.031122,
+      "n": 49
+     },
+     "2023-05-19": {
+      "ic": 0.429286,
+      "n": 49
+     },
+     "2023-05-26": {
+      "ic": 0.068367,
+      "n": 49
+     },
+     "2023-06-02": {
+      "ic": -0.155612,
+      "n": 49
+     },
+     "2023-06-09": {
+      "ic": -0.159694,
+      "n": 49
+     },
+     "2023-06-16": {
+      "ic": 0.196374,
+      "n": 48
+     },
+     "2023-06-23": {
+      "ic": 0.167607,
+      "n": 48
+     },
+     "2023-06-30": {
+      "ic": 0.044941,
+      "n": 48
+     },
+     "2023-07-07": {
+      "ic": 0.405558,
+      "n": 48
+     },
+     "2023-07-14": {
+      "ic": -0.113656,
+      "n": 48
+     },
+     "2023-07-21": {
+      "ic": 0.196591,
+      "n": 48
+     },
+     "2023-07-28": {
+      "ic": -0.154364,
+      "n": 48
+     },
+     "2023-08-04": {
+      "ic": -0.327833,
+      "n": 48
+     },
+     "2023-08-11": {
+      "ic": -0.002497,
+      "n": 48
+     },
+     "2023-08-18": {
+      "ic": 0.18617,
+      "n": 48
+     },
+     "2023-08-25": {
+      "ic": -0.207555,
+      "n": 48
+     },
+     "2023-09-01": {
+      "ic": 0.208098,
+      "n": 48
+     },
+     "2023-09-08": {
+      "ic": 0.151107,
+      "n": 48
+     },
+     "2023-09-15": {
+      "ic": 0.331416,
+      "n": 48
+     },
+     "2023-09-22": {
+      "ic": -0.23198,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": -0.003257,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": 0.303083,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": -0.246092,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": -0.426075,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": 0.333695,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": 0.199957,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": 0.032892,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": 0.074902,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": -0.022254,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": -0.336378,
+      "n": 47
+     },
+     "2023-12-08": {
+      "ic": -0.017576,
+      "n": 47
+     },
+     "2023-12-15": {
+      "ic": -0.127197,
+      "n": 47
+     },
+     "2023-12-22": {
+      "ic": -0.004047,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": 0.15148,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": 1.0618,
+    "mean_ic": 0.037805,
+    "n_days": 26,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": -0.235306,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": -0.148469,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": 0.355306,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.188776,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": -0.241837,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": 0.020918,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.121531,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": -0.169019,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.009119,
+      "n": 48
+     },
+     "2022-09-16": {
+      "ic": 0.105406,
+      "n": 48
+     },
+     "2022-10-14": {
+      "ic": -0.014898,
+      "n": 49
+     },
+     "2022-11-11": {
+      "ic": -0.136122,
+      "n": 49
+     },
+     "2022-12-09": {
+      "ic": 0.133367,
+      "n": 49
+     },
+     "2023-01-06": {
+      "ic": 0.043265,
+      "n": 49
+     },
+     "2023-02-03": {
+      "ic": 0.251531,
+      "n": 49
+     },
+     "2023-03-03": {
+      "ic": 0.054184,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": 0.351531,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": -0.048163,
+      "n": 49
+     },
+     "2023-05-26": {
+      "ic": 0.068367,
+      "n": 49
+     },
+     "2023-06-23": {
+      "ic": 0.167607,
+      "n": 48
+     },
+     "2023-07-21": {
+      "ic": 0.196591,
+      "n": 48
+     },
+     "2023-08-18": {
+      "ic": 0.18617,
+      "n": 48
+     },
+     "2023-09-15": {
+      "ic": 0.331416,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": -0.246092,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": 0.032892,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": -0.017576,
+      "n": 47
+     }
+    }
+   },
+   "spread_top_minus_bottom": 0.00569,
+   "top_quintile_mean_gross": 0.019926
+  },
+  "reversal_rank@h5": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": -0.001221,
+   "brier": null,
+   "equal_weight_day_mean_gross": 0.001632,
+   "mae": {
+    "hit_rate": 0.5082,
+    "mae": 0.042307,
+    "n": 5065
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5199,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": 4.1556,
+    "mean_ic": 0.084335,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": -0.112143,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": 0.152551,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": -0.209388,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": 0.310918,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": -0.161735,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": 0.273776,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": 0.215306,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": -0.063776,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": 0.141633,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": 0.173776,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": 0.416837,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": 0.509184,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.073469,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": -0.285102,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": -0.111122,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": 0.120204,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": -0.187347,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": -0.020918,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": -0.050408,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": 0.179898,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": 0.381531,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": 0.197959,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": 0.092959,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": -0.334898,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.094898,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": 0.222245,
+      "n": 49
+     },
+     "2022-07-08": {
+      "ic": -0.188367,
+      "n": 49
+     },
+     "2022-07-15": {
+      "ic": 0.499694,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": -0.193443,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": 0.182371,
+      "n": 48
+     },
+     "2022-08-05": {
+      "ic": 0.507959,
+      "n": 49
+     },
+     "2022-08-12": {
+      "ic": 0.132449,
+      "n": 49
+     },
+     "2022-08-19": {
+      "ic": 0.175204,
+      "n": 49
+     },
+     "2022-08-26": {
+      "ic": -0.310612,
+      "n": 49
+     },
+     "2022-09-02": {
+      "ic": 0.342653,
+      "n": 49
+     },
+     "2022-09-09": {
+      "ic": 0.148611,
+      "n": 48
+     },
+     "2022-09-16": {
+      "ic": 0.247178,
+      "n": 48
+     },
+     "2022-09-23": {
+      "ic": 0.047347,
+      "n": 49
+     },
+     "2022-09-30": {
+      "ic": 0.251092,
+      "n": 50
+     },
+     "2022-10-07": {
+      "ic": -0.014184,
+      "n": 49
+     },
+     "2022-10-14": {
+      "ic": -0.067551,
+      "n": 49
+     },
+     "2022-10-21": {
+      "ic": 0.204082,
+      "n": 49
+     },
+     "2022-10-28": {
+      "ic": 0.157449,
+      "n": 49
+     },
+     "2022-11-04": {
+      "ic": -0.059796,
+      "n": 49
+     },
+     "2022-11-11": {
+      "ic": -0.065714,
+      "n": 49
+     },
+     "2022-11-18": {
+      "ic": -0.05602,
+      "n": 49
+     },
+     "2022-11-25": {
+      "ic": -0.001633,
+      "n": 49
+     },
+     "2022-12-02": {
+      "ic": 0.06398,
+      "n": 49
+     },
+     "2022-12-09": {
+      "ic": -0.13602,
+      "n": 49
+     },
+     "2022-12-16": {
+      "ic": 0.278673,
+      "n": 49
+     },
+     "2022-12-23": {
+      "ic": 0.766122,
+      "n": 49
+     },
+     "2022-12-30": {
+      "ic": 0.280306,
+      "n": 49
+     },
+     "2023-01-06": {
+      "ic": 0.082143,
+      "n": 49
+     },
+     "2023-01-13": {
+      "ic": -0.308469,
+      "n": 49
+     },
+     "2023-01-20": {
+      "ic": -0.072755,
+      "n": 49
+     },
+     "2023-01-27": {
+      "ic": -0.077245,
+      "n": 49
+     },
+     "2023-02-03": {
+      "ic": 0.30602,
+      "n": 49
+     },
+     "2023-02-10": {
+      "ic": 0.230612,
+      "n": 49
+     },
+     "2023-02-17": {
+      "ic": -0.00898,
+      "n": 49
+     },
+     "2023-02-24": {
+      "ic": 0.105306,
+      "n": 49
+     },
+     "2023-03-03": {
+      "ic": 0.241224,
+      "n": 49
+     },
+     "2023-03-10": {
+      "ic": 0.154796,
+      "n": 49
+     },
+     "2023-03-17": {
+      "ic": -0.110102,
+      "n": 49
+     },
+     "2023-03-24": {
+      "ic": -0.155918,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": 0.296327,
+      "n": 49
+     },
+     "2023-04-06": {
+      "ic": -0.061327,
+      "n": 49
+     },
+     "2023-04-13": {
+      "ic": 0.037551,
+      "n": 49
+     },
+     "2023-04-21": {
+      "ic": 0.012143,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": 0.183571,
+      "n": 49
+     },
+     "2023-05-05": {
+      "ic": 0.142551,
+      "n": 49
+     },
+     "2023-05-12": {
+      "ic": -0.105102,
+      "n": 49
+     },
+     "2023-05-19": {
+      "ic": 0.212755,
+      "n": 49
+     },
+     "2023-05-26": {
+      "ic": 0.042959,
+      "n": 49
+     },
+     "2023-06-02": {
+      "ic": -0.036633,
+      "n": 49
+     },
+     "2023-06-09": {
+      "ic": -0.078673,
+      "n": 49
+     },
+     "2023-06-16": {
+      "ic": 0.237245,
+      "n": 49
+     },
+     "2023-06-23": {
+      "ic": 0.130204,
+      "n": 49
+     },
+     "2023-06-30": {
+      "ic": 0.138469,
+      "n": 49
+     },
+     "2023-07-07": {
+      "ic": 0.285931,
+      "n": 48
+     },
+     "2023-07-14": {
+      "ic": 0.351607,
+      "n": 48
+     },
+     "2023-07-21": {
+      "ic": -0.045701,
+      "n": 48
+     },
+     "2023-07-28": {
+      "ic": -0.154798,
+      "n": 48
+     },
+     "2023-08-04": {
+      "ic": -0.310248,
+      "n": 48
+     },
+     "2023-08-11": {
+      "ic": 0.219388,
+      "n": 48
+     },
+     "2023-08-18": {
+      "ic": 0.347699,
+      "n": 48
+     },
+     "2023-08-25": {
+      "ic": -0.049284,
+      "n": 48
+     },
+     "2023-09-01": {
+      "ic": 0.075771,
+      "n": 48
+     },
+     "2023-09-08": {
+      "ic": 0.232089,
+      "n": 48
+     },
+     "2023-09-15": {
+      "ic": 0.360399,
+      "n": 48
+     },
+     "2023-09-22": {
+      "ic": 0.066978,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": 0.29505,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": 0.39568,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": -0.225141,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": -0.226987,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": 0.038754,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": 0.088254,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": 0.179657,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": -0.004017,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": 0.101172,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": 0.068389,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": -0.25,
+      "n": 48
+     },
+     "2023-12-15": {
+      "ic": 0.251194,
+      "n": 48
+     },
+     "2023-12-22": {
+      "ic": 0.060592,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": 0.01457,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": null,
+   "spread_top_minus_bottom": 0.00918,
+   "top_quintile_mean_gross": 0.00796
+  },
+  "reversal_rank@h60": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.064202,
+   "brier": null,
+   "equal_weight_day_mean_gross": 0.032823,
+   "mae": {
+    "hit_rate": 0.4685,
+    "mae": 0.125466,
+    "n": 1159
+   },
+   "n_val_days": 24,
+   "n_val_predictions": 1201,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": -0.0692,
+    "mean_ic": -0.002791,
+    "n_days": 24,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": -0.084082,
+      "n": 49
+     },
+     "2022-02-28": {
+      "ic": 0.253163,
+      "n": 49
+     },
+     "2022-03-31": {
+      "ic": -0.16024,
+      "n": 50
+     },
+     "2022-04-29": {
+      "ic": -0.236327,
+      "n": 49
+     },
+     "2022-05-31": {
+      "ic": -0.087169,
+      "n": 48
+     },
+     "2022-06-30": {
+      "ic": 0.153677,
+      "n": 47
+     },
+     "2022-07-29": {
+      "ic": 0.216929,
+      "n": 47
+     },
+     "2022-08-30": {
+      "ic": 0.190838,
+      "n": 48
+     },
+     "2022-09-30": {
+      "ic": 0.175894,
+      "n": 50
+     },
+     "2022-10-31": {
+      "ic": 0.025102,
+      "n": 49
+     },
+     "2022-11-30": {
+      "ic": -0.034388,
+      "n": 49
+     },
+     "2022-12-30": {
+      "ic": 0.278469,
+      "n": 49
+     },
+     "2023-01-31": {
+      "ic": 0.036429,
+      "n": 49
+     },
+     "2023-02-28": {
+      "ic": -0.196735,
+      "n": 49
+     },
+     "2023-03-31": {
+      "ic": 0.436735,
+      "n": 49
+     },
+     "2023-04-28": {
+      "ic": -0.069366,
+      "n": 48
+     },
+     "2023-05-31": {
+      "ic": 0.121363,
+      "n": 48
+     },
+     "2023-06-30": {
+      "ic": -0.167607,
+      "n": 48
+     },
+     "2023-07-31": {
+      "ic": -0.061007,
+      "n": 48
+     },
+     "2023-08-31": {
+      "ic": -0.043205,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": -0.377891,
+      "n": 47
+     },
+     "2023-10-31": {
+      "ic": -0.081059,
+      "n": 47
+     },
+     "2023-11-30": {
+      "ic": -0.284228,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.072271,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": -0.3954,
+    "mean_ic": -0.023827,
+    "n_days": 2,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": -0.084082,
+      "n": 49
+     },
+     "2023-01-31": {
+      "ic": 0.036429,
+      "n": 49
+     }
+    }
+   },
+   "spread_top_minus_bottom": -0.017188,
+   "top_quintile_mean_gross": 0.047014
+  },
+  "ridge@h20": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.015558,
+   "brier": null,
+   "equal_weight_day_mean_gross": 0.010476,
+   "mae": {
+    "hit_rate": 0.5416,
+    "mae": 0.06403,
+    "n": 4948
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5095,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": 2.5221,
+    "mean_ic": 0.045941,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": 0.433163,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": 0.241122,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": 0.089184,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": 0.172606,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.218265,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": 0.172653,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": 0.079388,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": 0.213673,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.092653,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": -0.165918,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": -0.214388,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": -0.344388,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.073469,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": -0.183673,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": -0.124388,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": 0.022551,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": 0.018061,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": -0.057347,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": -0.038265,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": -0.158163,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": -0.191327,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": -0.104388,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": -0.090102,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": -0.181939,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.038265,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": 0.326096,
+      "n": 48
+     },
+     "2022-07-08": {
+      "ic": 0.448871,
+      "n": 48
+     },
+     "2022-07-15": {
+      "ic": 0.460595,
+      "n": 48
+     },
+     "2022-07-22": {
+      "ic": 0.256188,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": 0.007924,
+      "n": 48
+     },
+     "2022-08-05": {
+      "ic": 0.041576,
+      "n": 48
+     },
+     "2022-08-12": {
+      "ic": 0.026018,
+      "n": 47
+     },
+     "2022-08-19": {
+      "ic": 0.239362,
+      "n": 47
+     },
+     "2022-08-26": {
+      "ic": 0.26006,
+      "n": 47
+     },
+     "2022-09-02": {
+      "ic": 0.382747,
+      "n": 47
+     },
+     "2022-09-09": {
+      "ic": 0.117021,
+      "n": 47
+     },
+     "2022-09-16": {
+      "ic": 0.078284,
+      "n": 47
+     },
+     "2022-09-23": {
+      "ic": -0.052151,
+      "n": 47
+     },
+     "2022-09-30": {
+      "ic": 0.003148,
+      "n": 48
+     },
+     "2022-10-07": {
+      "ic": -0.025208,
+      "n": 47
+     },
+     "2022-10-14": {
+      "ic": 0.066489,
+      "n": 47
+     },
+     "2022-10-21": {
+      "ic": 0.11124,
+      "n": 47
+     },
+     "2022-10-28": {
+      "ic": 0.087535,
+      "n": 47
+     },
+     "2022-11-04": {
+      "ic": -0.066721,
+      "n": 47
+     },
+     "2022-11-11": {
+      "ic": -0.125347,
+      "n": 47
+     },
+     "2022-11-18": {
+      "ic": 0.132285,
+      "n": 47
+     },
+     "2022-11-25": {
+      "ic": -0.086031,
+      "n": 47
+     },
+     "2022-12-02": {
+      "ic": 0.069958,
+      "n": 47
+     },
+     "2022-12-09": {
+      "ic": -0.11228,
+      "n": 47
+     },
+     "2022-12-16": {
+      "ic": -0.046022,
+      "n": 47
+     },
+     "2022-12-23": {
+      "ic": 0.065333,
+      "n": 47
+     },
+     "2022-12-30": {
+      "ic": 0.09031,
+      "n": 47
+     },
+     "2023-01-06": {
+      "ic": 0.128122,
+      "n": 47
+     },
+     "2023-01-13": {
+      "ic": 0.031799,
+      "n": 47
+     },
+     "2023-01-20": {
+      "ic": 0.009135,
+      "n": 47
+     },
+     "2023-01-27": {
+      "ic": 0.087419,
+      "n": 47
+     },
+     "2023-02-03": {
+      "ic": 0.355111,
+      "n": 47
+     },
+     "2023-02-10": {
+      "ic": 0.085916,
+      "n": 47
+     },
+     "2023-02-17": {
+      "ic": 0.096323,
+      "n": 47
+     },
+     "2023-02-24": {
+      "ic": 0.175648,
+      "n": 47
+     },
+     "2023-03-03": {
+      "ic": -0.226179,
+      "n": 47
+     },
+     "2023-03-10": {
+      "ic": -0.061055,
+      "n": 47
+     },
+     "2023-03-17": {
+      "ic": 0.036656,
+      "n": 47
+     },
+     "2023-03-24": {
+      "ic": 0.114477,
+      "n": 47
+     },
+     "2023-03-31": {
+      "ic": 0.015842,
+      "n": 47
+     },
+     "2023-04-06": {
+      "ic": 0.086147,
+      "n": 47
+     },
+     "2023-04-13": {
+      "ic": 0.136332,
+      "n": 47
+     },
+     "2023-04-21": {
+      "ic": 0.344588,
+      "n": 47
+     },
+     "2023-04-28": {
+      "ic": 0.338691,
+      "n": 47
+     },
+     "2023-05-05": {
+      "ic": 0.327128,
+      "n": 47
+     },
+     "2023-05-12": {
+      "ic": -0.094126,
+      "n": 47
+     },
+     "2023-05-19": {
+      "ic": 0.188945,
+      "n": 47
+     },
+     "2023-05-26": {
+      "ic": -0.191374,
+      "n": 47
+     },
+     "2023-06-02": {
+      "ic": -0.127775,
+      "n": 47
+     },
+     "2023-06-09": {
+      "ic": 0.114593,
+      "n": 47
+     },
+     "2023-06-16": {
+      "ic": 0.006352,
+      "n": 46
+     },
+     "2023-06-23": {
+      "ic": 0.109713,
+      "n": 46
+     },
+     "2023-06-30": {
+      "ic": -0.006475,
+      "n": 46
+     },
+     "2023-07-07": {
+      "ic": -0.284613,
+      "n": 46
+     },
+     "2023-07-14": {
+      "ic": -0.300894,
+      "n": 46
+     },
+     "2023-07-21": {
+      "ic": -0.138699,
+      "n": 46
+     },
+     "2023-07-28": {
+      "ic": 0.236633,
+      "n": 46
+     },
+     "2023-08-04": {
+      "ic": 0.110777,
+      "n": 47
+     },
+     "2023-08-11": {
+      "ic": -0.231383,
+      "n": 47
+     },
+     "2023-08-18": {
+      "ic": -0.235777,
+      "n": 47
+     },
+     "2023-08-25": {
+      "ic": -0.277636,
+      "n": 47
+     },
+     "2023-09-01": {
+      "ic": -0.251503,
+      "n": 47
+     },
+     "2023-09-08": {
+      "ic": -0.174607,
+      "n": 47
+     },
+     "2023-09-15": {
+      "ic": 0.184436,
+      "n": 47
+     },
+     "2023-09-22": {
+      "ic": -0.029635,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": -0.133847,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": -0.019106,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": 0.050695,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": -0.080873,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": 0.058402,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": 0.178246,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": 0.149913,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": 0.332935,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": 0.31904,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": 0.315217,
+      "n": 47
+     },
+     "2023-12-08": {
+      "ic": 0.269889,
+      "n": 47
+     },
+     "2023-12-15": {
+      "ic": 0.1716,
+      "n": 47
+     },
+     "2023-12-22": {
+      "ic": 0.311055,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.27012,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": 1.5988,
+    "mean_ic": 0.06013,
+    "n_days": 26,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": 0.433163,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": 0.218265,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.092653,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": -0.073469,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": 0.018061,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": -0.191327,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": 0.038265,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": 0.256188,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.239362,
+      "n": 47
+     },
+     "2022-09-16": {
+      "ic": 0.078284,
+      "n": 47
+     },
+     "2022-10-14": {
+      "ic": 0.066489,
+      "n": 47
+     },
+     "2022-11-11": {
+      "ic": -0.125347,
+      "n": 47
+     },
+     "2022-12-09": {
+      "ic": -0.11228,
+      "n": 47
+     },
+     "2023-01-06": {
+      "ic": 0.128122,
+      "n": 47
+     },
+     "2023-02-03": {
+      "ic": 0.355111,
+      "n": 47
+     },
+     "2023-03-03": {
+      "ic": -0.226179,
+      "n": 47
+     },
+     "2023-03-31": {
+      "ic": 0.015842,
+      "n": 47
+     },
+     "2023-04-28": {
+      "ic": 0.338691,
+      "n": 47
+     },
+     "2023-05-26": {
+      "ic": -0.191374,
+      "n": 47
+     },
+     "2023-06-23": {
+      "ic": 0.109713,
+      "n": 46
+     },
+     "2023-07-21": {
+      "ic": -0.138699,
+      "n": 46
+     },
+     "2023-08-18": {
+      "ic": -0.235777,
+      "n": 47
+     },
+     "2023-09-15": {
+      "ic": 0.184436,
+      "n": 47
+     },
+     "2023-10-13": {
+      "ic": 0.050695,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": 0.149913,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": 0.269889,
+      "n": 47
+     }
+    }
+   },
+   "spread_top_minus_bottom": 0.013073,
+   "top_quintile_mean_gross": 0.028631
+  },
+  "ridge@h5": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.004979,
+   "brier": null,
+   "equal_weight_day_mean_gross": 0.001632,
+   "mae": {
+    "hit_rate": 0.5338,
+    "mae": 0.031581,
+    "n": 4961
+   },
+   "n_val_days": 104,
+   "n_val_predictions": 5095,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": -0.9706,
+    "mean_ic": -0.018485,
+    "n_days": 104,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-07": {
+      "ic": -0.169796,
+      "n": 49
+     },
+     "2022-01-14": {
+      "ic": 0.132551,
+      "n": 49
+     },
+     "2022-01-21": {
+      "ic": 0.141327,
+      "n": 49
+     },
+     "2022-01-28": {
+      "ic": -0.084898,
+      "n": 49
+     },
+     "2022-02-04": {
+      "ic": -0.267857,
+      "n": 49
+     },
+     "2022-02-11": {
+      "ic": -0.130612,
+      "n": 49
+     },
+     "2022-02-18": {
+      "ic": 0.017245,
+      "n": 49
+     },
+     "2022-02-25": {
+      "ic": 0.057755,
+      "n": 49
+     },
+     "2022-03-04": {
+      "ic": -0.343776,
+      "n": 49
+     },
+     "2022-03-11": {
+      "ic": -0.170204,
+      "n": 49
+     },
+     "2022-03-17": {
+      "ic": -0.046327,
+      "n": 49
+     },
+     "2022-03-25": {
+      "ic": -0.016429,
+      "n": 49
+     },
+     "2022-04-01": {
+      "ic": 0.234796,
+      "n": 49
+     },
+     "2022-04-08": {
+      "ic": -0.189082,
+      "n": 49
+     },
+     "2022-04-13": {
+      "ic": -0.201122,
+      "n": 49
+     },
+     "2022-04-22": {
+      "ic": 0.087245,
+      "n": 49
+     },
+     "2022-04-29": {
+      "ic": -0.067959,
+      "n": 49
+     },
+     "2022-05-06": {
+      "ic": -0.137245,
+      "n": 49
+     },
+     "2022-05-13": {
+      "ic": -0.244388,
+      "n": 49
+     },
+     "2022-05-20": {
+      "ic": 0.065918,
+      "n": 49
+     },
+     "2022-05-27": {
+      "ic": 0.379694,
+      "n": 49
+     },
+     "2022-06-03": {
+      "ic": -0.375,
+      "n": 49
+     },
+     "2022-06-10": {
+      "ic": 0.002041,
+      "n": 49
+     },
+     "2022-06-17": {
+      "ic": 0.062653,
+      "n": 49
+     },
+     "2022-06-24": {
+      "ic": -0.297449,
+      "n": 49
+     },
+     "2022-07-01": {
+      "ic": -0.024286,
+      "n": 49
+     },
+     "2022-07-08": {
+      "ic": 0.075714,
+      "n": 49
+     },
+     "2022-07-15": {
+      "ic": 0.207143,
+      "n": 49
+     },
+     "2022-07-22": {
+      "ic": 0.253582,
+      "n": 48
+     },
+     "2022-07-29": {
+      "ic": -0.036908,
+      "n": 48
+     },
+     "2022-08-05": {
+      "ic": 0.218736,
+      "n": 48
+     },
+     "2022-08-12": {
+      "ic": 0.164785,
+      "n": 48
+     },
+     "2022-08-19": {
+      "ic": 0.216565,
+      "n": 48
+     },
+     "2022-08-26": {
+      "ic": 0.207121,
+      "n": 48
+     },
+     "2022-09-02": {
+      "ic": -0.086409,
+      "n": 48
+     },
+     "2022-09-09": {
+      "ic": 0.258904,
+      "n": 47
+     },
+     "2022-09-16": {
+      "ic": 0.13321,
+      "n": 47
+     },
+     "2022-09-23": {
+      "ic": -0.310823,
+      "n": 47
+     },
+     "2022-09-30": {
+      "ic": 0.028767,
+      "n": 48
+     },
+     "2022-10-07": {
+      "ic": -0.011216,
+      "n": 47
+     },
+     "2022-10-14": {
+      "ic": 0.227451,
+      "n": 47
+     },
+     "2022-10-21": {
+      "ic": 0.018733,
+      "n": 47
+     },
+     "2022-10-28": {
+      "ic": -0.021277,
+      "n": 47
+     },
+     "2022-11-04": {
+      "ic": -0.324468,
+      "n": 47
+     },
+     "2022-11-11": {
+      "ic": 0.044635,
+      "n": 47
+     },
+     "2022-11-18": {
+      "ic": 0.022895,
+      "n": 47
+     },
+     "2022-11-25": {
+      "ic": -0.218548,
+      "n": 47
+     },
+     "2022-12-02": {
+      "ic": 0.127775,
+      "n": 47
+     },
+     "2022-12-09": {
+      "ic": -0.006707,
+      "n": 47
+     },
+     "2022-12-16": {
+      "ic": -0.089963,
+      "n": 47
+     },
+     "2022-12-23": {
+      "ic": -0.165009,
+      "n": 47
+     },
+     "2022-12-30": {
+      "ic": -0.161078,
+      "n": 47
+     },
+     "2023-01-06": {
+      "ic": -0.292206,
+      "n": 47
+     },
+     "2023-01-13": {
+      "ic": -0.076896,
+      "n": 47
+     },
+     "2023-01-20": {
+      "ic": -0.126041,
+      "n": 47
+     },
+     "2023-01-27": {
+      "ic": 0.100486,
+      "n": 47
+     },
+     "2023-02-03": {
+      "ic": -0.176573,
+      "n": 47
+     },
+     "2023-02-10": {
+      "ic": 0.031452,
+      "n": 47
+     },
+     "2023-02-17": {
+      "ic": 0.107655,
+      "n": 47
+     },
+     "2023-02-24": {
+      "ic": 0.338807,
+      "n": 47
+     },
+     "2023-03-03": {
+      "ic": -0.493409,
+      "n": 47
+     },
+     "2023-03-10": {
+      "ic": 0.321924,
+      "n": 47
+     },
+     "2023-03-17": {
+      "ic": -0.104186,
+      "n": 47
+     },
+     "2023-03-24": {
+      "ic": -0.134482,
+      "n": 47
+     },
+     "2023-03-31": {
+      "ic": -0.186517,
+      "n": 47
+     },
+     "2023-04-06": {
+      "ic": 0.44334,
+      "n": 47
+     },
+     "2023-04-13": {
+      "ic": 0.07019,
+      "n": 47
+     },
+     "2023-04-21": {
+      "ic": -0.070537,
+      "n": 47
+     },
+     "2023-04-28": {
+      "ic": -0.224329,
+      "n": 47
+     },
+     "2023-05-05": {
+      "ic": -0.214038,
+      "n": 47
+     },
+     "2023-05-12": {
+      "ic": 0.218316,
+      "n": 47
+     },
+     "2023-05-19": {
+      "ic": -0.165009,
+      "n": 47
+     },
+     "2023-05-26": {
+      "ic": -0.189755,
+      "n": 47
+     },
+     "2023-06-02": {
+      "ic": 0.113437,
+      "n": 47
+     },
+     "2023-06-09": {
+      "ic": -0.178191,
+      "n": 47
+     },
+     "2023-06-16": {
+      "ic": -0.233464,
+      "n": 47
+     },
+     "2023-06-23": {
+      "ic": -0.162003,
+      "n": 47
+     },
+     "2023-06-30": {
+      "ic": 0.158996,
+      "n": 47
+     },
+     "2023-07-07": {
+      "ic": -0.181869,
+      "n": 46
+     },
+     "2023-07-14": {
+      "ic": -0.28597,
+      "n": 46
+     },
+     "2023-07-21": {
+      "ic": -0.082948,
+      "n": 46
+     },
+     "2023-07-28": {
+      "ic": -0.026087,
+      "n": 46
+     },
+     "2023-08-04": {
+      "ic": 0.054579,
+      "n": 47
+     },
+     "2023-08-11": {
+      "ic": 0.06198,
+      "n": 47
+     },
+     "2023-08-18": {
+      "ic": 0.03284,
+      "n": 47
+     },
+     "2023-08-25": {
+      "ic": -0.210222,
+      "n": 47
+     },
+     "2023-09-01": {
+      "ic": -0.149052,
+      "n": 47
+     },
+     "2023-09-08": {
+      "ic": -0.060939,
+      "n": 47
+     },
+     "2023-09-15": {
+      "ic": -0.178538,
+      "n": 47
+     },
+     "2023-09-22": {
+      "ic": 0.009119,
+      "n": 48
+     },
+     "2023-09-29": {
+      "ic": -0.161094,
+      "n": 48
+     },
+     "2023-10-06": {
+      "ic": 0.13287,
+      "n": 48
+     },
+     "2023-10-13": {
+      "ic": 0.270951,
+      "n": 48
+     },
+     "2023-10-20": {
+      "ic": -0.044399,
+      "n": 48
+     },
+     "2023-10-27": {
+      "ic": 0.033543,
+      "n": 48
+     },
+     "2023-11-03": {
+      "ic": -0.133087,
+      "n": 48
+     },
+     "2023-11-10": {
+      "ic": -0.158055,
+      "n": 48
+     },
+     "2023-11-17": {
+      "ic": 0.080656,
+      "n": 48
+     },
+     "2023-11-24": {
+      "ic": 0.417173,
+      "n": 48
+     },
+     "2023-12-01": {
+      "ic": 0.300478,
+      "n": 48
+     },
+     "2023-12-08": {
+      "ic": 0.320126,
+      "n": 48
+     },
+     "2023-12-15": {
+      "ic": -0.08109,
+      "n": 48
+     },
+     "2023-12-22": {
+      "ic": 0.35673,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.305504,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": null,
+   "spread_top_minus_bottom": 0.000913,
+   "top_quintile_mean_gross": 0.005891
+  },
+  "ridge@h60": {
+   "benchmark_relative": "DATA_BLOCKED_BASIS_MISMATCH (raw fills vs TRI; diagnostic spread disclosed, never cash)",
+   "bottom_quintile_mean_gross": 0.053633,
+   "brier": null,
+   "equal_weight_day_mean_gross": 0.032823,
+   "mae": {
+    "hit_rate": 0.5833,
+    "mae": 0.118752,
+    "n": 1135
+   },
+   "n_val_days": 24,
+   "n_val_predictions": 1177,
+   "net_absolute": "DATA_BLOCKED (fee schedule effective 2026-03-01; train/validation has no net months)",
+   "rank_ic": {
+    "ic_t_day_clustered": -0.3323,
+    "mean_ic": -0.013801,
+    "n_days": 24,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": 0.026122,
+      "n": 49
+     },
+     "2022-02-28": {
+      "ic": -0.427347,
+      "n": 49
+     },
+     "2022-03-31": {
+      "ic": -0.107227,
+      "n": 50
+     },
+     "2022-04-29": {
+      "ic": -0.224694,
+      "n": 49
+     },
+     "2022-05-31": {
+      "ic": -0.01574,
+      "n": 48
+     },
+     "2022-06-30": {
+      "ic": 0.133904,
+      "n": 47
+     },
+     "2022-07-29": {
+      "ic": -0.157493,
+      "n": 47
+     },
+     "2022-08-30": {
+      "ic": 0.117368,
+      "n": 47
+     },
+     "2022-09-30": {
+      "ic": 0.049935,
+      "n": 48
+     },
+     "2022-10-31": {
+      "ic": -0.002313,
+      "n": 47
+     },
+     "2022-11-30": {
+      "ic": -0.21901,
+      "n": 47
+     },
+     "2022-12-30": {
+      "ic": -0.169288,
+      "n": 47
+     },
+     "2023-01-31": {
+      "ic": -0.040934,
+      "n": 47
+     },
+     "2023-02-28": {
+      "ic": 0.335569,
+      "n": 47
+     },
+     "2023-03-31": {
+      "ic": 0.046947,
+      "n": 47
+     },
+     "2023-04-28": {
+      "ic": 0.167191,
+      "n": 46
+     },
+     "2023-05-31": {
+      "ic": 0.037681,
+      "n": 46
+     },
+     "2023-06-30": {
+      "ic": -0.189269,
+      "n": 46
+     },
+     "2023-07-31": {
+      "ic": -0.008079,
+      "n": 46
+     },
+     "2023-08-31": {
+      "ic": -0.262835,
+      "n": 47
+     },
+     "2023-09-29": {
+      "ic": 0.358349,
+      "n": 47
+     },
+     "2023-10-31": {
+      "ic": 0.120953,
+      "n": 47
+     },
+     "2023-11-30": {
+      "ic": 0.34667,
+      "n": 47
+     },
+     "2023-12-29": {
+      "ic": -0.247687,
+      "n": 47
+     }
+    }
+   },
+   "rank_ic_thinned_nonoverlap": {
+    "ic_t_day_clustered": -0.2209,
+    "mean_ic": -0.007406,
+    "n_days": 2,
+    "note": "day-level t-stat; names within a day are one correlated group, never pooled as independent rows",
+    "per_day": {
+     "2022-01-31": {
+      "ic": 0.026122,
+      "n": 49
+     },
+     "2023-01-31": {
+      "ic": -0.040934,
+      "n": 47
+     }
+    }
+   },
+   "spread_top_minus_bottom": 0.009175,
+   "top_quintile_mean_gross": 0.062808
+  }
+ },
+ "runs": [
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf1",
+   "horizon": 5,
+   "n_excluded_rows": 996,
+   "n_train_days": 340,
+   "n_train_rows": 16242,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "df522eacad63f169534c8a02a08b9ae6bfeb6af27aa1193d5bbaff0ce54511a3"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf2",
+   "horizon": 5,
+   "n_excluded_rows": 975,
+   "n_train_days": 366,
+   "n_train_rows": 17516,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "d76b72f75b8b4563abf64edb207bc713834b2857cadbd34be637e82f1531a828"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf3",
+   "horizon": 5,
+   "n_excluded_rows": 1001,
+   "n_train_days": 392,
+   "n_train_rows": 18789,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "cd12940345c33a05d833b1254a8711f736b7fb27ec514c6b3fcc82ff96e4c4b0"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf4",
+   "horizon": 5,
+   "n_excluded_rows": 1056,
+   "n_train_days": 418,
+   "n_train_rows": 20063,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "64002fb9758b4d6fd3d4e31058a9072bf41e2e5a3d67da77ce5c4f1a5a248b8e"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf1",
+   "horizon": 20,
+   "n_excluded_rows": 1192,
+   "n_train_days": 337,
+   "n_train_rows": 16046,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "75a3993976758fa5d01428d744e02f1f29954ef903c4c5452b9ff33f3cd73674"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf2",
+   "horizon": 20,
+   "n_excluded_rows": 1178,
+   "n_train_days": 363,
+   "n_train_rows": 17320,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "0f51a936a8680da9528685b81a758cc59cd3f4d770fc97899fd994ceb810e68b"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf3",
+   "horizon": 20,
+   "n_excluded_rows": 1206,
+   "n_train_days": 389,
+   "n_train_rows": 18586,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "a30723a6a4a8446990e15dda99eecc88203ef841795476d3e770e1410a56cc16"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf4",
+   "horizon": 20,
+   "n_excluded_rows": 1263,
+   "n_train_days": 415,
+   "n_train_rows": 19860,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "eee5bc6c3651bd95f8a0462dc37225bd90fde46977e29cf91115ab0b24c704f9"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf1",
+   "horizon": 60,
+   "n_excluded_rows": 420,
+   "n_train_days": 75,
+   "n_train_rows": 3548,
+   "n_val_days": 6,
+   "n_val_rows": 301,
+   "run_id": "5c6e7051caefc8d9cfd0705e3ec11f1f6f19971e54243fda8f2ea55abccc9909"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf2",
+   "horizon": 60,
+   "n_excluded_rows": 425,
+   "n_train_days": 81,
+   "n_train_rows": 3842,
+   "n_val_days": 5,
+   "n_val_rows": 251,
+   "run_id": "ece4a299afcb810c590c819cb1676903127b0eac3ef368ad93db03bc67a1997e"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf3",
+   "horizon": 60,
+   "n_excluded_rows": 387,
+   "n_train_days": 87,
+   "n_train_rows": 4132,
+   "n_val_days": 6,
+   "n_val_rows": 300,
+   "run_id": "d42ae6a9b7cd690cc9f3a6870c832a00d94c322f2df9539aff579aeb813a2444"
+  },
+  {
+   "diagnostics": {},
+   "family": "climatology_binary",
+   "fold": "wf4",
+   "horizon": 60,
+   "n_excluded_rows": 402,
+   "n_train_days": 93,
+   "n_train_rows": 4427,
+   "n_val_days": 7,
+   "n_val_rows": 350,
+   "run_id": "93e7a6e4d8c2158ecbfacb4613ac5662560dade5e647cf2d9182f938fed0caa2"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5034,
+    "train_brier": 0.241995
+   },
+   "family": "hgb",
+   "fold": "wf1",
+   "horizon": 5,
+   "n_excluded_rows": 996,
+   "n_train_days": 340,
+   "n_train_rows": 16242,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "16821e8fe20b115c98e954f6bbcb147bacd1cc48c4be0dba16bd9e71db782f91"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5022,
+    "train_brier": 0.246923
+   },
+   "family": "hgb",
+   "fold": "wf2",
+   "horizon": 5,
+   "n_excluded_rows": 975,
+   "n_train_days": 366,
+   "n_train_rows": 17516,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "18c3e8aca4b3861f17a978eac05eb06a906527da8971e145ae54c8d9a91fa81c"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5084,
+    "train_brier": 0.245977
+   },
+   "family": "hgb",
+   "fold": "wf3",
+   "horizon": 5,
+   "n_excluded_rows": 1001,
+   "n_train_days": 392,
+   "n_train_rows": 18789,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "97391734fd8b952154688a95673f215309510a4c7b68e78d45ee67eff2708f38"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5093,
+    "train_brier": 0.247012
+   },
+   "family": "hgb",
+   "fold": "wf4",
+   "horizon": 5,
+   "n_excluded_rows": 1056,
+   "n_train_days": 418,
+   "n_train_rows": 20063,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "748b183cd4cf84f9d123df92153cee8620abf5bac2b4e6e5f037f2933d029b1d"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5343,
+    "train_brier": 0.236909
+   },
+   "family": "hgb",
+   "fold": "wf1",
+   "horizon": 20,
+   "n_excluded_rows": 1192,
+   "n_train_days": 337,
+   "n_train_rows": 16046,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "89aac595161f99952656e6303efd767b3a7c68814e232d2f123a4b63471e2981"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5293,
+    "train_brier": 0.242189
+   },
+   "family": "hgb",
+   "fold": "wf2",
+   "horizon": 20,
+   "n_excluded_rows": 1178,
+   "n_train_days": 363,
+   "n_train_rows": 17320,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "d89e49050732d9932c1c690c1ccfbb2e90621b5d657c1fabeb4ae23cead6fa7e"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5352,
+    "train_brier": 0.239017
+   },
+   "family": "hgb",
+   "fold": "wf3",
+   "horizon": 20,
+   "n_excluded_rows": 1206,
+   "n_train_days": 389,
+   "n_train_rows": 18586,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "7f800c8581a71e74fdaf0843779fe0d1e76bccb43065ac0b40befa40d416da30"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5354,
+    "train_brier": 0.23803
+   },
+   "family": "hgb",
+   "fold": "wf4",
+   "horizon": 20,
+   "n_excluded_rows": 1263,
+   "n_train_days": 415,
+   "n_train_rows": 19860,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "00cd54ed0ca01a3a6d4815e0358716b64f5761b400f4c5c7051d6cb0a3fbd6f9"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5699,
+    "train_brier": 0.214999
+   },
+   "family": "hgb",
+   "fold": "wf1",
+   "horizon": 60,
+   "n_excluded_rows": 420,
+   "n_train_days": 75,
+   "n_train_rows": 3548,
+   "n_val_days": 6,
+   "n_val_rows": 301,
+   "run_id": "63ac384bce50e1137a10546821f228a0e578cba1f4d73004145bca28332cf170"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5562,
+    "train_brier": 0.21947
+   },
+   "family": "hgb",
+   "fold": "wf2",
+   "horizon": 60,
+   "n_excluded_rows": 425,
+   "n_train_days": 81,
+   "n_train_rows": 3842,
+   "n_val_days": 5,
+   "n_val_rows": 251,
+   "run_id": "bef3b6579b401d407c0ef10acec883b75f2da2b6506bf6311e5db5a1be9f0741"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5574,
+    "train_brier": 0.219411
+   },
+   "family": "hgb",
+   "fold": "wf3",
+   "horizon": 60,
+   "n_excluded_rows": 387,
+   "n_train_days": 87,
+   "n_train_rows": 4132,
+   "n_val_days": 6,
+   "n_val_rows": 300,
+   "run_id": "35f607b0d4db6135bf05534f97b061180026ffda5cea990d0509adc2d7313b0b"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5546,
+    "train_brier": 0.222064
+   },
+   "family": "hgb",
+   "fold": "wf4",
+   "horizon": 60,
+   "n_excluded_rows": 402,
+   "n_train_days": 93,
+   "n_train_rows": 4427,
+   "n_val_days": 7,
+   "n_val_rows": 350,
+   "run_id": "c49f31d27b635ed3a3d73cf7da868e9eee46386fa638c5e50bd661c56ce36f26"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5038,
+    "train_brier": 0.249768
+   },
+   "family": "logistic",
+   "fold": "wf1",
+   "horizon": 5,
+   "n_excluded_rows": 996,
+   "n_train_days": 340,
+   "n_train_rows": 16242,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "7f5f2d03e7f07e44f84c56f8dec23f17c1e0c58426c651492337036b3cf05008"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5024,
+    "train_brier": 0.24977
+   },
+   "family": "logistic",
+   "fold": "wf2",
+   "horizon": 5,
+   "n_excluded_rows": 1012,
+   "n_train_days": 366,
+   "n_train_rows": 17516,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "af47e418d7848402618b40859d359ae7e19557192fe613791c4d7f78b244dc60"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5097,
+    "train_brier": 0.249527
+   },
+   "family": "logistic",
+   "fold": "wf3",
+   "horizon": 5,
+   "n_excluded_rows": 1053,
+   "n_train_days": 392,
+   "n_train_rows": 18789,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "730175984b209b6554d64115bb7bf415565ff1b64ac8525ba98622058dbcd811"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5105,
+    "train_brier": 0.249466
+   },
+   "family": "logistic",
+   "fold": "wf4",
+   "horizon": 5,
+   "n_excluded_rows": 1073,
+   "n_train_days": 418,
+   "n_train_rows": 20063,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "99c32d41c8f621d4e4bb108b22b6d73ef07e582d2a27efbc792eb094414e1fb0"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5461,
+    "train_brier": 0.246312
+   },
+   "family": "logistic",
+   "fold": "wf1",
+   "horizon": 20,
+   "n_excluded_rows": 1192,
+   "n_train_days": 337,
+   "n_train_rows": 16046,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "07a3862037b9cfc88cf16f70ea5b03a5a95b9375a6ca0581230b5d6356a6828e"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5394,
+    "train_brier": 0.247026
+   },
+   "family": "logistic",
+   "fold": "wf2",
+   "horizon": 20,
+   "n_excluded_rows": 1215,
+   "n_train_days": 363,
+   "n_train_rows": 17320,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "515a059cdc295e133c0b19b99bc27cb222803052dc8f2793f464486312bdd8a8"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5456,
+    "train_brier": 0.246248
+   },
+   "family": "logistic",
+   "fold": "wf3",
+   "horizon": 20,
+   "n_excluded_rows": 1258,
+   "n_train_days": 389,
+   "n_train_rows": 18586,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "b4f1224591e67c913a60ac60a7a9820ed875216eccd0daef71189198b6d5b074"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5452,
+    "train_brier": 0.246114
+   },
+   "family": "logistic",
+   "fold": "wf4",
+   "horizon": 20,
+   "n_excluded_rows": 1280,
+   "n_train_days": 415,
+   "n_train_rows": 19860,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "9cc1d0c6a86457f95270e94973ec473fb6fe6115cc15d52e1448915e2a581f7f"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5958,
+    "train_brier": 0.233908
+   },
+   "family": "logistic",
+   "fold": "wf1",
+   "horizon": 60,
+   "n_excluded_rows": 420,
+   "n_train_days": 75,
+   "n_train_rows": 3548,
+   "n_val_days": 6,
+   "n_val_rows": 301,
+   "run_id": "d9de5baf48a670645c67f51ea2965e0d8e0ba7d2709210b350b0d768382f6bb9"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5776,
+    "train_brier": 0.238913
+   },
+   "family": "logistic",
+   "fold": "wf2",
+   "horizon": 60,
+   "n_excluded_rows": 433,
+   "n_train_days": 81,
+   "n_train_rows": 3842,
+   "n_val_days": 5,
+   "n_val_rows": 251,
+   "run_id": "162fc3c8378236b90941c8ed421313498c44e9c599c2c02d0fb482ad6800cb14"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.5775,
+    "train_brier": 0.240003
+   },
+   "family": "logistic",
+   "fold": "wf3",
+   "horizon": 60,
+   "n_excluded_rows": 399,
+   "n_train_days": 87,
+   "n_train_rows": 4132,
+   "n_val_days": 6,
+   "n_val_rows": 300,
+   "run_id": "6448f26c3f87e49c7cdda4154a1b6a87c71ee344eba65d4320e3d0fe6eeccd90"
+  },
+  {
+   "diagnostics": {
+    "base_rate_train": 0.573,
+    "train_brier": 0.240299
+   },
+   "family": "logistic",
+   "fold": "wf4",
+   "horizon": 60,
+   "n_excluded_rows": 407,
+   "n_train_days": 93,
+   "n_train_rows": 4427,
+   "n_val_days": 7,
+   "n_val_rows": 350,
+   "run_id": "e5fe5b4714f1eabb75af4f481bce000f52e6e999274f6cb2a5eb2010e326ba26"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf1",
+   "horizon": 5,
+   "n_excluded_rows": 996,
+   "n_train_days": 340,
+   "n_train_rows": 16242,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "c82a9cc6ce40f6d417b1f35e5722812b06a2e6d8f09aad0c5d71fe609a47651c"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf2",
+   "horizon": 5,
+   "n_excluded_rows": 1001,
+   "n_train_days": 366,
+   "n_train_rows": 17516,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "1416237b1897c99456c3c481ab602b0978851af5e58ea6e45c8355b52d708adf"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf3",
+   "horizon": 5,
+   "n_excluded_rows": 1001,
+   "n_train_days": 392,
+   "n_train_rows": 18789,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "80112c1d0c4ef1d55ee701475e3b351a1cc15ec614c8e62e2a0d3b025f7e3ea0"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf4",
+   "horizon": 5,
+   "n_excluded_rows": 1056,
+   "n_train_days": 418,
+   "n_train_rows": 20063,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "6ae16fd160edf4692ec3b6a9e0113be8d4e26ae6ee8369c2f8cdaf99061c5249"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf1",
+   "horizon": 20,
+   "n_excluded_rows": 1192,
+   "n_train_days": 337,
+   "n_train_rows": 16046,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "77a44f17b1556c025c706ab1f18470159cf2775598a37a2a023ceae4d5ba599f"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf2",
+   "horizon": 20,
+   "n_excluded_rows": 1204,
+   "n_train_days": 363,
+   "n_train_rows": 17320,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "9b715faaa968b634cd79884c7d6d363e0d6c732d269005a5cc6b61f95ccae628"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf3",
+   "horizon": 20,
+   "n_excluded_rows": 1206,
+   "n_train_days": 389,
+   "n_train_rows": 18586,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "f6fb3fb7a5dce6e35eb9c1448292c47a912726fbb71b20156f7746c1d70bfb0c"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf4",
+   "horizon": 20,
+   "n_excluded_rows": 1263,
+   "n_train_days": 415,
+   "n_train_rows": 19860,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "ecf8d328a6e36e8ca3cde71cce88d19a9be7ef778f4eb47fe9e694feccafa76e"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf1",
+   "horizon": 60,
+   "n_excluded_rows": 420,
+   "n_train_days": 75,
+   "n_train_rows": 3548,
+   "n_val_days": 6,
+   "n_val_rows": 301,
+   "run_id": "894536e9e2bf978bae6b28152b07cd4c7a5e864e86908fe4247ea2774f0ecd1c"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf2",
+   "horizon": 60,
+   "n_excluded_rows": 431,
+   "n_train_days": 81,
+   "n_train_rows": 3842,
+   "n_val_days": 5,
+   "n_val_rows": 251,
+   "run_id": "19c7eb5d5e7b5c00fd0b6346af3288c105f30d167d1c1623e6c2b6264304d3b4"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf3",
+   "horizon": 60,
+   "n_excluded_rows": 387,
+   "n_train_days": 87,
+   "n_train_rows": 4132,
+   "n_val_days": 6,
+   "n_val_rows": 300,
+   "run_id": "fe364243b1275a1be396d644893dfe2c57bd8ba7577281166187b30042bf90c4"
+  },
+  {
+   "diagnostics": {},
+   "family": "momentum_rank",
+   "fold": "wf4",
+   "horizon": 60,
+   "n_excluded_rows": 402,
+   "n_train_days": 93,
+   "n_train_rows": 4427,
+   "n_val_days": 7,
+   "n_val_rows": 350,
+   "run_id": "6f435af55856280c40be77ee2209534850784bfbcca393dbb82d8f5ad7a37586"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf1",
+   "horizon": 5,
+   "n_excluded_rows": 996,
+   "n_train_days": 340,
+   "n_train_rows": 16242,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "9292de6f128687690f8c632375e5117df6cbe54b62b95eb20a32edc9d742050f"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf2",
+   "horizon": 5,
+   "n_excluded_rows": 977,
+   "n_train_days": 366,
+   "n_train_rows": 17516,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "2d673eb664e33f53baa1f459ac1bcee237c989ea495aa6ae7861935ff9c86921"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf3",
+   "horizon": 5,
+   "n_excluded_rows": 1001,
+   "n_train_days": 392,
+   "n_train_rows": 18789,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "85cf90e1c4d9a5208376a16dff9a4b50a80c30a286ed44769b5914661b148b2b"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf4",
+   "horizon": 5,
+   "n_excluded_rows": 1056,
+   "n_train_days": 418,
+   "n_train_rows": 20063,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "62e5f4ad4e666673a9d31e93116da6c0537c042bd10935c064b099a7d8755487"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf1",
+   "horizon": 20,
+   "n_excluded_rows": 1192,
+   "n_train_days": 337,
+   "n_train_rows": 16046,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "0b2abd7002177bfecd4f1086f32f90033387d3fb74c253bf98ad4a7da3fd11e9"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf2",
+   "horizon": 20,
+   "n_excluded_rows": 1180,
+   "n_train_days": 363,
+   "n_train_rows": 17320,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "32b9ed57f2e3a9ba3defeee5ec8290a93b60cca6cfb59b3bf63e546c38ddf603"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf3",
+   "horizon": 20,
+   "n_excluded_rows": 1206,
+   "n_train_days": 389,
+   "n_train_rows": 18586,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "784db5de7777d078a3aadbeaa46455e3bed53b0e0c18d461eb4ab4416970c3b1"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf4",
+   "horizon": 20,
+   "n_excluded_rows": 1263,
+   "n_train_days": 415,
+   "n_train_rows": 19860,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "d2fe76717c6353ba5a35f8b8c51ed980ac53ecc087456590783c76ea1c08b3bc"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf1",
+   "horizon": 60,
+   "n_excluded_rows": 420,
+   "n_train_days": 75,
+   "n_train_rows": 3548,
+   "n_val_days": 6,
+   "n_val_rows": 301,
+   "run_id": "ee3f511d9245a0fdb4d2031e75fa515b09172283fde6272c37433a7ed3f5ed48"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf2",
+   "horizon": 60,
+   "n_excluded_rows": 426,
+   "n_train_days": 81,
+   "n_train_rows": 3842,
+   "n_val_days": 5,
+   "n_val_rows": 251,
+   "run_id": "9207a0b769f3c6ddb7bdb098a6a12366cb2f515594a58b36a96b270f1f1dc96d"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf3",
+   "horizon": 60,
+   "n_excluded_rows": 387,
+   "n_train_days": 87,
+   "n_train_rows": 4132,
+   "n_val_days": 6,
+   "n_val_rows": 300,
+   "run_id": "8d5be7170d06ec5a33a8a1c564ae8f38ce0a8b01d996102e7847de7409c391b1"
+  },
+  {
+   "diagnostics": {},
+   "family": "reversal_rank",
+   "fold": "wf4",
+   "horizon": 60,
+   "n_excluded_rows": 402,
+   "n_train_days": 93,
+   "n_train_rows": 4427,
+   "n_val_days": 7,
+   "n_val_rows": 350,
+   "run_id": "9bf79033a0d6b5707e9ca9432a7d3f5a958af0efa7424e4446093869fdd93af9"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.00357,
+     "liquidity_20": -9.4e-05,
+     "overnight_gap": 0.00469,
+     "prox_252": 0.000739,
+     "rel_mom_60": -0.001566,
+     "ret_20": 0.001489,
+     "ret_60": 0.003043,
+     "trend_consistency_20": 8.8e-05,
+     "vol_20": -0.000164,
+     "volume_ratio_20": -0.000977
+    },
+    "train_r2": 0.010145
+   },
+   "family": "ridge",
+   "fold": "wf1",
+   "horizon": 5,
+   "n_excluded_rows": 996,
+   "n_train_days": 340,
+   "n_train_rows": 16242,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "e5087e93cdff9fb05e23d80a09db6404cc91faf49df80468571020b9c93482bf"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.003566,
+     "liquidity_20": -0.00014,
+     "overnight_gap": 0.004295,
+     "prox_252": 0.000639,
+     "rel_mom_60": -0.001397,
+     "ret_20": 0.001521,
+     "ret_60": 0.002888,
+     "trend_consistency_20": -0.000296,
+     "vol_20": -6.1e-05,
+     "volume_ratio_20": -0.000872
+    },
+    "train_r2": 0.008811
+   },
+   "family": "ridge",
+   "fold": "wf2",
+   "horizon": 5,
+   "n_excluded_rows": 1012,
+   "n_train_days": 366,
+   "n_train_rows": 17516,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "80912949c5742d80f7d1c0633a6f99c6f27641422f9d414513ae57c9a9d96ba0"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.003442,
+     "liquidity_20": 0.000103,
+     "overnight_gap": 0.004331,
+     "prox_252": 0.000292,
+     "rel_mom_60": -0.000429,
+     "ret_20": 0.001445,
+     "ret_60": 0.001514,
+     "trend_consistency_20": 2e-06,
+     "vol_20": -0.000688,
+     "volume_ratio_20": -0.001019
+    },
+    "train_r2": 0.008869
+   },
+   "family": "ridge",
+   "fold": "wf3",
+   "horizon": 5,
+   "n_excluded_rows": 1053,
+   "n_train_days": 392,
+   "n_train_rows": 18789,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "e43f721ac0b30d3b4ea2c13c8f63e21134194d8b0b1a2609153b695e81f82cf0"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.003198,
+     "liquidity_20": 0.0001,
+     "overnight_gap": 0.004198,
+     "prox_252": -0.000101,
+     "rel_mom_60": -0.000296,
+     "ret_20": 0.001018,
+     "ret_60": 0.001396,
+     "trend_consistency_20": 0.000417,
+     "vol_20": -0.000935,
+     "volume_ratio_20": -0.001212
+    },
+    "train_r2": 0.008699
+   },
+   "family": "ridge",
+   "fold": "wf4",
+   "horizon": 5,
+   "n_excluded_rows": 1073,
+   "n_train_days": 418,
+   "n_train_rows": 20063,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "91bb8002bd9a1c1bea05dba7bfc94b9677548864affaaff7ebb6cfefe747383f"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.018147,
+     "liquidity_20": 0.001241,
+     "overnight_gap": 0.003683,
+     "prox_252": 0.001408,
+     "rel_mom_60": 0.00113,
+     "ret_20": 0.007842,
+     "ret_60": 0.006583,
+     "trend_consistency_20": -0.003029,
+     "vol_20": -0.000276,
+     "volume_ratio_20": 0.000156
+    },
+    "train_r2": 0.015695
+   },
+   "family": "ridge",
+   "fold": "wf1",
+   "horizon": 20,
+   "n_excluded_rows": 1192,
+   "n_train_days": 337,
+   "n_train_rows": 16046,
+   "n_val_days": 25,
+   "n_val_rows": 1250,
+   "run_id": "fec035f9d689b36b4a509b28a2c8b22b44543c3b529d5fb3007d4173b96fdfcd"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.017617,
+     "liquidity_20": 0.000198,
+     "overnight_gap": 0.003291,
+     "prox_252": 0.000941,
+     "rel_mom_60": -0.000703,
+     "ret_20": 0.007251,
+     "ret_60": 0.008885,
+     "trend_consistency_20": -0.004105,
+     "vol_20": 0.001079,
+     "volume_ratio_20": 0.000428
+    },
+    "train_r2": 0.016353
+   },
+   "family": "ridge",
+   "fold": "wf2",
+   "horizon": 20,
+   "n_excluded_rows": 1215,
+   "n_train_days": 363,
+   "n_train_rows": 17320,
+   "n_val_days": 26,
+   "n_val_rows": 1301,
+   "run_id": "6f9e52aff3969733d71f7e141f6951b118f5bc8d89300275cf70d6ef0078ddee"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.018513,
+     "liquidity_20": 0.000546,
+     "overnight_gap": 0.002525,
+     "prox_252": 0.000233,
+     "rel_mom_60": 0.00194,
+     "ret_20": 0.007782,
+     "ret_60": 0.005945,
+     "trend_consistency_20": -0.003112,
+     "vol_20": -0.000822,
+     "volume_ratio_20": 0.000277
+    },
+    "train_r2": 0.016085
+   },
+   "family": "ridge",
+   "fold": "wf3",
+   "horizon": 20,
+   "n_excluded_rows": 1258,
+   "n_train_days": 389,
+   "n_train_rows": 18586,
+   "n_val_days": 26,
+   "n_val_rows": 1300,
+   "run_id": "16548ec3843224da728273c1a5b6b2c85194c3a5497829782cb33a6799112b79"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.018212,
+     "liquidity_20": 0.000466,
+     "overnight_gap": 0.002392,
+     "prox_252": -0.00051,
+     "rel_mom_60": 0.002218,
+     "ret_20": 0.007405,
+     "ret_60": 0.005284,
+     "trend_consistency_20": -0.002302,
+     "vol_20": -0.001261,
+     "volume_ratio_20": 0.000169
+    },
+    "train_r2": 0.016197
+   },
+   "family": "ridge",
+   "fold": "wf4",
+   "horizon": 20,
+   "n_excluded_rows": 1280,
+   "n_train_days": 415,
+   "n_train_rows": 19860,
+   "n_val_days": 27,
+   "n_val_rows": 1350,
+   "run_id": "47b0a9385715bd21a360547c1bf4d5cffcf2e751cd1698186c3317b66cc1b026"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.041288,
+     "liquidity_20": 0.008845,
+     "overnight_gap": 0.01955,
+     "prox_252": 0.001292,
+     "rel_mom_60": 0.023357,
+     "ret_20": 0.012633,
+     "ret_60": -0.004324,
+     "trend_consistency_20": -0.003533,
+     "vol_20": 0.001235,
+     "volume_ratio_20": -0.004681
+    },
+    "train_r2": 0.069402
+   },
+   "family": "ridge",
+   "fold": "wf1",
+   "horizon": 60,
+   "n_excluded_rows": 420,
+   "n_train_days": 75,
+   "n_train_rows": 3548,
+   "n_val_days": 6,
+   "n_val_rows": 301,
+   "run_id": "cc5d458dc2279ead2cc9c51aad7a0287116db924bc4dc0fafdf1557aeb2bc24a"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.035112,
+     "liquidity_20": 0.006399,
+     "overnight_gap": 0.01782,
+     "prox_252": -0.003195,
+     "rel_mom_60": 0.0212,
+     "ret_20": 0.012514,
+     "ret_60": -0.003098,
+     "trend_consistency_20": -0.005298,
+     "vol_20": 0.003614,
+     "volume_ratio_20": -0.005249
+    },
+    "train_r2": 0.064405
+   },
+   "family": "ridge",
+   "fold": "wf2",
+   "horizon": 60,
+   "n_excluded_rows": 433,
+   "n_train_days": 81,
+   "n_train_rows": 3842,
+   "n_val_days": 5,
+   "n_val_rows": 251,
+   "run_id": "55ee27402aa2a530fadc7a55e45101f158b0101102d750b94a9cf442d1d28be8"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.034142,
+     "liquidity_20": 0.004318,
+     "overnight_gap": 0.016516,
+     "prox_252": -0.003655,
+     "rel_mom_60": 0.020781,
+     "ret_20": 0.011117,
+     "ret_60": -0.002029,
+     "trend_consistency_20": -0.004605,
+     "vol_20": 0.003862,
+     "volume_ratio_20": -0.003948
+    },
+    "train_r2": 0.058273
+   },
+   "family": "ridge",
+   "fold": "wf3",
+   "horizon": 60,
+   "n_excluded_rows": 399,
+   "n_train_days": 87,
+   "n_train_rows": 4132,
+   "n_val_days": 6,
+   "n_val_rows": 300,
+   "run_id": "0013020ac5a30c0985a62499f8b2f770aa9c7dc20aa8d40d3e9fae4cd6d5d048"
+  },
+  {
+   "diagnostics": {
+    "coef": {
+     "drawdown_60": 0.033523,
+     "liquidity_20": 0.003919,
+     "overnight_gap": 0.01332,
+     "prox_252": -0.004634,
+     "rel_mom_60": 0.021014,
+     "ret_20": 0.010411,
+     "ret_60": -0.003496,
+     "trend_consistency_20": -0.004175,
+     "vol_20": 0.005444,
+     "volume_ratio_20": -0.003404
+    },
+    "train_r2": 0.058571
+   },
+   "family": "ridge",
+   "fold": "wf4",
+   "horizon": 60,
+   "n_excluded_rows": 407,
+   "n_train_days": 93,
+   "n_train_rows": 4427,
+   "n_val_days": 7,
+   "n_val_rows": 350,
+   "run_id": "74eea9031cd279529cadd33f95be86db41772dc4a06515095d80e21e9f07ee5c"
+  }
+ ],
+ "snapshots": 25316,
+ "verdict_rules": "permuted-IC below 90th percentile -> REJECTED; diagnostics-only -> RESEARCH_DIAGNOSTIC; net absolute and benchmark-relative economics typed DATA_BLOCKED; nothing promotes to TRADE",
+ "windows": {
+  "new_sealed_holdout": "NEW_SEALED_HOLDOUT_UNAVAILABLE",
+  "revealed_w2_holdout_quarantined": [
+   "2024-06-21",
+   "2026-09-17"
+  ],
+  "train": [
+   "2015-06-01",
+   "2021-12-31"
+  ],
+  "validation": [
+   "2022-01-01",
+   "2023-12-31"
+  ]
+ }
+}

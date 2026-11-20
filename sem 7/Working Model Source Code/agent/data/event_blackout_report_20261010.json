@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-10-10T16:07:46.764046+00:00",
+  "experiment": "event_blackout_v1",
+  "manifest": "event_blackout_v1",
+  "1_data_integrity": {
+    "manifest_frozen_before_outcomes": true
+  },
+  "2_event_coverage": {
+    "missing": "no coverage report"
+  },
+  "3_classifier_health": {
+    "missing": "no classifications scored yet"
+  },
+  "4_pit_verification": {
+    "membership_source_version": "75ebfac3b5d1fb22"
+  },
+  "5_sample_quality": {
+    "n_events": 0,
+    "n_companies": 0,
+    "n_event_days": 0,
+    "by_type": {},
+    "verdict_hint": "EVENT_FORWARD_INFANCY"
+  },
+  "6_control_metrics": "pending sample",
+  "7_candidate_metrics": "pending sample",
+  "8_tail_risk_effect": "pending sample",
+  "9_opportunity_cost": "pending sample",
+  "10_concentration": {
+    "missing": "no per-event pnl"
+  },
+  "11_failure_analysis": [
+    "no live announcement feed yet \u2014 sample is zero by construction",
+    "effective_ts approximated by publication_ts until meeting-date extraction",
+    "too few events (n=0 < 30 minimum) \u2014 any effect is noise",
+    "taxonomy error rate unmeasured \u2014 category labels uncertified",
+    "no economics measured yet \u2014 classification quality proves nothing (\u00a786)"
+  ],
+  "12_verdict": "EVENT_FORWARD_INFANCY",
+  "13_evidence_still_needed": [
+    "economics",
+    "coverage",
+    "live feed rows",
+    "30 eligible events / 10 companies / 20 event-days"
+  ]
+}

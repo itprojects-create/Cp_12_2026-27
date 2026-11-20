@@ -1,0 +1,11 @@
+{
+  "session_id": "c5e42f530c880b73",
+  "status": "done",
+  "action": "sell",
+  "authority": "RESEARCH_ONLY",
+  "analyst_reports": 5,
+  "as_of": "2026-10-10T19:31:13.506159+00:00",
+  "quote_source_verified": "yahoo",
+  "fyers_token_configured": false,
+  "resumed_from_checkpoints": true
+}

@@ -1,0 +1,76 @@
+{
+  "frozen_rule": "app/core/trend_core_v4.py (prereg data/prereg_core_v4.md, one run)",
+  "universe": "broad",
+  "n_days": 1471,
+  "n_names": 309,
+  "n_excluded": 186,
+  "excluded_sample": [
+    "360ONE.NS",
+    "AADHARHFC.NS",
+    "AAVAS.NS",
+    "ABCAPITAL.NS",
+    "ABDL.NS",
+    "ABSLAMC.NS",
+    "ACMESOLAR.NS",
+    "ACUTAAS.NS",
+    "ADANIGREEN.NS",
+    "AEGISVOPAK.NS",
+    "AETHER.NS",
+    "AFCONS.NS",
+    "AFFLE.NS",
+    "AIIL.NS",
+    "ALKEM.NS",
+    "AMBER.NS",
+    "ANANDRATHI.NS",
+    "ANGELONE.NS",
+    "ANTHEM.NS",
+    "ANURAS.NS",
+    "APTUS.NS",
+    "ASTERDM.NS",
+    "ATGL.NS",
+    "ATHERENERG.NS",
+    "AUBANK.NS",
+    "AWL.NS",
+    "AZAD.NS",
+    "BAJAJHFL.NS",
+    "BANDHANBNK.NS",
+    "BDL.NS"
+  ],
+  "total_return": 1.4753,
+  "cagr": 0.168,
+  "ann_vol": 0.1068,
+  "sharpe": 1.508,
+  "max_drawdown": 0.244,
+  "total_cost": 0.05417,
+  "avg_exposure": 0.5387,
+  "n_switches": 2233,
+  "yearly": {
+    "2015": {
+      "ret": 0.0448,
+      "intra_yr_dd": -0.096
+    },
+    "2016": {
+      "ret": 0.2858,
+      "intra_yr_dd": -0.2385
+    },
+    "2017": {
+      "ret": 0.5005,
+      "intra_yr_dd": -0.3329
+    },
+    "2018": {
+      "ret": -0.0633,
+      "intra_yr_dd": -0.1225
+    },
+    "2019": {
+      "ret": -0.067,
+      "intra_yr_dd": -0.1564
+    },
+    "2020": {
+      "ret": 0.4051,
+      "intra_yr_dd": -0.3176
+    }
+  },
+  "bench_cagr_corrected": 0.1646,
+  "bench_note": "corrected math (mean of total returns); v2/v3 bench numbers keep old formula",
+  "generated_at": "2026-10-06T17:59:19.639968+00:00"
+}

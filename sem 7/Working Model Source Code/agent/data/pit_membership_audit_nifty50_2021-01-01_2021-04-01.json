@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-10-10T16:02:26.715431+00:00",
+  "universe": "nifty50",
+  "index_id": "217",
+  "strict": false,
+  "period": [
+    "2021-01-01",
+    "2021-04-01"
+  ],
+  "n_rebalances": 13,
+  "n_unknown": 0,
+  "unknown_dates": [],
+  "n_violations": 0,
+  "violations": [],
+  "source_version": "75ebfac3b5d1fb22",
+  "rows": [
+    {
+      "date": "2021-01-01",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [
+        "ADANIPORTS.NS",
+        "ASIANPAINT.NS",
+        "AXISBANK.NS",
+        "BAJAJ-AUTO.NS",
+        "BAJAJFINSV.NS",
+        "BAJFINANCE.NS",
+        "BHARTIARTL.NS",
+        "BPCL.NS",
+        "BRITANNIA.NS",
+        "CIPLA.NS"
+      ],
+      "n_added": 50,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-01-08",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-01-15",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-01-22",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-01-29",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-02-05",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-02-12",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-02-19",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-02-26",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-03-05",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-03-12",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-03-19",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    },
+    {
+      "date": "2021-03-26",
+      "n": 50,
+      "hash": "9aee8749648d4275",
+      "added": [],
+      "n_added": 0,
+      "removed": [],
+      "n_removed": 0,
+      "pit_status": "PARTIAL",
+      "coverage": 0.3
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-10-10T15:48:11.000615+00:00",
+  "arms": {
+    "A": "deterministic core-long 0.05 (no overlay)",
+    "B": "core + deterministic veto (synthetic operator check)",
+    "C": "core + cached-LLM overlay via llm_overlay_size (veto/resize only)"
+  },
+  "n_scenarios": 360,
+  "source_files": [
+    "eval_report_20260918T165134Z.json",
+    "eval_report_20260919T133151Z.json",
+    "eval_report_20260919T160958Z.json",
+    "eval_report_20260920T074259Z.json",
+    "eval_report_20260920T092702Z.json",
+    "eval_report_20260920T113129Z.json",
+    "eval_report_20260920T164633Z.json",
+    "eval_report_20261005T091856Z.json",
+    "eval_report_20261005T174643Z.json",
+    "eval_report_20261006T062859Z.json",
+    "eval_report_20261006T082257Z.json",
+    "eval_report_20261006T123258Z.json",
+    "eval_report_20261006T123319Z.json",
+    "eval_report_deviloff_20261009T131202Z.json",
+    "eval_report_retry_20261006T160307Z.json"
+  ],
+  "comparability": "labels predate the split-adjust fix in some reports (see retry notes); as-is, zero new tokens spent",
+  "books": {
+    "n": 360,
+    "A_final": 4691170.32,
+    "C_final": 4602397.35,
+    "A_profit": -308829.68,
+    "C_profit": -397602.65,
+    "C_minus_A": -88772.97,
+    "n_veto": 66,
+    "n_resize": 119,
+    "n_pass": 175,
+    "capital": 5000000.0
+  },
+  "verdict": {
+    "verdict": "OFF",
+    "why": "C adds no incremental value even before inference cost",
+    "cost_lower_rs": 129600.0,
+    "cost_upper_rs": 388800.0,
+    "config_change": "none (stays OFF)"
+  },
+  "deterministic_B": {
+    "operator_ok": true,
+    "report": {
+      "overlay": "on-experimental",
+      "tag": "ablation-B-operator-check",
+      "n_names": 3,
+      "n_vetoed": 0,
+      "n_resized": 1,
+      "n_untouched": 2
+    }
+  },
+  "config": "LLM_OVERLAY_ENABLED=false (unchanged)"
+}

@@ -1,0 +1,287 @@
+{
+  "n_points": 30,
+  "n_signals": 27,
+  "signals": [
+    {
+      "date": "2026-02-05",
+      "side": "flat",
+      "forecast": 0.1064,
+      "ref": 0.0984,
+      "realized": 0.1232,
+      "ret": 0.0,
+      "regime": "CALM"
+    },
+    {
+      "date": "2026-02-12",
+      "side": "flat",
+      "forecast": 0.1015,
+      "ref": 0.0984,
+      "realized": 0.1327,
+      "ret": 0.0,
+      "regime": "CALM"
+    },
+    {
+      "date": "2026-02-19",
+      "side": "long-vol",
+      "forecast": 0.1181,
+      "ref": 0.1055,
+      "realized": 0.1568,
+      "ret": 0.4844630649404433,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-02-26",
+      "side": "flat",
+      "forecast": 0.1139,
+      "ref": 0.1059,
+      "realized": 0.177,
+      "ret": 0.0,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-03-06",
+      "side": "long-vol",
+      "forecast": 0.1753,
+      "ref": 0.1185,
+      "realized": 0.2508,
+      "ret": 1.1149883036206059,
+      "regime": "STRESSED"
+    },
+    {
+      "date": "2026-03-13",
+      "side": "long-vol",
+      "forecast": 0.2016,
+      "ref": 0.1342,
+      "realized": 0.3108,
+      "ret": 1.313615155069403,
+      "regime": "STRESSED"
+    },
+    {
+      "date": "2026-03-20",
+      "side": "long-vol",
+      "forecast": 0.2065,
+      "ref": 0.1521,
+      "realized": 0.3286,
+      "ret": 1.158447665798397,
+      "regime": "STRESSED"
+    },
+    {
+      "date": "2026-03-30",
+      "side": "long-vol",
+      "forecast": 0.2542,
+      "ref": 0.1787,
+      "realized": 0.2183,
+      "ret": 0.2192667711113737,
+      "regime": "STRESSED"
+    },
+    {
+      "date": "2026-04-08",
+      "side": "short-vol",
+      "forecast": 0.18,
+      "ref": 0.2003,
+      "realized": 0.1503,
+      "ret": 0.24755541682327212,
+      "regime": "STRESSED"
+    },
+    {
+      "date": "2026-04-16",
+      "side": "short-vol",
+      "forecast": 0.1647,
+      "ref": 0.2049,
+      "realized": 0.1267,
+      "ret": 0.3796697760904259,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-04-23",
+      "side": "short-vol",
+      "forecast": 0.1681,
+      "ref": 0.2056,
+      "realized": 0.1247,
+      "ret": 0.39139109737463434,
+      "regime": "STRESSED"
+    },
+    {
+      "date": "2026-04-30",
+      "side": "short-vol",
+      "forecast": 0.1637,
+      "ref": 0.2066,
+      "realized": 0.1604,
+      "ret": 0.2217221207633176,
+      "regime": "STRESSED"
+    },
+    {
+      "date": "2026-05-08",
+      "side": "short-vol",
+      "forecast": 0.144,
+      "ref": 0.201,
+      "realized": 0.1387,
+      "ret": 0.3075979438180957,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-05-15",
+      "side": "short-vol",
+      "forecast": 0.1626,
+      "ref": 0.2068,
+      "realized": 0.1153,
+      "ret": 0.44041527747427095,
+      "regime": "STRESSED"
+    },
+    {
+      "date": "2026-05-22",
+      "side": "short-vol",
+      "forecast": 0.1527,
+      "ref": 0.2026,
+      "realized": 0.1245,
+      "ret": 0.3831132609499336,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-06-01",
+      "side": "short-vol",
+      "forecast": 0.1423,
+      "ref": 0.2052,
+      "realized": 0.1319,
+      "ret": 0.35516090486193574,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-06-08",
+      "side": "short-vol",
+      "forecast": 0.1449,
+      "ref": 0.1984,
+      "realized": 0.1134,
+      "ret": 0.42628804721808083,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-06-15",
+      "side": "short-vol",
+      "forecast": 0.1207,
+      "ref": 0.1914,
+      "realized": 0.0994,
+      "ret": 0.4786153784059135,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-06-22",
+      "side": "short-vol",
+      "forecast": 0.1076,
+      "ref": 0.1767,
+      "realized": 0.1014,
+      "ret": 0.42422302642898413,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-06-30",
+      "side": "short-vol",
+      "forecast": 0.1126,
+      "ref": 0.1504,
+      "realized": 0.1453,
+      "ret": 0.0318281886764863,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-07-07",
+      "side": "short-vol",
+      "forecast": 0.0943,
+      "ref": 0.126,
+      "realized": 0.1445,
+      "ret": -0.14889945201854396,
+      "regime": "CALM"
+    },
+    {
+      "date": "2026-07-14",
+      "side": "short-vol",
+      "forecast": 0.1137,
+      "ref": 0.1271,
+      "realized": 0.0974,
+      "ret": 0.23170555889304692,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-07-21",
+      "side": "short-vol",
+      "forecast": 0.1033,
+      "ref": 0.1251,
+      "realized": 0.1297,
+      "ret": -0.038618400077388364,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-07-28",
+      "side": "short-vol",
+      "forecast": 0.1023,
+      "ref": 0.123,
+      "realized": 0.1082,
+      "ret": 0.117783171519287,
+      "regime": "ELEVATED"
+    },
+    {
+      "date": "2026-08-04",
+      "side": "short-vol",
+      "forecast": 0.1036,
+      "ref": 0.1263,
+      "realized": 0.0334,
+      "ret": 0.7337645118480272,
+      "regime": "CALM"
+    },
+    {
+      "date": "2026-08-11",
+      "side": "short-vol",
+      "forecast": 0.0927,
+      "ref": 0.1139,
+      "realized": 0.0578,
+      "ret": 0.4906449307368556,
+      "regime": "CALM"
+    },
+    {
+      "date": "2026-08-18",
+      "side": "short-vol",
+      "forecast": 0.0864,
+      "ref": 0.1148,
+      "realized": 0.0656,
+      "ret": 0.42661659674196606,
+      "regime": "CALM"
+    },
+    {
+      "date": "2026-08-25",
+      "side": "short-vol",
+      "forecast": 0.0812,
+      "ref": 0.1067,
+      "realized": 0.0516,
+      "ret": 0.5146689391156976,
+      "regime": "CALM"
+    },
+    {
+      "date": "2026-09-01",
+      "side": "short-vol",
+      "forecast": 0.0737,
+      "ref": 0.1054,
+      "realized": 0.0798,
+      "ret": 0.24086479518094783,
+      "regime": "CALM"
+    },
+    {
+      "date": "2026-09-08",
+      "side": "short-vol",
+      "forecast": 0.0721,
+      "ref": 0.0972,
+      "realized": 0.0931,
+      "ret": 0.04005872189626796,
+      "regime": "CALM"
+    }
+  ],
+  "total_pnl": 10.987,
+  "mean_ret": 0.40692,
+  "sharpe": 8.58,
+  "sharpe_ci": [
+    6.611,
+    12.612
+  ],
+  "top1_share": 0.12,
+  "top2_share": 0.225,
+  "n_long": 5,
+  "n_short": 22
+}

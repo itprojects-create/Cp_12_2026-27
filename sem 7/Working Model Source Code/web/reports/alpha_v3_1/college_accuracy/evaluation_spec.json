@@ -1,0 +1,158 @@
+{
+  "academic_question": "Measure reproducible absolute UP/DOWN classification accuracy and compare it with training-only majority, fixed-UP, trend and reversal baselines.",
+  "authority": "RESEARCH_ONLY_NO_ORDER_AUTHORITY",
+  "breakdowns": {
+    "fold": true,
+    "regime": "NOT_PREREGISTERED_FOR_THIS_SPRINT",
+    "sector": "UNAVAILABLE_NO_VERIFIED_ASOF_SECTOR_MAP",
+    "year": true
+  },
+  "candidate_selection": "No candidate is selected. All fixed W3 families and all predeclared baselines are reported. Logistic h20 is designated before scoring only as the primary fitted row for discussion/figure layout.",
+  "created_at_utc": "2026-11-14T17:15:32.7012207Z",
+  "data_limits": [
+    "raw unadjusted prices; not total return",
+    "action-shaped discontinuity windows excluded but action history incomplete",
+    "2024-H1 official archive gap outside evaluated window",
+    "historical membership includes weak snapshot-floor spells",
+    "no verified as-of sector map",
+    "fees unavailable for 2022-2023; accuracy is not economics"
+  ],
+  "decision_rules": {
+    "grid_use": "development display only; all points retained; no best point selected",
+    "primary_confidence_abstention": "none beyond data/model missingness",
+    "probability_confidence_grid": [
+      0.5,
+      0.55,
+      0.6,
+      0.65
+    ],
+    "probability_threshold": 0.5,
+    "ridge_threshold": 0.0,
+    "threshold_comparison": "strict greater-than; equality predicts DOWN"
+  },
+  "evidence_tier": "HISTORICAL_OOF_DEVELOPMENT",
+  "execution_indexing": {
+    "decision": "last completed weekly session; cutoff next local calendar day T00:15 IST",
+    "entry": "first eligible observed session OPEN strictly after decision cutoff",
+    "exit": "OPEN on the h-th observed NSE session after entry; labelled extension on missing instrument bar",
+    "exit_ref": "OPEN",
+    "same_close_fill_forbidden": true
+  },
+  "folds": {
+    "embargo_sessions": 20,
+    "kind": "four expanding walk-forward folds using existing W3 validation tiles",
+    "n_folds": 4,
+    "purge": "drop training row unless label exit is at least 20 observed sessions before validation start",
+    "random_row_split": false
+  },
+  "forbidden_claims": [
+    "fresh holdout",
+    "independent external validation",
+    "forward accuracy",
+    "profitable strategy",
+    "investment return",
+    "trading eligibility",
+    "Jev benefit"
+  ],
+  "historical_data_disclosure": "W1-W6 reports, W2 revealed holdout outcomes, and W3 validation metrics were available before this specification. Therefore no result is a fresh sealed test.",
+  "holdout_policy": {
+    "fresh_sealed_holdout": "NEW_SEALED_HOLDOUT_UNAVAILABLE",
+    "reuse_allowed": false,
+    "revealed_w2_holdout": [
+      "2024-06-21",
+      "2026-09-17"
+    ]
+  },
+  "inputs": {
+    "development_head": "36c0c960b50860596af6c25c68df3187b8d10866",
+    "frozen_w3_feature_hash": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+    "frozen_w3_label_hash": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e",
+    "service_head": "2a8b9dca2d5657955848803bc1bbc705343988f8",
+    "w3_feature_contract_sha256": "d637413444e9afe09a705191f05d5e3610fac0d82684c51831a5c42538c9de77",
+    "w3_model_comparison_sha256": "ff9d5ad72ad5ab547764e273cc35cd49e3e75d0580a1bac4fd2880a021510d81",
+    "w3_research_journal_sha256": "ab9a77695e87b49960c9086815b3de07a642f9cb15e82e1ba953246aa0f37426",
+    "w6_protocol_sha256": "fc9e5ab408f4efba96f197152ceb1c111e3a3b5f8b94023775305b586f115f6e",
+    "w6_real_ledger_sha256": "918013a014ac66ff753bbb50173ea9b09ad62109ce98f44111aba98e2fc90549",
+    "warehouse_path": "D:\\Quant-Plus\\backend-extension\\data\\research_v3\\warehouse.sqlite3",
+    "warehouse_sha256": "21787a7d07fca1f5126d0c33ce3d73842f6268411624543dbf15217ce9d4e8a4"
+  },
+  "models": {
+    "fixed_up": {
+      "rule": "always UP"
+    },
+    "hgb": {
+      "learning_rate": 0.05,
+      "max_depth": 3,
+      "max_iter": 150,
+      "min_samples_leaf": 100,
+      "random_state": 7,
+      "seed": 7
+    },
+    "logistic": {
+      "C": 1.0,
+      "class_weight": null,
+      "max_iter": 200,
+      "seed": 7,
+      "standardize": "train_only"
+    },
+    "majority_train": {
+      "rule": "majority class from each fold's purged training rows only"
+    },
+    "reversal_ret5": {
+      "rule": "UP iff -PIT ret_5 > 0"
+    },
+    "ridge": {
+      "alpha": 1.0,
+      "seed": 7,
+      "standardize": "train_only"
+    },
+    "trend_ret60": {
+      "rule": "UP iff PIT ret_60 > 0"
+    }
+  },
+  "samples": {
+    "answered_accuracy": "correct divided by answered eligible non-tie predictions",
+    "coverage_reporting": "ALL_ELIGIBLE labels with missing predictions counted as abstentions",
+    "primary_reporting": "COMMON_MODEL_SAMPLE intersection across all seven candidates",
+    "unconditional_accuracy": "correct predictions divided by every eligible non-tie label; abstentions are not correct"
+  },
+  "schema": "research_v3/college_directional_accuracy_spec/1",
+  "spec_payload_sha256": "94d1b074ffc8652b58d5b0d21fce7cd83743eb9bb547487279984d5a2298b65f",
+  "spec_version": "college-direction-open-open-v1",
+  "targets": {
+    "benchmark_relative": "SEPARATE_AND_NOT_USED_AS_UP_DOWN",
+    "h60": "OMITTED_INSUFFICIENT_INDEPENDENT_SAMPLE: W3 had 24 monthly dates and about 2 non-overlapping periods",
+    "primary": {
+      "down": "strictly < 0",
+      "horizon_sessions": 20,
+      "return": "future absolute raw-price executable OPEN-to-OPEN return",
+      "tie": "exactly 0; counted and excluded from binary denominator",
+      "up": "strictly > 0"
+    },
+    "reported_horizons": [
+      5,
+      20
+    ],
+    "secondary": {
+      "horizon_sessions": 5,
+      "same_mechanics": true
+    }
+  },
+  "uncertainty": {
+    "block_sessions_by_horizon": {
+      "20": 4,
+      "5": 1
+    },
+    "bootstrap_iterations": 2000,
+    "method": "moving decision-session block bootstrap",
+    "seed": 20261114,
+    "stocks_within_date_resampled_independently": false
+  },
+  "windows": {
+    "decision_cadence": "last observed session of each ISO week",
+    "train_start": "2015-06-01",
+    "training_initial_end": "2021-12-31",
+    "validation_end": "2023-12-31",
+    "validation_start": "2022-01-01"
+  }
+}

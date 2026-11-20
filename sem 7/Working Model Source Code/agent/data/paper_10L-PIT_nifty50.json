@@ -1,0 +1,76 @@
+{
+  "rule": "frozen v4 + baked veto + per-rebalance PIT membership (CORRECTNESS_REISSUE \u2014 same rule, bias-corrected universe)",
+  "universe": "nifty50",
+  "capital": 1000000.0,
+  "n_names": 36,
+  "n_excluded": 1,
+  "initial": 1000000.0,
+  "final": 1309956.72,
+  "profit": 309956.72,
+  "profit_pct": 31.0,
+  "cagr_pct": 4.91,
+  "max_drawdown_pct": 12.59,
+  "costs_rupees": 43476.02,
+  "cash_leftover": 1309956.72,
+  "n_holdings_end": 0,
+  "yearly": {
+    "2021": {
+      "start": 1000000.0,
+      "end": 1136118.6,
+      "pnl": 136118.6
+    },
+    "2022": {
+      "start": 1136118.6,
+      "end": 1063111.16,
+      "pnl": -73007.44
+    },
+    "2023": {
+      "start": 1063111.16,
+      "end": 1208274.95,
+      "pnl": 145163.79
+    },
+    "2024": {
+      "start": 1208274.95,
+      "end": 1272602.26,
+      "pnl": 64327.31
+    },
+    "2025": {
+      "start": 1272602.26,
+      "end": 1332521.12,
+      "pnl": 59918.86
+    },
+    "2026": {
+      "start": 1332521.12,
+      "end": 1309956.72,
+      "pnl": -22564.4
+    }
+  },
+  "top_holdings_end": [],
+  "approx_note": "adjusted closes; integer shares; split-timing effects approx",
+  "generated_at": "2026-10-10T17:17:55.091571+00:00",
+  "decision_audit": {
+    "n_rebalances": 284,
+    "n_rebalances_with_trades": 218,
+    "n_trades": 2937,
+    "n_buys": 1490,
+    "n_sells": 1447,
+    "total_veto_blocks": 9,
+    "total_stressed_blocks": 99,
+    "rebalance_cost_check": 43475.94
+  },
+  "decisions_file": "data\\paper_10L-PIT_nifty50_decisions.json",
+  "pit_reissue": {
+    "mode": "CORRECTNESS_REISSUE (not a new strategy)",
+    "universe_id": "nifty50",
+    "strict": false,
+    "note": "non-strict with disclosure (Amendment-1: strict degenerates)",
+    "membership_source_version": "75ebfac3b5d1fb22",
+    "n_frozen_unknown": 0,
+    "pit_status_counts": {
+      "PARTIAL": 284
+    },
+    "first_hash": "9aee8749648d4275",
+    "last_hash": "1a24b369ff57c173"
+  },
+  "pit_log_file": "data\\paper_10L-PIT_nifty50_pitlog.json"
+}

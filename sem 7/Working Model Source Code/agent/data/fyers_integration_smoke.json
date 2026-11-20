@@ -1,0 +1,13 @@
+{
+  "verified_symbols": [
+    "M&M",
+    "RELIANCE",
+    "SUZLON",
+    "TCS"
+  ],
+  "quote_source": "fyers",
+  "history_source": "fyers",
+  "authenticated": true,
+  "stream_connected": true,
+  "verified_at": "2026-10-10T20:05:00.618947+00:00"
+}

@@ -1,0 +1,69 @@
+{
+ "manifest_version": "wave4_reproducibility_manifest/1",
+ "generated_at": "2026-11-14T08:28:47.860313+00:00",
+ "rubric_version": "events_ai_rubric/1",
+ "rubric_sha256": "36f7722d7fef5f637c73af983d70348824e23dfd7c15973d0a1f7b2e89744d1a",
+ "frozen_w3_control": {
+  "feature_hash": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+  "label_hash": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e"
+ },
+ "report_artifacts": {
+  "wave4_provider_contract_and_security.md": "94855e35449301b56fa54f7486204ee492b9c86f00a075cd9e772c5ad9219f3c",
+  "wave4_event_evidence_manifest.json": "f322a7d649bf976b1a6315ec8a12c8b7bf30a5c24e03cefbf4295d31dcefb7d4",
+  "wave4_goldset_methodology.md": "499c6c7bab2909e7898b33d295956879e0543663119624f22d38d143ee9b646e",
+  "wave4_goldset_metrics.json": "a2a49b825071aa71cb0442464520ec968bb79272f08667a6ab92188ad0e549ea",
+  "wave4_mercury_research_tools_audit.md": "d150badc78504ad1d6ec63409e34f36882466e2ea08ef3a4022242d131ab9ac6",
+  "wave4_ablation_protocol.md": "9d1d65c2adbf3b241b40f39896e23d7d6e1705d4fb17f3e7a286a8902ae2149a",
+  "wave4_ablation_results.json": "c86804fd48c030cf3092fbb1e68bcb0062acbcb476dfa1690fb580f93d8c3c8d",
+  "wave4_ablation_results.md": "a22019dae00a91c357370dc0bd8d45e3f1495a1e441677f389f2f196e5bc4be9",
+  "wave4_regression_and_prod_failures.md": "e715c2f0d5843bc0511691979791c26ef7cf77af962a36c783080f6f8ed7f394",
+  "wave4_acceptance_report.md": "01d041798b88dc37483b88db0f10f0a0e4f9d749de739c6a9e83d86bdff6a392"
+ },
+ "code_modules": {
+  "__init__.py": "433e309a501910f76646dcce33dc25a5f0085c785691e76baffba1f4d468c7b3",
+  "adapter.py": "59d682868b060f0b426ec8ca6fa6c4c353075be1bc0b288643b5bcf3d7194bae",
+  "baseline.py": "556dd144f7556af9503192b67aab621764857d31a3db3e9e5ee48146b3646c98",
+  "contracts.py": "0205b0754698dc9bd80346629b7f7126c5ac22504c42ef2dd8334749b37b2f0a",
+  "evaluate.py": "e96b044b20384386d1d2ccc9f08a8aff78f156b2f98d9aadae4336de33d26a80",
+  "goldset\\synthetic_v1.json": "870c303e7b239ea305d4b6ac448cddd97f49d2baf2ca33f01bc2860f40880dd6",
+  "goldset.py": "345bc51555f4d2a4269256a0e7c799b3eb53d6baef502a5c4f82afcf79e26b98",
+  "mercury_tools.py": "84974896c5b3fd4638c77b032fa7ec1d836d8dc4b39a5324ec68ba88672455ec",
+  "offline_check.py": "120fcc6f834ec733a6f5bc09180231d76beeb51f119b7053407945467e585995",
+  "rubric.py": "ce887d589a053935a20979aa7afcd696d2ccf238c6ef549de71b9e106964e8ad",
+  "store.py": "086da8de62ff397d0a121754eb68b52deb506f6bd4981b2750df70c41310471d",
+  "validation.py": "9faf90659a50c08471bd8e7ff2aa6a3d7eeda3eb0f9f0edc6305dbf1e295bdb5",
+  "tests/test_research_v3_events_ai.py": "ec88ea3f65c7884dae2fcffff9c80b62af0fb0f7ca9d8f33f81e88e398732d18",
+  "scripts/wave4_run_events_ai.py": "588bd328e7035c99ceb17ff38946b094ea5668ed5aebff4e93fa5fade5d392b7",
+  "scripts/wave4_verify_w3_control.py": "9dcd813ef2f7f5cede4fd6e36702c47d3e747d39db81f085ad59c0ca7eff5a71"
+ },
+ "evidence_files_outside_repo": {
+  "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w4_jev_smoke_evidence.json": "261f015bb0707a67520ce23cd5e0ac59451229c9aed3dcf7e2c6a1c1b9630157",
+  "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w4_mercury_smoke_evidence.json": "814202e12ba2c7f8b29a8bbe9caf7460e1ca3c138927ee6c0e920f9fd9e8f2aa",
+  "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w4_prod_suite.log": "0fb54ee5d951f7bdd8ff68131e6434bef2ac14567fe71d5f7d608f3f60cefe1a",
+  "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w4_prod_suite_w4.log": "1c55771035e6081f1596470b8447c551ec4506f70b642079b9353d729547c8a1",
+  "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\w4_dev_suite.log": "87ed853212541e9faf7296bf9dcd2790f255dd40d270ef073f628dd2f7fcfbb4",
+  "D:\\Quant-Plus\\reports\\alpha_v3_1\\wave4_w3_control_reevaluation.json": "e3f1d782fe2fd4a6cc8e0518d9e63be04a186ef4e72bbeba116b144dc177baeb"
+ },
+ "determinism": {
+  "runs": 2,
+  "classification_ids_identical": true,
+  "store_record_hashes_identical": true,
+  "chain_verified_a": [
+   true,
+   null
+  ],
+  "chain_verified_b": [
+   true,
+   null
+  ],
+  "metrics_identical": true,
+  "store_written": "temp dir only (records carry hashes, no excerpt bodies)"
+ },
+ "rerun_protocol": [
+  "cd backend-extension",
+  "python -m pytest tests/test_research_v3_events_ai.py -q   # 78 tests",
+  "python scripts/wave4_verify_w3_control.py                # Arm A hashes",
+  "python scripts/wave4_run_events_ai.py                    # regenerate reports"
+ ],
+ "notes": "classification_id / event_id exclude wall-clock fields; report files embed generated_at so report hashes change on rerun by design; module hashes pin the code identity"
+}

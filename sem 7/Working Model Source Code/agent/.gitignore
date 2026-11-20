@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+*.db
+*.db-wal
+*.db-shm
+data/backups/
+data/alerts.log
+data/fyers_private/
+fyers*.log
+
+# Runtime caches, live databases and logs: kept locally, never committed
+data/yf_cache/
+data/events_cache/
+data/raw/
+data/*.sqlite3
+data/*.sqlite3-wal
+data/*.sqlite3-shm
+data/sessions.log
+*.log

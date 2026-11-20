@@ -1,0 +1,200 @@
+{
+  "artifacts": {
+    "accuracy_figures.png": "c13c632a0e4877cb92eabe39abc66f90c69024b3cf738cdd502d85d51bb28665",
+    "college_evaluation_acceptance.md": "71b910276451ef625d493f974c4e4b9438929551ed1cbf3504e558ea88d3f179",
+    "college_results_section.md": "05cbff145115ba96a49faaa1265a66c8d7005b95ac4f07765af1a3b72a001ca8",
+    "data_and_label_audit.md": "26652cdbd2fd42e7110a4441b4fe05c59b7824d6697bd0df305818fc07ff5aa0",
+    "directional_accuracy_results.json": "c65acdacee97e6a5c9b1181f93218063312257edd3fb72b81114444269c2e2bf",
+    "directional_accuracy_results.md": "31caa856397bd64514df4f0ea48b0528c9ed0211c58548e7c57355a044749a98",
+    "evaluation_spec.json": "7218affce2fa1038c7b5471ec6e9bc7b1a70c37b4e2bce99f9ab2d6cefee6346",
+    "oof_predictions.jsonl": "b458c0c72684872fdc553c3a934fe4cb319366adf6fad19b156c99e5d1548e78"
+  },
+  "authority": "RESEARCH_ONLY_NO_ORDER_AUTHORITY",
+  "code_and_tests": {
+    "quantplus_intelligence/research_v3/college_accuracy/__init__.py": "d677a698c280c83e092dd3a0c367cb0e5753f555cf04d35b63268f99358289e8",
+    "quantplus_intelligence/research_v3/college_accuracy/contracts.py": "36795b2500de14b93a9f67f43d2443ef03dd2665bfab3ef28357d98ae90e0679",
+    "quantplus_intelligence/research_v3/college_accuracy/metrics.py": "a4b36bd3971ab20775b7c13ace7971fd5b7b5caf9da158551b8223731b898660",
+    "quantplus_intelligence/research_v3/college_accuracy/reporting.py": "7dffe1e91ba218beffeec264ae8ea69e3e4c95f48a4bece868bb340bce50a521",
+    "quantplus_intelligence/research_v3/college_accuracy/runner.py": "97f45bcc7a036c384f21450f3e83e87f672a75d094d93ecfa7dab3115d35e642",
+    "scripts/college_accuracy_run.py": "b209784fa831d5a24a383e56b5b63a35f3e33e01a3afad812823a8700636a894",
+    "scripts/college_accuracy_verify.py": "d63fb1a4c2d967e8636d3767250cad44be4719dd1c40d709d5f83fdbc77a64a3",
+    "tests/test_college_accuracy.py": "a70aa7ecefb71e5deeaa7e0b0afd945d08524513f50d096facabc2d2cedba013"
+  },
+  "fold_hashes": [
+    "f50d7fa23b04612e3d122decd6cc06dfd36505ae22106601f1205f463d9750fe",
+    "427e99f7e656ceb106ee88484ea4b35417e7f1554fa16038f941862f5554a97f",
+    "17db4be0cf7b7baa4e1c6a3d9f01ea5d5d1079c723eaecaeb5e24a2d1a83eb05",
+    "79a85c74ba24cf25b211f74a250bbb5e3b5bd292f253a7843bae7c9b21521cb8"
+  ],
+  "frozen_w3_controls": {
+    "feature_hash": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+    "label_hash": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e"
+  },
+  "holdout_status": "NEW_SEALED_HOLDOUT_UNAVAILABLE",
+  "inputs": {
+    "development_head": "36c0c960b50860596af6c25c68df3187b8d10866",
+    "frozen_w3_feature_hash": "634b3669a3aacde6181bf2936d1bd98dd70f679edd9cb9637bcf9423a2e0fd52",
+    "frozen_w3_label_hash": "0053df3de4d04032c51dfdda7c152aedf6e800af120c57340a28bcb5beb55a7e",
+    "open_to_open_label_hash": "233b8715dc66bfea9e46c5fb8ca01308774eeb5c16881bb264a1a0f259582847",
+    "service_head": "2a8b9dca2d5657955848803bc1bbc705343988f8",
+    "snapshot_hash": "132704f7ad7b77e6d19ccfa16464cb83dfc48eabd58bb273cf6717923ff7f6ec",
+    "w3_feature_contract_sha256": "d637413444e9afe09a705191f05d5e3610fac0d82684c51831a5c42538c9de77",
+    "w3_model_comparison_sha256": "ff9d5ad72ad5ab547764e273cc35cd49e3e75d0580a1bac4fd2880a021510d81",
+    "w3_research_journal_sha256": "ab9a77695e87b49960c9086815b3de07a642f9cb15e82e1ba953246aa0f37426",
+    "w6_protocol_sha256": "fc9e5ab408f4efba96f197152ceb1c111e3a3b5f8b94023775305b586f115f6e",
+    "w6_real_ledger_sha256": "918013a014ac66ff753bbb50173ea9b09ad62109ce98f44111aba98e2fc90549",
+    "warehouse_path": "D:\\Quant-Plus\\backend-extension\\data\\research_v3\\warehouse.sqlite3",
+    "warehouse_sha256": "21787a7d07fca1f5126d0c33ce3d73842f6268411624543dbf15217ce9d4e8a4"
+  },
+  "manifest_payload_sha256": "42366b691910ef6fd05b6bbb127ac7e3c71ad98a8001160ab16bf5298bc31234",
+  "manifest_version": "college_accuracy_reproducibility/1",
+  "network_provider_calls": 0,
+  "rerun_commands": [
+    "cd backend-extension && python scripts/college_accuracy_run.py run --spec ../reports/alpha_v3_1/college_accuracy/evaluation_spec.json --output ../reports/alpha_v3_1/college_accuracy",
+    "cd backend-extension && python -m pytest tests/test_college_accuracy.py -q"
+  ],
+  "result_id": "32062fc4437a397be2813df19bccda31c061d8de9e1501c208884dc0f8190c2d",
+  "run_ids": [
+    "0068e655b77500e9f64633291a632096464fcc2cb28d0afb0371d5797ff4c2d2",
+    "1de54d6881e7fde6db51abdcef7c5e28c9c7b547d0f5e8b5b03a5976b69cf8b4",
+    "1f727ddc9835f30f2d1cfbffa523a326f98c8a709d9bde423c5066fac44175ba",
+    "212d488f0c9594a092668e3f257fa4ada62492bd0a15dc83bbf2bae17b7b0aa3",
+    "215200a559f7102b7fc9108178e77f4522f9663b488d81448f11082940284d17",
+    "28fad1955e29ad6d2c290f2cb98cac8f6d0ed0f1177a7b43a32af7883054758f",
+    "2b6760f39534c72c1090248e81c22956a018824a3edad2fc450124d51b2cdfd5",
+    "2cff175acdb185178ad6ee01ac8a2f065d95f15b4806a79ef8814af57c76ec30",
+    "30d470278d8b397422b0d1f24f7c61e993f9172578b86432b8745b1e9b1976a2",
+    "367e041334834638703427b797a9d982969c29be1492913b0ac1cfdd2ad6bde5",
+    "37b5b45dcf5364a95f54de3f75573407c96d0ca2c14daaf97481f366ff41d305",
+    "38fb9eef0c6d1eb86f7d42ec0dabedb79ded463b48d4cbfc1bc10a8d4e2f7fca",
+    "3f0f6b8a51948ab4725a8c1cd72dd95dadde954b16da5d3609d7f0b65adb32c4",
+    "4342fa4564fa8ace2c874ba1b33ead35fe39ffeac64ee92ece112e041646f462",
+    "463ca0a21103f6646aa9092f93e78b633ad008c6c376e7203fb13c179f46dda0",
+    "47fb02bf14a8421125ed9092739c13d29528f169cb910a6ac429b9d6e1ca733e",
+    "4eb4ff8df79db87437da33b330abf1bb9b8405ceb9ff285e8ca78845ccab7d53",
+    "552fe26376c11059716dd8485f92a2c934cc84226d91d8502101c74ac4bf4bc2",
+    "57df4dced3ce92eeca15d4743103fb80e66b71e92a52270c15135dd1f3370c7f",
+    "5c671c51920f8cf7ec636a3eb6651fe0e8c4e964ad5af469b8c77242e041afbc",
+    "61c87a6c348fb3e98eda19c0d963f6e739feffc4d193df4ca0f81db6ad2e808a",
+    "67e723b1f60f86f9a11b732cbb46b96fc1ca9ad8760fa78cba3ed8bca09a70ae",
+    "6909b26efcb0ad130243e76a603b96d3af7b9cd8da2e9e131d6435e63ba0f659",
+    "6d1c0faa093796e79d3ce441e276d635b2034d7c321f6cd321ab511664a1fa8e",
+    "741984db6c9e6f034910e57cafe983bbde3f9b58bf4be16e5eb50d512a80eef5",
+    "7d849a35b7c2036b66c43e8fa762674e92c84741cbd5ba0f2ad5876324d90322",
+    "8168d40e77f8ed791267af5b2b924bd532638e20f9d93ad8224b73f809f5bf69",
+    "861e632a46d2a97519e719cf42bfbd5c227b8ad36b09f81cb6c2f2fa17bffa80",
+    "8ffc9e2d6213699764c216dd17e20d9d4544c6b2a32901f85ccb8ff9fde0836e",
+    "92905bcfa4bbf8a72c37c9983fe1e8ad8427c59144a3339a2bae8d237ebe4b95",
+    "99305ebe4a4c7f57ffd47ba79eb3aa04f18028bf7407554468abef07088e0d0d",
+    "a278fdda44fefa75e54a741a58a3f51ee8ccf3139edbc4d0a64b94612c350838",
+    "a3b545a1d757569c5752c74dd210ec64b0fa9f736f64134bb7227976d350678b",
+    "a8a99b85b8bba91db38d6b6b3050a9a5a48e88dc49e61c391134eed21fd701d3",
+    "b44addf7c630665685b636871fa2fdfbd40f451b6dae68888ee172424c399f7b",
+    "b50f1b85e3ecefbd507b1f0aca75beb68c40491fae6496bf54dc2cd298b418db",
+    "b6043cf8236e4e9e6cc67e59ee4095393f8ec7820a08387972f07232671f540b",
+    "ba9652f4e7f84067f6f3b1b167390a95acfc0dadea0a96b95664e1e556e1be7e",
+    "bad0746d41552a2f248562789b36e8e29d90ae2674ac36d4640c47a1dc0d3a69",
+    "c0a89609950950c44c02672f7f790646e116a777d642edce4d92e073855a6aa6",
+    "c0b35b026705a51b445c5bc043aa4857592fd7e58a727dfc2b9b602510a2e615",
+    "c40f2a3d4f7aa6e4a46fc53cd6829b58d748de1bd6e19fcd561073e109e36a74",
+    "c5ec0168225055c4641faa619f9927ff208d19208445cb3dc29b4c7f968e1c72",
+    "c5ec607719f8a820bf3422f06feb9afa9e57c0320bbddaf0f526c62d1de69afd",
+    "c8973c9298de351a78c5aaf3f8dc87e87bd6a1f8076abed8a247355b2368e350",
+    "c8a7c76a52fc9805e5cd47302bca9975d3b57880a5c74ea2270c5de8a6833f34",
+    "ceaf9aa14a75216ef9264f2d4b90f7aad3bc00c59efb35ca2620d7d3919c9314",
+    "d6401fff21c02fd33d6b47d43ecc526f3c885866c97c628dfda2554bfd64760d",
+    "d868ae7b941c0810106ff430624e54c12fe5dec3b6625bb9f27d4f0322042cb3",
+    "ddcddcf24fe11976d63ec3b6e9baec54dbb3a6b30f46a386661de8a14b6d2759",
+    "de34c4d29a02c6ca43b293e2b288666569e2a22f18d107512c23b148f6495721",
+    "e1d7e60a8a3f5322b7fd2e90f3531f07215366355fb96b9f4eab66e94f16e9f5",
+    "eb12e39be9a37b3c565c1a45b546b67b7f802b593c894bf051a92674f7e93947",
+    "ee01d896346be7676e362daab865e43649189942c32af6fe617ccd2069f03ecf",
+    "f78d62ba24efd1e168ac38ada70076f76f13b185e6720c6f0525130a89696869",
+    "fe548a4a50c2ee24719f0f967555d27d51988b1e68ffe37a95f16d3862d6210f"
+  ],
+  "self_reference_convention": "manifest hashes all result artifacts except itself; payload hash excludes manifest_payload_sha256",
+  "spec_hash": "94d1b074ffc8652b58d5b0d21fce7cd83743eb9bb547487279984d5a2298b65f",
+  "test_evidence": {
+    "deterministic_rerun": {
+      "byte_identical": true,
+      "comparison_evidence_path": "C:\\Users\\Ronit\\AppData\\Local\\Temp\\opencode\\college_two_run_comparison.json",
+      "comparison_evidence_sha256": "46c92e4d217f267eb3427e800067bb4ea4121b2f7f8c546f3b6573743b4db18f",
+      "complete_runs": 2,
+      "files_each": 9,
+      "result_id": "32062fc4437a397be2813df19bccda31c061d8de9e1501c208884dc0f8190c2d"
+    },
+    "development_full": "789 passed in 42.64s",
+    "development_full_log_sha256": "678743d8c4473c5dcc1814b7ee442caaccad81fff2231e1cb4f243ee8352663a",
+    "evidence_version": "college_accuracy_test_evidence/1",
+    "explicit_skips": [
+      "tests/test_technical.py::test_technical_pit_live",
+      "tests/test_research_v3_events_ai.py::TestFrozenW3Control::test_w3_feature_and_label_hashes_frozen"
+    ],
+    "frozen_w3_hashes_match": true,
+    "known_failures": [
+      "tests/test_gateway_experiential.py::test_experiential_key_takes_priority_over_openrouter",
+      "tests/test_gateway_experiential.py::test_gateway_targets_experiential",
+      "tests/test_gateway_limits.py::test_402_quarantines_and_rotates",
+      "tests/test_gateway_limits.py::test_401_quarantines_key_and_rotates",
+      "tests/test_stock_integration.py::test_auth_symbol_validation_and_unconfigured_agents"
+    ],
+    "network_in_default_tests": false,
+    "provider_calls": 0,
+    "scoped_development": "19 passed in 1.24s",
+    "scoped_service": "19 passed in 5.29s",
+    "service_full": "5 failed, 808 passed, 2 skipped, 22 warnings in 319.79s (0:05:19)",
+    "service_full_log_sha256": "3a42ef78a4f60d64e8ceee659e2df569561ec75f256febc0af445f33becdff99",
+    "staged_files": 0
+  },
+  "two_repo_sync": [
+    {
+      "byte_identical": true,
+      "development_sha256": "d677a698c280c83e092dd3a0c367cb0e5753f555cf04d35b63268f99358289e8",
+      "relative_path": "quantplus_intelligence/research_v3/college_accuracy/__init__.py",
+      "service_sha256": "d677a698c280c83e092dd3a0c367cb0e5753f555cf04d35b63268f99358289e8"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "36795b2500de14b93a9f67f43d2443ef03dd2665bfab3ef28357d98ae90e0679",
+      "relative_path": "quantplus_intelligence/research_v3/college_accuracy/contracts.py",
+      "service_sha256": "36795b2500de14b93a9f67f43d2443ef03dd2665bfab3ef28357d98ae90e0679"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "a4b36bd3971ab20775b7c13ace7971fd5b7b5caf9da158551b8223731b898660",
+      "relative_path": "quantplus_intelligence/research_v3/college_accuracy/metrics.py",
+      "service_sha256": "a4b36bd3971ab20775b7c13ace7971fd5b7b5caf9da158551b8223731b898660"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "97f45bcc7a036c384f21450f3e83e87f672a75d094d93ecfa7dab3115d35e642",
+      "relative_path": "quantplus_intelligence/research_v3/college_accuracy/runner.py",
+      "service_sha256": "97f45bcc7a036c384f21450f3e83e87f672a75d094d93ecfa7dab3115d35e642"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "7dffe1e91ba218beffeec264ae8ea69e3e4c95f48a4bece868bb340bce50a521",
+      "relative_path": "quantplus_intelligence/research_v3/college_accuracy/reporting.py",
+      "service_sha256": "7dffe1e91ba218beffeec264ae8ea69e3e4c95f48a4bece868bb340bce50a521"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "b209784fa831d5a24a383e56b5b63a35f3e33e01a3afad812823a8700636a894",
+      "relative_path": "scripts/college_accuracy_run.py",
+      "service_sha256": "b209784fa831d5a24a383e56b5b63a35f3e33e01a3afad812823a8700636a894"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "d63fb1a4c2d967e8636d3767250cad44be4719dd1c40d709d5f83fdbc77a64a3",
+      "relative_path": "scripts/college_accuracy_verify.py",
+      "service_sha256": "d63fb1a4c2d967e8636d3767250cad44be4719dd1c40d709d5f83fdbc77a64a3"
+    },
+    {
+      "byte_identical": true,
+      "development_sha256": "a70aa7ecefb71e5deeaa7e0b0afd945d08524513f50d096facabc2d2cedba013",
+      "relative_path": "tests/test_college_accuracy.py",
+      "service_sha256": "a70aa7ecefb71e5deeaa7e0b0afd945d08524513f50d096facabc2d2cedba013"
+    }
+  ],
+  "two_repo_sync_all_byte_identical": true
+}

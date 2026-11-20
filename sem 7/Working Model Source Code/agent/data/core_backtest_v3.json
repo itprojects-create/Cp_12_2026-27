@@ -1,0 +1,49 @@
+{
+  "frozen_rule": "app/core/trend_core_v3.py (prereg data/prereg_core_v3.md, one run)",
+  "base": "v2 app/core/trend_core.py untouched",
+  "window": "2021-01-01..2026-09-30",
+  "n_days": 1420,
+  "n_names": 36,
+  "excluded_names": [
+    "TATAMOTORS.NS"
+  ],
+  "total_return": 0.334,
+  "cagr": 0.0525,
+  "ann_vol": 0.0767,
+  "sharpe": 0.705,
+  "max_drawdown": 0.1246,
+  "total_cost": 0.0351,
+  "avg_exposure": 0.4639,
+  "n_switches": 1081,
+  "yearly_diagnostic": {
+    "2021": {
+      "ret": 0.1483,
+      "intra_yr_dd": -0.1768
+    },
+    "2022": {
+      "ret": -0.0543,
+      "intra_yr_dd": -0.0845
+    },
+    "2023": {
+      "ret": 0.1396,
+      "intra_yr_dd": -0.1279
+    },
+    "2024": {
+      "ret": 0.042,
+      "intra_yr_dd": -0.0972
+    },
+    "2025": {
+      "ret": 0.0377,
+      "intra_yr_dd": -0.071
+    },
+    "2026": {
+      "ret": -0.0031,
+      "intra_yr_dd": -0.0571
+    }
+  },
+  "bench_cagr": 0.3028,
+  "blackout": "skipped (no PIT-clean historical earnings at scale; disclosed)",
+  "vix": "aligned ^INDIAVIX or CALM-fallback (see log)",
+  "gate": "MaxDD<0.1635 OR Sharpe>0.698 AND 2022_ret>-0.1025",
+  "generated_at": "2026-10-06T13:25:43.423517+00:00"
+}

@@ -1,0 +1,156 @@
+{
+  "artifact_version": "wave6_paper_nav_and_benchmark/1",
+  "classification": "REAL_FORWARD_EMPTY_PLUS_SEPARATE_ENGINEERING_FIXTURE",
+  "evidence_time": "2026-11-14T16:42:00+00:00",
+  "financial_verdict": "NOT_YET_DEMONSTRATED",
+  "fixture_context": {
+    "fees": [
+      {
+        "broker_component": "fyers_standard_observed_2026_11_14",
+        "decision_cutoff": null,
+        "fill_ref": "d109d8aaac7c7c5fc10fc1eee61a7d389b953af947a2b62cb795b3443bb2f067",
+        "items": [
+          {
+            "amount_paise": 100,
+            "basis": "0.1% of delivery turnover, rounded to the rupee per fill",
+            "code": "STT"
+          },
+          {
+            "amount_paise": 2,
+            "basis": "Rs 307 per crore each side",
+            "code": "EXCHANGE"
+          },
+          {
+            "amount_paise": 0,
+            "basis": "Rs 10 per crore",
+            "code": "SEBI"
+          },
+          {
+            "amount_paise": 8,
+            "basis": "0.015% of delivery purchase value",
+            "code": "STAMP"
+          },
+          {
+            "amount_paise": 150,
+            "basis": "min(rate x order value, cap) per executed order: 0.300% capped at Rs 20.0",
+            "code": "BROKERAGE"
+          },
+          {
+            "amount_paise": 27,
+            "basis": "18% of brokerage, exchange charge and SEBI fee",
+            "code": "GST"
+          }
+        ],
+        "maturity": "ENGINEERING_FIXTURE",
+        "record_kind": "FEE_EVENT",
+        "recorded_at": "2026-11-16T04:30:00+00:00",
+        "schedule_id": "nse-cm-delivery-2026-03-01",
+        "session_date": null,
+        "stream_id": "w6-engineering-fixture-v1",
+        "total_paise": 287
+      }
+    ],
+    "nav": {
+      "cash_paise": 9949663,
+      "equity_paise": 10000163,
+      "fees_paid_paise": 287,
+      "fixture": true,
+      "holdings_value_paise": 50500,
+      "invested_cost_paise": 50050,
+      "nav_known": true,
+      "pending_proceeds_paise": 0,
+      "positions": [
+        {
+          "blocked": false,
+          "isin": "INE467B01029",
+          "mark_paise": 10100,
+          "mark_source": "fixture",
+          "mark_time": "2026-11-17T09:59:50+00:00",
+          "pending_buy": 0,
+          "pending_sell": 0,
+          "quantity": 5,
+          "settled": 5,
+          "status": "MARK_OBSERVED",
+          "symbol": "TCS",
+          "value_paise": 50500
+        }
+      ],
+      "realised_gross_paise": 0,
+      "realised_net_paise": 0,
+      "reserved_cash_paise": 0,
+      "reserved_shares": {},
+      "stream_id": "w6-engineering-fixture-v1",
+      "unrealised_pnl_paise": 450
+    },
+    "not_financial_evidence": true,
+    "reconciliation": {
+      "actual_cash_plus_pending_paise": 9949663,
+      "actual_holdings": {
+        "INE467B01029": 5
+      },
+      "cash_conserved": true,
+      "expected_cash_plus_pending_paise": 9949663,
+      "expected_holdings": {
+        "INE467B01029": 5
+      },
+      "holdings_conserved": true,
+      "no_negative_balances": true,
+      "ok": true,
+      "reservations_valid": true
+    }
+  },
+  "observational_sample": {
+    "abstentions": 0,
+    "end": null,
+    "no_trades": 0,
+    "non_overlapping_horizons": 0,
+    "paper_fills": 0,
+    "partial_executions": 0,
+    "rejected_intents": 0,
+    "sessions_missed": 0,
+    "sessions_run": 0,
+    "signals": 0,
+    "start": null
+  },
+  "panel_A_forecast_skill": {
+    "brier": {
+      "metric": "brier",
+      "note": "no real blind labels; no calibration claim",
+      "status": "GOLDSET_HOLDOUT_UNAVAILABLE"
+    },
+    "event_classifier": {
+      "status": "GOLDSET_HOLDOUT_UNAVAILABLE"
+    },
+    "rank_ic": {
+      "metric": "rank_ic",
+      "n_effective_dates": 0,
+      "note": "no labelled forward returns available; no IC computed",
+      "status": "GOLDSET_HOLDOUT_UNAVAILABLE"
+    }
+  },
+  "panel_B_absolute_economics": {
+    "absolute_net_return": null,
+    "blocked_valuations": [],
+    "fees_paid_paise": 0,
+    "n_blocked_marks": 0,
+    "n_complete_marks": 0,
+    "note": "missing/blocked marks or starting capital; no zero return imputed",
+    "panel": "B_absolute_economics",
+    "status": "DATA_BLOCKED",
+    "trade_count": 0,
+    "turnover_paise": 0
+  },
+  "panel_C_investor_relative": {
+    "aligned_rows": [],
+    "n_aligned": 0,
+    "n_benchmark_missing": 0,
+    "note": "no verified forward benchmark marks for the interval",
+    "panel": "C_investor_relative",
+    "status": "DATA_BLOCKED"
+  },
+  "sample_sufficiency": {
+    "minimum_preregistered": 60,
+    "n_independent_horizons": 0,
+    "status": "INSUFFICIENT_FORWARD_SAMPLE"
+  }
+}

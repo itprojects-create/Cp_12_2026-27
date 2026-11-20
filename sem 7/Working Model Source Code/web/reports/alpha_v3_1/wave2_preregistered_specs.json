@@ -1,0 +1,262 @@
+{
+ "capital_paise": 10000000,
+ "generated_at": "2026-11-12T10:42:57.613576+00:00",
+ "slippage_bps": 10,
+ "specs": [
+  {
+   "declared_negative_control": false,
+   "fingerprint": "d11f28f26e25fe79d7e0e269337e79d288aeb6ea012091a6292ec07fc29eccde",
+   "payload": {
+    "created_at": "2026-11-12T10:41:24.065466+00:00",
+    "declared_negative_control": false,
+    "execution": {
+     "broker": "book_zero_brokerage",
+     "capital_paise": 10000000,
+     "entry_ref": "OPEN",
+     "exit_ref": "OPEN",
+     "rebalance": "monthly",
+     "slippage_bps": 10
+    },
+    "family": "other",
+    "hypothesis": "H1: cross-sectional 6-month (126-session) price momentum, top-10 equal weight, monthly rebalance at the executable open; long-only NIFTY50 as-of members",
+    "notes": "sector-relative variant is DATA_BLOCKED: no verified historical sector map is ingested; raw/unadjusted bars mean economics vs TRI stays blocked until actions verify",
+    "seed": 20261112,
+    "signal": {
+     "family": "cross_sectional_momentum",
+     "high_window_sessions": 252,
+     "lookback_sessions": 126,
+     "min_history_sessions": 0,
+     "skip_sessions": 0,
+     "top_k": 10
+    },
+    "spec_id": "wave2.h1.momentum-6m",
+    "universe": {
+     "max_names": 50,
+     "membership_mode": "disclosed",
+     "require_entry_session_bar": true,
+     "universe_id": "nifty50"
+    },
+    "version": 1,
+    "windows": {
+     "embargo_sessions": 21,
+     "holdout_end": "2026-09-17",
+     "holdout_start": "2024-06-21",
+     "train_end": "2021-12-31",
+     "train_start": "2015-06-01",
+     "validation_end": "2023-12-31",
+     "validation_start": "2022-01-01"
+    }
+   },
+   "preregistration_hash": "bc64c005e8f180d887e092792cb3997a9fd48a0784aba6b7144b4468bf6e924a",
+   "spec_id": "wave2.h1.momentum-6m",
+   "version": 1
+  },
+  {
+   "declared_negative_control": false,
+   "fingerprint": "d1318f6e3f605e4b995e1b448b2d36b35b137f46ffd97a1e23d95b9cde560906",
+   "payload": {
+    "created_at": "2026-11-12T10:41:24.065466+00:00",
+    "declared_negative_control": false,
+    "execution": {
+     "broker": "book_zero_brokerage",
+     "capital_paise": 10000000,
+     "entry_ref": "OPEN",
+     "exit_ref": "OPEN",
+     "rebalance": "monthly",
+     "slippage_bps": 10
+    },
+    "family": "other",
+    "hypothesis": "H2: 52-week-high continuation, long the 10 names closest to their 252-session available high, equal weight, monthly rebalance at the executable open",
+    "notes": "never a 65-bar proxy: the window is 252 available sessions",
+    "seed": 20261112,
+    "signal": {
+     "family": "near_52w_high",
+     "high_window_sessions": 252,
+     "lookback_sessions": 126,
+     "min_history_sessions": 0,
+     "skip_sessions": 0,
+     "top_k": 10
+    },
+    "spec_id": "wave2.h2.near-52w-high",
+    "universe": {
+     "max_names": 50,
+     "membership_mode": "disclosed",
+     "require_entry_session_bar": true,
+     "universe_id": "nifty50"
+    },
+    "version": 1,
+    "windows": {
+     "embargo_sessions": 21,
+     "holdout_end": "2026-09-17",
+     "holdout_start": "2024-06-21",
+     "train_end": "2021-12-31",
+     "train_start": "2015-06-01",
+     "validation_end": "2023-12-31",
+     "validation_start": "2022-01-01"
+    }
+   },
+   "preregistration_hash": "fab31a88cbfddd833d1e7c7b247884c27d3e15f825e51adc80367924e7eadf98",
+   "spec_id": "wave2.h2.near-52w-high",
+   "version": 1
+  },
+  {
+   "declared_negative_control": false,
+   "fingerprint": "4e14ad9fc79ef846f4ec85f04c52850bb827c78b3ed11290f66bf658944660c4",
+   "payload": {
+    "created_at": "2026-11-12T10:41:24.065466+00:00",
+    "declared_negative_control": false,
+    "execution": {
+     "broker": "book_zero_brokerage",
+     "capital_paise": 10000000,
+     "entry_ref": "OPEN",
+     "exit_ref": "OPEN",
+     "rebalance": "monthly",
+     "slippage_bps": 10
+    },
+    "family": "other",
+    "hypothesis": "Control baseline: equal weight across ALL eligible as-of members (ranking-neutral portfolio), identical windows, execution and fee model",
+    "notes": "top_k = universe size: momentum ranking selects everyone",
+    "seed": 20261112,
+    "signal": {
+     "family": "cross_sectional_momentum",
+     "high_window_sessions": 252,
+     "lookback_sessions": 126,
+     "min_history_sessions": 0,
+     "skip_sessions": 0,
+     "top_k": 50
+    },
+    "spec_id": "wave2.baseline.equal-weight",
+    "universe": {
+     "max_names": 50,
+     "membership_mode": "disclosed",
+     "require_entry_session_bar": true,
+     "universe_id": "nifty50"
+    },
+    "version": 1,
+    "windows": {
+     "embargo_sessions": 21,
+     "holdout_end": "2026-09-17",
+     "holdout_start": "2024-06-21",
+     "train_end": "2021-12-31",
+     "train_start": "2015-06-01",
+     "validation_end": "2023-12-31",
+     "validation_start": "2022-01-01"
+    }
+   },
+   "preregistration_hash": "4e19df4456ee2c83da2138271791b581b8fb8f52319506a2f7dbca3fac5e671e",
+   "spec_id": "wave2.baseline.equal-weight",
+   "version": 1
+  },
+  {
+   "declared_negative_control": true,
+   "fingerprint": "2b58bf5d7ca1b4ae84f2513f35f10272cb48d86d9d1d6d7608b2e38d5a91ec88",
+   "payload": {
+    "created_at": "2026-11-12T10:41:24.065466+00:00",
+    "declared_negative_control": true,
+    "execution": {
+     "broker": "book_zero_brokerage",
+     "capital_paise": 10000000,
+     "entry_ref": "OPEN",
+     "exit_ref": "OPEN",
+     "rebalance": "monthly",
+     "slippage_bps": 10
+    },
+    "family": "other",
+    "hypothesis": "Deliberate negative control: ranks by the decision session's close, a bar whose available_at exceeds the decision cutoff; must be caught and rejected",
+    "notes": "",
+    "seed": 20261112,
+    "signal": {
+     "family": "leak_control",
+     "high_window_sessions": 252,
+     "lookback_sessions": 126,
+     "min_history_sessions": 0,
+     "skip_sessions": 0,
+     "top_k": 10
+    },
+    "spec_id": "wave2.control.leak.same-day-close",
+    "universe": {
+     "max_names": 50,
+     "membership_mode": "disclosed",
+     "require_entry_session_bar": true,
+     "universe_id": "nifty50"
+    },
+    "version": 1,
+    "windows": {
+     "embargo_sessions": 21,
+     "holdout_end": "2026-09-17",
+     "holdout_start": "2024-06-21",
+     "train_end": "2021-12-31",
+     "train_start": "2015-06-01",
+     "validation_end": "2023-12-31",
+     "validation_start": "2022-01-01"
+    }
+   },
+   "preregistration_hash": "a52b237a6becb98e3266e05f465e124a99ae037e6b13c51b42bc76771dcb7a50",
+   "spec_id": "wave2.control.leak.same-day-close",
+   "version": 1
+  },
+  {
+   "declared_negative_control": true,
+   "fingerprint": "e2fa5fff804057da5c04a0503f9aacb2e992cba7a82d510b11cc512942637e73",
+   "payload": {
+    "created_at": "2026-11-12T10:41:24.065466+00:00",
+    "declared_negative_control": true,
+    "execution": {
+     "broker": "book_zero_brokerage",
+     "capital_paise": 10000000,
+     "entry_ref": "OPEN",
+     "exit_ref": "OPEN",
+     "rebalance": "monthly",
+     "slippage_bps": 10
+    },
+    "family": "other",
+    "hypothesis": "Deliberate negative control: seeded random portfolio from the same eligible pools; must earn no edge",
+    "notes": "",
+    "seed": 20261112,
+    "signal": {
+     "family": "noise_control",
+     "high_window_sessions": 252,
+     "lookback_sessions": 126,
+     "min_history_sessions": 0,
+     "skip_sessions": 0,
+     "top_k": 10
+    },
+    "spec_id": "wave2.control.noise.seeded",
+    "universe": {
+     "max_names": 50,
+     "membership_mode": "disclosed",
+     "require_entry_session_bar": true,
+     "universe_id": "nifty50"
+    },
+    "version": 1,
+    "windows": {
+     "embargo_sessions": 21,
+     "holdout_end": "2026-09-17",
+     "holdout_start": "2024-06-21",
+     "train_end": "2021-12-31",
+     "train_start": "2015-06-01",
+     "validation_end": "2023-12-31",
+     "validation_start": "2022-01-01"
+    }
+   },
+   "preregistration_hash": "115e209895f605c8cce2bf4d2b3b3656e46c9ad7ea4bca4ed5e7264a275ef47d",
+   "spec_id": "wave2.control.noise.seeded",
+   "version": 1
+  }
+ ],
+ "window_spec": {
+  "holdout": [
+   "2024-06-21",
+   "2026-09-17"
+  ],
+  "note": "chronological; embargo structurally enforced by label censoring at fold boundaries",
+  "train": [
+   "2015-06-01",
+   "2021-12-31"
+  ],
+  "validation": [
+   "2022-01-01",
+   "2023-12-31"
+  ]
+ }
+}

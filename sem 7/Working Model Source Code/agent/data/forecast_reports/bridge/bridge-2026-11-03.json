@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-11-03T13:31:09.108230+00:00",
+  "gate": {
+    "generated_at": "2026-11-03T13:31:09.103534+00:00",
+    "horizons": {
+      "5": {
+        "state": "HALT",
+        "settled": 1,
+        "bull_n": 0,
+        "hit_rate": null,
+        "long_edge_after_costs": null,
+        "need_for_halt_end": 29,
+        "trade_p": 0.6,
+        "cost_hurdle": 0.004
+      }
+    },
+    "claim": "every number re-derives from settled ledger rows; no state persists"
+  },
+  "intents": [],
+  "skipped": 70
+}
