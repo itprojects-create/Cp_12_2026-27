@@ -15,7 +15,7 @@ Observe the market. Investigate the evidence. Challenge the thesis. Practise the
 ![InsForge](https://img.shields.io/badge/Hosted_Backend-InsForge-2563EB?style=flat-square)
 ![Academic Project](https://img.shields.io/badge/Capstone-2026%E2%80%9327-7C3AED?style=flat-square)
 
-[Explore the source](sem%207/Working%20Model%20Source%20Code/) · [Read the research paper](sem%207/Research%20Paper.pdf) · [Open the project report](sem%207/Final%20Project%20Report%20%28Black%20Book%29.pdf)
+[Watch the demonstration](sem%207/Project%20Demonstration%20Video.mp4) · [Explore the source](sem%207/Working%20Model%20Source%20Code/) · [Read the research paper](sem%207/Research%20Paper.pdf) · [Open the project report](sem%207/Final%20Project%20Report%20%28Black%20Book%29.pdf)
 
 </div>
 
@@ -101,6 +101,7 @@ Cp_12_2026-27/
     ├── Final Project Report (Black Book).pdf
     ├── Research Paper.pdf
     ├── Project Logbook.pdf
+    ├── Project Demonstration Video.mp4
     └── Working Model Source Code/
         ├── README.md
         ├── web/
@@ -116,7 +117,9 @@ Cp_12_2026-27/
 | 7 | Research Paper | [PDF](sem%207/Research%20Paper.pdf) |
 | 7 | Project Logbook | [PDF](sem%207/Project%20Logbook.pdf) |
 | 7 | Working Model Source Code | [Source and setup](sem%207/Working%20Model%20Source%20Code/) |
-| 7 | Project Demonstration Video — 3 minutes | To be added |
+| 7 | Project Demonstration Video | [Watch or download](sem%207/Project%20Demonstration%20Video.mp4) |
+
+The demonstration video is a compressed MP4 included directly in `sem 7`. It downloads with a normal clone; Git LFS is not required. The original recording is preserved locally.
 
 ## Run the working model
 

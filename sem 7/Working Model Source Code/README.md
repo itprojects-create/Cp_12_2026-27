@@ -5,7 +5,7 @@ Quant Plus is an NSE market research and paper trading application. This submiss
 - `web/`: React and TanStack Start frontend, server routes, paper trading engine, database migrations, intelligence extensions, tests and supporting research evidence.
 - `agent/`: Python FastAPI backend, market data integration, research agents, reference data and tests.
 
-The six semester documents are in the repository's `sem 6` and `sem 7` folders. The demonstration video is deferred.
+The six semester documents are in the repository's `sem 6` and `sem 7` folders. A compressed [demonstration video](../Project%20Demonstration%20Video.mp4) is included directly in `sem 7` and downloads with a normal Git clone. The original recording is preserved locally.
 
 ## Requirements
 
